@@ -3,18 +3,22 @@ project:
   output-dir: docs
 
 website:
-  title: "website"
+  title: "Public Opinion and Policy"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    right:
+      - syllabus.qmd
+
+  page-footer:
+      border: false
+      left: © 2023 Gustavo Diaz
+      right: Powered by [{{< fa brands r-project >}}](https://cran.r-project.org/) and [Quarto](https://quarto.org/)
+  
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+    theme: 
+      - litera
+      - custom.scss
 
 
 

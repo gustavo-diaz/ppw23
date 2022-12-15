@@ -1,16 +1,16 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Public Opinion and Policy",
+    "section": "",
+    "text": "Dr. Gustavo Diaz\n   Kenneth Taylor Hall 711\n   diazg2@mcmaster.ca\n   Schedule an appointment\n\n\n\n\n\n   Wednesdays\n   January 11–April 12, 2023\n   8:30–11:20\n   Kenneth Taylor Hall B121\n\n\n\n\nWrite something about contact policy"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
     "title": "About",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "website",
-    "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   }
 ]

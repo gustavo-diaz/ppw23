@@ -1,0 +1,33 @@
+author: Gustavo Diaz
+
+instructor:
+  name: Dr. Gustavo Diaz
+  name_no_title: Gustavo Diaz
+  email: diazg2@mcmaster.ca
+  url: "https://gustavodiaz.org/"
+  twitter: gusvalo
+  github: gustavo-diaz
+  office: "Kenneth Taylor Hall 711"
+  contact_policy: >-
+   Write something about contact policy
+  appointment_url: https://calendly.com/tbd/
+
+course:
+  number: "POLSCI 4SS3"
+  semester: "Winter 2023"
+  days: "Wednesdays"
+  time: "8:30–11:20"
+  location: "Kenneth Taylor Hall B121"
+  dates: "January 11–April 12, 2023"
+  github: "https://github.com/gustavo-diaz/ppw23"
+  url: "https://ppw23.gustavodiaz.org/"
+  copyright_year: "2022"
+  slack: "TBD"
+
+university:
+  name: McMaster University
+  url: "https://www.mcmaster.ca/"
+
+school:
+  name: Department of Political Science
+  url: "https://politicalscience.mcmaster.ca/"
