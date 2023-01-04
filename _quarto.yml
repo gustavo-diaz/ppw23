@@ -7,6 +7,20 @@ website:
   navbar:
     right:
       - syllabus.qmd
+      - schedule.qmd
+      - assignments.qmd
+      - text: "Content"
+        file: content/index.qmd
+      - text: "Labs"
+        file: labs/index.qmd
+      - text: "Resources"
+        file: resources/index.qmd
+      - text: "Avenue"
+        href: "https://avenue.mcmaster.ca/"
+      - icon: cloud-fill
+        href: "https://posit.cloud/"
+        aria-label: Posit.cloud
+      
 
   page-footer:
       border: false
