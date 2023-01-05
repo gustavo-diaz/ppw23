@@ -1,0 +1,39 @@
+---
+title: "Resources"
+format:
+  html:
+    toc: true
+---
+
+## Templates
+
+I will upload .Rmd templates here that you can use to work on your assignments in R.
+
+For the weekly labs, you can use the corresponding files in the [Labs](/labs/) page as a template.
+
+## Coding
+
+### Accessing software
+
+- Installation instructions for [R](https://www.r-project.org/) and [RStudio](https://posit.co/downloads/) in different platforms: [{{< fa brands windows >}}](https://socialsciences.mcmaster.ca/jfox/Courses/R/ICPSR/R-install-instructions.html) [{{< fa brands apple >}}](https://socialsciences.mcmaster.ca/jfox/Courses/R/ICPSR/R-install-instructions.html) [{{< fa brands chrome >}}](https://levente.littvay.hu/chromebook/) 
+
+- [Posit Cloud](https://posit.cloud/). Also accessible with the [{{< fa cloud >}}](https://posit.cloud/) icon in the top navigation bar
+
+- [Also include a list of computers in campus available to students]
+
+### Tips
+
+Coming soon!
+
+## Reading
+
+I do my best to assign as little reading as possible. Still, some of the readings are full of technical terms, tables, figures, and math. I expect our class discussions to start from the main findings of a study and then work backwards to understand how a study was conducted and why it was done so in a certain why.
+
+This means that you may have to pay extra attention to things that you tend to ignore when reading for other courses. My advice is to try to read strategically. I find [this guide](https://www.ameliahoovergreen.com/uploads/9/3/0/9/93091546/howtoread.pdf) by [Amelia Hoover Green](https://www.ameliahoovergreen.com/) useful.
+
+I find myself at odds about assigning readings with a lot of math. On the one hand, I find equations useful to talk about general design ideas that we can then translate to specific research contexts. On the other hand, I got into political science because I wanted to avoid math as much as possible (it didn't work), which means I have to fight my natural inclination of skipping all the ~~formulas~~ ~~formulae~~ *formulæ*.
+
+Over time, I have learned that the problem is not so much the math, but the language attached to it. Academic articles often expect the audience to be an insider that already knows how to read the math, so they skip the plain language explanation. I find it useful to try to rewrite equations in words as I take notes, but that takes time that you may not have.
+
+I plan to use some of our class time clarifying important quantities of with words and coding examples.
+

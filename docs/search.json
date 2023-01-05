@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "This page provides additional details on course evaluations. See the syllabus for more details."
+  },
+  {
+    "objectID": "assignments.html#attendance-and-participation-10",
+    "href": "assignments.html#attendance-and-participation-10",
+    "title": "Assignments",
+    "section": "Attendance and participation (10%)",
+    "text": "Attendance and participation (10%)\nI expect you to engage actively in this class. At a minimum, I expect you to come to lecture ready to discuss the material and collaborate with your peers on weekly assignments. To obtain a good participation grade, you must also make interventions conducive to a productive and respectful learning environment for yourself and others during class, office hours, online communications, or through other means that best suit your learning style.\nWe all have different interests and personalities, so I will keep an open mind about what constitutes good participation, and I encourage you to be proactive about pursuing the participation avenues that are most productive for you."
+  },
+  {
+    "objectID": "assignments.html#weekly-lab-assignments-30-due-on-fridays-at-5-pm",
+    "href": "assignments.html#weekly-lab-assignments-30-due-on-fridays-at-5-pm",
+    "title": "Assignments",
+    "section": "Weekly lab assignments (30%), due on Fridays at 5 PM",
+    "text": "Weekly lab assignments (30%), due on Fridays at 5 PM\nWe will have weekly assignments aimed at practicing the application of course material with statistical software. These range from coding exercises to evaluating and improving research designs. You are encouraged to work on these assignments in groups during the lab sessions and beyond, but you must submit individual reports.\nWe will start working on the weekly assignments during our lab session. On most weeks, you will need additional time to finish them. There will be 12 weekly lab assignments in total and your best 10 will count towards your final grade (3% each). You can choose to submit only 10 weekly assignments or complete more than the minimum required."
+  },
+  {
+    "objectID": "assignments.html#response-papers-30-due-on-tuesdays-at-830-am",
+    "href": "assignments.html#response-papers-30-due-on-tuesdays-at-830-am",
+    "title": "Assignments",
+    "section": "Response papers (30%), due on Tuesdays at 8:30 AM",
+    "text": "Response papers (30%), due on Tuesdays at 8:30 AM\nYou can choose to write a response paper on weeks that include reading original studies. A response paper is a short form document that summarizes the question, relevance, and research design of a study and then uses the course material to critically evaluate an aspect of its design or implementation. The main task is to identify questions and issues that require our attention during the discussion portion of our weekly meeting. You are expected to engage actively during class discussion in the weeks you write a response paper. In weeks with multiple assigned papers, you can choose whichever you prefer to discuss. The course website contains a template with guidelines on how to write a response paper for this course. Response papers are due 24 hours before our class meeting.\nResponse papers should be between 700 and 1,000 words. You are required to complete at least 3 response papers, if you choose to complete more, only the best three will count towards your final grade (10% each)."
+  },
+  {
+    "objectID": "assignments.html#final-project-meetings",
+    "href": "assignments.html#final-project-meetings",
+    "title": "Assignments",
+    "section": "Final project meetings",
+    "text": "Final project meetings\nIn preparation for your final project, you will have at least two meetings to report progress and receive feedback on your final project (as a group, if applicable). At least one of the meetings should happen before the mid-term recess. You should sign up for office hours (preferably virtually to accommodate for group schedules) and clarify in the subject line that this is a project meeting. The minimum number of meetings required may change based on roster size.\nIn the first meeting, we will discuss project ideas and identify elements of the course material that you should pay attention to. In subsequent meetings, you should submit a document outlining your current progress 24 hours before the meeting time. This can be a either working draft of your final project or a separate document altogether. The purpose of this exercise is for you to get continuous feedback on writing a pre-analysis plan. Based on the specifics of your project, I may ask you to schedule additional meetings. You are also welcomed to schedule additional meetings if you deem it necessary.\nFinal project meetings count for 10% of your total grade. This grade will be updated after every meeting and should serve as an indication of the work required to receive a satisfactory score in your final project. Not all group members need to attend a meeting, but every group member should attend at least one meeting."
+  },
+  {
+    "objectID": "assignments.html#final-project-pre-analysis-plan-20-due-on-april-21-by-1159-pm",
+    "href": "assignments.html#final-project-pre-analysis-plan-20-due-on-april-21-by-1159-pm",
+    "title": "Assignments",
+    "section": "Final project: Pre-analysis plan (20%), due on April 21 by 11:59 PM",
+    "text": "Final project: Pre-analysis plan (20%), due on April 21 by 11:59 PM\nYour final project is a pre-analysis plan. This is a document that outlines the steps of a future study that addresses a novel question of academic interest or policy/industry relevance. This document identifies a problem or question that needs to be addressed, explains its relevance or novelty, proposes a research design, and evaluates its properties to guide implementation. The course website will host resources to write a pre-analysis plan, and we will discuss expectations throughout the semester. Final projects should range from 5,000 to 6,000 words.\nDuring the first week of our course, you will complete a survey to share details about your research interests and career goals. Based on your answers, I will create research themes that students can sign up to form groups on a first-come first-served basis. I anticipate groups of 3-4 people. The details of group formation will change depending on interests and roster size.\nIf you already have a research topic you want to work on, you may choose to write an individual project instead. However, note that the expectations are the same as if you were working with a group. You should consult with me as early as possible to determine if your individual project suits the course objectives. The instructor reserves the right to accept or reject individual project proposals."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Public Opinion and Policy",
@@ -7,11 +49,32 @@
     "text": "Welcome!\nThis course explores quantitative research designs to answer questions about public opinion and policy in academia, government, and industry. In this website you will find all the course materials. Assignments must be submitted through Avenue.\n\n\n\nInstructor\n\n   Dr. Gustavo Diaz\n   Kenneth Taylor Hall 711\n   diazg2@mcmaster.ca\n   Schedule a meeting\n\n\n\nCourse details\n\n   Wednesdays\n   8:30–11:20\n   Kenneth Taylor Hall B121\n   January 11–April 12, 2023\n\n\n\nContact\nSend an email or schedule a meeting. I usually respond to emails within 24 hours. Please schedule meetings at least 8 hours in advance."
   },
   {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "I will upload .Rmd templates here that you can use to work on your assignments in R.\nFor the weekly labs, you can use the corresponding files in the Labs page as a template."
+  },
+  {
+    "objectID": "resources.html#coding",
+    "href": "resources.html#coding",
+    "title": "Resources",
+    "section": "Coding",
+    "text": "Coding\n\nAccessing software\n\nInstallation instructions for R and RStudio in different platforms:   \nPosit Cloud. Also accessible with the  icon in the top navigation bar\n[Also include a list of computers in campus available to students]\n\n\n\nTips\nComing soon!"
+  },
+  {
+    "objectID": "resources.html#reading",
+    "href": "resources.html#reading",
+    "title": "Resources",
+    "section": "Reading",
+    "text": "Reading\nI do my best to assign as little reading as possible. Still, some of the readings are full of technical terms, tables, figures, and math. I expect our class discussions to start from the main findings of a study and then work backwards to understand how a study was conducted and why it was done so in a certain why.\nThis means that you may have to pay extra attention to things that you tend to ignore when reading for other courses. My advice is to try to read strategically. I find this guide by Amelia Hoover Green useful.\nI find myself at odds about assigning readings with a lot of math. On the one hand, I find equations useful to talk about general design ideas that we can then translate to specific research contexts. On the other hand, I got into political science because I wanted to avoid math as much as possible (it didn’t work), which means I have to fight my natural inclination of skipping all the formulas formulae formulæ.\nOver time, I have learned that the problem is not so much the math, but the language attached to it. Academic articles often expect the audience to be an insider that already knows how to read the math, so they skip the plain language explanation. I find it useful to try to rewrite equations in words as I take notes, but that takes time that you may not have.\nI plan to use some of our class time clarifying important quantities of with words and coding examples."
+  },
+  {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This is an overview of the semester. As the semester goes on, I will update this page with links to slides, readings, and lab assignments.\nYou can also check the Content and Labs pages for details.\n\n\n  \n\nTable continues below\n\n\n1\nJanuary 11\nIntroduction\n\n\n\n\n\n\n\n\nResearch interests"
+    "text": "This is an overview of the semester. As the semester goes on, I will update this page with links to slides, readings, and lab assignments.\nYou can also check the Content and Labs pages for details.\n\n\n\n\n Week\n Date\n Content\n Lab\n\n\n\n\n1\nJanuary 11\nIntroduction\nResearch interests survey\n\n\n2\nJanuary 18\nRepresentative surveys\nIntro to R; sampling from populations\n\n\n3\nJanuary 25\nPanel surveys\nDescriptive inference\n\n\n4\nFebruary 1\nSensitive questions\nReducing sensitivity bias\n\n\n5\nFebruary 8\nSurvey experiments\nSurvey experimental designs\n\n\n6\nFebruary 15\nConvenience samples\nExternal validity\n\n\n7\nFebruary 22\nMid-term recess\n\n\n\n8\nMarch 1\nEvidence-informed policy\nHypothesis testing\n\n\n9\nMarch 8\nField experiments I\nField experimental designs I\n\n\n10\nMarch 15\nField experiments II\nField experimental designs II\n\n\n11\nMarch 22\nBeyond experimentation\nLimitations of experiments\n\n\n12\nMarch 29\nQuasi-experiments I\nQuasi-experimental designs I\n\n\n13\nApril 5\nQuasi-experiments II\nQuasi-experimental designs II\n\n\n14\nApril 12\nFlex class or open lab\n\n\n\n\nApril 21\nFinal project due"
   },
   {
     "objectID": "syllabus.html",
@@ -21,11 +84,11 @@
     "text": "Dr. Gustavo Diaz\n   Kenneth Taylor Hall 711\n   diazg2@mcmaster.ca\n   Schedule a meeting\n\n\n\n\n\n   Wednesdays\n   8:30–11:20\n   Kenneth Taylor Hall B121\n   January 11–April 12, 2023"
   },
   {
-    "objectID": "syllabus.html#description",
-    "href": "syllabus.html#description",
+    "objectID": "syllabus.html#description-fa-file-pdf",
+    "href": "syllabus.html#description-fa-file-pdf",
     "title": "Syllabus",
-    "section": "Description",
-    "text": "Description\nThis course explores quantitative research designs to answer questions about public opinion and policy in academia, government, and industry. We will examine how to conduct surveys to understand variation in public opinion or attitudes toward several subjects across the world. We will also examine empirical strategies to generate credible evidence to inform policy decisions in different contexts.\nThe main learning objective of this course to develop standards to think about the appropriate research design before conducting a study. This is useful to those working with quantitative data either directly or indirectly. We will work towards that goal through a combination of reading, discussion, and hands-on practice.\nStudents will have the opportunity to practice working with statistical software in preparation to write a pre-analysis plan document that outlines the steps of a future study that addresses a novel question of academic interest or policy/industry relevance.\nThis course contributes to the Research Methods and/or Analysis requirement for the Concurrent Certificate in Applied Social Sciences Research. As such, it relies heavily on statistics as the main tool to think about research design. Students are expected to have taken at least POLSCI 4NN3 – Statistical Analysis or have equivalent experience with statistics and statistical programming software. I expect us to understand the main findings of a quantitative social science study and work backwards from there to understand the research design choices that researchers made. I also expect, but not assume, some experience with loading, cleaning, and analyzing data."
+    "section": "Description ",
+    "text": "Description \nThis course explores quantitative research designs to answer questions about public opinion and policy in academia, government, and industry. We will examine how to conduct surveys to understand variation in public opinion or attitudes toward several subjects across the world. We will also examine empirical strategies to generate credible evidence to inform policy decisions in different contexts.\nThe main learning objective of this course to develop standards to think about the appropriate research design before conducting a study. This is useful to those working with quantitative data either directly or indirectly. We will work towards that goal through a combination of reading, discussion, and hands-on practice.\nStudents will have the opportunity to practice working with statistical software in preparation to write a pre-analysis plan document that outlines the steps of a future study that addresses a novel question of academic interest or policy/industry relevance.\nThis course contributes to the Research Methods and/or Analysis requirement for the Concurrent Certificate in Applied Social Sciences Research. As such, it relies heavily on statistics as the main tool to think about research design. Students are expected to have taken at least POLSCI 4NN3 – Statistical Analysis or have equivalent experience with statistics and statistical programming software. I expect us to understand the main findings of a quantitative social science study and work backwards from there to understand the research design choices that researchers made. I also expect, but not assume, some experience with loading, cleaning, and analyzing data."
   },
   {
     "objectID": "syllabus.html#objectives",

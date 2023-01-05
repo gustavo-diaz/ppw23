@@ -1,5 +1,43 @@
 ---
 title: "Assignments"
+format:
+  html:
+    toc: true
 ---
 
-Asda.
+This page provides additional details on course evaluations. See the [syllabus](/syllabus.qmd) for more details.
+
+## Attendance and participation (10%)
+
+I expect you to engage actively in this class. At a minimum, I expect you to come to lecture ready to discuss the material and collaborate with your peers on weekly assignments. To obtain a good participation grade, you must also make interventions conducive to a productive and respectful learning environment for yourself and others during class, office hours, online communications, or through other means that best suit your learning style.
+
+We all have different interests and personalities, so I will keep an open mind about what constitutes good participation, and I encourage you to be proactive about pursuing the participation avenues that are most productive for you.
+
+## Weekly lab assignments (30%), due on Fridays at 5 PM
+
+We will have weekly assignments aimed at practicing the application of course material with statistical software. These range from coding exercises to evaluating and improving research designs. You are encouraged to work on these assignments in groups during the lab sessions and beyond, but you must submit individual reports.
+
+We will start working on the weekly assignments during our lab session. On most weeks, you will need additional time to finish them. There will be 12 weekly lab assignments in total and your best 10 will count towards your final grade (3% each). You can choose to submit only 10 weekly assignments or complete more than the minimum required.
+
+## Response papers (30%), due on Tuesdays at 8:30 AM
+
+You can choose to write a response paper on weeks that include reading original studies. A response paper is a short form document that summarizes the question, relevance, and research design of a study and then uses the course material to critically evaluate an aspect of its design or implementation. The main task is to identify questions and issues that require our attention during the discussion portion of our weekly meeting. You are expected to engage actively during class discussion in the weeks you write a response paper. In weeks with multiple assigned papers, you can choose whichever you prefer to discuss. The course website contains a template with guidelines on how to write a response paper for this course. Response papers are due 24 hours before our class meeting.
+
+Response papers should be between 700 and 1,000 words. You are required to complete at least 3 response papers, if you choose to complete more, only the best three will count towards your final grade (10% each).
+
+## Final project meetings
+
+In preparation for your final project, you will have at least two meetings to report progress and receive feedback on your final project (as a group, if applicable). At least one of the meetings should happen before the mid-term recess. You should sign up for office hours (preferably virtually to accommodate for group schedules) and clarify in the subject line that this is a project meeting. The minimum number of meetings required may change based on roster size.
+
+In the first meeting, we will discuss project ideas and identify elements of the course material that you should pay attention to. In subsequent meetings, you should submit a document outlining your current progress 24 hours before the meeting time. This can be a either working draft of your final project or a separate document altogether. The purpose of this exercise is for you to get continuous feedback on writing a pre-analysis plan. Based on the specifics of your project, I may ask you to schedule additional meetings. You are also welcomed to schedule additional meetings if you deem it necessary.
+
+Final project meetings count for 10% of your total grade. This grade will be updated after every meeting and should serve as an indication of the work required to receive a satisfactory score in your final project. Not all group members need to attend a meeting, but every group member should attend at least one meeting.
+
+## Final project: Pre-analysis plan (20%), due on April 21 by 11:59 PM
+
+Your final project is a pre-analysis plan. This is a document that outlines the steps of a future study that addresses a novel question of academic interest or policy/industry relevance. This document identifies a problem or question that needs to be addressed, explains its relevance or novelty, proposes a research design, and evaluates its properties to guide implementation. The course website will host resources to write a pre-analysis plan, and we will discuss expectations throughout the semester. Final projects should range from 5,000 to 6,000 words.
+
+During the first week of our course, you will complete a survey to share details about your research interests and career goals. Based on your answers, I will create research themes that students can sign up to form groups on a first-come first-served basis. I anticipate groups of 3-4 people. The details of group formation will change depending on interests and roster size.
+
+If you already have a research topic you want to work on, you may choose to write an individual project instead. However, note that the expectations are the same as if you were working with a group. You should consult with me as early as possible to determine if your individual project suits the course objectives. The instructor reserves the right to accept or reject individual project proposals.
+

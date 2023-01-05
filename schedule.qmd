@@ -16,7 +16,21 @@ You can also check the [Content](/content/) and [Labs](/labs/) pages for details
 schedule =
   tribble(
     ~Week, ~Date, ~Content, ~Lab,
-    1, "January 11", "Introduction", "[Research interests](link)" 
+    1, "January 11", "Introduction", "[Research interests survey](link)",
+    2, "January 18", "Representative surveys", "Intro to R; sampling from populations",
+    3, "January 25", "Panel surveys", "Descriptive inference",
+    4, "February 1", "Sensitive questions", "Reducing sensitivity bias",
+    5, "February 8", "Survey experiments", "Survey experimental designs",
+    6, "February 15", "Convenience samples", "External validity",
+    7, "February 22", "Mid-term recess", NA,
+    8, "March 1", "Evidence-informed policy", "Hypothesis testing",
+    9, "March 8", "Field experiments I", "Field experimental designs I",
+    10, "March 15", "Field experiments II", "Field experimental designs II",
+    11, "March 22", "Beyond experimentation", "Limitations of experiments",
+    12, "March 29", "Quasi-experiments I", "Quasi-experimental designs I",
+    13, "April 5", "Quasi-experiments II", "Quasi-experimental designs II",
+    14, "April 12", "Flex class or open lab", NA,
+    NA, "**April 21**", "**Final project due**", NA
   )
 ```
 
@@ -28,7 +42,9 @@ schedule %>%
                col.names = c("{{< fa hashtag >}} Week",
                              "{{< fa calendar >}} Date",
                              "{{< fa book-open-reader >}} Content",
-                             "{{< fa laptop-code >}} Lab"))
+                             "{{< fa laptop-code >}} Lab"),
+               split.tables = Inf,
+               missing = "")
 ```
 
 </div>

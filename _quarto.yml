@@ -13,8 +13,7 @@ website:
         file: content/index.qmd
       - text: "Labs"
         file: labs/index.qmd
-      - text: "Resources"
-        file: resources/index.qmd
+      - resources.qmd
       - text: "Avenue"
         href: "https://avenue.mcmaster.ca/"
       - icon: cloud-fill

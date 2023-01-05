@@ -32,7 +32,7 @@ library(pander)
 
 :::
 
-## Description
+## Description [{{< fa file-pdf >}}](/syllabus.pdf)
 
 This course explores quantitative research designs to answer questions about public opinion and policy in academia, government, and industry. We will examine how to conduct surveys to understand variation in public opinion or attitudes toward several subjects across the world. We will also examine empirical strategies to generate credible evidence to inform policy decisions in different contexts.
 
