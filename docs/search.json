@@ -42,6 +42,125 @@
     "text": "Final project: Pre-analysis plan (20%), due on April 21 by 11:59 PM\nYour final project is a pre-analysis plan. This is a document that outlines the steps of a future study that addresses a novel question of academic interest or policy/industry relevance. This document identifies a problem or question that needs to be addressed, explains its relevance or novelty, proposes a research design, and evaluates its properties to guide implementation. The course website will host resources to write a pre-analysis plan, and we will discuss expectations throughout the semester. Final projects should range from 5,000 to 6,000 words.\nDuring the first week of our course, you will complete a survey to share details about your research interests and career goals. Based on your answers, I will create research themes that students can sign up to form groups on a first-come first-served basis. I anticipate groups of 3-4 people. The details of group formation will change depending on interests and roster size.\nIf you already have a research topic you want to work on, you may choose to write an individual project instead. However, note that the expectations are the same as if you were working with a group. You should consult with me as early as possible to determine if your individual project suits the course objectives. The instructor reserves the right to accept or reject individual project proposals."
   },
   {
+    "objectID": "content/01_content.html",
+    "href": "content/01_content.html",
+    "title": "Week 1: Introduction",
+    "section": "",
+    "text": "We go over the course theme and requirements and discuss tips to succeed.\nWe will use some of the lab time exploring R and RStudio.\nThe lab assignment for this week is a freebie. You will complete a survey of research interests to help me organize groups for the final project and will get full points by just completing the survey."
+  },
+  {
+    "objectID": "content/01_content.html#reading",
+    "href": "content/01_content.html#reading",
+    "title": "Week 1: Introduction",
+    "section": "Reading",
+    "text": "Reading\nIt’s the first day. No reading!"
+  },
+  {
+    "objectID": "content/01_content.html#slides",
+    "href": "content/01_content.html#slides",
+    "title": "Week 1: Introduction",
+    "section": "Slides",
+    "text": "Slides\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/01_content.html#lab",
+    "href": "content/01_content.html#lab",
+    "title": "Week 1: Introduction",
+    "section": "Lab",
+    "text": "Lab\nPart 1: Introduction to R and RStudio \nPart 2: Survey of research interests \n\n\n\n\n\n\nDue\n\n\n\nFriday, January 13, 5 PM"
+  },
+  {
+    "objectID": "content/02_content.html",
+    "href": "content/02_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/03_content.html",
+    "href": "content/03_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/04_content.html",
+    "href": "content/04_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/05_content.html",
+    "href": "content/05_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/06_content.html",
+    "href": "content/06_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/08_content.html",
+    "href": "content/08_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/09_content.html",
+    "href": "content/09_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/10_content.html",
+    "href": "content/10_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/11_content.html",
+    "href": "content/11_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/12_content.html",
+    "href": "content/12_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/13_content.html",
+    "href": "content/13_content.html",
+    "title": "Course material",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "content/14_content.html",
+    "href": "content/14_content.html",
+    "title": "Week 14: Flex Class or Open Lab",
+    "section": "",
+    "text": "We are leaving one empty spot in our schedule just in case, we can use our time this week in four ways:\n\nCatch up on missed content due to unforeseen circumstances\nLearn more about a topic that caught our attention during the semester\nDiscuss steps to learn more about the topic of this class or to take advantage of what you learned this semester\nHave an unstructured lab session so we can work on final projects and help each other out\n\nThese are not mutually exclusive. We will collectively decide what to do and I will update this page accordingly."
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Content Overview",
+    "section": "",
+    "text": "You can use the sidebar to navigate the course content organized by weeks.\nFor each week, you will find:\n\nA brief overview of the week’s topic\nA list of the required readings. Both sections of the textbook  and research articles .\n\n\n\n\n\n\n\nTip\n\n\n\nI expect you to come to class prepared to discuss them. This usually means a decent understanding of how the concepts introduced or research conducted and coming up with something to ask or comment about the reading.\n\n\n\nLinks to the slides in HTML  and PDF \n\n\n\n\n\n\n\nNote\n\n\n\nI like to make HTML slides to include code and animations. I make PDF slides available in case you want to print or save them locally.\n\n\n\nLinks to the corresponding weekly lab assignment \n\n\n\n\n\n\n\nTip\n\n\n\nYou can download  file for the assignments, edit it with your work, and compile it to PDF when you are ready to submit!"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Public Opinion and Policy",
@@ -75,6 +194,13 @@
     "title": "Schedule",
     "section": "",
     "text": "This is an overview of the semester. As the semester goes on, I will update this page with links to slides, readings, and lab assignments.\nYou can also check the Content and Labs pages for details.\n\n\n\n\n Week\n Date\n Content\n Lab\n\n\n\n\n1\nJanuary 11\nIntroduction\nResearch interests survey\n\n\n2\nJanuary 18\nRepresentative surveys\nIntro to R; sampling from populations\n\n\n3\nJanuary 25\nPanel surveys\nDescriptive inference\n\n\n4\nFebruary 1\nSensitive questions\nReducing sensitivity bias\n\n\n5\nFebruary 8\nSurvey experiments\nSurvey experimental designs\n\n\n6\nFebruary 15\nConvenience samples\nExternal validity\n\n\n7\nFebruary 22\nMid-term recess\n\n\n\n8\nMarch 1\nEvidence-informed policy\nHypothesis testing\n\n\n9\nMarch 8\nField experiments I\nField experimental designs I\n\n\n10\nMarch 15\nField experiments II\nField experimental designs II\n\n\n11\nMarch 22\nBeyond experimentation\nLimitations of experiments\n\n\n12\nMarch 29\nQuasi-experiments I\nQuasi-experimental designs I\n\n\n13\nApril 5\nQuasi-experiments II\nQuasi-experimental designs II\n\n\n14\nApril 12\nFlex class or open lab\n\n\n\n\nApril 21\nFinal project due"
+  },
+  {
+    "objectID": "slides/01_slides.html#this-is-a-test",
+    "href": "slides/01_slides.html#this-is-a-test",
+    "title": "TEST",
+    "section": "THIS IS A TEST",
+    "text": "THIS IS A TEST"
   },
   {
     "objectID": "syllabus.html",

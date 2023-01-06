@@ -2,6 +2,7 @@
 title: "Public Opinion and Policy"
 subtitle: "POLSCI 4SS3 -- Winter 2023 -- McMaster University"
 page-layout: full
+sidebar: false
 ---
 
 ### Welcome!

@@ -3,6 +3,7 @@ title: "Assignments"
 format:
   html:
     toc: true
+sidebar: false
 ---
 
 This page provides additional details on course evaluations. See the [syllabus](/syllabus.qmd) for more details.

@@ -1,0 +1,42 @@
+---
+title: "Week 1: Introduction"
+date: "January 11, 2023"
+format: html
+---
+
+```{r setup, echo = FALSE, results = "asis"}
+# Slide showing functions
+source(here::here("R", "show_slides.R"))
+```
+
+## Overview
+
+We go over the course theme and requirements and discuss tips to succeed.
+
+We will use some of the lab time exploring R and RStudio.
+
+The lab assignment for this week is a freebie. You will complete a survey of research interests to help me organize groups for the final project and will get full points by just completing the survey.
+
+## Reading
+
+It's the first day. No reading!
+
+## Slides
+
+```{r show-slides, echo = FALSE, results = "asis"}
+show_slide("/slides/01_slides")
+slide_buttons("/slides/01_slides")
+```
+
+
+## Lab
+
+**Part 1:** Introduction to R and RStudio {{< fa brands r-project >}}
+
+**Part 2:** Survey of research interests {{< fa file-pen >}}
+
+::: {.callout-warning}
+## Due
+
+Friday, January 13, 5 PM
+:::

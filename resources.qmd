@@ -3,6 +3,7 @@ title: "Resources"
 format:
   html:
     toc: true
+sidebar: false
 ---
 
 ## Templates

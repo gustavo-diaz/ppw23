@@ -3,6 +3,7 @@ title: "Syllabus"
 format:
   html:
     toc: true
+sidebar: false
 ---
 
 ```{r setup, message=FALSE, warning=FALSE, include=FALSE}
