@@ -11,26 +11,26 @@ library(pander)
 
 This is an overview of the semester. As the semester goes on, I will update this page with links to slides, readings, and lab assignments.
 
-You can also check the [Content](/content/) and [Labs](/labs/) pages for details.
+You can also check the [Content](/content/) page for details.
 
 ```{r schedule, include = FALSE}
 schedule =
   tribble(
     ~Week, ~Date, ~Content, ~Lab,
-    1, "January 11", "Introduction", "[Research interests survey](link)",
-    2, "January 18", "Representative surveys", "Intro to R; sampling from populations",
-    3, "January 25", "Panel surveys", "Descriptive inference",
-    4, "February 1", "Sensitive questions", "Reducing sensitivity bias",
-    5, "February 8", "Survey experiments", "Survey experimental designs",
-    6, "February 15", "Convenience samples", "External validity",
+    1, "January 11", "[Introduction](content/01_content.qmd)", "[Research interests survey](link)",
+    2, "January 18", "[Representative surveys](content/02_content.qmd)", "Intro to R; sampling from populations",
+    3, "January 25", "[Panel surveys](content/03_content.qmd)", "Descriptive inference",
+    4, "February 1", "[Sensitive questions](content/04_content.qmd)", "Reducing sensitivity bias",
+    5, "February 8", "[Survey experiments](content/05_content.qmd)", "Survey experimental designs",
+    6, "February 15", "[Convenience samples](content/06_content.qmd)", "External validity",
     7, "February 22", "Mid-term recess", NA,
-    8, "March 1", "Evidence-informed policy", "Hypothesis testing",
-    9, "March 8", "Field experiments I", "Field experimental designs I",
-    10, "March 15", "Field experiments II", "Field experimental designs II",
-    11, "March 22", "Beyond experimentation", "Limitations of experiments",
-    12, "March 29", "Quasi-experiments I", "Quasi-experimental designs I",
-    13, "April 5", "Quasi-experiments II", "Quasi-experimental designs II",
-    14, "April 12", "Flex class or open lab", NA,
+    8, "March 1", "[Evidence-informed policy]((content/08_content.qmd))", "Hypothesis testing",
+    9, "March 8", "[Field experiments I](content/09_content.qmd)", "Field experimental designs I",
+    10, "March 15", "[Field experiments II](content/10_content.qmd)", "Field experimental designs II",
+    11, "March 22", "[Beyond experimentation](content/11_content.qmd)", "Limitations of experiments",
+    12, "March 29", "[Quasi-experiments I](content/12_content.qmd)", "Quasi-experimental designs I",
+    13, "April 5", "[Quasi-experiments II](content/13_content.qmd)", "Quasi-experimental designs II",
+    14, "April 12", "[Flex class or open lab](content/14_content.qmd)", NA,
     NA, "**April 21**", "**Final project due**", NA
   )
 ```

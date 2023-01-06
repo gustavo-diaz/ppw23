@@ -14,7 +14,7 @@ For each week, you will find:
 I expect you to come to class prepared to discuss them. This usually means a decent understanding of how the concepts introduced or research conducted and coming up with something to ask or comment about the reading.
 :::
 
-- Links to the slides in **HTML** [{{< fa arrow-up-right-from-square >}}]{style="color: #ac1455;"} and **PDF** [{{< fa file-pdf >}}]{style="color: #ac1455;"}
+- Links to the slides in **HTML** [{{< fa arrow-up-right-from-square >}}]{style="color: blue;"} and **PDF** [{{< fa file-pdf >}}]{style="color: #ac1455;"}
 
 ::: {.callout-note}
 I like to make HTML slides to include code and animations. I make PDF slides available in case you want to print or save them locally.

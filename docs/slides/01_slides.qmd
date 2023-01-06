@@ -1,6 +1,24 @@
 ---
-title: "TEST"
-format: revealjs
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
 ---
 
-## THIS IS A TEST
+::: {style="text-align: center"}
+## Public Opinion and Policy{.center background-color="#ac1455"}
+### POLSCI 4SS3
+### Winter 2023
+
+&nbsp;
+
+
+**Prof. Gustavo Diaz**   
+Department of Political Science  
+McMaster University  
+[popw23.gustavodiaz.org](https://popw23.gustavodiaz.org/)
+:::
+
+## Testing font awesome
+
+{{< fa brands r-project >}}

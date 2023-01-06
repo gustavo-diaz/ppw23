@@ -10,7 +10,7 @@ sidebar: false
 
 I will upload .Rmd templates here that you can use to work on your assignments in R.
 
-For the weekly labs, you can use the corresponding files in the [Labs](/labs/) page as a template.
+For the weekly labs, you can use the corresponding files in the [Content](/content/) page as templates.
 
 ## Coding
 

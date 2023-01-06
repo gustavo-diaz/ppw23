@@ -1,0 +1,15 @@
+Heritage Maroon: #7A003C
+Heritage Gold: #FDBF57
+Heritage Grey: #5E6A71
+Light Maroon: #ac1455
+Light Grey: #efefef
+Cool Grey: #dbdbdd
+Medium Grey: #aeb4b8
+Heritage Grey: #5E6A71
+Dark Grey: #222222 (this is just black lol)
+Brighter World Yellow: #FFD100
+Brighter World Lime: #D2D755
+Brighter World Sky Blue: #8BD3E6
+Brighter World Red: #A6192E
+Brigher World Green: #007B4B
+Brighter World Blue: #007096

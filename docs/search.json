@@ -46,7 +46,7 @@
     "href": "content/01_content.html",
     "title": "Week 1: Introduction",
     "section": "",
-    "text": "We go over the course theme and requirements and discuss tips to succeed.\nWe will use some of the lab time exploring R and RStudio.\nThe lab assignment for this week is a freebie. You will complete a survey of research interests to help me organize groups for the final project and will get full points by just completing the survey."
+    "text": "We go over the course theme, requirements, and tips to succeed.\nThe lab assignment for this week is a freebie. You will complete a survey of research interests to help me organize groups for the final project and will get full points by just completing the survey."
   },
   {
     "objectID": "content/01_content.html#reading",
@@ -60,14 +60,14 @@
     "href": "content/01_content.html#slides",
     "title": "Week 1: Introduction",
     "section": "Slides",
-    "text": "Slides\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
   },
   {
     "objectID": "content/01_content.html#lab",
     "href": "content/01_content.html#lab",
     "title": "Week 1: Introduction",
     "section": "Lab",
-    "text": "Lab\nPart 1: Introduction to R and RStudio \nPart 2: Survey of research interests \n\n\n\n\n\n\nDue\n\n\n\nFriday, January 13, 5 PM"
+    "text": "Lab\nSurvey of research interests \n\n\n\n\n\n\nDue\n\n\n\nFriday, January 13, 5 PM"
   },
   {
     "objectID": "content/02_content.html",
@@ -172,7 +172,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "I will upload .Rmd templates here that you can use to work on your assignments in R.\nFor the weekly labs, you can use the corresponding files in the Labs page as a template."
+    "text": "I will upload .Rmd templates here that you can use to work on your assignments in R.\nFor the weekly labs, you can use the corresponding files in the Content page as templates."
   },
   {
     "objectID": "resources.html#coding",
@@ -193,14 +193,21 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This is an overview of the semester. As the semester goes on, I will update this page with links to slides, readings, and lab assignments.\nYou can also check the Content and Labs pages for details.\n\n\n\n\n Week\n Date\n Content\n Lab\n\n\n\n\n1\nJanuary 11\nIntroduction\nResearch interests survey\n\n\n2\nJanuary 18\nRepresentative surveys\nIntro to R; sampling from populations\n\n\n3\nJanuary 25\nPanel surveys\nDescriptive inference\n\n\n4\nFebruary 1\nSensitive questions\nReducing sensitivity bias\n\n\n5\nFebruary 8\nSurvey experiments\nSurvey experimental designs\n\n\n6\nFebruary 15\nConvenience samples\nExternal validity\n\n\n7\nFebruary 22\nMid-term recess\n\n\n\n8\nMarch 1\nEvidence-informed policy\nHypothesis testing\n\n\n9\nMarch 8\nField experiments I\nField experimental designs I\n\n\n10\nMarch 15\nField experiments II\nField experimental designs II\n\n\n11\nMarch 22\nBeyond experimentation\nLimitations of experiments\n\n\n12\nMarch 29\nQuasi-experiments I\nQuasi-experimental designs I\n\n\n13\nApril 5\nQuasi-experiments II\nQuasi-experimental designs II\n\n\n14\nApril 12\nFlex class or open lab\n\n\n\n\nApril 21\nFinal project due"
+    "text": "This is an overview of the semester. As the semester goes on, I will update this page with links to slides, readings, and lab assignments.\nYou can also check the Content page for details.\n\n\n\n\n Week\n Date\n Content\n Lab\n\n\n\n\n1\nJanuary 11\nIntroduction\nResearch interests survey\n\n\n2\nJanuary 18\nRepresentative surveys\nIntro to R; sampling from populations\n\n\n3\nJanuary 25\nPanel surveys\nDescriptive inference\n\n\n4\nFebruary 1\nSensitive questions\nReducing sensitivity bias\n\n\n5\nFebruary 8\nSurvey experiments\nSurvey experimental designs\n\n\n6\nFebruary 15\nConvenience samples\nExternal validity\n\n\n7\nFebruary 22\nMid-term recess\n\n\n\n8\nMarch 1\nEvidence-informed policy\nHypothesis testing\n\n\n9\nMarch 8\nField experiments I\nField experimental designs I\n\n\n10\nMarch 15\nField experiments II\nField experimental designs II\n\n\n11\nMarch 22\nBeyond experimentation\nLimitations of experiments\n\n\n12\nMarch 29\nQuasi-experiments I\nQuasi-experimental designs I\n\n\n13\nApril 5\nQuasi-experiments II\nQuasi-experimental designs II\n\n\n14\nApril 12\nFlex class or open lab\n\n\n\n\nApril 21\nFinal project due"
   },
   {
-    "objectID": "slides/01_slides.html#this-is-a-test",
-    "href": "slides/01_slides.html#this-is-a-test",
-    "title": "TEST",
-    "section": "THIS IS A TEST",
-    "text": "THIS IS A TEST"
+    "objectID": "slides/01_slides.html#public-opinion-and-policy",
+    "href": "slides/01_slides.html#public-opinion-and-policy",
+    "title": "Public Opinion and Policy",
+    "section": "Public Opinion and Policy",
+    "text": "Public Opinion and Policy\nPOLSCI 4SS3\nWinter 2023\n \nProf. Gustavo Diaz\nDepartment of Political Science\nMcMaster University\npopw23.gustavodiaz.org"
+  },
+  {
+    "objectID": "slides/01_slides.html#testing-font-awesome",
+    "href": "slides/01_slides.html#testing-font-awesome",
+    "title": "Public Opinion and Policy",
+    "section": "Testing font awesome",
+    "text": "Testing font awesome"
   },
   {
     "objectID": "syllabus.html",

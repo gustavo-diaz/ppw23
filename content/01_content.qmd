@@ -11,9 +11,7 @@ source(here::here("R", "show_slides.R"))
 
 ## Overview
 
-We go over the course theme and requirements and discuss tips to succeed.
-
-We will use some of the lab time exploring R and RStudio.
+We go over the course theme, requirements, and tips to succeed.
 
 The lab assignment for this week is a freebie. You will complete a survey of research interests to help me organize groups for the final project and will get full points by just completing the survey.
 
@@ -23,6 +21,12 @@ It's the first day. No reading!
 
 ## Slides
 
+::: {.callout-tip}
+## Navigation
+
+Click on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.
+:::
+
 ```{r show-slides, echo = FALSE, results = "asis"}
 show_slide("/slides/01_slides")
 slide_buttons("/slides/01_slides")
@@ -31,9 +35,7 @@ slide_buttons("/slides/01_slides")
 
 ## Lab
 
-**Part 1:** Introduction to R and RStudio {{< fa brands r-project >}}
-
-**Part 2:** Survey of research interests {{< fa file-pen >}}
+Survey of research interests {{< fa file-pen >}}
 
 ::: {.callout-warning}
 ## Due
