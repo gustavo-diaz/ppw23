@@ -250,5 +250,103 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
+  },
+  {
+    "objectID": "slides/01_slides.html#welcome",
+    "href": "slides/01_slides.html#welcome",
+    "title": "Public Opinion and Policy",
+    "section": "Welcome!",
+    "text": "Welcome!\nThis course is about quantitative research designs applied to public opinion and policy\n\n\nQuantitative: Data analysis using statistics and statistical programming software\n\n\n\n\nResearch design: Thinking about how research is conducted"
+  },
+  {
+    "objectID": "slides/01_slides.html#welcome-1",
+    "href": "slides/01_slides.html#welcome-1",
+    "title": "Public Opinion and Policy",
+    "section": "Welcome!",
+    "text": "Welcome!\nThis course is about quantitative research designs applied to public opinion and policy\n\nPublic opinion: Views among the general1 public\n\n\n\n(Public) policy: Government actions and how to carry them\n\n\nSometimes not so general"
+  },
+  {
+    "objectID": "slides/01_slides.html#why-public-opinion-and-policy",
+    "href": "slides/01_slides.html#why-public-opinion-and-policy",
+    "title": "Public Opinion and Policy",
+    "section": "Why public opinion and policy?",
+    "text": "Why public opinion and policy?\n\n\nBoth are important for the operation of government and adjacent organizations\n\n\n\n\nWhy together?\n\n\n\n\nBoth are important and difficult/expensive to get right\n\n\n\n\nMinimize mistakes before conducting a study"
+  },
+  {
+    "objectID": "slides/01_slides.html#focus-on-thinking-about-research-design-before-conducting-a-study",
+    "href": "slides/01_slides.html#focus-on-thinking-about-research-design-before-conducting-a-study",
+    "title": "Public Opinion and Policy",
+    "section": "Focus on thinking about research design before conducting a study",
+    "text": "Focus on thinking about research design before conducting a study"
+  },
+  {
+    "objectID": "slides/01_slides.html#is-this-a-mistake",
+    "href": "slides/01_slides.html#is-this-a-mistake",
+    "title": "Public Opinion and Policy",
+    "section": "Is this a mistake?",
+    "text": "Is this a mistake?"
+  },
+  {
+    "objectID": "slides/01_slides.html#content-warning",
+    "href": "slides/01_slides.html#content-warning",
+    "title": "Public Opinion and Policy",
+    "section": "Content warning",
+    "text": "Content warning\n\nWe will rely heavily on statistics to think about the properties of a research design\n\n\n\nReading technical writing\nUnderstanding statistical concepts\nApplying them in writing and through software\nWrite a statistics-heavy final project"
+  },
+  {
+    "objectID": "slides/01_slides.html#content-warning-fa-skull-crossbones",
+    "href": "slides/01_slides.html#content-warning-fa-skull-crossbones",
+    "title": "Public Opinion and Policy",
+    "section": "Content warning ",
+    "text": "Content warning \n\nWe will rely heavily on math and statistics to think about the properties of a research design\n\n\n\nYou will be asked to:\n\nRead technical writing\nUnderstand and explain statistical concepts\nApply them in writing and coding\nWrite a statistics-heavy final project"
+  },
+  {
+    "objectID": "slides/01_slides.html#was-this-a-mistake",
+    "href": "slides/01_slides.html#was-this-a-mistake",
+    "title": "Public Opinion and Policy",
+    "section": "Was this a mistake?",
+    "text": "Was this a mistake?\n\nNo wrong answers!"
+  },
+  {
+    "objectID": "slides/01_slides.html#course-website",
+    "href": "slides/01_slides.html#course-website",
+    "title": "Public Opinion and Policy",
+    "section": "Course website",
+    "text": "Course website\npopw23.gustavodiaz.org"
+  },
+  {
+    "objectID": "slides/01_slides.html#required-reading",
+    "href": "slides/01_slides.html#required-reading",
+    "title": "Public Opinion and Policy",
+    "section": "Required reading",
+    "text": "Required reading\nbook.declaredesign.org\n\nBlair, Graeme, Alexander Coppock, and Macartan Humphreys. 2022. Research Design: Declaration, Diagnosis, Redesign. Forthcoming at Princeton University Press\nFREE ONLINE. DO NOT BUY\nChapters are short but include math and code\nRead 1-3 sections + 1-2 research articles per week"
+  },
+  {
+    "objectID": "slides/01_slides.html#suggested-reading",
+    "href": "slides/01_slides.html#suggested-reading",
+    "title": "Public Opinion and Policy",
+    "section": "Suggested reading",
+    "text": "Suggested reading\nr4ds.had.co.nz\n\nGrolemund, Garret and Hadley Wickham. 2017. R for Data Science. O’Reilly Media Inc\nALSO FREE ONLINE. DO NOT BUY\nGood to consult while working on lab assignments"
+  },
+  {
+    "objectID": "slides/01_slides.html#software",
+    "href": "slides/01_slides.html#software",
+    "title": "Public Opinion and Policy",
+    "section": "Software",
+    "text": "Software\nR and RStudio"
+  },
+  {
+    "objectID": "slides/01_slides.html#computer-access",
+    "href": "slides/01_slides.html#computer-access",
+    "title": "Public Opinion and Policy",
+    "section": "Computer access",
+    "text": "Computer access\n\nYou will need a computer to work on during our weekly meetings and beyond\nR + RStudio works on most laptops and has a cloud option\nSee https://popw23.gustavodiaz.org/resources.html for installation guides\nComputers in the classroom should have the most recent version\nComputer labs open to students whenever courses are not scheduled"
+  },
+  {
+    "objectID": "slides/01_slides.html#assignments",
+    "href": "slides/01_slides.html#assignments",
+    "title": "Public Opinion and Policy",
+    "section": "Assignments",
+    "text": "Assignments\n\n\n\n\n\n\n\nAssignment\nPercent\n\n\n\n\nAttendance and participation\n10%\n\n\nWeekly lab assignments (best 10)\n30% (3% each)\n\n\nResponse papers (best 3)\n30% (10% each)\n\n\nFinal project meetings\n10%\n\n\nFinal project: Pre-analysis plan\n20%\n\n\n\n\nSee the syllabus for details and policies"
   }
 ]

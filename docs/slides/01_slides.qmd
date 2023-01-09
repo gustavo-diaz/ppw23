@@ -5,6 +5,12 @@ format:
     slide-number: true
 ---
 
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(pander)
+```
+
+
 ::: {style="text-align: center"}
 ## Public Opinion and Policy{.center background-color="#ac1455"}
 ### POLSCI 4SS3
@@ -19,6 +25,149 @@ McMaster University
 [popw23.gustavodiaz.org](https://popw23.gustavodiaz.org/)
 :::
 
-## Testing font awesome
+## Welcome!
 
-{{< fa brands r-project >}}
+This course is about **quantitative research designs** applied to **public opinion and policy**
+
+. . .
+
+- **Quantitative:** Data analysis using statistics and statistical programming software
+
+. . .
+
+- **Research design:** Thinking about how research is conducted
+
+## Welcome! {visibility="uncounted"}
+
+This course is about **quantitative research designs** applied to **public opinion and policy**
+
+- **Public opinion:** Views among the general^[Sometimes not so general] public
+
+. . .
+
+- **(Public) policy:** Government actions and how to carry them
+
+## Why public opinion and policy?
+
+. . .
+
+- Both are important for the operation of government and adjacent organizations
+
+. . .
+
+- Why ***together***?
+
+. . .
+
+- Both are important and difficult/expensive to get right
+
+. . .
+
+- Minimize mistakes **before** conducting a study
+
+## Was this a mistake?
+
+![No wrong answers!](figs/arrivecan.png){fig-align="center"}
+
+## Content warning {{< fa skull-crossbones >}}
+
+- We will rely heavily on **math** and **statistics** to think about the properties of a research design
+
+. . .
+
+- You will be asked to:
+
+    - Read technical writing
+    - Understand and explain statistical concepts
+    - Apply them in writing and coding
+    - Write a statistics-heavy final project
+    
+::: {style="text-align: center"}
+# Materials {.center background-color="#FDBF57"}
+:::
+
+## Course website
+
+[popw23.gustavodiaz.org](https://popw23.gustavodiaz.org/)
+
+![](figs/website.png){fig-align="center"}
+
+## Required reading
+
+[book.declaredesign.org](https://book.declaredesign.org/)
+
+- Blair, Graeme, Alexander Coppock, and Macartan Humphreys. 2022. *Research Design: Declaration, Diagnosis, Redesign*. Forthcoming at Princeton University Press
+
+- **FREE ONLINE. DO NOT BUY**
+
+- Chapters are short but include math and code
+
+- Read 1-3 sections + 1-2 research articles per week
+
+## Suggested reading
+
+[r4ds.had.co.nz](https://r4ds.had.co.nz/)
+
+- Grolemund, Garret and Hadley Wickham. 2017. *R for Data Science*. O’Reilly Media Inc
+
+- **ALSO FREE ONLINE. DO NOT BUY**
+
+- Good to consult while working on lab assignments
+
+## Software
+
+[R](https://www.r-project.org/) and [RStudio](https://posit.co/downloads/)
+
+![](figs/rstudio_ide.png){fig-align="center"}
+
+## Computer access
+
+- You will need a computer to work on during our weekly meetings and beyond
+
+- R + RStudio works on most laptops and has a cloud option
+
+- See <https://popw23.gustavodiaz.org/resources.html> for installation guides
+
+- Computers in the classroom should have the most recent version
+
+- Computer labs open to students whenever courses are not scheduled [{{< fa arrow-up-right-from-square >}}](https://uts.mcmaster.ca/services/teaching-and-learning/computer-labs/)
+
+::: {style="text-align: center"}
+# Evaluation {.center background-color="#FDBF57"}
+:::
+
+---
+
+```{r assignments, include = FALSE}
+assignments = tribble(
+  ~Assignment, ~Percent,
+  "Attendance and participation", "10%",
+  "Weekly lab assignments (best 10)", "30% (3% each)",
+  "Response papers (best 3)", "30% (10% each)",
+  "Final project meetings", "10%",
+  "Final project: Pre-analysis plan", "20%"
+)
+```
+
+
+
+```{r show-assignments, echo = FALSE, results = "asis"}
+assignments %>% 
+  pandoc.table(justify = "lc")
+```
+
+::: footer
+See the [syllabus](https://popw23.gustavodiaz.org/syllabus.html) for details and policies
+:::
+
+::: {style="text-align: center"}
+# Schedule {.center background-color="#FDBF57"}
+:::
+
+::: {style="text-align: center"}
+# Tips {.center background-color="#FDBF57"}
+:::
+
+::: {style="text-align: center"}
+# Lab {.center background-color="#007096"}
+:::
