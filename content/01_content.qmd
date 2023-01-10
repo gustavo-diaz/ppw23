@@ -35,7 +35,7 @@ slide_buttons("/slides/01_slides")
 
 ## Lab
 
-Survey of research interests {{< fa file-pen >}}
+Survey of research interests {{< fa file-pen >}} [Link posted after class]
 
 ::: {.callout-warning}
 ## Due

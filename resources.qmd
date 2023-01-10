@@ -20,11 +20,23 @@ For the weekly labs, you can use the corresponding files in the [Content](/conte
 
 - [Posit Cloud](https://posit.cloud/). Also accessible with the [{{< fa cloud >}}](https://posit.cloud/) icon in the top navigation bar
 
-- [Also include a list of computers in campus available to students]
+- [List of computer labs on campus](https://uts.mcmaster.ca/services/teaching-and-learning/computer-labs/)
 
-### Tips
 
-Coming soon!
+### Tips and resources
+
+- Learn R within the R console using [Swirl](https://swirlstats.com/)
+
+- [R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+
+- [RStudio cheat sheets](https://posit.co/resources/cheatsheets/) to learn about commonly used packages in the `tidyverse`
+
+- The [`DeclareDesign` library of research designs](https://declaredesign.org/r/designlibrary/) may be useful to get started on lab assignments
+
+- [Project oriented workflow](https://r4ds.had.co.nz/workflow-projects.html) to keep track of your work in R
+
+- Try the [`here`](https://here.r-lib.org/) package for relative path management
+
 
 ## Reading
 

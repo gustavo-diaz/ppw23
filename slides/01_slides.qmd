@@ -126,7 +126,7 @@ This course is about **quantitative research designs** applied to **public opini
 
 - R + RStudio works on most laptops and has a cloud option
 
-- See <https://popw23.gustavodiaz.org/resources.html> for installation guides
+- See [popw23.gustavodiaz.org/resources.html](https://popw23.gustavodiaz.org/resources.html) for installation guides
 
 - Computers in the classroom should have the most recent version
 
@@ -164,10 +164,65 @@ See the [syllabus](https://popw23.gustavodiaz.org/syllabus.html) for details and
 # Schedule {.center background-color="#FDBF57"}
 :::
 
+## Semester at a glance
+
+- **First half:** Focus on designs for public opinion (surveys)
+
+- **Second half:** Focus on public policy (experiments, RCTs, AB testing)
+
+- Weekly **reading** and **lab assignments**
+
+- Choose when to write **response papers** (at least 3)
+
+- Schedule at least **two** final project meetings (before and after mid-term recess)
+
+
+## Class meeting
+
+- Brief lecture (< 30 min)
+
+- Discussion (~ 40 min)
+
+- Break (10 min)
+
+- Lab (Remaining time)
+
 ::: {style="text-align: center"}
 # Tips {.center background-color="#FDBF57"}
 :::
 
-::: {style="text-align: center"}
-# Lab {.center background-color="#007096"}
+## Doing well in this course
+
+- Content is cumulative. Stay engaged!
+
+- Work with others, especially on coding
+
+- Come to class prepared to work backwards from **findings** to **research design choices**
+
+- See also [popw23.gustavodiaz.org/resources.html](https://popw23.gustavodiaz.org/resources.html)
+
+## Stay in touch!
+
+- {{< fa university >}} &nbsp; {{< var instructor.office >}}
+- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
+- {{< fa calendar-check >}} &nbsp; <https://calendly.com/diazg/student-hours>
+
+::: footer
+Info also in [course website](https://popw23.gustavodiaz.org/)
 :::
+
+::: {style="text-align: center"}
+# {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::
+
+## Take home part: Research interests survey
+
+- Link available before the end of today
+
+- Due on Friday, January 13, at 5 PM
+
+- I will use this to create group categories that you will sign up for
+
+## Now: Install and play around with R
+
+[popw23.gustavodiaz.org/resources.html](https://popw23.gustavodiaz.org/resources.html)
