@@ -187,6 +187,10 @@ See the [syllabus](https://popw23.gustavodiaz.org/syllabus.html) for details and
 
 - Lab (Remaining time)
 
+. . .
+
+**{{< fa arrow-right >}} Is 8:30 AM a good start time?**
+
 ::: {style="text-align: center"}
 # Tips {.center background-color="#FDBF57"}
 :::
