@@ -72,9 +72,30 @@
   {
     "objectID": "content/02_content.html",
     "href": "content/02_content.html",
-    "title": "Course material",
+    "title": "Week 2: Representative Surveys",
     "section": "",
-    "text": "Coming soon!"
+    "text": "We start the topic of public opinion with representative surveys. As the name suggests, a representative survey is administered to a sample of respondents that resemble the demographic characteristics of the underlying population.\nThe punchline of this week is that conducting a true representative survey via random sampling is near impossible. Instead, most surveys use some form of quota or stratified sampling to ensure that the sample obtained resembles the population of interest.\nThe lab assignment for this week will be a guided introduction to R. By the end, we will compare different sampling techniques."
+  },
+  {
+    "objectID": "content/02_content.html#reading",
+    "href": "content/02_content.html#reading",
+    "title": "Week 2: Representative Surveys",
+    "section": "Reading",
+    "text": "Reading\n\n RD sections 1-4\n Schwarz, Norbert. 1999. “Self-reports: How the questions shape the answers.” American Psychologist 54 (2): 93-105\n Stephenson, Laura B., Allison Harell, Daniel Rubenson, and Peter John Loewen. 2021. “Measuring Preferences and Behaviors in the 2019 Canadian Election Study.” Canadian Journal of Political Science/Revue Canadienne de science politique"
+  },
+  {
+    "objectID": "content/02_content.html#slides",
+    "href": "content/02_content.html#slides",
+    "title": "Week 2: Representative Surveys",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/02_content.html#lab",
+    "href": "content/02_content.html#lab",
+    "title": "Week 2: Representative Surveys",
+    "section": "Lab",
+    "text": "Lab\nIntro to R and sampling from populations  [Coming soon!]\n\n\n\n\n\n\nDue\n\n\n\nFriday, January 20, 5 PM"
   },
   {
     "objectID": "content/03_content.html",
@@ -158,7 +179,7 @@
     "href": "content/index.html",
     "title": "Content Overview",
     "section": "",
-    "text": "You can use the sidebar to navigate the course content organized by weeks.\nFor each week, you will find:\n\nA brief overview of the week’s topic\nA list of the required readings. Both sections of the textbook  and research articles .\n\n\n\n\n\n\n\nTip\n\n\n\nI expect you to come to class prepared to discuss them. This usually means a decent understanding of how the concepts introduced or research conducted and coming up with something to ask or comment about the reading.\n\n\n\nLinks to the slides in HTML  and PDF \n\n\n\n\n\n\n\nNote\n\n\n\nI like to make HTML slides to include code and animations. I make PDF slides available in case you want to print or save them locally.\n\n\n\nLinks to the corresponding weekly lab assignment \n\n\n\n\n\n\n\nTip\n\n\n\nYou can download  file for the assignments, edit it with your work, and compile it to PDF when you are ready to submit!"
+    "text": "You can use the sidebar to navigate the course content organized by weeks.\nFor each week, you will find:\n\nA brief overview of the week’s topic\nA list of the required readings. Both sections of the textbook  and research articles .\n\n\n\n\n\n\n\nAccessing readings off-campus\n\n\n\nUse this link for instructions to access library resources off-campus. I find the browser bookmarklet helpful.\n\n\n\nLinks to the slides in HTML  and PDF \n\n\n\n\n\n\n\nNote\n\n\n\nI like to make HTML slides to include code and animations. I make PDF slides available in case you want to print or save them locally.\n\n\n\nLinks to the corresponding weekly lab assignment \n\n\n\n\n\n\n\nTip\n\n\n\nYou can download  file for the assignments, edit it with your work, and compile it to PDF when you are ready to submit!"
   },
   {
     "objectID": "index.html",
@@ -313,6 +334,13 @@
     "title": "Public Opinion and Policy",
     "section": "Now: Install and play around with R",
     "text": "Now: Install and play around with R\npopw23.gustavodiaz.org/resources.html"
+  },
+  {
+    "objectID": "slides/placeholder.html#coming-soon",
+    "href": "slides/placeholder.html#coming-soon",
+    "title": "Public Opinion and Policy",
+    "section": "Coming soon!",
+    "text": "Coming soon!"
   },
   {
     "objectID": "syllabus.html",

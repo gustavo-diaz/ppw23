@@ -17,7 +17,7 @@ You can also check the [Content](/content/) page for details.
 schedule =
   tribble(
     ~Week, ~Date, ~Content, ~Lab,
-    1, "January 11", "[Introduction](content/01_content.qmd)", "[Research interests survey](link)",
+    1, "January 11", "[Introduction](content/01_content.qmd)", "[Research interests survey](https://forms.gle/JVocaVQRaJS1x3YM6)",
     2, "January 18", "[Representative surveys](content/02_content.qmd)", "Intro to R; sampling from populations",
     3, "January 25", "[Panel surveys](content/03_content.qmd)", "Descriptive inference",
     4, "February 1", "[Sensitive questions](content/04_content.qmd)", "Reducing sensitivity bias",

@@ -11,7 +11,8 @@ For each week, you will find:
 - A list of the **required readings**. Both sections of the **textbook** [{{< fa book >}}]{style="color: #ac1455;"} and **research articles** [{{< fa file-lines >}}]{style="color: #ac1455;"}.
 
 ::: {.callout-tip}
-I expect you to come to class prepared to discuss them. This usually means a decent understanding of how the concepts introduced or research conducted and coming up with something to ask or comment about the reading.
+## Accessing readings off-campus
+Use [this link](https://library.mcmaster.ca/services/off-campus-access) for instructions to access library resources off-campus. I find the browser bookmarklet helpful.
 :::
 
 - Links to the slides in **HTML** [{{< fa arrow-up-right-from-square >}}]{style="color: blue;"} and **PDF** [{{< fa file-pdf >}}]{style="color: #ac1455;"}
