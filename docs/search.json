@@ -383,5 +383,117 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
+  },
+  {
+    "objectID": "slides/02_slides.html#representative-surveys",
+    "href": "slides/02_slides.html#representative-surveys",
+    "title": "Public Opinion and Policy",
+    "section": "Representative Surveys",
+    "text": "Representative Surveys\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/02_slides.html#reminders",
+    "href": "slides/02_slides.html#reminders",
+    "title": "Public Opinion and Policy",
+    "section": "Reminders",
+    "text": "Reminders\nAbsorb the dog."
+  },
+  {
+    "objectID": "slides/02_slides.html#announcements",
+    "href": "slides/02_slides.html#announcements",
+    "title": "Public Opinion and Policy",
+    "section": "Announcements",
+    "text": "Announcements\n\nClass will now start at 9 AM instead of 8:30 AM\nI received accommodation letters. Schedule a meeting if you need anything beyond extra time for completing assignments\nUploaded a template for response papers [DO THIS]\nSign-up for final project groups will start at [TIME]. Check course website for link."
+  },
+  {
+    "objectID": "slides/02_slides.html#last-week",
+    "href": "slides/02_slides.html#last-week",
+    "title": "Public Opinion and Policy",
+    "section": "Last week",
+    "text": "Last week\n\nOverview of course topic, goals, evaluation, expectations\nWe installed R and RStudio and explored them a bit\nCloud option always available if all else fails\nMore details in the course website"
+  },
+  {
+    "objectID": "slides/02_slides.html#today",
+    "href": "slides/02_slides.html#today",
+    "title": "Public Opinion and Policy",
+    "section": "Today",
+    "text": "Today\n\nOverview of the MIDA research design workflow\nStart the topic of public opinion\nRepresentative surveys as the standard design\nTakeaway: Complete random sampling is the gold standard but too hard to apply in realistic settings\nDiscussion: Canadian Election Study\n Lab: Intro to R + Sampling from populations"
+  },
+  {
+    "objectID": "slides/02_slides.html#what-is-a-research-design",
+    "href": "slides/02_slides.html#what-is-a-research-design",
+    "title": "Public Opinion and Policy",
+    "section": "What is a research design?",
+    "text": "What is a research design?\n\n\n RD: A procedure for generating answers to questions\nMore generally: Thinking about how research is (was, will be) conducted\nEmphasis: We can program and interrogate elements of a research design"
+  },
+  {
+    "objectID": "slides/02_slides.html#elements-of-research-design",
+    "href": "slides/02_slides.html#elements-of-research-design",
+    "title": "Public Opinion and Policy",
+    "section": "Elements of research design",
+    "text": "Elements of research design\n\n\nModel (M) \nInquiry (I) \nData strategy (D) \nAnswer strategy (A)"
+  },
+  {
+    "objectID": "slides/02_slides.html#model",
+    "href": "slides/02_slides.html#model",
+    "title": "Public Opinion and Policy",
+    "section": "Model",
+    "text": "Model\n\n\n: A set of speculations about what causes what and how\nSet: We consider many models because we are uncertain of how the world works\nSpeculation: All models are wrong, some models are useful\nWhat causes what: Informs the event generating process (e.g. distributions, correlations)\nHow: An explanation of why things are connected or correlated"
+  },
+  {
+    "objectID": "slides/02_slides.html#examples-of-models",
+    "href": "slides/02_slides.html#examples-of-models",
+    "title": "Public Opinion and Policy",
+    "section": "Examples of models?",
+    "text": "Examples of models?\n\nHint: Models are also called theories (of change), arguments, claims, beliefs, epistemologies, ideologies, hunches, conjecture"
+  },
+  {
+    "objectID": "slides/02_slides.html#inquiry",
+    "href": "slides/02_slides.html#inquiry",
+    "title": "Public Opinion and Policy",
+    "section": "Inquiry",
+    "text": "Inquiry\n\n\n: A research question stated in terms of the model\nIn this course, we will talk about quantities of interest or estimands1\nSome questions will lend themselves to multiple inquiries. We will tend to focus on those with one or a handful\n\n\nEstimands, estimators, and estimates are different things with annoyingly similar names. We will return to this in a few weeks."
+  },
+  {
+    "objectID": "slides/02_slides.html#examples-of-inquiries",
+    "href": "slides/02_slides.html#examples-of-inquiries",
+    "title": "Public Opinion and Policy",
+    "section": "Examples of inquiries",
+    "text": "Examples of inquiries\n\nWhat is the proportion of unemployed people in the country?\nWhat is the effect of immigration on economic development?\nDo people support funding private clinics to mitigate surgery backlogs?\nWill the stock market crash this year?\nIndividual causal effect \\(\\tau_i = Y_{i}(1)-Y_{i}(0)\\)"
+  },
+  {
+    "objectID": "slides/02_slides.html#data-strategy",
+    "href": "slides/02_slides.html#data-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Data strategy",
+    "text": "Data strategy\n\n\n: Set of procedures used to gather information from the world\nThree features:\n\nHow units are selected\nHow conditions are assigned1\nHow outcomes are measured\n\n\n\nThis will make more sense as we start thinking about cause and effect."
+  },
+  {
+    "objectID": "slides/02_slides.html#answer-strategy",
+    "href": "slides/02_slides.html#answer-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Answer strategy",
+    "text": "Answer strategy\n\n\n: How we summarize the data produced by the data strategy\nData is too complicated to speak for itself\nNeeds summary and explanation\nMost research methods qualify as answer strategies (Examples?)"
+  },
+  {
+    "objectID": "slides/02_slides.html#public-opinion",
+    "href": "slides/02_slides.html#public-opinion",
+    "title": "Public Opinion and Policy",
+    "section": "Public opinion",
+    "text": "Public opinion\n\n\nThe study of self-reported attitudes and behaviors\nPrimarily among general public\nGoal: Mapping self-reports to actual attitudes and behaviors"
+  },
+  {
+    "objectID": "slides/02_slides.html#parallels",
+    "href": "slides/02_slides.html#parallels",
+    "title": "Public Opinion and Policy",
+    "section": "Parallels",
+    "text": "Parallels\n[ HERE TABLE COMPARING THEORY PART AND EMPIRICAL PART]"
+  },
+  {
+    "objectID": "slides/02_slides.html#two-challenges",
+    "href": "slides/02_slides.html#two-challenges",
+    "title": "Public Opinion and Policy",
+    "section": "Two challenges",
+    "text": "Two challenges\n[Continue here]"
   }
 ]
