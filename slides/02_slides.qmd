@@ -5,6 +5,12 @@ format:
     slide-number: true
 ---
 
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(kableExtra)
+```
+
+
 ::: {style="text-align: center"}
 ## Representative Surveys {.center background-color="#ac1455"}
 
@@ -20,9 +26,9 @@ Winter 2023
 
 - I received accommodation letters. Schedule a meeting if you need anything beyond extra time for completing assignments
 
-- Uploaded a template for response papers [DO THIS]
+- Response paper template coming soon!
 
-- Sign-up for final project groups will start at [TIME]. Check course website for link.
+- Sign-up for final project groups will start at 5 PM on Friday, January 20. Check course website for link. First come first served!
 
 ## Last week {background-color="#FDBF57"}
 
@@ -44,7 +50,7 @@ Winter 2023
 
 - **Takeaway:** Complete random sampling is the gold standard but too hard to apply in realistic settings
 
-- **Discussion:** Canadian Election Study
+- **Discussion:** Getting surveys right
 
 - **{{< fa laptop-code >}} Lab:** Intro to R + Sampling from populations
 
@@ -160,7 +166,18 @@ Winter 2023
 
 ## Parallels
 
-[ HERE TABLE COMPARING THEORY PART AND EMPIRICAL PART]
+```{r dd, include = FALSE}
+dd = tribble(
+  ~Theory, ~Empirics,
+  "Model", "Data strategy",
+  "Inquiry", "Answer strategy"
+)
+```
+
+```{r showdd, echo = FALSE, results = "asis"}
+dd %>% kbl()
+```
+
 
 ::: {style="text-align: center"}
 # Representative Surveys {background-color="#FDBF57"}
@@ -183,8 +200,69 @@ Winter 2023
 
 ## Two challenges
 
-[Continue here asking the right questions and asking the right people]
+. . .
 
-# ::: {style="text-align: center"}
-# {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+1. Asking the right **questions**
+
+2. Asking the right **people**
+
+## Asking the right questions
+
+![](figs/tv_consumption.png){fig-align="center"}
+
+## Asking the right people
+
+![](figs/ces.png){fig-align="center"}
+
+## What is this?
+
+![](figs/ces_sampling.png){fig-align="center"}
+
+::: footer
+Stephenson et al (2021, p. 120)
 :::
+
+## Some key sampling decisions
+
+- Mode `(in-person, lab, phone, mail, internet)`
+
+- Sampling frame
+
+- Sample size
+
+- Sampling procedure `(completely random, stratified, quotas)`
+
+- Oversampling
+
+::: {style="text-align: center"}
+## Next Week {.center background-color="#8BD3E6"}
+### Panel Surveys
+
+**Focus on:** Worth having multiple survey waves?
+:::
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::
+
+## Tip before you start {{< fa lightbulb >}}
+
+- Make a project for this course!
+
+- From {{< fa brands r-project >}}, go to: `File > New Project`
+
+- Select New or Existing Directory `(Whichever works for you)`
+
+- Save the lab `.Rmd` file in the same directory
+
+- {{< fa brands r-project >}} will automatically recognize all files within the project directory
+
+- Continue using the same project for all lab assignments

@@ -1,0 +1,350 @@
+---
+title: "Lab 2"
+subtitle: "Intro to R + Sampling from populations"
+author: |
+        | **Name:** [Your name here]
+        | **Mac ID:** [The first half of your Mac email address]
+date: "**Due:** Friday, January 20, 5 PM"
+output: 
+  pdf_document:
+    highlight: espresso
+    fig_caption: yes
+urlcolor: blue
+header-includes:
+    - \usepackage{setspace}
+    - \doublespacing
+    - \usepackage{float}
+    - \floatplacement{figure}{t}
+    - \floatplacement{table}{t}
+    - \usepackage{flafter}
+    - \usepackage[T1]{fontenc}
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{ragged2e}
+    - \usepackage{booktabs}
+    - \usepackage{amsmath}
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+# This code chunk sets up the global options
+# It won't be visible when you knit to PDF
+# By the way, lines beginning with #
+# will not be processed by R
+# Use this to comment your code
+
+# Global options for the knitting behavior of all subsequent code chunks
+knitr::opts_chunk$set(echo = TRUE)
+# echo = TRUE prints the actual code chunk in the PDF
+# We want this for lab assignments
+```
+
+# Part 1: Introduction to R
+
+## R packages
+
+R is open-source software. Which means users can develop their own applications to expand its functionality. That's why a private company like [Posit](https://posit.co/) can make its own user interface for R.
+
+Much like a smartphone, we can expand R's functionality by installing apps. We call these applications **packages**.
+
+The following code chunk will install the packages we need for today. You can run a line of code with `cmd + Enter` in Mac or `Ctrl + Enter` in Windows.
+
+You can also run a code chunk by clicking on the play button in the top-right corner of chunk.
+
+```{r dependencies, eval = FALSE}
+install.packages(c("tidyverse", "DeclareDesign")
+```
+
+Notice that I set up the code chunk option `eval = FALSE`. This will print the code in the PDF but not process it in any way. We do this because we only need to install packages once. No need to process it multiple times. *Please wait until you are done working on this lab assignment to make the PDF. Further instructions await.*
+
+> **TASK 1:**
+>
+> **Once packages are installed. Use \# to comment out the `install.packages` function above.**
+
+There are many other ways to install R packages. For example, in a saved copy of an `.Rmd` file, R will pop a message at the top of the Source panel asking to install the packages that have not been installed. In future labs we will skip package installation.
+
+Like phone apps, packages only work when you load them. The following code loads the packages we will need.
+
+```{r pkgs, message = FALSE, warning = FALSE, results = "hide"}
+# I set up the code chunk options to process the code but hide the output.
+# This is useful to show the packages you are using 
+# without the messages that follow.
+library(tidyverse)
+library(DeclareDesign)
+```
+
+The [`tidyverse`](https://www.tidyverse.org/) is a collection of popular packages that make R more coherent. Think of it as if base R was written in 20^th^ century British English, whereas the `tidyverse` packages are all written in 21^st^ century American English.[^1] This is no minor feat since some modern packages may be written in South African English, for example.
+
+[^1]: By which I mean American English. I am too new to Canada to know where to place Canadian English in this analogy. Also I apologi~~zs~~ze for writing in US English.
+
+This is all to say that, for this course, you will learn to code in R in a very specific, opinionated, yet useful way.[^2]
+
+[^2]: Continuing the analogy, eventually you may learn enough English to understand all the different dialects as they evolve. You may need more than this course to do so.
+
+The [`DeclareDesign`](https://declaredesign.org/) package is part of the set of software tools that accompany our textbook. It has all the relevant functions to imagine, declare, and diagnose research designs.
+
+## Basic operations
+
+In the most basic way, R is a calculator. You can do things like:
+
+```{r}
+1/200*30
+```
+
+Notice that R knows the order of operations and parenthesis:
+
+```{r}
+1+2*3
+
+(1+2)*3
+```
+
+And that some common operations are rewritten as functions:
+
+```{r}
+sqrt(10)
+```
+
+R *ignores spaces* but is *case sensitive*. For example:
+
+```{r}
+# x is the sequence of numbers from 1 to 10
+x = 1:10
+
+mean(x)
+```
+
+Is not the same as
+
+```{r, error = TRUE}
+mean(X)
+```
+
+That said, it pays off to write code as if you were writing prose. Spaces and line breaks make things more readable. Use whatever formatting style suits you, the `formatR` package will take care of the most annoying things.
+
+Notice that we use the `=` operator to store an object in R's memory (which you can consult in the environment tab in the top right).[^3] When we say that R is an object-oriented programming language, we mean that the core of what we do in R is storing objects in its environment (data, functions, variables, etc.) and then do stuff with it.
+
+[^3]: Some people `<-` instead of `=` as the assignment operator. Use whichever makes more sense to you. I use `=` because it involves fewer keystrokes.
+
+> **TASK 2**
+>
+> **Figure out how to insert a new code chunk right below this prompt. Then create an object called `even` with a sequence of even numbers from 1 to 10.**
+>
+> ***Tip:*** **There are many ways to accomplish this. I would start by writing `?seq` in the console to learn about one way to do it.**
+
+The `tidyverse` has its own way to write map functions onto objects. You can also write:
+
+```{r}
+x %>% mean()
+```
+
+And it should give the same answer. This may look trivial now but it becomes convenient when you want to string operations. For example:
+
+```{r}
+x %>% mean() %>% sqrt()
+```
+
+The symbol `%>%` here is known as the pipe operator because you use it build a pipeline. I tend to write in pipelines, but you are welcome to write code in any way that feels natural.
+
+This was a very brief introduction. Learning the basics of R takes weeks, being comfortable with the basic stuff may also take months. Do not hesitate to ask questions about how to do something (that's why we save some of our meeting time to work on lab assignments). Feel free to work with peers or use any of the online resources available out there.
+
+**Remember that this course is not quizzing your knowledge of R**. We are merely using it as a language to write down research designs.
+
+You may also want to check the [suggested textbook](https://r4ds.had.co.nz/) or the [Resources](https://popw23.gustavodiaz.org/resources.html) page of the course website to learn about R as you go.
+
+# Part 2: Sampling from populations
+
+## Complete random sampling
+
+In our discussion, I highlighted how the online portion of the Canadian Election Study uses quotas to make sure they have enough coverage of English and French speakers. In Quebec, they sample 80% French and 20% English. Elsewhere, it's 10% French and 90% English.
+
+> **TASK 3**
+>
+> **Why do you think it is important do this?**
+
+------------------------------------------------------------------------
+
+[Write your answer here]
+
+------------------------------------------------------------------------
+
+There is no wrong answers, but spend some time discussing it with someone to see if it checks out.
+
+Whatever the reason, stratified sampling with quotas is very expensive, so we better come up with a good reason to do it! We want to do this to ensure surveys are representative of our sampling frame. Presumably the frame is adults from the whole country, and the 80/20 and 10/90 breakdowns are good approximations of the census data.
+
+In `DeclareDesign` language, we would say that our **MODEL** of the world suggests the language breakdowns described above. The model does not need to be right, it only needs to be useful.
+
+Canada has an **adult** population of about 30 million. That's a bit overkill to simulate in R, so let's assume our sampling frame has 30 *thousand* people.[^4] Let's say that 20% of our sampling frame is from QC, that's about 6 thousand.
+
+[^4]: You can definitely do it but you can learn what I want you to learn with a much smaller sampling frame.
+
+How would our sample look like if we were to draw a sample of 1,000 individuals completely at random?
+
+We can use some `DeclareDesign` code to do so. One trick is that when a survey uses stratified sampling, we can think about different strata as completely independent surveys.
+
+Let's start with places outside Canada, where our model of the world suggests about 90% English and 10% French speakers.
+
+```{r}
+model = declare_model(N = 30000 - 6000,
+                      french = sample(c(0,1), N,
+                                      replace = TRUE, prob = c(0.9, 0.1)))
+```
+
+Let's unpack what we just did. We encoded our beliefs about the world within `model`. We told R we have a sampling frame `N` of $30000 - 6000 = 24000$. We then said that in our frame of `N` people, any given person has 90% probability of being `french = 0`. Here, zero means english speaker and one means french speaker.
+
+We can isolate that from the function:
+
+```{r}
+sample(c(0, 1), size = 100, replace = TRUE, prob = c(0.9, 0.1))
+```
+
+> **TASK 4**
+>
+> **Explain what the different arguments of the `sample` function above are doing.**
+
+------------------------------------------------------------------------
+
+[Write your answer here]
+
+------------------------------------------------------------------------
+
+We are introducing some variability by stating that any given person has a certain probability of being a french speaker. We can think of this as baking in uncertainty around our model. We know that such deterministic numbers are not accurate, even if they were the exact census figure, those are already outdated.
+
+Because of this uncertainty, every time we sample from our sampling frame we get a different distribution of people. This is great for our current purposes. We will later how to prevent this behavior soon.
+
+Let's skip the **inquiry** and **answer strategy** steps for now. Our **DATA STRATEGY** suggests that we sample individuals completely at random.
+
+```{r}
+sampling = declare_sampling(S =complete_rs(N, n = 1000))
+```
+
+We can chain steps of a research design together with the `+` operator.[^5]
+
+[^5]: Note that the chaining syntax varies across packages.
+
+```{r}
+canada_survey = model + sampling
+```
+
+We can then interrogate our research design. For now, let draw one realization of our survey data.
+
+```{r, results = "hide"}
+# Notice that I am hiding the results to avoid printing 
+# the whole 1k observations in the pdf
+draw_data(canada_survey)
+```
+
+We can pipe operations to compute the proportion of french speakers:
+
+```{r}
+canada_survey %>% 
+  draw_data() %>%
+  summarize(prop_french = mean(french))
+```
+
+This works because the mean of a binary variable is the same as the proportion of ones over the total.
+
+Again, you will notice that the result changes every time you run the code.
+
+> **TASK 5**
+>
+> **What is the number of french speakers in *your* sample?**
+>
+> ***Hint:*** **To get a consistent answer, include the `set.seed(x)` function in the line right before your calculation. Replace `x` with your student ID number. Doing this will fix the random number generator algorithm in R.**
+
+```{r}
+# Write your code here
+```
+
+------------------------------------------------------------------------
+
+[Write your answer in words here]
+
+------------------------------------------------------------------------
+
+## How often do we get the it right?
+
+How often would our complete random sampling procedure give an answer that is close to the original stratified quota sampling? In the future we will discuss about standards to compare. But for now we will eyeball it.
+
+We can simulate our research design multiple times and record the result every time. But to do that we need to declare our **INQUIRY** and **ANSWER STRATEGY**:
+
+```{r}
+inquiry = declare_inquiry(true_prop = mean(french))
+
+sample_mean = declare_estimator(french ~ 1, inquiry = "true_prop")
+```
+
+And then create a new design putting them all together:
+
+```{r}
+canada_survey_full = model + inquiry + sampling + sample_mean
+```
+
+The following code draws independent samples of 1,000 respondents 1,000 times. For each simulation, it will compute the sample mean and store the output as a data frame.
+
+```{r}
+# Insert set.seed here so your results are consistent.
+# This code will take a couple minutes to complete
+sims = simulate_design(canada_survey_full, sims = 1000)
+```
+
+There is a lot of information in `sims`, but right now we only care about the `estimate` column.
+
+Let's visualize its distribution. The following figure shows the distribution of the proportion of french speakers in our simulated surveys. The taller the bar, the more frequently we see proportions around the corresponding value.
+
+```{r, warning = FALSE, message = FALSE, results = "asis"}
+# ggplot is a tidyverse package for making figures.
+# We will learn more about it soon.
+ggplot(sims) +
+  aes(x = estimate) +
+  geom_histogram() +
+  labs(x = "Proportion of French Speakers")
+```
+
+How does this compare with the original CES sampling procedure? It's hard to tell, because the CES approach guarantees a 10% proportion of French speakers by design. But, as we mentioned, this is expensive to implement.
+
+What we can do is compute how off-the-mark our sampling procedure is in average:
+
+```{r}
+sims %>% summarize(rmse = sqrt(mean((estimate-estimand)^2)))
+```
+
+This number is the **Root Mean Squared Error (RMSE).** It tells us that, in average, our estimates of the proportion are off by a certain number of percentage points. The specific value will change based on your seed, but when I did it, I got a number that rounds up to $0.01$. Which is about a $\pm 1\%$ margin of error.
+
+## English speakers in QC
+
+> **TASK 6**
+>
+> **Repeat the simulation exercise for the smaller sample of English speakers in Quebec. Start with a sample size of 1,000 respondents. Is this a good number? Would you go higher or lower? Use either a figure or the RMSE as a criterion to choose. Report one new design with a different sample size and explain why it is better.**
+>
+> ***Hint 1:*** **If you cannot come up with a reason to justify your design, consider that CES may be convinced either because the margin of error or the sample size is very small.**
+>
+> ***Hint 2:*** **The chapters from the RD textbook we read this week show a way to try many sample sizes on a research design at once without having to rewrite the whole design.**
+
+# Part 3: Submission instructions
+
+You can work in groups, but you must submit your work individually through **Avenue**. To do so, you can render or knit[^6] a PDF of this .Rmd file.
+
+[^6]: Those two mean the same thing.
+
+RStudio used *pandoc* to render `.Rmd` files. In turn, *pandoc* uses *LaTeX* as the engine to compile PDFs. This all means that our software uses software that needs software to make PDFs.
+
+If you installed RStudio in your device for the first time for this course, you will need to install a distribution of LaTeX. The easy way to do this is with `tinytex`.
+
+You can install `tinytex` from R. Pass the following code to the console:
+
+```{r, eval = FALSE}
+install.packages("tinytex")
+tinytex::install_tinytex()
+```
+
+You only need to do this once per device. Once this is done, you can press the **Knit** button at the top of the Source panel to compile a PDF that will be saved on your project directory.
+
+You may also be prompted to install a lot of other dependencies the first time you compile a PDF. Those are all the LaTeX packages that will make the PDF look the way I specified in the preamble.
+
+If this doesn't work the first week. That's ok, you can import your project to Posit Cloud or send a separate PDF with a copy paste of your response to each task. However, you should make sure this works by lab 2.
+
+Once this is done, you can find a link to upload your file in the **Assessments > Assignments** tab of the course page in Avenue.
+
+## Important tip!
+
+When you render your PDF, read over your code to make sure that it stays within the page so I can actually read it. You can use vertical space liberally as long as you do not break a function argument in the middle. You can break lines in a comma, `+`, or ` %>% `. R will yell at you if you break a line in the wrong place.

@@ -319,6 +319,9 @@
       margin-right: 0; 
     }
   </style>
+  
+  <script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -336,8 +339,8 @@ Winter 2023</p>
 <ul>
 <li><p>Class will now start at 9 AM instead of 8:30 AM</p></li>
 <li><p>I received accommodation letters. Schedule a meeting if you need anything beyond extra time for completing assignments</p></li>
-<li><p>Uploaded a template for response papers [DO THIS]</p></li>
-<li><p>Sign-up for final project groups will start at [TIME]. Check course website for link.</p></li>
+<li><p>Response paper template coming soon!</p></li>
+<li><p>Sign-up for final project groups will start at 5 PM on Friday, January 20. Check course website for link. First come first served!</p></li>
 </ul>
 </section>
 <section id="last-week" class="slide level2" data-background-color="#FDBF57">
@@ -356,7 +359,7 @@ Winter 2023</p>
 <li><p>Start the topic of public opinion</p></li>
 <li><p>Representative surveys as the standard design</p></li>
 <li><p><strong>Takeaway:</strong> Complete random sampling is the gold standard but too hard to apply in realistic settings</p></li>
-<li><p><strong>Discussion:</strong> Canadian Election Study</p></li>
+<li><p><strong>Discussion:</strong> Getting surveys right</p></li>
 <li><p><strong><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Lab:</strong> Intro to R + Sampling from populations</p></li>
 </ul>
 </section>
@@ -451,7 +454,28 @@ Winter 2023</p>
 </section>
 <section id="parallels" class="slide level2">
 <h2>Parallels</h2>
-<p>[ HERE TABLE COMPARING THEORY PART AND EMPIRICAL PART]</p>
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Theory </th>
+   <th style="text-align:left;"> Empirics </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Model </td>
+   <td style="text-align:left;"> Data strategy </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Inquiry </td>
+   <td style="text-align:left;"> Answer strategy </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
 </section>
 <section id="representative-surveys-1" class="title-slide slide level1 center" data-background-color="#FDBF57" style="text-align: center">
 <h1>Representative Surveys</h1>
@@ -474,22 +498,70 @@ Winter 2023</p>
 </section>
 <section id="two-challenges" class="slide level2">
 <h2>Two challenges</h2>
-<p>[Continue here]</p>
+<div class="fragment">
+<ol type="1">
+<li><p>Asking the right <strong>questions</strong></p></li>
+<li><p>Asking the right <strong>people</strong></p></li>
+</ol>
+</div>
 </section>
-<section id="section" class="title-slide slide level1 center" style="text-align: center">
-<h1>:::</h1>
+<section id="asking-the-right-questions" class="slide level2">
+<h2>Asking the right questions</h2>
 
+<img data-src="figs/tv_consumption.png" class="r-stretch quarto-figure-center"></section>
+<section id="asking-the-right-people" class="slide level2">
+<h2>Asking the right people</h2>
+
+<img data-src="figs/ces.png" class="r-stretch quarto-figure-center"></section>
+<section id="what-is-this" class="slide level2">
+<h2>What is this?</h2>
+
+<img data-src="figs/ces_sampling.png" class="r-stretch quarto-figure-center"><div class="footer">
+<p>Stephenson et al (2021, p.&nbsp;120)</p>
+</div>
 </section>
-
-<section id="fa-laptop-code-lab" class="title-slide slide level1 center" data-background-color="#007096">
-<h1><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Lab</h1>
-<p>:::</p>
+<section id="some-key-sampling-decisions" class="slide level2">
+<h2>Some key sampling decisions</h2>
+<ul>
+<li><p>Mode <code>(in-person, lab, phone, mail, internet)</code></p></li>
+<li><p>Sampling frame</p></li>
+<li><p>Sample size</p></li>
+<li><p>Sampling procedure <code>(completely random, stratified, quotas)</code></p></li>
+<li><p>Oversampling</p></li>
+</ul>
+</section>
+<section id="next-week" class="slide level2 center" data-background-color="#8BD3E6" style="text-align: center">
+<h2>Next Week</h2>
+<h3 id="panel-surveys">Panel Surveys</h3>
+<p><strong>Focus on:</strong> Worth having multiple survey waves?</p>
+</section>
+<section id="break-time" class="slide level2 center" data-background-color="#D2D755" style="text-align: center">
+<h2>Break time!</h2>
+<p>&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/panda_dance.gif" style="width:10.0%;height:10.0%"></p>
+</figure>
+</div>
+</section>
+<section id="fa-laptop-code-lab" class="slide level2 center" data-background-color="#007096" style="text-align: center">
+<h2><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Lab</h2>
+</section>
+<section id="tip-before-you-start-fa-lightbulb" class="slide level2">
+<h2>Tip before you start <i class="fa-solid fa-lightbulb" aria-hidden="true"></i></h2>
+<ul>
+<li><p>Make a project for this course!</p></li>
+<li><p>From <i class="fa-brands fa-r-project" aria-hidden="true"></i>, go to: <code>File &gt; New Project</code></p></li>
+<li><p>Select New or Existing Directory <code>(Whichever works for you)</code></p></li>
+<li><p>Save the lab <code>.Rmd</code> file in the same directory</p></li>
+<li><p><i class="fa-brands fa-r-project" aria-hidden="true"></i> will automatically recognize all files within the project directory</p></li>
+<li><p>Continue using the same project for all lab assignments</p></li>
+</ul>
 
 <div class="footer footer-default">
 
 </div>
 </section>
-
 
     </div>
   </div>
@@ -702,6 +774,44 @@ Winter 2023</p>
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

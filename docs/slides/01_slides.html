@@ -329,7 +329,6 @@
 <h2>Public Opinion and Policy</h2>
 <h3 id="polsci-4ss3">POLSCI 4SS3</h3>
 <h3 id="winter-2023">Winter 2023</h3>
-<p>&nbsp;</p>
 <p><strong>Prof.&nbsp;Gustavo Diaz</strong><br>
 Department of Political Science<br>
 McMaster University<br>
@@ -518,7 +517,7 @@ McMaster University<br>
 <li><p>Lab (Remaining time)</p></li>
 </ul>
 <div class="fragment">
-<p><strong><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Is 8:30 AM a good start time?</strong></p>
+<p><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> <strong>Is 8:30 AM a good start time?</strong></p>
 </div>
 </section>
 <section id="tips" class="title-slide slide level1 center" data-background-color="#FDBF57" style="text-align: center">
@@ -538,9 +537,9 @@ McMaster University<br>
 <section id="stay-in-touch" class="slide level2">
 <h2>Stay in touch!</h2>
 <ul>
-<li><i class="fa-solid fa-university" aria-hidden="true"></i> &nbsp; Kenneth Taylor Hall 711</li>
-<li><i class="fa-solid fa-envelope" aria-hidden="true"></i> &nbsp; <a href="mailto:diazg2@mcmaster.ca">diazg2@mcmaster.ca</a></li>
-<li><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> &nbsp; <a href="https://calendly.com/diazg/student-hours" class="uri">https://calendly.com/diazg/student-hours</a></li>
+<li><i class="fa-solid fa-university" aria-hidden="true"></i> Kenneth Taylor Hall 711</li>
+<li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:diazg2@mcmaster.ca">diazg2@mcmaster.ca</a></li>
+<li><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> <a href="https://calendly.com/diazg/student-hours" class="uri">https://calendly.com/diazg/student-hours</a></li>
 </ul>
 <div class="footer">
 <p>Info also in <a href="https://popw23.gustavodiaz.org/">course website</a></p>
@@ -779,44 +778,6 @@ McMaster University<br>
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

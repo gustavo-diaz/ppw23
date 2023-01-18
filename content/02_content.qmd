@@ -35,14 +35,14 @@ Click on the frame below and use the arrows to navigate. You can type <kbd>?</kb
 :::
 
 ```{r show-slides, echo = FALSE, results = "asis"}
-show_slide("/slides/placeholder")
+show_slide("/slides/02_slides")
 slide_buttons("/slides/02_slides")
 ```
 
 
 ## Lab
 
-Intro to R and sampling from populations {{< fa laptop-code >}} [Coming soon!]
+[Intro to R and sampling from populations {{< fa laptop-code >}}](labs/02_lab.Rmd)
 
 ::: {.callout-warning}
 ## Due
