@@ -3,10 +3,10 @@ project:
   output-dir: docs
   render: 
     - "*.qmd"
-    - "!labs/"
+    - "!content/labs/"
   resources:
     - "slides/"
-    - "labs/*.Rmd"
+    - "content/labs/*.Rmd"
   
 # See https://quarto.org/docs/projects/code-execution.html#freeze
 execute:
