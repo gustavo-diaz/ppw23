@@ -1,5 +1,51 @@
 ---
-title: "Course material"
+title: "Week 3: Panel Surveys"
+date: "January 25, 2023"
+format: html
 ---
 
-Coming soon!
+```{r setup, echo = FALSE, results = "asis"}
+# Slide showing functions
+source(here::here("R", "show_slides.R"))
+```
+
+## Overview
+
+Panel surveys are surveys where the same respondents are asked questions multiple times. Sometimes these repeat the same questions to understand shifts in public opinion and the effect of events in between waves.
+
+As with last week, the takeaway is that panel surveys are expensive and risk missing subjects across waves, this is called panel attrition. With fixed budgets, one may wonder if we are better off just conducting a one-shot survey, also called a cross-section with an increased sample size.
+
+The lab assignment simulates the exercise of comparing one-shot surveys with a panel. In doing so, it also introduces the concept of descriptive inference. In statistics, inference means using the data we have to understand something for which we do not have data. In surveys, this implies inferring from sample to population.
+
+## Reading
+
+- [{{< fa book >}}]{style="color: #ac1455;"} [RD sections 5-7, 15](https://book.declaredesign.org/declaring-designs.html) 
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Esaiasson, Peter and Mikael Persson. 2014. [“Does Studying Political Science Affect Civic Attitudes?: A Panel Comparison of Students of Politics, Law, and Mass Communication.”](https://doi.org/10.1080/15512169.2014.948118) *Journal of Political Science Education* 10 (4): 375-385
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Claes, Ellen, and Marc Hooghe. 2017. [“The Effect of Political Science Education on Political Trust and Interest: Results from a 5-year Panel Study.”](https://doi.org/10.1080/15512169.2016.1171153) *Journal of Political Science Education* 13 (1): 33-45
+
+
+## Slides
+
+::: {.callout-tip}
+## Navigation
+
+Click on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.
+:::
+
+```{r show-slides, echo = FALSE, results = "asis"}
+show_slide("/slides/placeholder")
+slide_buttons("/slides/03_slides")
+```
+
+
+## Lab
+
+Descriptive inference {{< fa laptop-code >}} (Coming soon!)
+
+::: {.callout-warning}
+## Due
+
+Friday, January 27, 5 PM
+:::

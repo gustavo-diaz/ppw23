@@ -1,0 +1,14 @@
+{
+  "hash": "41f1ad493f900a06976f836d98ce5b3f",
+  "result": {
+    "markdown": "---\ntitle: \"Week 3: Panel Surveys\"\ndate: \"January 25, 2023\"\nformat: html\n---\n\n\n\n\n## Overview\n\nPanel surveys are surveys where the same respondents are asked questions multiple times. Sometimes these repeat the same questions to understand shifts in public opinion and the effect of events in between waves.\n\nAs with last week, the takeaway is that panel surveys are expensive and risk missing subjects across waves, this is called panel attrition. With fixed budgets, one may wonder if we are better off just conducting a one-shot survey, also called a cross-section with an increased sample size.\n\nThe lab assignment simulates the exercise of comparing one-shot surveys with a panel. In doing so, it also introduces the concept of descriptive inference. In statistics, inference means using the data we have to understand something for which we do not have data. In surveys, this implies inferring from sample to population.\n\n## Reading\n\n- [{{< fa book >}}]{style=\"color: #ac1455;\"} [RD sections 5-7, 15](https://book.declaredesign.org/declaring-designs.html) \n\n- [{{< fa file-lines >}}]{style=\"color: #ac1455;\"} Esaiasson, Peter and Mikael Persson. 2014. [“Does Studying Political Science Affect Civic Attitudes?: A Panel Comparison of Students of Politics, Law, and Mass Communication.”](https://doi.org/10.1080/15512169.2014.948118) *Journal of Political Science Education* 10 (4): 375-385\n\n- [{{< fa file-lines >}}]{style=\"color: #ac1455;\"} Claes, Ellen, and Marc Hooghe. 2017. [“The Effect of Political Science Education on Political Trust and Interest: Results from a 5-year Panel Study.”](https://doi.org/10.1080/15512169.2016.1171153) *Journal of Political Science Education* 13 (1): 33-45\n\n\n## Slides\n\n::: {.callout-tip}\n## Navigation\n\nClick on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.\n:::\n\n\n<iframe width=\"800\" height=\"450\" marginheight=\"0\" marginwidth=\"0\" src=\"/slides/placeholder.html\">\n  Your browser does not support frame view, please use the links below.\n</iframe>\n<p class=\"buttons\"><a class=\"btn btn-primary\" target=\"_blank\" href=\"/slides/03_slides.html\"><i class=\"fa-solid fa-arrow-up-right-from-square\"></i> Open in a new window</a> <a class=\"btn btn-danger\" target=\"_blank\" href=\"/slides/03_slides.pdf\" role=\"button\"><i class=\"fa-solid fa-file-pdf\"></i> Download PDF </a></p>\n\n\n\n## Lab\n\nDescriptive inference {{< fa laptop-code >}} (Coming soon!)\n\n::: {.callout-warning}\n## Due\n\nFriday, January 27, 5 PM\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
