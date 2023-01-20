@@ -102,7 +102,7 @@
     "href": "content/03_content.html",
     "title": "Week 3: Panel Surveys",
     "section": "",
-    "text": "Panel surveys are surveys where the same respondents are asked questions multiple times. Sometimes these repeat the same questions to understand shifts in public opinion and the effect of events in between waves.\nAs with last week, the takeaway is that panel surveys are expensive and risk missing subjects across waves, this is called panel attrition. With fixed budgets, one may wonder if we are better off just conducting a one-shot survey, also called a cross-section with an increased sample size.\nThe lab assignment simulates the exercise of comparing one-shot surveys with a panel. In doing so, it also introduces the concept of descriptive inference. In statistics, inference means using the data we have to understand something for which we do not have data. In surveys, this implies inferring from sample to population."
+    "text": "Sign up for final project group using this form \nPanel surveys are surveys where the same respondents are asked questions multiple times. Sometimes these repeat the same questions to understand shifts in public opinion and the effect of events in between waves.\nAs with last week, the takeaway is that panel surveys are expensive and risk missing subjects across waves, this is called panel attrition. With fixed budgets, one may wonder if we are better off just conducting a one-shot survey, also called a cross-section with an increased sample size.\nWe have no new lab assignment this week. Instead, we will spend some time revisiting the lab from last week. I plan to spend some time comparing one-shot and panel surveys with simulations."
   },
   {
     "objectID": "content/04_content.html",
@@ -564,6 +564,6 @@
     "href": "content/03_content.html#lab",
     "title": "Week 3: Panel Surveys",
     "section": "Lab",
-    "text": "Lab\nDescriptive inference  (Coming soon!)\n\n\n\n\n\n\nDue\n\n\n\nFriday, January 27, 5 PM"
+    "text": "Lab\nNo new lab! We will revisit the lab from last week."
   }
 ]

@@ -11,11 +11,13 @@ source(here::here("R", "show_slides.R"))
 
 ## Overview
 
+Sign up for final project group using [this form {{< fa file-pen >}}](https://forms.gle/6MpV3XfQjpvCd2pS6)
+
 Panel surveys are surveys where the same respondents are asked questions multiple times. Sometimes these repeat the same questions to understand shifts in public opinion and the effect of events in between waves.
 
 As with last week, the takeaway is that panel surveys are expensive and risk missing subjects across waves, this is called panel attrition. With fixed budgets, one may wonder if we are better off just conducting a one-shot survey, also called a cross-section with an increased sample size.
 
-The lab assignment simulates the exercise of comparing one-shot surveys with a panel. In doing so, it also introduces the concept of descriptive inference. In statistics, inference means using the data we have to understand something for which we do not have data. In surveys, this implies inferring from sample to population.
+We have no new lab assignment this week. Instead, we will spend some time revisiting the lab from last week. I plan to spend some time comparing one-shot and panel surveys with simulations.
 
 ## Reading
 
@@ -42,10 +44,4 @@ slide_buttons("/slides/03_slides")
 
 ## Lab
 
-Descriptive inference {{< fa laptop-code >}} (Coming soon!)
-
-::: {.callout-warning}
-## Due
-
-Friday, January 27, 5 PM
-:::
+No new lab! We will revisit the lab from last week.
