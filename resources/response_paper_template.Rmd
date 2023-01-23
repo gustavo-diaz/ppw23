@@ -1,0 +1,63 @@
+---
+title: "Response Paper #X"
+author: |
+        | **Name:** Your name here
+        | **Mac ID:** The first half of your Mac email address
+date: "Week Y: Topic of The Week"
+output: 
+  pdf_document:
+    number_sections: true
+    fig_caption: yes
+urlcolor: blue
+header-includes:
+    - \usepackage{setspace}
+    - \doublespacing
+    - \usepackage{float}
+    - \floatplacement{figure}{t}
+    - \floatplacement{table}{t}
+    - \usepackage{flafter}
+    - \usepackage[T1]{fontenc}
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{ragged2e}
+    - \usepackage{booktabs}
+    - \usepackage{amsmath}
+fontsize: 12pt
+---
+
+# Overview
+
+This an optional template for the response papers for our class. You can work directly on the `.Rmd` file or use it as a guideline to work on your own file. The only restriction is that your submission to Avenue must be a PDF. See the syllabus for formatting and extension guidelines.
+
+If you are working off the template, see <https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf> for some tips on common writing operations in Rmarkdown.
+
+Start by replacing the relevant information in the preamble of the document. Including the number of the response paper, your personal details, and the reference to the week about which you are writing the paper.
+
+The **Overview** section should indicate which reading for the week you are discussing, it summarizes its main finding and relevance in 2-3 sentences, and then briefly highlights the point that you want to make in your response. For example, in this response paper I want to criticize the use of a convenience sample instead of a representative sample. The overview should not take more than 2-3 paragraphs.
+
+# Research Design
+
+This section describes the research design of the study you discuss. You do not need to include *every detail* but you should include enough detail so that a person who is not taking this course gets a decent picture of what the researchers did. The key here is to translate some of the technical terms into plain language so that the instructor recognizes that you understood the material. We will practice describing research design throughout the semester. 
+
+This section should not be more than one page, but we can be flexible if a study warrants more extensive description. The important part is that this does not come at the expense of the next section.
+
+# Response
+
+This is where you write your response to the reading. The main task is to entertain the thought of how you would do things differently if you were to conduct the study yourself. What would you change? What would your proposed changes produce? The closer a response draws from the course material, the better, but feel free to bring up outside experiences if they feel important or useful. 
+
+Sometimes the research design decisions of a published study are not immediately obvious. Feel free to fill the gaps if this is the case. For example, the CES does not explain why they stratify their sample into regions that do not map the provinces, but one may safely assume it is because of population density being much lower outside of Ontario and Quebec.
+
+## Sub-sections
+
+It may help to organize your thoughts into subsections so that you can address them one at a time.
+
+# Minor points
+
+Response papers are short enough that they do not need a conclusion. Instead, you can spend up to a half page in the end listing small comments or questions that came from your reading.
+
+- You can mention parts of the research design that feel unclear
+- Or write down technical terms that seem important but you did not understand (or you understood but want to double check)
+- Or posit questions that you believe may be interesting to go over in our class meeting
+
+# References
+
+Your response paper does not need to add references or citations unless you cite sources from outside of the course. If there is nothing to cite, you can delete this section. If you do cite, then this does not count towards the word count.
