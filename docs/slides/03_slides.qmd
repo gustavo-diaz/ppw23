@@ -1,0 +1,293 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(ggdag)
+
+# Global options
+theme_set(theme_dag(base_size = 40))
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Panel Surveys {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Announcements {background-color="#8BD3E6"}
+
+- Lab 2 deadline extended to Friday, January 27 `(no new lab today)`
+
+- [Sign up for groups!](https://forms.gle/6MpV3XfQjpvCd2pS6)
+
+- By 9 AM tomorrow or I will put you wherever {{< fa face-angry >}}
+
+## Last week {background-color="#FDBF57"}
+
+- Overview of **MIDA** approach to research design as programming
+
+- **Representative surveys** as the gold standard of public opinion research
+
+- Challenging to decide:
+
+    - What to ask
+    - Who to ask
+    
+- **Lab:** Get to know R, practice simulating a survey with random sampling
+
+## Today {background-color="#FDBF57"}
+
+- Start thinking about **cause and effect**
+
+- **Panel surveys:** Survey the same sample multiple times
+
+- **Lab:** Revisit last week's lab
+
+::: {style="text-align: center"}
+# Cause and Effect {background-color="#FDBF57"}
+:::
+
+## Elements of a model {{< fa book >}}
+
+. . .
+
+1. Signature
+
+2. Functional relations
+
+3. Probability distribution over exogenous variables
+
+## Part 1: Signature
+
+::: incremental
+
+- **{{< fa book >}}:** Describes variables and their ranges
+
+- Two kinds of variables
+
+- **Endogenous:** Generated from *within* the model
+
+- **Exogenous:** Generated from *without* the model
+
+:::
+
+## Types of exogenous variables
+
+::: incremental
+
+1. Anything explicitly (or assumed as) **randomized** 
+
+    - Mostly experimental treatment assignment
+    
+    - Denoted by $Z$
+    
+2. Anything **unobserved** by the model
+
+    - Otherwise we would be in trouble!
+    
+    - Denoted by $U$
+    
+:::
+
+## Types of endogenous variables
+
+- Anything else
+
+::: incremental
+
+- **Outcomes:** The things we ultimately want to understand ($Y$)
+
+- **Moderators:** Variables that modify effects ($X$)
+
+- **Mediators:** How or why something has an effect ($X$)
+
+- **Confounders:** Introduce non-causal dependence ($X$)
+
+:::
+
+## Part 2: Functional relations
+
+::: incremental
+- **{{< fa book >}}:** Set of **functions** that produce endogenous variables
+
+- Two ways to express functional relations
+
+1. **Structural causal models** `(today)`
+
+2. **Potential outcomes framework** `(next week)`
+
+:::
+
+## Structural causal models
+
+- Use **D**irected **A**cyclic **G**raphs `(DAGs)`
+
+::: incremental
+
+- **Directed:** Connected by arrows
+
+- **Acyclic:** Not cyclical, usually end in outcomes
+
+- **Graphs:** Visual representation as *nodes* and *edges*
+
+- They represent **nonparametric** causal models
+:::
+
+## Example
+
+```{r, results = "asis", fig.cap = "DAG for $Y = f_y(Z,U)$"}
+dag = dagify(Y ~ Z + U,
+             exposure = "Z",
+             outcome = "Y",
+             labels = c(
+               "Y" = "Outcome",
+               "Z" = "Treatment assignment",
+               "U" = "Unknown heterogeneity"),
+             coords = data.frame(
+               x = c(1, 0, 1),
+               y = c(0, 0, 1),
+               name = c("Y", "Z", "U")
+             ))
+
+ggdag(dag, use_labels = "label", 
+      node_size = 20, text_size = 5)
+```
+
+## Part 3: Probability distribution over exogenous variables
+
+- An explanation of how exogenous variables are generated
+
+. . .
+
+### Examples
+
+. . .
+
+- $Z \sim \text{Bern}(p)$ with $p = 0.1$
+
+. . .
+
+- $U \sim N(\mu, \sigma)$ with $\mu = 0$ and $\sigma = 1$
+
+::: {style="text-align: center"}
+# Panel Surveys {background-color="#FDBF57"}
+:::
+
+## What are panel surveys?
+
+::: incremental
+
+- Surveys where the same participants are asked questions at multiple points in time
+
+- Usually measure **outcomes** at every time `(but not necessary)`
+
+- More common among *convenience samples* `(e.g. students, twins)`
+
+- The name comes from their **data structure**
+
+:::
+
+## Panel data
+
+```{r bal_panel}
+bal_panel = data.frame(
+  ID = c(rep(1, 3), rep(2, 3)),
+  year = rep(c(2016, 2017, 2018), 2),
+  income = c(1300, 1600, 2000, 2000, 2300, 2400),
+  age = c(27, 28, 29, 38, 39, 40),
+  sex = c(rep("M", 3), rep("F", 3))
+)
+
+bal_panel %>% kable(caption = "Balanced panel")
+```
+
+## Panel data
+
+```{r unbal_panel}
+unbal_panel = data.frame(
+  ID = c(1, 1, 2, 2, 2, 3),
+  year = c(2016, 2017, 2016, 2017, 2018, 2017),
+  income = c(1600, 1500, 1900, 2000, 2100, 3300),
+  age = c(23, 24, 41, 42, 43, 34),
+  sex = c("M", "M", "F", "F", "F", "M")
+)
+
+unbal_panel %>% kable(caption = "Unbalanced panel")
+```
+
+## What are panel surveys for?
+
+::: {.fragment .semi-fade-out fragment-index=1}
+1. To measure attitudes in a population over time
+:::
+
+::: {.fragment .highlight-red fragment-index=1}
+2. To understand the effect of events occurring between waves
+:::
+
+## Challenge
+
+::: incremental
+
+- **Panel attrition:** Participants may drop out from follow up waves
+
+- It may offset the benefit of conducting a panel survey
+
+- It may depend on factors relevant to the study
+
+:::
+
+## Example 1
+
+![](figs/esaiasson_persson_0.png){fig-align="center"}
+
+---
+
+![](figs/esaiasson_persson_1.png){fig-align="center"}
+
+## Example 2
+
+![](figs/claes_hooghe_0.png){fig-align="center"}
+
+--- 
+
+![](figs/claes_hooghe_1.png){fig-align="center"}
+
+---
+
+![](figs/claes_hooghe_2.png){fig-align="center"}
+
+
+::: {style="text-align: center"}
+## Next Week {.center background-color="#8BD3E6"}
+### Sensitive Questions
+
+**Focus on:** Which research design seems more appropriate to elicit honest answers?
+:::
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::
+
