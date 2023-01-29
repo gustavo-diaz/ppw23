@@ -1,5 +1,48 @@
 ---
-title: "Course material"
+title: "Week 4: Sensitive Questions"
+date: "February 1, 2023"
+format: html
 ---
 
-Coming soon!
+
+```{r setup, echo = FALSE, results = "asis"}
+# Slide showing functions
+source(here::here("R", "show_slides.R"))
+```
+
+## Overview
+
+When surveys deal with sensitive topics, there is a chance that respondents conceal the truth in their answers. We call this **sensitivity bias**. This week, we review research designs that seek to reduce sensitivity biases by asking sensitive questions indirectly. Asking indirect questions takes attention away from the sensitive attitude of interest and ensures respondent anonymity.
+
+The takeaway for this week is that these techniques reduce sensitivity bias, but they do so at the expense of statistical precision, so they may not always improve our ability to measure sensitive attitudes and behaviors. We illustrate this point in the lab.
+
+
+## Reading
+
+- [{{< fa book >}}]{style="color: #ac1455;"} [RD sections 8-9, 17](https://book.declaredesign.org/crafting-a-data-strategy.html) 
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Blair, Graeme. 2015. ["Survey Methods for Sensitive Topics."](https://graemeblair.com/papers/sensitive.pdf) *Comparative Politics Newsletter* 12 (44): 12-16
+
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Creighton, Matthew J. and Amaney Jamal. 2015. [“Does Islam play a role in anti-immigrant sentiment? An experimental approach.”](https://doi.org/10.1016/j.ssresearch.2015.04.001) *Social Science Research* 53 (1): 89-103
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Oliveros, Virginia and Daniel W. Gingerich. 2020. [“Lying About Corruption in Surveys: Evidence from a Joint Response Model.”](https://doi.org/10.1093/ijpor/edz019) *International Journal of Public Opinion Research* 32 (2): 384-395
+
+
+## Slides
+
+::: {.callout-tip}
+## Navigation
+
+Click on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.
+:::
+
+```{r show-slides, echo = FALSE, results = "asis"}
+show_slide("/slides/placeholder")
+slide_buttons("/slides/04_slides")
+```
+
+
+## Lab
+
+Reducing sensitivity bias {{< fa laptop-code >}} (Coming soon!)
