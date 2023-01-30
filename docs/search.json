@@ -761,5 +761,103 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
+  },
+  {
+    "objectID": "slides/04_slides.html#sensitive-questions",
+    "href": "slides/04_slides.html#sensitive-questions",
+    "title": "Public Opinion and Policy",
+    "section": "Sensitive Questions",
+    "text": "Sensitive Questions\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/04_slides.html#announcements",
+    "href": "slides/04_slides.html#announcements",
+    "title": "Public Opinion and Policy",
+    "section": "Announcements",
+    "text": "Announcements\n\nGroups put in contact yesterday\nTopic is highly negotiable\nDon’t forget to schedule a meeting before break!"
+  },
+  {
+    "objectID": "slides/04_slides.html#last-week",
+    "href": "slides/04_slides.html#last-week",
+    "title": "Public Opinion and Policy",
+    "section": "Last week",
+    "text": "Last week\n\nElements of models (signature, functional relations, probability distributions)\nPanel surveys: Good for understanding before-after effects, expensive to conduct"
+  },
+  {
+    "objectID": "slides/04_slides.html#today",
+    "href": "slides/04_slides.html#today",
+    "title": "Public Opinion and Policy",
+    "section": "Today",
+    "text": "Today\n\nElements of data strategies and answer strategies\nResearch designs for sensitive questions\nLab: Write your own design"
+  },
+  {
+    "objectID": "slides/04_slides.html#what",
+    "href": "slides/04_slides.html#what",
+    "title": "Public Opinion and Policy",
+    "section": "What?",
+    "text": "What?"
+  },
+  {
+    "objectID": "slides/04_slides.html#next-week",
+    "href": "slides/04_slides.html#next-week",
+    "title": "Public Opinion and Policy",
+    "section": "Next Week",
+    "text": "Next Week\nSurvey Experiments\nFocus on: What are they good for?"
+  },
+  {
+    "objectID": "slides/04_slides.html#break-time",
+    "href": "slides/04_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/04_slides.html#fa-laptop-code-lab",
+    "href": "slides/04_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
+    "objectID": "slides/04_slides.html#elements-of-a-data-strategy",
+    "href": "slides/04_slides.html#elements-of-a-data-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Elements of a data strategy",
+    "text": "Elements of a data strategy\n\n\nSampling (random, nonrandom)\nTreatment assignment (if applicable)\nMeasurement (validity, reliability)"
+  },
+  {
+    "objectID": "slides/04_slides.html#measurement-as-multiple-independent-draws",
+    "href": "slides/04_slides.html#measurement-as-multiple-independent-draws",
+    "title": "Public Opinion and Policy",
+    "section": "Measurement as multiple independent draws",
+    "text": "Measurement as multiple independent draws"
+  },
+  {
+    "objectID": "slides/04_slides.html#types-of-answer-strategies",
+    "href": "slides/04_slides.html#types-of-answer-strategies",
+    "title": "Public Opinion and Policy",
+    "section": "Types of answer strategies",
+    "text": "Types of answer strategies\n\n\nPoint estimation\n\n\n\n\n\n\n\n\n\nExample\n\n\n\nWhat is the proportion of French speakers?\nWhat is the effect of taking a political science course on political interest?"
+  },
+  {
+    "objectID": "slides/04_slides.html#elements-of-an-answer-strategy",
+    "href": "slides/04_slides.html#elements-of-an-answer-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Elements of an answer strategy",
+    "text": "Elements of an answer strategy\n\n\nAnswer characterization (domain, units, outcomes, conditions)\nUncertainty (Bayesian, frequentist)\nProcedure (e.g. OLS, difference-in-means)"
+  },
+  {
+    "objectID": "slides/04_slides.html#example-1",
+    "href": "slides/04_slides.html#example-1",
+    "title": "Public Opinion and Policy",
+    "section": "Example",
+    "text": "Example\n\nHypothesis testing\n\n\n\n\n\n\n\n\nExample\n\n\n\nHas the proportion of French speakers increased?\nIs there an effect of taking a political science course on political interest?"
+  },
+  {
+    "objectID": "slides/04_slides.html#types-of-answer-strategies-1",
+    "href": "slides/04_slides.html#types-of-answer-strategies-1",
+    "title": "Public Opinion and Policy",
+    "section": "Types of answer strategies",
+    "text": "Types of answer strategies\n\nHypothesis testing\n\n\n\n\n\n\n\n\nExample\n\n\n\nHas the proportion of French speakers increased?\nIs there an effect of taking a political science course on political interest?"
   }
 ]

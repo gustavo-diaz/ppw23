@@ -1,0 +1,152 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(ggdag)
+
+# Global options
+theme_set(theme_dag(base_size = 40))
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Sensitive Questions {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Announcements {background-color="#8BD3E6"}
+
+- Groups put in contact yesterday
+
+- Topic is highly negotiable
+
+- Don't forget to schedule a meeting before break!
+
+## Last week {background-color="#FDBF57"}
+
+- Elements of models `(signature, functional relations, probability distributions)`
+
+- **Panel surveys:** Good for understanding before-after effects, expensive to conduct
+
+## Today {background-color="#FDBF57"}
+
+- Elements of **data strategies** and **answer strategies**
+
+- Research designs for sensitive questions
+
+- **Lab:** Write your own design
+
+::: {style="text-align: center"}
+# Data and Answer Strategies {background-color="#FDBF57"}
+:::
+
+## Elements of a data strategy
+
+::: incremental
+1. Sampling `(random, nonrandom)`
+
+2. Treatment assignment `(if applicable)`
+
+3. Measurement `(validity, reliability)`
+:::
+
+## Measurement as multiple independent draws
+
+![](figs/darts_validity.png){fig-align="center"}
+
+## Elements of an answer strategy
+
+::: incremental
+1. Answer characterization `(domain, units, outcomes, conditions)`
+
+2. Uncertainty `(Bayesian, frequentist)`
+
+3. Procedure `(e.g. OLS, difference-in-means)`
+:::
+
+## Types of answer strategies
+
+. . .
+
+1. Point estimation 
+
+. . .
+
+::: {.callout-note}
+### Example
+
+- What is the proportion of French speakers?
+
+- What is the effect of taking a political science course on political interest?
+:::
+
+## Types of answer strategies {visibility="uncounted"}
+
+2. Hypothesis testing
+
+. . .
+
+::: {.callout-note}
+### Example
+
+- Has the proportion of French speakers increased?
+
+- Is there an effect of taking a political science course on political interest?
+:::
+
+
+::: {style="text-align: center"}
+# Sensitive Questions {background-color="#FDBF57"}
+:::
+
+## Why do people lie in surveys?
+
+::: incremental
+
+1. Inattention
+
+2. Satisficing
+
+3. Limited options
+
+4. Demand effects
+
+5. Sensitivity
+
+:::
+
+
+
+::: {style="text-align: center"}
+## Next Week {.center background-color="#8BD3E6"}
+### Survey Experiments
+
+**Focus on:** What are they good for?
+:::
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::
+
