@@ -788,7 +788,7 @@
     "href": "slides/04_slides.html#today",
     "title": "Public Opinion and Policy",
     "section": "Today",
-    "text": "Today\n\nElements of data strategies and answer strategies\nResearch designs for sensitive questions\nLab: Write your own design"
+    "text": "Today\n\nElements of data strategies and answer strategies\nResearch designs for sensitive questions\nLab: Practice writing research designs on your own"
   },
   {
     "objectID": "slides/04_slides.html#what",
@@ -859,5 +859,201 @@
     "title": "Public Opinion and Policy",
     "section": "Types of answer strategies",
     "text": "Types of answer strategies\n\nHypothesis testing\n\n\n\n\n\n\n\n\nExample\n\n\n\nHas the proportion of French speakers increased?\nIs there an effect of taking a political science course on political interest?"
+  },
+  {
+    "objectID": "slides/04_slides.html#why-do-people-lie-in-surveys",
+    "href": "slides/04_slides.html#why-do-people-lie-in-surveys",
+    "title": "Public Opinion and Policy",
+    "section": "Why do people lie in surveys?",
+    "text": "Why do people lie in surveys?\n\n\nInattention\nSatisficing\nLimited options\nDemand effects\nSocial desirability/sensitivity bias"
+  },
+  {
+    "objectID": "slides/04_slides.html#why-do-people-lie-in-surveys-1",
+    "href": "slides/04_slides.html#why-do-people-lie-in-surveys-1",
+    "title": "Public Opinion and Policy",
+    "section": "Why do people lie in surveys?",
+    "text": "Why do people lie in surveys?\n\nInattention\nSatisficing\nLimited options\nDemand effects\nSocial desirability/sensitivity bias"
+  },
+  {
+    "objectID": "slides/04_slides.html#how-to-prevent-lying",
+    "href": "slides/04_slides.html#how-to-prevent-lying",
+    "title": "Public Opinion and Policy",
+    "section": "How to prevent lying?",
+    "text": "How to prevent lying?\n\n\nAdd noise to the question\nTwo approaches:\n\n\nDistract from the sensitive attitude/behavior\nGuarantee anonymity\n\n\nDifferent designs vary on how they combine the two"
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response",
+    "href": "slides/04_slides.html#randomized-response",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no."
+  },
+  {
+    "objectID": "slides/04_slides.html#list-experiment",
+    "href": "slides/04_slides.html#list-experiment",
+    "title": "Public Opinion and Policy",
+    "section": "List experiment",
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset."
+  },
+  {
+    "objectID": "slides/04_slides.html#endorsement-experiment",
+    "href": "slides/04_slides.html#endorsement-experiment",
+    "title": "Public Opinion and Policy",
+    "section": "Endorsement experiment",
+    "text": "Endorsement experiment"
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-1",
+    "href": "slides/04_slides.html#randomized-response-1",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-2",
+    "href": "slides/04_slides.html#randomized-response-2",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-3",
+    "href": "slides/04_slides.html#randomized-response-3",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-4",
+    "href": "slides/04_slides.html#randomized-response-4",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n\n \n[TURN AWAY FROM RESPONDENT]\n\n\n \nNow you throw the dice so that I cannot see what comes out."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-5",
+    "href": "slides/04_slides.html#randomized-response-5",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \n[TURN AWAY FROM RESPONDENT]\n \nHave you thrown the dice?"
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-6",
+    "href": "slides/04_slides.html#randomized-response-6",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \n[TURN AWAY FROM RESPONDENT]\n \nHave you picked it up?"
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-7",
+    "href": "slides/04_slides.html#randomized-response-7",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \nNow, during the height of the conflict in 2007 and 2008 (in Afghanistan), did you know any militants, like a family member, a friend, or someone you talked to on a regular basis?\n\nPlease, before you answer, take note of the number you rolled on the dice."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-8",
+    "href": "slides/04_slides.html#randomized-response-8",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If 1 shows on the dice, tell me no. If 6 shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \nNow, during the height of the conflict in 2007 and 2008 (in Afghanistan), did you know any militants, like a family member, a friend, or someone you talked to on a regular basis? Please, before you answer, take note of the number you rolled on the dice."
+  },
+  {
+    "objectID": "slides/04_slides.html#answer-strategy",
+    "href": "slides/04_slides.html#answer-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Answer strategy",
+    "text": "Answer strategy\n\n\nWe know that about \\(1/6 \\approx 0.17\\) respondents said yes because they rolled a \nSo if \\(30\\%\\) in total said yes\nWe have \\(\\widehat{Y} = 0.3 - 0.17 = 0.13\\) as our estimate of the proportion of the population who know a member of a militant organization\nBut we do not know who they are in our survey!"
+  },
+  {
+    "objectID": "slides/04_slides.html#list-experiment-1",
+    "href": "slides/04_slides.html#list-experiment-1",
+    "title": "Public Opinion and Policy",
+    "section": "List experiment",
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you."
+  },
+  {
+    "objectID": "slides/04_slides.html#list-experiment-2",
+    "href": "slides/04_slides.html#list-experiment-2",
+    "title": "Public Opinion and Policy",
+    "section": "List experiment",
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\n\nControl group\n\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment"
+  },
+  {
+    "objectID": "slides/04_slides.html#assumptions",
+    "href": "slides/04_slides.html#assumptions",
+    "title": "Public Opinion and Policy",
+    "section": "Assumptions",
+    "text": "Assumptions\n\n\n\n\n\n\n\n1. Honesty given protection\n\n\nPeople respond honestly when guaranteed anonymity.\n\n\n\n\n\n\n\n\n\n\n\n2. One-sided lying\n\n\nThose who do not hold the sensitive trait never falsely claim to bear it.\n\n\n\n\n\n\nThese cannot be verified with data!"
+  },
+  {
+    "objectID": "slides/04_slides.html#list-experiment-3",
+    "href": "slides/04_slides.html#list-experiment-3",
+    "title": "Public Opinion and Policy",
+    "section": "List experiment",
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\nTreatment group\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment\nA black family moving next door"
+  },
+  {
+    "objectID": "slides/04_slides.html#other-research-designs",
+    "href": "slides/04_slides.html#other-research-designs",
+    "title": "Public Opinion and Policy",
+    "section": "Other research designs",
+    "text": "Other research designs\n\n\nBuilding trust with respondents\nEndorsement experiments\nConjoint experiments\nNetwork scale-up method\nVariants of the randomized response and list experiment"
+  },
+  {
+    "objectID": "slides/04_slides.html#answer-strategy-1",
+    "href": "slides/04_slides.html#answer-strategy-1",
+    "title": "Public Opinion and Policy",
+    "section": "Answer strategy",
+    "text": "Answer strategy\n\n\nRespondents are randomly assigned to conditions\nDifferences in responses can only be attributed to the presence/absence of the sensitive item\nSo \\(\\widehat{Y} = \\text{Mean(treatment)} - \\text{Mean(control)})\\) estimates the proportion in the population of interest who would get upset if a black family moves next door\nBut we do not know who they are in our survey!"
+  },
+  {
+    "objectID": "slides/04_slides.html#assumptions-1",
+    "href": "slides/04_slides.html#assumptions-1",
+    "title": "Public Opinion and Policy",
+    "section": "Assumptions",
+    "text": "Assumptions\n\n\n\n\n\n\n\n1. No liars\n\n\nThose who do not hold the sensitive item never falsely claim to bear it.\n\n\n\n\n\n\n\n\n\n\n\n2. No design effects\n\n\nIncluding the sensitive item does not change how participants respond to the baseline items\n\n\n\n\n\n\nThese can only be evaluated indirectly"
+  },
+  {
+    "objectID": "slides/04_slides.html#vignette",
+    "href": "slides/04_slides.html#vignette",
+    "title": "Public Opinion and Policy",
+    "section": "Vignette",
+    "text": "Vignette\nBelow you will read three things that sometimes people oppose or are against. After you read all three, just tell us HOW MANY of them you OPPOSE. We don’t want to know which ones, just HOW MANY."
+  },
+  {
+    "objectID": "slides/04_slides.html#vignette-1",
+    "href": "slides/04_slides.html#vignette-1",
+    "title": "Public Opinion and Policy",
+    "section": "Vignette",
+    "text": "Vignette\n\nThe federal government increasing assistance to the poor\nProfessional athletes making millions of dollars per year\nLarge corporations polluting the environment\n\n\n\n\nTreatment 1\n4. Granting citizenship to a legal immigrant who is Muslim\n\nTreatment 2\n4. Granting citizenship to a legal immigrant who is Christian"
+  },
+  {
+    "objectID": "slides/04_slides.html#vignette-2",
+    "href": "slides/04_slides.html#vignette-2",
+    "title": "Public Opinion and Policy",
+    "section": "Vignette",
+    "text": "Vignette\n\nHow many of the following statements are true?\n\n\nMy mother was born in OCTOBER, NOVEMBER, OR DECEMBER\nIn order to avoid paying a traffic ticket, I would be willing to pay a bribe to a police officer."
+  },
+  {
+    "objectID": "slides/04_slides.html#vignette-3",
+    "href": "slides/04_slides.html#vignette-3",
+    "title": "Public Opinion and Policy",
+    "section": "Vignette",
+    "text": "Vignette\n\nPlease indicate your answer below\n\nA. Both statements are true OR neither statement is true\nB. One of the two statements is true\n\n\nRemember: Your mother’s birthdate is unknown to anyone involved in the collection, administration, or analysis of the survey. As such, your confidentiality is guaranteed."
+  },
+  {
+    "objectID": "slides/04_slides.html#crosswise-model",
+    "href": "slides/04_slides.html#crosswise-model",
+    "title": "Public Opinion and Policy",
+    "section": "Crosswise model",
+    "text": "Crosswise model\n\nHow many of the following statements are true?\n\n\nMy mother was born in OCTOBER, NOVEMBER, OR DECEMBER\nIn order to avoid paying a traffic ticket, I would be willing to pay a bribe to a police officer."
+  },
+  {
+    "objectID": "slides/04_slides.html#crosswise-model-1",
+    "href": "slides/04_slides.html#crosswise-model-1",
+    "title": "Public Opinion and Policy",
+    "section": "Crosswise model",
+    "text": "Crosswise model\n\nPlease indicate your answer below\n\nA. Both statements are true OR neither statement is true\nB. One of the two statements is true\n\n\nRemember: Your mother’s birthdate is unknown to anyone involved in the collection, administration, or analysis of the survey. As such, your confidentiality is guaranteed."
   }
 ]
