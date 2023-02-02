@@ -263,7 +263,7 @@
     "href": "resources.html#coding",
     "title": "Resources",
     "section": "Coding",
-    "text": "Coding\n\nAccessing software\n\nInstallation instructions for R and RStudio in different platforms:   \nPosit Cloud. Also accessible with the  icon in the top navigation bar\nList of computer labs on campus\n\n\n\nTips and resources\n\nLearn R within the R console using Swirl\nR Markdown cheat sheet\nRStudio cheat sheets to learn about commonly used packages in the tidyverse\nThe DeclareDesign library of research designs may be useful to get started on lab assignments\nProject oriented workflow to keep track of your work in R\nTry the here package for relative path management"
+    "text": "Coding\n\nAccessing software\n\nInstallation instructions for R and RStudio in different platforms:   \nPosit Cloud. Also accessible with the  icon in the top navigation bar\nList of computer labs on campus\n\n\n\nTips and resources\n\nThe Data Analysis Support Hub at the library has video tutorials and lets you schedule consultations to get help with assignments in R\nLearn R within the R console using Swirl\nR Markdown cheat sheet\nRStudio cheat sheets to learn about commonly used packages in the tidyverse\nThe DeclareDesign library of research designs may be useful to get started on lab assignments\nProject oriented workflow to keep track of your work in R\nTry the here package for relative path management"
   },
   {
     "objectID": "resources.html#reading",
@@ -641,7 +641,7 @@
     "href": "slides/03_slides.html#part-3-probability-distribution-over-exogenous-variables",
     "title": "Public Opinion and Policy",
     "section": "Part 3: Probability distribution over exogenous variables",
-    "text": "Part 3: Probability distribution over exogenous variables\n\nAn explanation of how exogenous variables are generated\n\n\nExamples\n\n\n\\(Z \\sim \\text{Bern}(p)\\) with \\(p = 0.1\\)\n\n\n\n\n\\(U \\sim N(\\mu, \\sigma)\\) with \\(\\mu = 0\\) and \\(\\sigma = 1\\)"
+    "text": "Part 3: Probability distribution over exogenous variables\n\nAn explanation of how exogenous variables are generated\n\n\n\nExamples\n\n\n\\(Z \\sim \\text{Bern}(p)\\) with \\(p = 0.1\\)\n\n\n\n\n\\(U \\sim N(\\mu, \\sigma)\\) with \\(\\mu = 0\\) and \\(\\sigma = 1\\)"
   },
   {
     "objectID": "slides/03_slides.html#what-are-panel-surveys",
@@ -697,7 +697,7 @@
     "href": "slides/03_slides.html#next-week",
     "title": "Public Opinion and Policy",
     "section": "Next Week",
-    "text": "Next Week\nSensitive Questions\nFocus on: Which research design seems more appropriate to elicit honest answers?"
+    "text": "Next Week\n\nSensitive Questions\nFocus on: Which research design seems more appropriate to elicit honest answers?"
   },
   {
     "objectID": "slides/03_slides.html#break-time",
@@ -802,7 +802,7 @@
     "href": "slides/04_slides.html#next-week",
     "title": "Public Opinion and Policy",
     "section": "Next Week",
-    "text": "Next Week\nSurvey Experiments\nFocus on: What are they good for?"
+    "text": "Next Week\n\nSurvey Experiments\nFocus on: What are they good for?"
   },
   {
     "objectID": "slides/04_slides.html#break-time",
@@ -837,7 +837,7 @@
     "href": "slides/04_slides.html#types-of-answer-strategies",
     "title": "Public Opinion and Policy",
     "section": "Types of answer strategies",
-    "text": "Types of answer strategies\n\n\nPoint estimation\n\n\n\n\n\n\n\n\n\nExample\n\n\n\nWhat is the proportion of French speakers?\nWhat is the effect of taking a political science course on political interest?"
+    "text": "Types of answer strategies\n\n\nPoint estimation\n\n\n\n\n\n\n\n\n\nExample\n\n\n\n\nWhat is the proportion of French speakers?\nWhat is the effect of taking a political science course on political interest?"
   },
   {
     "objectID": "slides/04_slides.html#elements-of-an-answer-strategy",
@@ -858,7 +858,7 @@
     "href": "slides/04_slides.html#types-of-answer-strategies-1",
     "title": "Public Opinion and Policy",
     "section": "Types of answer strategies",
-    "text": "Types of answer strategies\n\nHypothesis testing\n\n\n\n\n\n\n\n\nExample\n\n\n\nHas the proportion of French speakers increased?\nIs there an effect of taking a political science course on political interest?"
+    "text": "Types of answer strategies\n\nHypothesis testing\n\n\n\n\n\n\n\n\nExample\n\n\n\n\nHas the proportion of French speakers increased?\nIs there an effect of taking a political science course on political interest?"
   },
   {
     "objectID": "slides/04_slides.html#why-do-people-lie-in-surveys",
@@ -977,21 +977,21 @@
     "href": "slides/04_slides.html#list-experiment-2",
     "title": "Public Opinion and Policy",
     "section": "List experiment",
-    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\n\nControl group\n\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment"
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\n\n\nControl group\n\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment"
   },
   {
     "objectID": "slides/04_slides.html#assumptions",
     "href": "slides/04_slides.html#assumptions",
     "title": "Public Opinion and Policy",
     "section": "Assumptions",
-    "text": "Assumptions\n\n\n\n\n\n\n\n1. Honesty given protection\n\n\nPeople respond honestly when guaranteed anonymity.\n\n\n\n\n\n\n\n\n\n\n\n2. One-sided lying\n\n\nThose who do not hold the sensitive trait never falsely claim to bear it.\n\n\n\n\n\n\nThese cannot be verified with data!"
+    "text": "Assumptions\n\n\n\n\n\n\n\n1. Honesty given protection\n\n\n\nPeople respond honestly when guaranteed anonymity.\n\n\n\n\n\n\n\n\n\n\n2. One-sided lying\n\n\n\nThose who do not hold the sensitive trait never falsely claim to bear it.\n\n\n\n\n\nThese cannot be verified with data!"
   },
   {
     "objectID": "slides/04_slides.html#list-experiment-3",
     "href": "slides/04_slides.html#list-experiment-3",
     "title": "Public Opinion and Policy",
     "section": "List experiment",
-    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\nTreatment group\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment\nA black family moving next door"
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\n\nTreatment group\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment\nA black family moving next door"
   },
   {
     "objectID": "slides/04_slides.html#other-research-designs",
@@ -1012,7 +1012,7 @@
     "href": "slides/04_slides.html#assumptions-1",
     "title": "Public Opinion and Policy",
     "section": "Assumptions",
-    "text": "Assumptions\n\n\n\n\n\n\n\n1. No liars\n\n\nThose who do not hold the sensitive item never falsely claim to bear it.\n\n\n\n\n\n\n\n\n\n\n\n2. No design effects\n\n\nIncluding the sensitive item does not change how participants respond to the baseline items\n\n\n\n\n\n\nThese can only be evaluated indirectly"
+    "text": "Assumptions\n\n\n\n\n\n\n\n1. No liars\n\n\n\nThose who do not hold the sensitive item never falsely claim to bear it.\n\n\n\n\n\n\n\n\n\n\n2. No design effects\n\n\n\nIncluding the sensitive item does not change how participants respond to the baseline items\n\n\n\n\n\nThese can only be evaluated indirectly"
   },
   {
     "objectID": "slides/04_slides.html#vignette",
@@ -1026,7 +1026,7 @@
     "href": "slides/04_slides.html#vignette-1",
     "title": "Public Opinion and Policy",
     "section": "Vignette",
-    "text": "Vignette\n\nThe federal government increasing assistance to the poor\nProfessional athletes making millions of dollars per year\nLarge corporations polluting the environment\n\n\n\n\nTreatment 1\n4. Granting citizenship to a legal immigrant who is Muslim\n\nTreatment 2\n4. Granting citizenship to a legal immigrant who is Christian"
+    "text": "Vignette\n\nThe federal government increasing assistance to the poor\nProfessional athletes making millions of dollars per year\nLarge corporations polluting the environment\n\n\n\n\n\nTreatment 1\n4. Granting citizenship to a legal immigrant who is Muslim\n\n\n\nTreatment 2\n4. Granting citizenship to a legal immigrant who is Christian"
   },
   {
     "objectID": "slides/04_slides.html#vignette-2",
@@ -1055,5 +1055,19 @@
     "title": "Public Opinion and Policy",
     "section": "Crosswise model",
     "text": "Crosswise model\n\nPlease indicate your answer below\n\nA. Both statements are true OR neither statement is true\nB. One of the two statements is true\n\n\nRemember: Your mother’s birthdate is unknown to anyone involved in the collection, administration, or analysis of the survey. As such, your confidentiality is guaranteed."
+  },
+  {
+    "objectID": "slides/03_slides.html",
+    "href": "slides/03_slides.html",
+    "title": "Public Opinion and Policy",
+    "section": "",
+    "text": "POLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/04_slides.html",
+    "href": "slides/04_slides.html",
+    "title": "Public Opinion and Policy",
+    "section": "",
+    "text": "POLSCI 4SS3\nWinter 2023"
   }
 ]

@@ -27,6 +27,8 @@ For the weekly labs, you can use the corresponding files in the [Content](/conte
 
 ### Tips and resources
 
+- The [Data Analysis Support Hub](https://library.mcmaster.ca/services/dash) at the library has video tutorials and lets you schedule consultations to get help with assignments in R
+
 - Learn R within the R console using [Swirl](https://swirlstats.com/)
 
 - [R Markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
