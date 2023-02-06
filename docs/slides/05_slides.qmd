@@ -1,0 +1,170 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(ggdag)
+
+# Global options
+theme_set(theme_dag(base_size = 40))
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Survey Experiments {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Announcements {background-color="#8BD3E6"}
+
+- Schedule group meetings before break!
+
+- Need help with R? Check the [Data Analysis Support Hub](https://library.mcmaster.ca/services/dash) at Mac
+
+- You can book virtual research consultations with an expert
+
+
+## Last week {background-color="#FDBF57"}
+
+- We discussed and explored techniques to reduce sensitivity bias
+
+- Some techniques are **observational** `(e.g. randomized response)`
+
+- Some techniques are **experimental** `(e.g. list experiment)`
+
+- **Today:** Discuss surveys using experiments more generally
+
+::: {style="text-align: center"}
+# Survey experiments {background-color="#FDBF57"}
+:::
+
+## Types of survey research design
+
+```{r}
+types = tribble(
+  ~Inquiry, ~Observational, ~Experimental,
+  "Descriptive", "Sample survey", "List experiment",
+  "Causal", "Panel survey", "Survey experiment"
+)
+
+types %>% 
+  kbl() %>% 
+  add_header_above(c(" " = 1, "Data strategy" = 2)) %>% 
+  column_spec(1, bold = TRUE) %>% 
+  column_spec(2, color = "white") %>% 
+  column_spec(3, color = "white")
+```
+
+## Types of survey research design {visibility="uncounted"}
+
+```{r}
+types %>% 
+  kbl() %>% 
+  add_header_above(c(" " = 1, "Data strategy" = 2)) %>% 
+  column_spec(1, bold = TRUE) %>% 
+  column_spec(2, color = c("black", "white")) %>% 
+  column_spec(3, color = "white")
+```
+
+## Types of survey research design {visibility="uncounted"}
+
+```{r}
+types %>% 
+  kbl() %>% 
+  add_header_above(c(" " = 1, "Data strategy" = 2)) %>% 
+  column_spec(1, bold = TRUE) %>% 
+  column_spec(2, color = c("black", "white")) %>% 
+  column_spec(3, color = c("black", "white"))
+```
+
+## Types of survey research design {visibility="uncounted"}
+
+```{r}
+types %>% 
+  kbl() %>% 
+  add_header_above(c(" " = 1, "Data strategy" = 2)) %>% 
+  column_spec(1, bold = TRUE) %>% 
+  column_spec(3, color = c("black", "white"))
+```
+
+## Types of survey research design {visibility="uncounted"}
+
+```{r}
+types %>% 
+  kbl() %>% 
+  add_header_above(c(" " = 1, "Data strategy" = 2)) %>% 
+  column_spec(1, bold = TRUE)
+```
+
+. . .
+
+&nbsp;
+
+Survey experiments are **experimental** data strategies that answer a **causal** inquiry
+
+::: aside
+Technically, list experiments are survey experiments too.
+:::
+
+## Survey experiments
+
+::: incremental
+- Assign respondents to **conditions**
+
+- Usually by **random assignment**
+
+- Each condition is a different version of a **question** or **vignette**
+
+- **Goal:** Understand the effect of different conditions on the outcome question if interest
+
+- How does this work?
+
+:::
+
+## Taking a step back
+
+::: incremental
+
+- Two ways to express functional relations
+
+1. **Structural causal models** `(two weeks ago)`
+
+2. **Potential outcomes framework** `(today)`
+
+:::
+
+::: {style="text-align: center"}
+# Potential outcomes framework {background-color="#FDBF57"}
+:::
+
+::: {style="text-align: center"}
+## Next Week {.center background-color="#8BD3E6"}
+### Convenience Samples
+
+**Focus on:** TBD
+:::
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::

@@ -1069,5 +1069,103 @@
     "title": "Public Opinion and Policy",
     "section": "",
     "text": "POLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/05_slides.html#survey-experiments",
+    "href": "slides/05_slides.html#survey-experiments",
+    "title": "Public Opinion and Policy",
+    "section": "Survey Experiments",
+    "text": "Survey Experiments\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/05_slides.html#announcements",
+    "href": "slides/05_slides.html#announcements",
+    "title": "Public Opinion and Policy",
+    "section": "Announcements",
+    "text": "Announcements\n\nSchedule group meetings before break!\nNeed help with R? Check the Data Analysis Support Hub at Mac\nYou can book virtual research consultations with an expert"
+  },
+  {
+    "objectID": "slides/05_slides.html#last-week",
+    "href": "slides/05_slides.html#last-week",
+    "title": "Public Opinion and Policy",
+    "section": "Last week",
+    "text": "Last week\n\nWe discussed and explored techniques to reduce sensitivity bias\nSome techniques are observational (e.g. randomized response)\nSome techniques are experimental (e.g. list experiment)\nToday: Discuss surveys using experiments more generally"
+  },
+  {
+    "objectID": "slides/05_slides.html#today",
+    "href": "slides/05_slides.html#today",
+    "title": "Public Opinion and Policy",
+    "section": "Today",
+    "text": "Today"
+  },
+  {
+    "objectID": "slides/05_slides.html#next-week",
+    "href": "slides/05_slides.html#next-week",
+    "title": "Public Opinion and Policy",
+    "section": "Next Week",
+    "text": "Next Week\nConvenience Samples\nFocus on: TBD"
+  },
+  {
+    "objectID": "slides/05_slides.html#break-time",
+    "href": "slides/05_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/05_slides.html#fa-laptop-code-lab",
+    "href": "slides/05_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design",
+    "href": "slides/05_slides.html#types-of-survey-research-design",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design-1",
+    "href": "slides/05_slides.html#types-of-survey-research-design-1",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design-2",
+    "href": "slides/05_slides.html#types-of-survey-research-design-2",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design-3",
+    "href": "slides/05_slides.html#types-of-survey-research-design-3",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design-4",
+    "href": "slides/05_slides.html#types-of-survey-research-design-4",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment \n  \n\n\n\n\n\n \nSurvey experiments are experimental data strategies that answer a causal inquiry\n\n\n\nTechnically, list experiments are survey experiments too."
+  },
+  {
+    "objectID": "slides/05_slides.html#survey-experiments-2",
+    "href": "slides/05_slides.html#survey-experiments-2",
+    "title": "Public Opinion and Policy",
+    "section": "Survey experiments",
+    "text": "Survey experiments\n\n\nAssign respondents to conditions\nUsually by random assignment\nEach condition is a different version of a question or vignette\nGoal: Understand the effect of different conditions on the outcome question if interest\nHow does this work?"
+  },
+  {
+    "objectID": "slides/05_slides.html#taking-a-step-back",
+    "href": "slides/05_slides.html#taking-a-step-back",
+    "title": "Public Opinion and Policy",
+    "section": "Taking a step back",
+    "text": "Taking a step back\n\n\nTwo ways to express functional relations\n\n\nStructural causal models (two weeks ago)\nPotential outcomes framework (today)"
   }
 ]
