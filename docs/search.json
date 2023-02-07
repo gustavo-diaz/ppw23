@@ -641,7 +641,7 @@
     "href": "slides/03_slides.html#part-3-probability-distribution-over-exogenous-variables",
     "title": "Public Opinion and Policy",
     "section": "Part 3: Probability distribution over exogenous variables",
-    "text": "Part 3: Probability distribution over exogenous variables\n\nAn explanation of how exogenous variables are generated\n\n\n\nExamples\n\n\n\\(Z \\sim \\text{Bern}(p)\\) with \\(p = 0.1\\)\n\n\n\n\n\\(U \\sim N(\\mu, \\sigma)\\) with \\(\\mu = 0\\) and \\(\\sigma = 1\\)"
+    "text": "Part 3: Probability distribution over exogenous variables\n\nAn explanation of how exogenous variables are generated\n\n\nExamples\n\n\n\\(Z \\sim \\text{Bern}(p)\\) with \\(p = 0.1\\)\n\n\n\n\n\\(U \\sim N(\\mu, \\sigma)\\) with \\(\\mu = 0\\) and \\(\\sigma = 1\\)"
   },
   {
     "objectID": "slides/03_slides.html#what-are-panel-surveys",
@@ -697,7 +697,7 @@
     "href": "slides/03_slides.html#next-week",
     "title": "Public Opinion and Policy",
     "section": "Next Week",
-    "text": "Next Week\n\nSensitive Questions\nFocus on: Which research design seems more appropriate to elicit honest answers?"
+    "text": "Next Week\nSensitive Questions\nFocus on: Which research design seems more appropriate to elicit honest answers?"
   },
   {
     "objectID": "slides/03_slides.html#break-time",
@@ -709,6 +709,454 @@
   {
     "objectID": "slides/03_slides.html#fa-laptop-code-lab",
     "href": "slides/03_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
+    "objectID": "slides/04_slides.html#sensitive-questions",
+    "href": "slides/04_slides.html#sensitive-questions",
+    "title": "Public Opinion and Policy",
+    "section": "Sensitive Questions",
+    "text": "Sensitive Questions\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/04_slides.html#announcements",
+    "href": "slides/04_slides.html#announcements",
+    "title": "Public Opinion and Policy",
+    "section": "Announcements",
+    "text": "Announcements\n\nGroups put in contact later today\nTopic is highly negotiable\nDon’t forget to schedule a meeting before break!"
+  },
+  {
+    "objectID": "slides/04_slides.html#last-week",
+    "href": "slides/04_slides.html#last-week",
+    "title": "Public Opinion and Policy",
+    "section": "Last week",
+    "text": "Last week\n\nElements of models (signature, functional relations, probability distributions)\nPanel surveys: Good for understanding before-after effects, expensive to conduct"
+  },
+  {
+    "objectID": "slides/04_slides.html#today",
+    "href": "slides/04_slides.html#today",
+    "title": "Public Opinion and Policy",
+    "section": "Today",
+    "text": "Today\n\nElements of data strategies and answer strategies\nResearch designs for sensitive questions\nLab: Practice writing research designs on your own"
+  },
+  {
+    "objectID": "slides/04_slides.html#elements-of-a-data-strategy",
+    "href": "slides/04_slides.html#elements-of-a-data-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Elements of a data strategy",
+    "text": "Elements of a data strategy\n\n\nSampling (random, nonrandom)\nTreatment assignment (if applicable)\nMeasurement (validity, reliability)"
+  },
+  {
+    "objectID": "slides/04_slides.html#measurement-as-multiple-independent-draws",
+    "href": "slides/04_slides.html#measurement-as-multiple-independent-draws",
+    "title": "Public Opinion and Policy",
+    "section": "Measurement as multiple independent draws",
+    "text": "Measurement as multiple independent draws"
+  },
+  {
+    "objectID": "slides/04_slides.html#elements-of-an-answer-strategy",
+    "href": "slides/04_slides.html#elements-of-an-answer-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Elements of an answer strategy",
+    "text": "Elements of an answer strategy\n\n\nAnswer characterization (domain, units, outcomes, conditions)\nUncertainty (Bayesian, frequentist)\nProcedure (e.g. OLS, difference-in-means)"
+  },
+  {
+    "objectID": "slides/04_slides.html#types-of-answer-strategies",
+    "href": "slides/04_slides.html#types-of-answer-strategies",
+    "title": "Public Opinion and Policy",
+    "section": "Types of answer strategies",
+    "text": "Types of answer strategies\n\n\nPoint estimation\n\n\n\n\n\n\n\n\n\nExample\n\n\n\nWhat is the proportion of French speakers?\nWhat is the effect of taking a political science course on political interest?"
+  },
+  {
+    "objectID": "slides/04_slides.html#types-of-answer-strategies-1",
+    "href": "slides/04_slides.html#types-of-answer-strategies-1",
+    "title": "Public Opinion and Policy",
+    "section": "Types of answer strategies",
+    "text": "Types of answer strategies\n\nHypothesis testing\n\n\n\n\n\n\n\n\nExample\n\n\n\nHas the proportion of French speakers increased?\nIs there an effect of taking a political science course on political interest?"
+  },
+  {
+    "objectID": "slides/04_slides.html#why-do-people-lie-in-surveys",
+    "href": "slides/04_slides.html#why-do-people-lie-in-surveys",
+    "title": "Public Opinion and Policy",
+    "section": "Why do people lie in surveys?",
+    "text": "Why do people lie in surveys?\n\n\nInattention\nSatisficing\nLimited options\nDemand effects\nSocial desirability/sensitivity bias"
+  },
+  {
+    "objectID": "slides/04_slides.html#why-do-people-lie-in-surveys-1",
+    "href": "slides/04_slides.html#why-do-people-lie-in-surveys-1",
+    "title": "Public Opinion and Policy",
+    "section": "Why do people lie in surveys?",
+    "text": "Why do people lie in surveys?\n\nInattention\nSatisficing\nLimited options\nDemand effects\nSocial desirability/sensitivity bias"
+  },
+  {
+    "objectID": "slides/04_slides.html#how-to-prevent-lying",
+    "href": "slides/04_slides.html#how-to-prevent-lying",
+    "title": "Public Opinion and Policy",
+    "section": "How to prevent lying?",
+    "text": "How to prevent lying?\n\n\nAdd noise to the question\nTwo approaches:\n\n\nDistract from the sensitive attitude/behavior\nGuarantee anonymity\n\n\nDifferent designs vary on how they combine the two"
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response",
+    "href": "slides/04_slides.html#randomized-response",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-1",
+    "href": "slides/04_slides.html#randomized-response-1",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-2",
+    "href": "slides/04_slides.html#randomized-response-2",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-3",
+    "href": "slides/04_slides.html#randomized-response-3",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-4",
+    "href": "slides/04_slides.html#randomized-response-4",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n\n \n[TURN AWAY FROM RESPONDENT]\n\n\n \nNow you throw the dice so that I cannot see what comes out."
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-5",
+    "href": "slides/04_slides.html#randomized-response-5",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \n[TURN AWAY FROM RESPONDENT]\n \nHave you thrown the dice?"
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-6",
+    "href": "slides/04_slides.html#randomized-response-6",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \n[TURN AWAY FROM RESPONDENT]\n \nHave you picked it up?"
+  },
+  {
+    "objectID": "slides/04_slides.html#randomized-response-7",
+    "href": "slides/04_slides.html#randomized-response-7",
+    "title": "Public Opinion and Policy",
+    "section": "Randomized response",
+    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \nNow, during the height of the conflict in 2007 and 2008 (in Afghanistan), did you know any militants, like a family member, a friend, or someone you talked to on a regular basis?\n\nPlease, before you answer, take note of the number you rolled on the dice."
+  },
+  {
+    "objectID": "slides/04_slides.html#answer-strategy",
+    "href": "slides/04_slides.html#answer-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Answer strategy",
+    "text": "Answer strategy\n\n\nWe know that about \\(1/6 \\approx 0.17\\) respondents said yes because they rolled a \nSo if \\(30\\%\\) in total said yes\nWe have \\(\\widehat{Y} = 0.3 - 0.17 = 0.13\\) as our estimate of the proportion of the population who know a member of a militant organization\nBut we do not know who they are in our survey!"
+  },
+  {
+    "objectID": "slides/04_slides.html#assumptions",
+    "href": "slides/04_slides.html#assumptions",
+    "title": "Public Opinion and Policy",
+    "section": "Assumptions",
+    "text": "Assumptions\n\n\n\n\n\n\n\n1. Honesty given protection\n\n\nPeople respond honestly when guaranteed anonymity.\n\n\n\n\n\n\n\n\n\n\n\n2. One-sided lying\n\n\nThose who do not hold the sensitive trait never falsely claim to bear it.\n\n\n\n\n\n\nThese cannot be verified with data!"
+  },
+  {
+    "objectID": "slides/04_slides.html#list-experiment",
+    "href": "slides/04_slides.html#list-experiment",
+    "title": "Public Opinion and Policy",
+    "section": "List experiment",
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset."
+  },
+  {
+    "objectID": "slides/04_slides.html#list-experiment-1",
+    "href": "slides/04_slides.html#list-experiment-1",
+    "title": "Public Opinion and Policy",
+    "section": "List experiment",
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you."
+  },
+  {
+    "objectID": "slides/04_slides.html#list-experiment-2",
+    "href": "slides/04_slides.html#list-experiment-2",
+    "title": "Public Opinion and Policy",
+    "section": "List experiment",
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\n\nControl group\n\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment"
+  },
+  {
+    "objectID": "slides/04_slides.html#list-experiment-3",
+    "href": "slides/04_slides.html#list-experiment-3",
+    "title": "Public Opinion and Policy",
+    "section": "List experiment",
+    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\nTreatment group\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment\nA black family moving next door"
+  },
+  {
+    "objectID": "slides/04_slides.html#answer-strategy-1",
+    "href": "slides/04_slides.html#answer-strategy-1",
+    "title": "Public Opinion and Policy",
+    "section": "Answer strategy",
+    "text": "Answer strategy\n\n\nRespondents are randomly assigned to conditions\nDifferences in responses can only be attributed to the presence/absence of the sensitive item\nSo \\(\\widehat{Y} = \\text{Mean(treatment)} - \\text{Mean(control)})\\) estimates the proportion in the population of interest who would get upset if a black family moves next door\nBut we do not know who they are in our survey!"
+  },
+  {
+    "objectID": "slides/04_slides.html#assumptions-1",
+    "href": "slides/04_slides.html#assumptions-1",
+    "title": "Public Opinion and Policy",
+    "section": "Assumptions",
+    "text": "Assumptions\n\n\n\n\n\n\n\n1. No liars\n\n\nThose who do not hold the sensitive item never falsely claim to bear it.\n\n\n\n\n\n\n\n\n\n\n\n2. No design effects\n\n\nIncluding the sensitive item does not change how participants respond to the baseline items\n\n\n\n\n\n\nThese can only be evaluated indirectly"
+  },
+  {
+    "objectID": "slides/04_slides.html#other-research-designs",
+    "href": "slides/04_slides.html#other-research-designs",
+    "title": "Public Opinion and Policy",
+    "section": "Other research designs",
+    "text": "Other research designs\n\n\nBuilding trust with respondents\nEndorsement experiments\nConjoint experiments\nNetwork scale-up method\nVariants of the randomized response and list experiment"
+  },
+  {
+    "objectID": "slides/04_slides.html#vignette",
+    "href": "slides/04_slides.html#vignette",
+    "title": "Public Opinion and Policy",
+    "section": "Vignette",
+    "text": "Vignette\nBelow you will read three things that sometimes people oppose or are against. After you read all three, just tell us HOW MANY of them you OPPOSE. We don’t want to know which ones, just HOW MANY."
+  },
+  {
+    "objectID": "slides/04_slides.html#vignette-1",
+    "href": "slides/04_slides.html#vignette-1",
+    "title": "Public Opinion and Policy",
+    "section": "Vignette",
+    "text": "Vignette\n\nThe federal government increasing assistance to the poor\nProfessional athletes making millions of dollars per year\nLarge corporations polluting the environment\n\n\n\n\nTreatment 1\n4. Granting citizenship to a legal immigrant who is Muslim\n\nTreatment 2\n4. Granting citizenship to a legal immigrant who is Christian"
+  },
+  {
+    "objectID": "slides/04_slides.html#next-week",
+    "href": "slides/04_slides.html#next-week",
+    "title": "Public Opinion and Policy",
+    "section": "Next Week",
+    "text": "Next Week\nSurvey Experiments\nFocus on: What are they good for?"
+  },
+  {
+    "objectID": "slides/04_slides.html#break-time",
+    "href": "slides/04_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/04_slides.html#fa-laptop-code-lab",
+    "href": "slides/04_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
+    "objectID": "slides/05_slides.html#survey-experiments",
+    "href": "slides/05_slides.html#survey-experiments",
+    "title": "Public Opinion and Policy",
+    "section": "Survey Experiments",
+    "text": "Survey Experiments\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/05_slides.html#announcements",
+    "href": "slides/05_slides.html#announcements",
+    "title": "Public Opinion and Policy",
+    "section": "Announcements",
+    "text": "Announcements\n\nSchedule group meetings before break!\nNeed help with R? Check the Data Analysis Support Hub at Mac\nYou can book virtual research consultations with an expert"
+  },
+  {
+    "objectID": "slides/05_slides.html#last-week",
+    "href": "slides/05_slides.html#last-week",
+    "title": "Public Opinion and Policy",
+    "section": "Last week",
+    "text": "Last week\n\nWe discussed and explored techniques to reduce sensitivity bias\nSome techniques are observational (e.g. randomized response)\nSome techniques are experimental (e.g. list experiment)\nToday: Discuss surveys using experiments more generally"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design",
+    "href": "slides/05_slides.html#types-of-survey-research-design",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design-1",
+    "href": "slides/05_slides.html#types-of-survey-research-design-1",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design-2",
+    "href": "slides/05_slides.html#types-of-survey-research-design-2",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design-3",
+    "href": "slides/05_slides.html#types-of-survey-research-design-3",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
+  },
+  {
+    "objectID": "slides/05_slides.html#types-of-survey-research-design-4",
+    "href": "slides/05_slides.html#types-of-survey-research-design-4",
+    "title": "Public Opinion and Policy",
+    "section": "Types of survey research design",
+    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment \n  \n\n\n\n\n\n \nSurvey experiments are experimental data strategies that answer a causal inquiry\n\n\n\nTechnically, list experiments are survey experiments too."
+  },
+  {
+    "objectID": "slides/05_slides.html#survey-experiments-2",
+    "href": "slides/05_slides.html#survey-experiments-2",
+    "title": "Public Opinion and Policy",
+    "section": "Survey experiments",
+    "text": "Survey experiments\n\n\nAssign respondents to conditions\nUsually by random assignment\nEach condition is a different version of a question or vignette\nGoal: Understand the effect of different conditions on the outcome question if interest\nHow does this work?"
+  },
+  {
+    "objectID": "slides/05_slides.html#taking-a-step-back",
+    "href": "slides/05_slides.html#taking-a-step-back",
+    "title": "Public Opinion and Policy",
+    "section": "Taking a step back",
+    "text": "Taking a step back\n\n\nTwo ways to express functional relations\n\n\nStructural causal models (two weeks ago)\nPotential outcomes framework (today)"
+  },
+  {
+    "objectID": "slides/05_slides.html#notation",
+    "href": "slides/05_slides.html#notation",
+    "title": "Public Opinion and Policy",
+    "section": "Notation",
+    "text": "Notation\n\n\n\\(i\\): unit of analysis (e.g. individuals, schools, countries)\n\\(Z_i = \\{0,1\\}\\) indicates a condition (1: Treatment, 0: Control)\n\\(Y_i(Z_i)\\) is the individual potential outcome\n\\(Y_i(0)\\): Potential outcome under control\n\\(Y_i(1)\\): Potential outcome under treatment"
+  },
+  {
+    "objectID": "slides/05_slides.html#toy-example",
+    "href": "slides/05_slides.html#toy-example",
+    "title": "Public Opinion and Policy",
+    "section": "Toy example",
+    "text": "Toy example\n\n\n\n \n  \n    ID \n    Female \n    \\(Y_i(1)\\) \n    \\(Y_i(0)\\) \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n  \n  \n    2 \n    0 \n    1 \n    0 \n  \n  \n    3 \n    1 \n    1 \n    0 \n  \n  \n    4 \n    1 \n    1 \n    1 \n  \n\n\n\n\n\n\n\\(\\tau_i = Y_i(1) - Y_i(0)\\) is the individual causal effect"
+  },
+  {
+    "objectID": "slides/05_slides.html#toy-example-1",
+    "href": "slides/05_slides.html#toy-example-1",
+    "title": "Public Opinion and Policy",
+    "section": "Toy example",
+    "text": "Toy example\n\n\n\n \n  \n    ID \n    Female \n    \\(Y_i(1)\\) \n    \\(Y_i(0)\\) \n    \\(\\tau_i\\) \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    2 \n    0 \n    1 \n    0 \n    1 \n  \n  \n    3 \n    1 \n    1 \n    0 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n    0 \n  \n\n\n\n\n\n\\(\\tau_i = Y_i(1) - Y_i(0)\\) is the individual causal effect\n\n\n\n\\(\\tau = (1/n) \\sum_{i=1}^n \\tau_i = E[\\tau_i]\\) is the inquiry\n\n\n\n\nWe call \\(\\tau\\) the Average Treatment Effect (ATE)"
+  },
+  {
+    "objectID": "slides/05_slides.html#a-note-on-notation",
+    "href": "slides/05_slides.html#a-note-on-notation",
+    "title": "Public Opinion and Policy",
+    "section": "A note on notation",
+    "text": "A note on notation\n\n\nGreek\n\n\nLetters like \\(\\mu\\) denote estimands\nA hat \\(\\hat{\\mu}\\) denotes estimators\n\n\n\nLatin\n\n\nLetters like \\(X\\) denote actual variables in our data\nA bar \\(\\bar{X}\\) denotes an estimate calculated from our data\n\n\n\n\n\n\n\\(X \\rightarrow \\bar{X} \\rightarrow \\hat{\\mu} \\xrightarrow{\\text{hopefully!}} \\mu\\)\n \n\\(\\text{Data} \\rightarrow \\text{Estimate} \\rightarrow \\text{Estimator} \\xrightarrow{\\text{hopefully!}} \\text{Estimand}\\)"
+  },
+  {
+    "objectID": "slides/05_slides.html#challenge",
+    "href": "slides/05_slides.html#challenge",
+    "title": "Public Opinion and Policy",
+    "section": "Challenge",
+    "text": "Challenge\n\n\nWe want to know the ATE \\(\\tau\\)\nThis requires us to know \\(\\tau_i = Y_i(1) - Y_i(0)\\)\nBut when we assign treatment conditions we only observe one of the potential outcomes \\(Y_i(1)\\) or \\(Y_i(0)\\)\nMeaning that \\(\\tau_i\\) is impossible to calculate!\nThis is the fundamental problem of causal inference"
+  },
+  {
+    "objectID": "slides/05_slides.html#continuing-the-example",
+    "href": "slides/05_slides.html#continuing-the-example",
+    "title": "Public Opinion and Policy",
+    "section": "Continuing the example",
+    "text": "Continuing the example\n\n\n\n \n\n\nUnobserved\n\n  \n    ID \n    Female \n    \\(Y_i(1)\\) \n    \\(Y_i(0)\\) \n    \\(\\tau_i\\) \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    2 \n    0 \n    1 \n    0 \n    1 \n  \n  \n    3 \n    1 \n    1 \n    0 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n    0 \n  \n\n\n\n\n\n\nWe can randomly assign conditions \\(Z_i\\)"
+  },
+  {
+    "objectID": "slides/05_slides.html#continuing-the-example-1",
+    "href": "slides/05_slides.html#continuing-the-example-1",
+    "title": "Public Opinion and Policy",
+    "section": "Continuing the example",
+    "text": "Continuing the example\n\n\n\n \n\n\nUnobserved\nObserved\n\n  \n    ID \n    Female \n    \\(Y_i(1)\\) \n    \\(Y_i(0)\\) \n    \\(\\tau_i\\) \n    \\(Z_i\\) \n    \\(Y_i\\) \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n    0 \n    1 \n    0 \n  \n  \n    2 \n    0 \n    1 \n    0 \n    1 \n    0 \n    0 \n  \n  \n    3 \n    1 \n    1 \n    0 \n    1 \n    1 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n    0 \n    0 \n    1 \n  \n\n\n\n\n\n\nWe observe outcome \\(Y_i\\) depending on assigned condition \\(Z_i\\)\nWe can use this to approximate the ATE with an estimator"
+  },
+  {
+    "objectID": "slides/05_slides.html#estimator-for-the-ate",
+    "href": "slides/05_slides.html#estimator-for-the-ate",
+    "title": "Public Opinion and Policy",
+    "section": "Estimator for the ATE",
+    "text": "Estimator for the ATE\n\nAdditive property of expectations:\n\n\\[\n\\tau = E[\\tau_i] = E[Y_i(1) - Y_i(0)] \\\\\n= \\underbrace{E[Y_i(1)] - E[Y_i(0)]}_{\\text{Difference in means between potential outcomes}}\n\\]\n\n\nWe cannot calculate this, but we can calculate\n\n\\[\n\\hat{\\tau} = \\underbrace{E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]}_{\\text{Difference in means between conditions}}\n\\]"
+  },
+  {
+    "objectID": "slides/05_slides.html#randomization",
+    "href": "slides/05_slides.html#randomization",
+    "title": "Public Opinion and Policy",
+    "section": "Randomization",
+    "text": "Randomization\n\n\nIf we can claim that units are selected into conditions \\(Z_i\\) independently from potential outcomes\nThen we can claim that \\(\\hat{\\tau}\\) is a good approximation of \\(\\tau\\)\nIn which case we say that \\(\\hat{\\tau}\\) is an unbiased estimator of the ATE\nRandom assignment of units into conditions guarantees this in expectation"
+  },
+  {
+    "objectID": "slides/05_slides.html#assumptions",
+    "href": "slides/05_slides.html#assumptions",
+    "title": "Public Opinion and Policy",
+    "section": "Assumptions",
+    "text": "Assumptions\n\n\n\n\n\n\n\n1. Ignorability\n\n\nAssignment to conditions does not depend on potential outcomes. This is guaranteed if randomization works properly.\n\n\n\n\n\n\n\n\n\n\n\n2. Non-interference\n\n\nIndividual potential outcomes do not depend on the treatment assignment of others. If they do, then we need a more complicated model.\n\n\n\n\n\n\nWe cannot evaluate these assumptions with data but we can convince our audience with careful research design"
+  },
+  {
+    "objectID": "slides/05_slides.html#tomz-and-weeks-2013-public-opinion-and-the-democratic-peace",
+    "href": "slides/05_slides.html#tomz-and-weeks-2013-public-opinion-and-the-democratic-peace",
+    "title": "Public Opinion and Policy",
+    "section": "Tomz and Weeks (2013): “Public Opinion and the Democratic Peace”",
+    "text": "Tomz and Weeks (2013): “Public Opinion and the Democratic Peace”\n\n\nSurveys in the UK (\\(n = 762\\)) and US (\\(n = 1273\\))\nApril-May 2010\nOutcome: Support for military strike\n2x2x2 survey experiment"
+  },
+  {
+    "objectID": "slides/05_slides.html#vignette-design",
+    "href": "slides/05_slides.html#vignette-design",
+    "title": "Public Opinion and Policy",
+    "section": "Vignette design",
+    "text": "Vignette design\n\n\n\nUK\n\nPolitical regime: Democracy/not a democracy\nMilitary alliances: Ally/not an ally\nMilitary power: As strong/half as strong\n\n\nUS\n\nPolitical regime: Democracy/not a democracy\nMilitary alliances: Ally/not an ally\nTrade: High level/not high level"
+  },
+  {
+    "objectID": "slides/05_slides.html#results-for-democracy",
+    "href": "slides/05_slides.html#results-for-democracy",
+    "title": "Public Opinion and Policy",
+    "section": "Results for democracy",
+    "text": "Results for democracy"
+  },
+  {
+    "objectID": "slides/05_slides.html#results-for-other-factors",
+    "href": "slides/05_slides.html#results-for-other-factors",
+    "title": "Public Opinion and Policy",
+    "section": "Results for other factors",
+    "text": "Results for other factors"
+  },
+  {
+    "objectID": "slides/05_slides.html#eggers-et-al-2017-corruption-accountability-and-gender",
+    "href": "slides/05_slides.html#eggers-et-al-2017-corruption-accountability-and-gender",
+    "title": "Public Opinion and Policy",
+    "section": "Eggers et al (2017): “Corruption, Accountability, and Gender”",
+    "text": "Eggers et al (2017): “Corruption, Accountability, and Gender”"
+  },
+  {
+    "objectID": "slides/05_slides.html#profile-variants",
+    "href": "slides/05_slides.html#profile-variants",
+    "title": "Public Opinion and Policy",
+    "section": "Profile variants",
+    "text": "Profile variants\n\n\n\n \n  \n    Factor \n    MP \n    Challenger \n  \n \n\n  \n    Party \n    Labour, Conservative \n    Labour, Conservative, Liberal Democrat \n  \n  \n    Age \n    45, 52, 64 \n    40, 52, 64 \n  \n  \n    Gender \n    Male, Female \n    Male, Female \n  \n  \n    Previous job \n    General practitioner, journalist, political advisor, teacher, business manager \n    General practitioner, journalist, political advisor, teacher, business manager"
+  },
+  {
+    "objectID": "slides/05_slides.html#results",
+    "href": "slides/05_slides.html#results",
+    "title": "Public Opinion and Policy",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "slides/05_slides.html#next-week",
+    "href": "slides/05_slides.html#next-week",
+    "title": "Public Opinion and Policy",
+    "section": "Next Week",
+    "text": "Next Week\nConvenience Samples\nFocus on: Should findings generalize?"
+  },
+  {
+    "objectID": "slides/05_slides.html#break-time",
+    "href": "slides/05_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/05_slides.html#fa-laptop-code-lab",
+    "href": "slides/05_slides.html#fa-laptop-code-lab",
     "title": "Public Opinion and Policy",
     "section": " Lab",
     "text": "Lab"
@@ -761,411 +1209,5 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
-  },
-  {
-    "objectID": "slides/04_slides.html#sensitive-questions",
-    "href": "slides/04_slides.html#sensitive-questions",
-    "title": "Public Opinion and Policy",
-    "section": "Sensitive Questions",
-    "text": "Sensitive Questions\n \nPOLSCI 4SS3\nWinter 2023"
-  },
-  {
-    "objectID": "slides/04_slides.html#announcements",
-    "href": "slides/04_slides.html#announcements",
-    "title": "Public Opinion and Policy",
-    "section": "Announcements",
-    "text": "Announcements\n\nGroups put in contact later today\nTopic is highly negotiable\nDon’t forget to schedule a meeting before break!"
-  },
-  {
-    "objectID": "slides/04_slides.html#last-week",
-    "href": "slides/04_slides.html#last-week",
-    "title": "Public Opinion and Policy",
-    "section": "Last week",
-    "text": "Last week\n\nElements of models (signature, functional relations, probability distributions)\nPanel surveys: Good for understanding before-after effects, expensive to conduct"
-  },
-  {
-    "objectID": "slides/04_slides.html#today",
-    "href": "slides/04_slides.html#today",
-    "title": "Public Opinion and Policy",
-    "section": "Today",
-    "text": "Today\n\nElements of data strategies and answer strategies\nResearch designs for sensitive questions\nLab: Practice writing research designs on your own"
-  },
-  {
-    "objectID": "slides/04_slides.html#what",
-    "href": "slides/04_slides.html#what",
-    "title": "Public Opinion and Policy",
-    "section": "What?",
-    "text": "What?"
-  },
-  {
-    "objectID": "slides/04_slides.html#next-week",
-    "href": "slides/04_slides.html#next-week",
-    "title": "Public Opinion and Policy",
-    "section": "Next Week",
-    "text": "Next Week\n\nSurvey Experiments\nFocus on: What are they good for?"
-  },
-  {
-    "objectID": "slides/04_slides.html#break-time",
-    "href": "slides/04_slides.html#break-time",
-    "title": "Public Opinion and Policy",
-    "section": "Break time!",
-    "text": "Break time!"
-  },
-  {
-    "objectID": "slides/04_slides.html#fa-laptop-code-lab",
-    "href": "slides/04_slides.html#fa-laptop-code-lab",
-    "title": "Public Opinion and Policy",
-    "section": " Lab",
-    "text": "Lab"
-  },
-  {
-    "objectID": "slides/04_slides.html#elements-of-a-data-strategy",
-    "href": "slides/04_slides.html#elements-of-a-data-strategy",
-    "title": "Public Opinion and Policy",
-    "section": "Elements of a data strategy",
-    "text": "Elements of a data strategy\n\n\nSampling (random, nonrandom)\nTreatment assignment (if applicable)\nMeasurement (validity, reliability)"
-  },
-  {
-    "objectID": "slides/04_slides.html#measurement-as-multiple-independent-draws",
-    "href": "slides/04_slides.html#measurement-as-multiple-independent-draws",
-    "title": "Public Opinion and Policy",
-    "section": "Measurement as multiple independent draws",
-    "text": "Measurement as multiple independent draws"
-  },
-  {
-    "objectID": "slides/04_slides.html#types-of-answer-strategies",
-    "href": "slides/04_slides.html#types-of-answer-strategies",
-    "title": "Public Opinion and Policy",
-    "section": "Types of answer strategies",
-    "text": "Types of answer strategies\n\n\nPoint estimation\n\n\n\n\n\n\n\n\n\nExample\n\n\n\n\nWhat is the proportion of French speakers?\nWhat is the effect of taking a political science course on political interest?"
-  },
-  {
-    "objectID": "slides/04_slides.html#elements-of-an-answer-strategy",
-    "href": "slides/04_slides.html#elements-of-an-answer-strategy",
-    "title": "Public Opinion and Policy",
-    "section": "Elements of an answer strategy",
-    "text": "Elements of an answer strategy\n\n\nAnswer characterization (domain, units, outcomes, conditions)\nUncertainty (Bayesian, frequentist)\nProcedure (e.g. OLS, difference-in-means)"
-  },
-  {
-    "objectID": "slides/04_slides.html#example-1",
-    "href": "slides/04_slides.html#example-1",
-    "title": "Public Opinion and Policy",
-    "section": "Example",
-    "text": "Example\n\nHypothesis testing\n\n\n\n\n\n\n\n\nExample\n\n\n\nHas the proportion of French speakers increased?\nIs there an effect of taking a political science course on political interest?"
-  },
-  {
-    "objectID": "slides/04_slides.html#types-of-answer-strategies-1",
-    "href": "slides/04_slides.html#types-of-answer-strategies-1",
-    "title": "Public Opinion and Policy",
-    "section": "Types of answer strategies",
-    "text": "Types of answer strategies\n\nHypothesis testing\n\n\n\n\n\n\n\n\nExample\n\n\n\n\nHas the proportion of French speakers increased?\nIs there an effect of taking a political science course on political interest?"
-  },
-  {
-    "objectID": "slides/04_slides.html#why-do-people-lie-in-surveys",
-    "href": "slides/04_slides.html#why-do-people-lie-in-surveys",
-    "title": "Public Opinion and Policy",
-    "section": "Why do people lie in surveys?",
-    "text": "Why do people lie in surveys?\n\n\nInattention\nSatisficing\nLimited options\nDemand effects\nSocial desirability/sensitivity bias"
-  },
-  {
-    "objectID": "slides/04_slides.html#why-do-people-lie-in-surveys-1",
-    "href": "slides/04_slides.html#why-do-people-lie-in-surveys-1",
-    "title": "Public Opinion and Policy",
-    "section": "Why do people lie in surveys?",
-    "text": "Why do people lie in surveys?\n\nInattention\nSatisficing\nLimited options\nDemand effects\nSocial desirability/sensitivity bias"
-  },
-  {
-    "objectID": "slides/04_slides.html#how-to-prevent-lying",
-    "href": "slides/04_slides.html#how-to-prevent-lying",
-    "title": "Public Opinion and Policy",
-    "section": "How to prevent lying?",
-    "text": "How to prevent lying?\n\n\nAdd noise to the question\nTwo approaches:\n\n\nDistract from the sensitive attitude/behavior\nGuarantee anonymity\n\n\nDifferent designs vary on how they combine the two"
-  },
-  {
-    "objectID": "slides/04_slides.html#randomized-response",
-    "href": "slides/04_slides.html#randomized-response",
-    "title": "Public Opinion and Policy",
-    "section": "Randomized response",
-    "text": "Randomized response\nFor this question, I want you to answer yes or no."
-  },
-  {
-    "objectID": "slides/04_slides.html#list-experiment",
-    "href": "slides/04_slides.html#list-experiment",
-    "title": "Public Opinion and Policy",
-    "section": "List experiment",
-    "text": "List experiment\nNow I am going to read you three things that make people angry or upset."
-  },
-  {
-    "objectID": "slides/04_slides.html#endorsement-experiment",
-    "href": "slides/04_slides.html#endorsement-experiment",
-    "title": "Public Opinion and Policy",
-    "section": "Endorsement experiment",
-    "text": "Endorsement experiment"
-  },
-  {
-    "objectID": "slides/04_slides.html#randomized-response-1",
-    "href": "slides/04_slides.html#randomized-response-1",
-    "title": "Public Opinion and Policy",
-    "section": "Randomized response",
-    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw."
-  },
-  {
-    "objectID": "slides/04_slides.html#randomized-response-2",
-    "href": "slides/04_slides.html#randomized-response-2",
-    "title": "Public Opinion and Policy",
-    "section": "Randomized response",
-    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no."
-  },
-  {
-    "objectID": "slides/04_slides.html#randomized-response-3",
-    "href": "slides/04_slides.html#randomized-response-3",
-    "title": "Public Opinion and Policy",
-    "section": "Randomized response",
-    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes."
-  },
-  {
-    "objectID": "slides/04_slides.html#randomized-response-4",
-    "href": "slides/04_slides.html#randomized-response-4",
-    "title": "Public Opinion and Policy",
-    "section": "Randomized response",
-    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n\n \n[TURN AWAY FROM RESPONDENT]\n\n\n \nNow you throw the dice so that I cannot see what comes out."
-  },
-  {
-    "objectID": "slides/04_slides.html#randomized-response-5",
-    "href": "slides/04_slides.html#randomized-response-5",
-    "title": "Public Opinion and Policy",
-    "section": "Randomized response",
-    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \n[TURN AWAY FROM RESPONDENT]\n \nHave you thrown the dice?"
-  },
-  {
-    "objectID": "slides/04_slides.html#randomized-response-6",
-    "href": "slides/04_slides.html#randomized-response-6",
-    "title": "Public Opinion and Policy",
-    "section": "Randomized response",
-    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \n[TURN AWAY FROM RESPONDENT]\n \nHave you picked it up?"
-  },
-  {
-    "objectID": "slides/04_slides.html#randomized-response-7",
-    "href": "slides/04_slides.html#randomized-response-7",
-    "title": "Public Opinion and Policy",
-    "section": "Randomized response",
-    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If  shows on the dice, tell me no. If  shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \nNow, during the height of the conflict in 2007 and 2008 (in Afghanistan), did you know any militants, like a family member, a friend, or someone you talked to on a regular basis?\n\nPlease, before you answer, take note of the number you rolled on the dice."
-  },
-  {
-    "objectID": "slides/04_slides.html#randomized-response-8",
-    "href": "slides/04_slides.html#randomized-response-8",
-    "title": "Public Opinion and Policy",
-    "section": "Randomized response",
-    "text": "Randomized response\nFor this question, I want you to answer yes or no. But I want you to consider the number of your dice throw. If 1 shows on the dice, tell me no. If 6 shows, tell me yes. But if another number shows, tell me your own opinion about the question.\n \nNow, during the height of the conflict in 2007 and 2008 (in Afghanistan), did you know any militants, like a family member, a friend, or someone you talked to on a regular basis? Please, before you answer, take note of the number you rolled on the dice."
-  },
-  {
-    "objectID": "slides/04_slides.html#answer-strategy",
-    "href": "slides/04_slides.html#answer-strategy",
-    "title": "Public Opinion and Policy",
-    "section": "Answer strategy",
-    "text": "Answer strategy\n\n\nWe know that about \\(1/6 \\approx 0.17\\) respondents said yes because they rolled a \nSo if \\(30\\%\\) in total said yes\nWe have \\(\\widehat{Y} = 0.3 - 0.17 = 0.13\\) as our estimate of the proportion of the population who know a member of a militant organization\nBut we do not know who they are in our survey!"
-  },
-  {
-    "objectID": "slides/04_slides.html#list-experiment-1",
-    "href": "slides/04_slides.html#list-experiment-1",
-    "title": "Public Opinion and Policy",
-    "section": "List experiment",
-    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you."
-  },
-  {
-    "objectID": "slides/04_slides.html#list-experiment-2",
-    "href": "slides/04_slides.html#list-experiment-2",
-    "title": "Public Opinion and Policy",
-    "section": "List experiment",
-    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\n\n\nControl group\n\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment"
-  },
-  {
-    "objectID": "slides/04_slides.html#assumptions",
-    "href": "slides/04_slides.html#assumptions",
-    "title": "Public Opinion and Policy",
-    "section": "Assumptions",
-    "text": "Assumptions\n\n\n\n\n\n\n\n1. Honesty given protection\n\n\n\nPeople respond honestly when guaranteed anonymity.\n\n\n\n\n\n\n\n\n\n\n2. One-sided lying\n\n\n\nThose who do not hold the sensitive trait never falsely claim to bear it.\n\n\n\n\n\nThese cannot be verified with data!"
-  },
-  {
-    "objectID": "slides/04_slides.html#list-experiment-3",
-    "href": "slides/04_slides.html#list-experiment-3",
-    "title": "Public Opinion and Policy",
-    "section": "List experiment",
-    "text": "List experiment\nNow I am going to read you three things that make people angry or upset. After I read all three, just tell me HOW MANY of them upset you. I don’t want to know which ones, just HOW MANY.\n\nTreatment group\n\nThe federal government increasing the tax on gasoline\nProfessional athletes getting million-dollar contracts\nLarge corporations polluting the environment\nA black family moving next door"
-  },
-  {
-    "objectID": "slides/04_slides.html#other-research-designs",
-    "href": "slides/04_slides.html#other-research-designs",
-    "title": "Public Opinion and Policy",
-    "section": "Other research designs",
-    "text": "Other research designs\n\n\nBuilding trust with respondents\nEndorsement experiments\nConjoint experiments\nNetwork scale-up method\nVariants of the randomized response and list experiment"
-  },
-  {
-    "objectID": "slides/04_slides.html#answer-strategy-1",
-    "href": "slides/04_slides.html#answer-strategy-1",
-    "title": "Public Opinion and Policy",
-    "section": "Answer strategy",
-    "text": "Answer strategy\n\n\nRespondents are randomly assigned to conditions\nDifferences in responses can only be attributed to the presence/absence of the sensitive item\nSo \\(\\widehat{Y} = \\text{Mean(treatment)} - \\text{Mean(control)})\\) estimates the proportion in the population of interest who would get upset if a black family moves next door\nBut we do not know who they are in our survey!"
-  },
-  {
-    "objectID": "slides/04_slides.html#assumptions-1",
-    "href": "slides/04_slides.html#assumptions-1",
-    "title": "Public Opinion and Policy",
-    "section": "Assumptions",
-    "text": "Assumptions\n\n\n\n\n\n\n\n1. No liars\n\n\n\nThose who do not hold the sensitive item never falsely claim to bear it.\n\n\n\n\n\n\n\n\n\n\n2. No design effects\n\n\n\nIncluding the sensitive item does not change how participants respond to the baseline items\n\n\n\n\n\nThese can only be evaluated indirectly"
-  },
-  {
-    "objectID": "slides/04_slides.html#vignette",
-    "href": "slides/04_slides.html#vignette",
-    "title": "Public Opinion and Policy",
-    "section": "Vignette",
-    "text": "Vignette\nBelow you will read three things that sometimes people oppose or are against. After you read all three, just tell us HOW MANY of them you OPPOSE. We don’t want to know which ones, just HOW MANY."
-  },
-  {
-    "objectID": "slides/04_slides.html#vignette-1",
-    "href": "slides/04_slides.html#vignette-1",
-    "title": "Public Opinion and Policy",
-    "section": "Vignette",
-    "text": "Vignette\n\nThe federal government increasing assistance to the poor\nProfessional athletes making millions of dollars per year\nLarge corporations polluting the environment\n\n\n\n\n\nTreatment 1\n4. Granting citizenship to a legal immigrant who is Muslim\n\n\n\nTreatment 2\n4. Granting citizenship to a legal immigrant who is Christian"
-  },
-  {
-    "objectID": "slides/04_slides.html#vignette-2",
-    "href": "slides/04_slides.html#vignette-2",
-    "title": "Public Opinion and Policy",
-    "section": "Vignette",
-    "text": "Vignette\n\nHow many of the following statements are true?\n\n\nMy mother was born in OCTOBER, NOVEMBER, OR DECEMBER\nIn order to avoid paying a traffic ticket, I would be willing to pay a bribe to a police officer."
-  },
-  {
-    "objectID": "slides/04_slides.html#vignette-3",
-    "href": "slides/04_slides.html#vignette-3",
-    "title": "Public Opinion and Policy",
-    "section": "Vignette",
-    "text": "Vignette\n\nPlease indicate your answer below\n\nA. Both statements are true OR neither statement is true\nB. One of the two statements is true\n\n\nRemember: Your mother’s birthdate is unknown to anyone involved in the collection, administration, or analysis of the survey. As such, your confidentiality is guaranteed."
-  },
-  {
-    "objectID": "slides/04_slides.html#crosswise-model",
-    "href": "slides/04_slides.html#crosswise-model",
-    "title": "Public Opinion and Policy",
-    "section": "Crosswise model",
-    "text": "Crosswise model\n\nHow many of the following statements are true?\n\n\nMy mother was born in OCTOBER, NOVEMBER, OR DECEMBER\nIn order to avoid paying a traffic ticket, I would be willing to pay a bribe to a police officer."
-  },
-  {
-    "objectID": "slides/04_slides.html#crosswise-model-1",
-    "href": "slides/04_slides.html#crosswise-model-1",
-    "title": "Public Opinion and Policy",
-    "section": "Crosswise model",
-    "text": "Crosswise model\n\nPlease indicate your answer below\n\nA. Both statements are true OR neither statement is true\nB. One of the two statements is true\n\n\nRemember: Your mother’s birthdate is unknown to anyone involved in the collection, administration, or analysis of the survey. As such, your confidentiality is guaranteed."
-  },
-  {
-    "objectID": "slides/03_slides.html",
-    "href": "slides/03_slides.html",
-    "title": "Public Opinion and Policy",
-    "section": "",
-    "text": "POLSCI 4SS3\nWinter 2023"
-  },
-  {
-    "objectID": "slides/04_slides.html",
-    "href": "slides/04_slides.html",
-    "title": "Public Opinion and Policy",
-    "section": "",
-    "text": "POLSCI 4SS3\nWinter 2023"
-  },
-  {
-    "objectID": "slides/05_slides.html#survey-experiments",
-    "href": "slides/05_slides.html#survey-experiments",
-    "title": "Public Opinion and Policy",
-    "section": "Survey Experiments",
-    "text": "Survey Experiments\n \nPOLSCI 4SS3\nWinter 2023"
-  },
-  {
-    "objectID": "slides/05_slides.html#announcements",
-    "href": "slides/05_slides.html#announcements",
-    "title": "Public Opinion and Policy",
-    "section": "Announcements",
-    "text": "Announcements\n\nSchedule group meetings before break!\nNeed help with R? Check the Data Analysis Support Hub at Mac\nYou can book virtual research consultations with an expert"
-  },
-  {
-    "objectID": "slides/05_slides.html#last-week",
-    "href": "slides/05_slides.html#last-week",
-    "title": "Public Opinion and Policy",
-    "section": "Last week",
-    "text": "Last week\n\nWe discussed and explored techniques to reduce sensitivity bias\nSome techniques are observational (e.g. randomized response)\nSome techniques are experimental (e.g. list experiment)\nToday: Discuss surveys using experiments more generally"
-  },
-  {
-    "objectID": "slides/05_slides.html#today",
-    "href": "slides/05_slides.html#today",
-    "title": "Public Opinion and Policy",
-    "section": "Today",
-    "text": "Today"
-  },
-  {
-    "objectID": "slides/05_slides.html#next-week",
-    "href": "slides/05_slides.html#next-week",
-    "title": "Public Opinion and Policy",
-    "section": "Next Week",
-    "text": "Next Week\nConvenience Samples\nFocus on: TBD"
-  },
-  {
-    "objectID": "slides/05_slides.html#break-time",
-    "href": "slides/05_slides.html#break-time",
-    "title": "Public Opinion and Policy",
-    "section": "Break time!",
-    "text": "Break time!"
-  },
-  {
-    "objectID": "slides/05_slides.html#fa-laptop-code-lab",
-    "href": "slides/05_slides.html#fa-laptop-code-lab",
-    "title": "Public Opinion and Policy",
-    "section": " Lab",
-    "text": "Lab"
-  },
-  {
-    "objectID": "slides/05_slides.html#types-of-survey-research-design",
-    "href": "slides/05_slides.html#types-of-survey-research-design",
-    "title": "Public Opinion and Policy",
-    "section": "Types of survey research design",
-    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
-  },
-  {
-    "objectID": "slides/05_slides.html#types-of-survey-research-design-1",
-    "href": "slides/05_slides.html#types-of-survey-research-design-1",
-    "title": "Public Opinion and Policy",
-    "section": "Types of survey research design",
-    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
-  },
-  {
-    "objectID": "slides/05_slides.html#types-of-survey-research-design-2",
-    "href": "slides/05_slides.html#types-of-survey-research-design-2",
-    "title": "Public Opinion and Policy",
-    "section": "Types of survey research design",
-    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
-  },
-  {
-    "objectID": "slides/05_slides.html#types-of-survey-research-design-3",
-    "href": "slides/05_slides.html#types-of-survey-research-design-3",
-    "title": "Public Opinion and Policy",
-    "section": "Types of survey research design",
-    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment"
-  },
-  {
-    "objectID": "slides/05_slides.html#types-of-survey-research-design-4",
-    "href": "slides/05_slides.html#types-of-survey-research-design-4",
-    "title": "Public Opinion and Policy",
-    "section": "Types of survey research design",
-    "text": "Types of survey research design\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Panel survey \n    Survey experiment \n  \n\n\n\n\n\n \nSurvey experiments are experimental data strategies that answer a causal inquiry\n\n\n\nTechnically, list experiments are survey experiments too."
-  },
-  {
-    "objectID": "slides/05_slides.html#survey-experiments-2",
-    "href": "slides/05_slides.html#survey-experiments-2",
-    "title": "Public Opinion and Policy",
-    "section": "Survey experiments",
-    "text": "Survey experiments\n\n\nAssign respondents to conditions\nUsually by random assignment\nEach condition is a different version of a question or vignette\nGoal: Understand the effect of different conditions on the outcome question if interest\nHow does this work?"
-  },
-  {
-    "objectID": "slides/05_slides.html#taking-a-step-back",
-    "href": "slides/05_slides.html#taking-a-step-back",
-    "title": "Public Opinion and Policy",
-    "section": "Taking a step back",
-    "text": "Taking a step back\n\n\nTwo ways to express functional relations\n\n\nStructural causal models (two weeks ago)\nPotential outcomes framework (today)"
   }
 ]

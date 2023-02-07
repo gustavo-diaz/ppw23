@@ -150,11 +150,325 @@ Technically, list experiments are survey experiments too.
 # Potential outcomes framework {background-color="#FDBF57"}
 :::
 
+## Notation
+
+::: incremental
+- $i$: unit of analysis `(e.g. individuals, schools, countries)`
+
+- $Z_i = \{0,1\}$ indicates a condition `(1: Treatment, 0: Control)`
+
+- $Y_i(Z_i)$ is the individual **potential outcome**
+
+- $Y_i(0)$: Potential outcome under control
+
+- $Y_i(1)$: Potential outcome under treatment
+
+:::
+
+## Toy example
+
+```{r}
+pop = declare_population(
+  N = 4,
+  female = c(0, 0, 1, 1),
+  Y0 = c(0, 0, 0, 1),
+  Y1 = c(0, 1, 1, 1)
+)
+
+pot = declare_potential_outcomes(Y ~ Y1 * Z + Y0 * (1-Z))
+
+estimand = declare_inquiry(ATE = mean(Y1 - Y0))
+
+assign = declare_assignment(Z = complete_ra(N, m = 2))
+
+reveal = declare_measurement(Y = reveal_outcomes(Y ~ Z))
+
+estimator = declare_estimator(Y ~ Z, inquiry = "ATE")
+
+design_1 = pop + pot + estimand + assign + reveal + estimator
+```
+
+```{r}
+set.seed(142)
+
+dat = draw_data(design_1)
+
+dat_0 = dat %>% select(ID, female, Y1, Y0)
+
+colnames(dat_0) = c("ID", "Female", "\\(Y_i(1)\\)", "\\(Y_i(0)\\)")
+
+dat_0 %>% kbl(escape = FALSE)
+```
+
+. . .
+
+- $\tau_i = Y_i(1) - Y_i(0)$ is the **individual causal effect**
+
+## Toy example {visibility="uncounted"}
+
+```{r}
+dat_1 = dat %>% 
+  select(ID, female, Y1, Y0) %>% 
+  mutate(tau = Y1 - Y0)
+
+colnames(dat_1) = c("ID", "Female", "\\(Y_i(1)\\)", "\\(Y_i(0)\\)", "\\(\\tau_i\\)")
+
+dat_1 %>% kbl(escape = FALSE)
+```
+
+
+
+- $\tau_i = Y_i(1) - Y_i(0)$ is the **individual causal effect**
+
+. . .
+
+- $\tau = (1/n) \sum_{i=1}^n \tau_i = E[\tau_i]$ is the **inquiry**
+
+. . .
+
+- We call $\tau$ the **Average Treatment Effect (ATE)**
+
+## A note on notation {background-color="#8BD3E6"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Greek
+
+::: incremental
+
+- Letters like $\mu$ denote **estimands**
+
+- A hat $\hat{\mu}$ denotes **estimators**
+
+:::
+:::
+
+::: {.column width="50%"}
+### Latin
+
+::: incremental
+
+- Letters like $X$ denote **actual variables** in our data
+
+- A bar $\bar{X}$  denotes an **estimate** calculated from our data
+
+:::
+
+
+:::
+
+::::
+
+. . .
+
+::: {style="text-align: center"}
+
+$X \rightarrow \bar{X} \rightarrow \hat{\mu} \xrightarrow{\text{hopefully!}} \mu$
+
+
+&nbsp;
+
+
+$\text{Data} \rightarrow \text{Estimate} \rightarrow \text{Estimator} \xrightarrow{\text{hopefully!}} \text{Estimand}$
+::: 
+
+## Challenge
+
+::: incremental
+
+- We want to know the ATE $\tau$
+
+- This requires us to know $\tau_i = Y_i(1) - Y_i(0)$
+
+- But when we assign treatment conditions we only observe one of the potential outcomes $Y_i(1)$ or $Y_i(0)$
+
+- Meaning that $\tau_i$ is impossible to calculate!
+
+- This is the **fundamental problem of causal inference**
+
+:::
+
+## Continuing the example
+
+```{r}
+dat_1 %>% 
+  kbl(escape = FALSE) %>% 
+  add_header_above(c(" " = 2, "Unobserved" = 3))
+```
+
+. . .
+
+- We can randomly assign conditions $Z_i$
+
+## Continuing the example {visibility="uncounted"}
+
+```{r}
+dat_2 = dat %>% 
+  select(ID, female, Y1, Y0, Z, Y) %>% 
+  mutate(tau = Y1 - Y0) %>% 
+  relocate(tau, .after = "Y0")
+
+colnames(dat_2) = c("ID", "Female", "\\(Y_i(1)\\)", "\\(Y_i(0)\\)", "\\(\\tau_i\\)",
+                    "\\(Z_i\\)", "\\(Y_i\\)")
+
+dat_2 %>% 
+  kbl(escape = FALSE) %>%
+  add_header_above(c(" " = 2, "Unobserved" = 3,  "Observed" = 2))
+```
+
+. . .
+
+- We observe outcome $Y_i$ depending on assigned condition $Z_i$
+
+- We can use this to approximate the ATE with an **estimator**
+
+## Estimator for the ATE
+
+- **Additive property of expectations:** 
+
+$$
+\tau = E[\tau_i] = E[Y_i(1) - Y_i(0)] \\
+= \underbrace{E[Y_i(1)] - E[Y_i(0)]}_{\text{Difference in means between potential outcomes}}
+$$
+
+. . .
+
+- We cannot calculate this, but we can calculate
+
+$$
+\hat{\tau} = \underbrace{E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]}_{\text{Difference in means between conditions}}
+$$
+
+## Randomization
+
+::: incremental
+- If we can claim that units are selected into conditions $Z_i$ independently from potential outcomes 
+
+- Then we can claim that $\hat{\tau}$ is a good approximation of $\tau$
+
+- In which case we say that $\hat{\tau}$ is an **unbiased** estimator of the ATE
+
+- Random assignment of units into conditions guarantees this *in expectation*
+
+:::
+
+## Assumptions
+
+. . .
+
+::: {.callout-warning}
+### 1. Ignorability
+
+Assignment to conditions does not depend on potential outcomes. This is guaranteed if randomization works properly.
+
+:::
+
+. . .
+
+::: {.callout-warning}
+### 2. Non-interference
+
+Individual potential outcomes do not depend on the treatment assignment of others. If they do, then we need a more complicated model.
+
+:::
+
+. . .
+
+- We cannot evaluate these assumptions with data but we can convince our audience with careful research design
+
+::: {style="text-align: center"}
+# Discussion {background-color="#FDBF57"}
+:::
+
+## Tomz and Weeks (2013): "Public Opinion and the Democratic Peace"
+
+::: incremental
+
+- Surveys in the UK ($n = 762$) and US ($n = 1273$)
+
+- April-May 2010
+
+- **Outcome:** Support for military strike
+
+- 2x2x2 survey experiment
+
+:::
+
+## Vignette design
+
+. . .
+
+:::: columns
+
+::: {.column width="50%"}
+### UK
+- **Political regime:** Democracy/not a democracy
+
+- **Military alliances:** Ally/not an ally
+
+- **Military power:** As strong/half as strong
+:::
+
+::: {.column width="50%"}
+
+### US
+
+- **Political regime:** Democracy/not a democracy
+
+- **Military alliances:** Ally/not an ally
+
+- **Trade:** High level/not high level
+
+:::
+
+::::
+
+## Results for democracy
+
+![](figs/tomz_weeks_1.png){fig-align="center"}
+
+## Results for other factors
+
+![](figs/tomz_weeks_2.png){fig-align="center"}
+
+## Eggers et al (2017): "Corruption, Accountability, and Gender"
+
+. . .
+
+![](figs/eggers_1.png){fig-align="center" width=65%}
+
+## Profile variants
+
+```{r}
+eggers = tribble(
+  ~Factor, ~MP, ~Challenger,
+  "Party", "Labour, Conservative", "Labour, Conservative, Liberal Democrat",
+  "Age", "45, 52, 64", "40, 52, 64",
+  "Gender", "Male, Female", "Male, Female",
+  "Previous job", 
+  "General practitioner, journalist, political advisor, teacher, business manager", 
+  "General practitioner, journalist, political advisor, teacher, business manager"
+)
+```
+
+```{r}
+eggers %>% 
+  kbl() %>% 
+  kable_styling(full_width = TRUE)
+```
+
+## Results
+
+![](figs/eggers_2.png){fig-align="center"}
+
+
+
 ::: {style="text-align: center"}
 ## Next Week {.center background-color="#8BD3E6"}
 ### Convenience Samples
 
-**Focus on:** TBD
+**Focus on:** Should findings generalize?
 :::
 
 ::: {style="text-align: center"}

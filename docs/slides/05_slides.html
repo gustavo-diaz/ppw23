@@ -552,10 +552,463 @@ Winter 2023</p>
 
 </section>
 
+<section id="notation" class="slide level2">
+<h2>Notation</h2>
+<div>
+<ul>
+<li class="fragment"><p><span class="math inline">\(i\)</span>: unit of analysis <code>(e.g. individuals, schools, countries)</code></p></li>
+<li class="fragment"><p><span class="math inline">\(Z_i = \{0,1\}\)</span> indicates a condition <code>(1: Treatment, 0: Control)</code></p></li>
+<li class="fragment"><p><span class="math inline">\(Y_i(Z_i)\)</span> is the individual <strong>potential outcome</strong></p></li>
+<li class="fragment"><p><span class="math inline">\(Y_i(0)\)</span>: Potential outcome under control</p></li>
+<li class="fragment"><p><span class="math inline">\(Y_i(1)\)</span>: Potential outcome under treatment</p></li>
+</ul>
+</div>
+</section>
+<section id="toy-example" class="slide level2">
+<h2>Toy example</h2>
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> ID </th>
+   <th style="text-align:right;"> Female </th>
+   <th style="text-align:right;"> \(Y_i(1)\) </th>
+   <th style="text-align:right;"> \(Y_i(0)\) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(\tau_i = Y_i(1) - Y_i(0)\)</span> is the <strong>individual causal effect</strong></li>
+</ul>
+</div>
+</section>
+<section id="toy-example-1" class="slide level2" data-visibility="uncounted">
+<h2>Toy example</h2>
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> ID </th>
+   <th style="text-align:right;"> Female </th>
+   <th style="text-align:right;"> \(Y_i(1)\) </th>
+   <th style="text-align:right;"> \(Y_i(0)\) </th>
+   <th style="text-align:right;"> \(\tau_i\) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<ul>
+<li><span class="math inline">\(\tau_i = Y_i(1) - Y_i(0)\)</span> is the <strong>individual causal effect</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><span class="math inline">\(\tau = (1/n) \sum_{i=1}^n \tau_i = E[\tau_i]\)</span> is the <strong>inquiry</strong></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>We call <span class="math inline">\(\tau\)</span> the <strong>Average Treatment Effect (ATE)</strong></li>
+</ul>
+</div>
+</section>
+<section id="a-note-on-notation" class="slide level2" data-background-color="#8BD3E6">
+<h2>A note on notation</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="greek">Greek</h3>
+<div>
+<ul>
+<li class="fragment"><p>Letters like <span class="math inline">\(\mu\)</span> denote <strong>estimands</strong></p></li>
+<li class="fragment"><p>A hat <span class="math inline">\(\hat{\mu}\)</span> denotes <strong>estimators</strong></p></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<h3 id="latin">Latin</h3>
+<div>
+<ul>
+<li class="fragment"><p>Letters like <span class="math inline">\(X\)</span> denote <strong>actual variables</strong> in our data</p></li>
+<li class="fragment"><p>A bar <span class="math inline">\(\bar{X}\)</span> denotes an <strong>estimate</strong> calculated from our data</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div style="text-align: center">
+<p><span class="math inline">\(X \rightarrow \bar{X} \rightarrow \hat{\mu} \xrightarrow{\text{hopefully!}} \mu\)</span></p>
+<p>&nbsp;</p>
+<p><span class="math inline">\(\text{Data} \rightarrow \text{Estimate} \rightarrow \text{Estimator} \xrightarrow{\text{hopefully!}} \text{Estimand}\)</span></p>
+</div>
+</div>
+</section>
+<section id="challenge" class="slide level2">
+<h2>Challenge</h2>
+<div>
+<ul>
+<li class="fragment"><p>We want to know the ATE <span class="math inline">\(\tau\)</span></p></li>
+<li class="fragment"><p>This requires us to know <span class="math inline">\(\tau_i = Y_i(1) - Y_i(0)\)</span></p></li>
+<li class="fragment"><p>But when we assign treatment conditions we only observe one of the potential outcomes <span class="math inline">\(Y_i(1)\)</span> or <span class="math inline">\(Y_i(0)\)</span></p></li>
+<li class="fragment"><p>Meaning that <span class="math inline">\(\tau_i\)</span> is impossible to calculate!</p></li>
+<li class="fragment"><p>This is the <strong>fundamental problem of causal inference</strong></p></li>
+</ul>
+</div>
+</section>
+<section id="continuing-the-example" class="slide level2">
+<h2>Continuing the example</h2>
+<div class="cell-output-display">
+
+<table>
+ <thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="2"></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Unobserved</div></th>
+</tr>
+  <tr>
+   <th style="text-align:left;"> ID </th>
+   <th style="text-align:right;"> Female </th>
+   <th style="text-align:right;"> \(Y_i(1)\) </th>
+   <th style="text-align:right;"> \(Y_i(0)\) </th>
+   <th style="text-align:right;"> \(\tau_i\) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div class="fragment">
+<ul>
+<li>We can randomly assign conditions <span class="math inline">\(Z_i\)</span></li>
+</ul>
+</div>
+</section>
+<section id="continuing-the-example-1" class="slide level2" data-visibility="uncounted">
+<h2>Continuing the example</h2>
+<div class="cell-output-display">
+
+<table>
+ <thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="2"></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="3"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Unobserved</div></th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"><div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">Observed</div></th>
+</tr>
+  <tr>
+   <th style="text-align:left;"> ID </th>
+   <th style="text-align:right;"> Female </th>
+   <th style="text-align:right;"> \(Y_i(1)\) </th>
+   <th style="text-align:right;"> \(Y_i(0)\) </th>
+   <th style="text-align:right;"> \(\tau_i\) </th>
+   <th style="text-align:right;"> \(Z_i\) </th>
+   <th style="text-align:right;"> \(Y_i\) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div class="fragment">
+<ul>
+<li><p>We observe outcome <span class="math inline">\(Y_i\)</span> depending on assigned condition <span class="math inline">\(Z_i\)</span></p></li>
+<li><p>We can use this to approximate the ATE with an <strong>estimator</strong></p></li>
+</ul>
+</div>
+</section>
+<section id="estimator-for-the-ate" class="slide level2">
+<h2>Estimator for the ATE</h2>
+<ul>
+<li><strong>Additive property of expectations:</strong></li>
+</ul>
+<p><span class="math display">\[
+\tau = E[\tau_i] = E[Y_i(1) - Y_i(0)] \\
+= \underbrace{E[Y_i(1)] - E[Y_i(0)]}_{\text{Difference in means between potential outcomes}}
+\]</span></p>
+<div class="fragment">
+<ul>
+<li>We cannot calculate this, but we can calculate</li>
+</ul>
+<p><span class="math display">\[
+\hat{\tau} = \underbrace{E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]}_{\text{Difference in means between conditions}}
+\]</span></p>
+</div>
+</section>
+<section id="randomization" class="slide level2">
+<h2>Randomization</h2>
+<div>
+<ul>
+<li class="fragment"><p>If we can claim that units are selected into conditions <span class="math inline">\(Z_i\)</span> independently from potential outcomes</p></li>
+<li class="fragment"><p>Then we can claim that <span class="math inline">\(\hat{\tau}\)</span> is a good approximation of <span class="math inline">\(\tau\)</span></p></li>
+<li class="fragment"><p>In which case we say that <span class="math inline">\(\hat{\tau}\)</span> is an <strong>unbiased</strong> estimator of the ATE</p></li>
+<li class="fragment"><p>Random assignment of units into conditions guarantees this <em>in expectation</em></p></li>
+</ul>
+</div>
+</section>
+<section id="assumptions" class="slide level2">
+<h2>Assumptions</h2>
+<div class="fragment">
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>1. Ignorability</strong></p>
+</div>
+<div class="callout-content">
+<p>Assignment to conditions does not depend on potential outcomes. This is guaranteed if randomization works properly.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>2. Non-interference</strong></p>
+</div>
+<div class="callout-content">
+<p>Individual potential outcomes do not depend on the treatment assignment of others. If they do, then we need a more complicated model.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<ul>
+<li>We cannot evaluate these assumptions with data but we can convince our audience with careful research design</li>
+</ul>
+</div>
+</section>
+<section id="discussion" class="title-slide slide level1 center" data-background-color="#FDBF57" style="text-align: center">
+<h1>Discussion</h1>
+
+</section>
+
+<section id="tomz-and-weeks-2013-public-opinion-and-the-democratic-peace" class="slide level2">
+<h2>Tomz and Weeks (2013): “Public Opinion and the Democratic Peace”</h2>
+<div>
+<ul>
+<li class="fragment"><p>Surveys in the UK (<span class="math inline">\(n = 762\)</span>) and US (<span class="math inline">\(n = 1273\)</span>)</p></li>
+<li class="fragment"><p>April-May 2010</p></li>
+<li class="fragment"><p><strong>Outcome:</strong> Support for military strike</p></li>
+<li class="fragment"><p>2x2x2 survey experiment</p></li>
+</ul>
+</div>
+</section>
+<section id="vignette-design" class="slide level2">
+<h2>Vignette design</h2>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="uk">UK</h3>
+<ul>
+<li><p><strong>Political regime:</strong> Democracy/not a democracy</p></li>
+<li><p><strong>Military alliances:</strong> Ally/not an ally</p></li>
+<li><p><strong>Military power:</strong> As strong/half as strong</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="us">US</h3>
+<ul>
+<li><p><strong>Political regime:</strong> Democracy/not a democracy</p></li>
+<li><p><strong>Military alliances:</strong> Ally/not an ally</p></li>
+<li><p><strong>Trade:</strong> High level/not high level</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="results-for-democracy" class="slide level2">
+<h2>Results for democracy</h2>
+
+<img data-src="figs/tomz_weeks_1.png" class="r-stretch quarto-figure-center"></section>
+<section id="results-for-other-factors" class="slide level2">
+<h2>Results for other factors</h2>
+
+<img data-src="figs/tomz_weeks_2.png" class="r-stretch quarto-figure-center"></section>
+<section id="eggers-et-al-2017-corruption-accountability-and-gender" class="slide level2">
+<h2>Eggers et al (2017): “Corruption, Accountability, and Gender”</h2>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/eggers_1.png" style="width:65.0%"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="profile-variants" class="slide level2">
+<h2>Profile variants</h2>
+<div class="cell-output-display">
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Factor </th>
+   <th style="text-align:left;"> MP </th>
+   <th style="text-align:left;"> Challenger </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Party </td>
+   <td style="text-align:left;"> Labour, Conservative </td>
+   <td style="text-align:left;"> Labour, Conservative, Liberal Democrat </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Age </td>
+   <td style="text-align:left;"> 45, 52, 64 </td>
+   <td style="text-align:left;"> 40, 52, 64 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Gender </td>
+   <td style="text-align:left;"> Male, Female </td>
+   <td style="text-align:left;"> Male, Female </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Previous job </td>
+   <td style="text-align:left;"> General practitioner, journalist, political advisor, teacher, business manager </td>
+   <td style="text-align:left;"> General practitioner, journalist, political advisor, teacher, business manager </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</section>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+
+<img data-src="figs/eggers_2.png" class="r-stretch quarto-figure-center"></section>
 <section id="next-week" class="slide level2 center" data-background-color="#8BD3E6" style="text-align: center">
 <h2>Next Week</h2>
 <h3 id="convenience-samples">Convenience Samples</h3>
-<p><strong>Focus on:</strong> TBD</p>
+<p><strong>Focus on:</strong> Should findings generalize?</p>
 </section>
 <section id="break-time" class="slide level2 center" data-background-color="#D2D755" style="text-align: center">
 <h2>Break time!</h2>
