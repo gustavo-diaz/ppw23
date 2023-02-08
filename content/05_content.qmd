@@ -42,4 +42,4 @@ slide_buttons("/slides/05_slides")
 
 ## Lab
 
-Survey experimental designs {{< fa laptop-code >}} (Coming soon!)
+[Survey experimental designs {{< fa laptop-code >}}]((labs/05_lab.Rmd))
