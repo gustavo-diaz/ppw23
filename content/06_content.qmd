@@ -1,5 +1,45 @@
 ---
-title: "Course material"
+title: "Convenience Samples"
+date: "February 15, 2023"
+format: html
 ---
 
-Coming soon!
+
+```{r setup, echo = FALSE, results = "asis"}
+# Slide showing functions
+source(here::here("R", "show_slides.R"))
+```
+
+## Overview
+
+Last week we learned about survey experiments. These are increasingly being conducted of convenience samples of online survey respondents. This brings questions about whether the results of experiments can generalize to the population of interest. When a finding can be generalized to a broader population, we say that it has **external validity**.
+
+The lab explores the concept of external validity and its different flavors.
+
+
+## Reading
+
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Munger, Kevin, Ishita Gopal, Jonathan Nagler, Josuah A. Tucker. 2021. [“Accessibility and generalizability: Are social media effects moderated by age or digital literacy?”](https://doi.org/10.1177/20531680211016968) *Research & Politics* 8 (2)
+
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Coppock, Alexander, Thomas J. Leeper, and Kevin J. Mullinix. 2018. [“Generalizability of heterogeneous treatment effect estimates across samples.”](https://doi.org/10.1073/pnas.1808083115) *Proceedings of the National Academy of Sciences* 115 (49): 12441-12446
+
+
+## Slides
+
+::: {.callout-tip}
+## Navigation
+
+Click on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.
+:::
+
+```{r show-slides, echo = FALSE, results = "asis"}
+show_slide("/slides/placeholder")
+slide_buttons("/slides/06_slides")
+```
+
+
+## Lab
+
+External Validity {{< fa laptop-code >}} (coming soon!)

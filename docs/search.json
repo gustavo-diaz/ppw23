@@ -184,9 +184,9 @@
   {
     "objectID": "content/06_content.html",
     "href": "content/06_content.html",
-    "title": "Course material",
+    "title": "Convenience Samples",
     "section": "",
-    "text": "Coming soon!"
+    "text": "Last week we learned about survey experiments. These are increasingly being conducted of convenience samples of online survey respondents. This brings questions about whether the results of experiments can generalize to the population of interest. When a finding can be generalized to a broader population, we say that it has external validity.\nThe lab explores the concept of external validity and its different flavors."
   },
   {
     "objectID": "content/08_content.html",
@@ -1209,5 +1209,33 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
+  },
+  {
+    "objectID": "content/06_content.html#reading",
+    "href": "content/06_content.html#reading",
+    "title": "Convenience Samples",
+    "section": "Reading",
+    "text": "Reading\n\n Munger, Kevin, Ishita Gopal, Jonathan Nagler, Josuah A. Tucker. 2021. “Accessibility and generalizability: Are social media effects moderated by age or digital literacy?” Research & Politics 8 (2)\n Coppock, Alexander, Thomas J. Leeper, and Kevin J. Mullinix. 2018. “Generalizability of heterogeneous treatment effect estimates across samples.” Proceedings of the National Academy of Sciences 115 (49): 12441-12446"
+  },
+  {
+    "objectID": "content/06_content.html#slides",
+    "href": "content/06_content.html#slides",
+    "title": "Convenience Samples",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/06_content.html#lab",
+    "href": "content/06_content.html#lab",
+    "title": "Convenience Samples",
+    "section": "Lab",
+    "text": "Lab\nExternal Validity  (coming soon!)"
+  },
+  {
+    "objectID": "slides/05_slides.html",
+    "href": "slides/05_slides.html",
+    "title": "Public Opinion and Policy",
+    "section": "",
+    "text": "POLSCI 4SS3\nWinter 2023"
   }
 ]
