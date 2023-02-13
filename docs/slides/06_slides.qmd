@@ -1,0 +1,112 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(ggdag)
+
+# Global options
+theme_set(theme_dag(base_size = 40))
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Convenience Samples {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Course so far {background-color="#FDBF57"}
+
+- Representative surveys as the gold standard
+
+- Other research design help us learn more but tend to use convenience samples
+
+- **Today:** Talk more about convenience samples
+
+## We are seeing less of this
+
+[Here pic of CES]
+
+## And more of this
+
+[Here pic of online survey platforms]
+
+## Do we want surveys to be representative?
+
+::: incremental
+
+- Pros?
+
+- Cons?
+
+- We always want them!
+
+- But when do we **need** them?
+
+- Rather, when can we **get away** with not having them?
+
+:::
+
+
+
+## Internal an external validity
+
+::: incremental
+
+- **Validity:** Approximate truth or usefulness of an inference
+
+- **Inference:** How we interpret the results of a study
+
+- **Internal validity:** Whether inferences from a single study *cannot* be explained by other factors
+
+- **External validity:** Whether inferences from a single study apply to a broader population or other target populations
+
+- Convenience samples make it *easier* to achieve *internal validity* at the *expense* of *external validity* 
+
+:::
+
+## Types of internal validity
+
+1. X-validity `(endogenous variables)`
+
+2. T-validity `(treatments, conditions)`
+
+3. Y-validity `(outcome variables)`
+
+4. C-validity `(context)`
+
+::: aside
+See [Egami and Hartman (2022)](https://doi.org/10.1017/S0003055422000880) for more
+:::
+
+::: {style="text-align: center"}
+## After Recess {.center background-color="#8BD3E6"}
+### Evidence-Informed Policy
+
+**Focus on:** New topic!
+:::
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::
