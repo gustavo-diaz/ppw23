@@ -38,11 +38,19 @@ Winter 2023
 
 ## We are seeing less of this
 
-[Here pic of CES]
+![](figs/ces_logo.png){fig-align="center"}
 
 ## And more of this
 
-[Here pic of online survey platforms]
+![](figs/mturk.png){fig-align="center"}
+
+## And more of this {visibility="uncounted"}
+
+![](figs/prolific.png){fig-align="center"}
+
+## And more of this {visibility="uncounted"}
+
+![](figs/cint.png){fig-align="center"}
 
 ## Do we want surveys to be representative?
 
@@ -66,7 +74,7 @@ Winter 2023
 
 ::: incremental
 
-- **Validity:** Approximate truth or usefulness of an inference
+- **Validity:** Approximate truth or usefulness of an *inference*
 
 - **Inference:** How we interpret the results of a study
 
@@ -90,6 +98,128 @@ Winter 2023
 
 ::: aside
 See [Egami and Hartman (2022)](https://doi.org/10.1017/S0003055422000880) for more
+:::
+
+## X-validity
+
+::: incremental
+- Is the sample comparable to the target population?
+
+- If not, can we claim that the differences can be ignored?
+
+- To do that, we have to convince ourselves that:
+:::
+
+. . .
+
+1. Effects are the same across units
+
+. . .
+
+OR
+
+. . .
+
+2. We observe all the variables that may explain discrepancies in effects
+
+## T-validity
+
+::: incremental
+- Do treatments `(conditions)` reflect what participants would encounter in the real world? 
+
+- **Example:** Is thinking about *hypothetical* countries a good reflection to how people would think about *real* countries?
+
+- Can we claim that there are no different versions of the same *treatment*?
+
+- To do that, we need to convince ourselves that everyone would interpret vignettes in the same way
+
+- Either because it is **realistic** enough or abstract yet **believable**
+:::
+
+## Y-validity
+
+::: incremental
+- Do the outcomes we measure in surveys reflect the outcomes we want to learn about in the real world?
+
+- **Example:** Are self-reported vote intentions a good replacement for actual voting behavior?
+
+- Can we claim that there are no different versions of the same *outcome*?
+
+- Need to convince ourselves that measured outcomes are sufficiently valid and reliable
+
+:::
+
+## C-validity
+
+::: incremental
+- Do results generalize from other contexts?
+
+- **Example:** If it worked with students in Sweden, will it work with students in Canada?
+
+- Can we claim that the same units would react in the same way if the study was conducted elsewhere?
+
+- Need to convince ourselves that **context is irrelevant** for *similar people* in *different places*
+:::
+
+::: {style="text-align: center"}
+# Discussion {background-color="#FDBF57"}
+:::
+
+## Munger et al (2021): Accessibility and generalizability
+
+::: incremental
+
+- Replicate 3 convenience sample survey experiments with representative sample
+
+1. Social commentary and news source credibility
+
+2. Facebook shares and news consumption
+
+3. Issue framing and support for gun control
+
+- **Argument:** Effects vary considerably by age and digital literacy
+
+:::
+
+## Findings
+
+::: incremental
+
+- **Replication 1:** Participants low on digital literacy did not respond differently to vignettes
+
+- **Replication 2:** Older people clicked on whatever headline came first
+
+- **Replication 3:** No differences because issue had nothing to do with digital literacy
+
+- What kind of validity is this about?
+
+:::
+
+## Coppock et al (2018): Generalizability of heterogeneous treatment effect estimates across samples
+
+::: incremental
+- Replicate 27 studies from nationally-representative samples with convenience samples
+
+- Compare how effects vary across 16 demographic characteristics
+
+:::
+
+---
+
+![](figs/coppock_1.png){fig-align="center"}
+
+## Explanation
+
+::: incremental
+
+- Different samples yield similar results when:
+
+1. Treatment effects are mostly homogeneous
+
+2. Effect heterogeneity is **orthogonal** to sample selection
+
+- What type of validity is this about?
+
 :::
 
 ::: {style="text-align: center"}

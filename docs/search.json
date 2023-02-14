@@ -189,6 +189,27 @@
     "text": "Last week we learned about survey experiments. These are increasingly being conducted of convenience samples of online survey respondents. This brings questions about whether the results of experiments can generalize to the population of interest. When a finding can be generalized to a broader population, we say that it has external validity.\nThe lab explores the concept of external validity and its different flavors."
   },
   {
+    "objectID": "content/06_content.html#reading",
+    "href": "content/06_content.html#reading",
+    "title": "Convenience Samples",
+    "section": "Reading",
+    "text": "Reading\n\n Munger, Kevin, Ishita Gopal, Jonathan Nagler, Josuah A. Tucker. 2021. “Accessibility and generalizability: Are social media effects moderated by age or digital literacy?” Research & Politics 8 (2)\n Coppock, Alexander, Thomas J. Leeper, and Kevin J. Mullinix. 2018. “Generalizability of heterogeneous treatment effect estimates across samples.” Proceedings of the National Academy of Sciences 115 (49): 12441-12446"
+  },
+  {
+    "objectID": "content/06_content.html#slides",
+    "href": "content/06_content.html#slides",
+    "title": "Convenience Samples",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/06_content.html#lab",
+    "href": "content/06_content.html#lab",
+    "title": "Convenience Samples",
+    "section": "Lab",
+    "text": "Lab\nExternal Validity  (coming soon!)"
+  },
+  {
     "objectID": "content/08_content.html",
     "href": "content/08_content.html",
     "title": "Course material",
@@ -1162,6 +1183,146 @@
     "text": "Lab"
   },
   {
+    "objectID": "slides/06_slides.html#convenience-samples",
+    "href": "slides/06_slides.html#convenience-samples",
+    "title": "Public Opinion and Policy",
+    "section": "Convenience Samples",
+    "text": "Convenience Samples\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/06_slides.html#course-so-far",
+    "href": "slides/06_slides.html#course-so-far",
+    "title": "Public Opinion and Policy",
+    "section": "Course so far",
+    "text": "Course so far\n\nRepresentative surveys as the gold standard\nOther research design help us learn more but tend to use convenience samples\nToday: Talk more about convenience samples"
+  },
+  {
+    "objectID": "slides/06_slides.html#we-are-seeing-less-of-this",
+    "href": "slides/06_slides.html#we-are-seeing-less-of-this",
+    "title": "Public Opinion and Policy",
+    "section": "We are seeing less of this",
+    "text": "We are seeing less of this"
+  },
+  {
+    "objectID": "slides/06_slides.html#and-more-of-this",
+    "href": "slides/06_slides.html#and-more-of-this",
+    "title": "Public Opinion and Policy",
+    "section": "And more of this",
+    "text": "And more of this"
+  },
+  {
+    "objectID": "slides/06_slides.html#and-more-of-this-1",
+    "href": "slides/06_slides.html#and-more-of-this-1",
+    "title": "Public Opinion and Policy",
+    "section": "And more of this",
+    "text": "And more of this"
+  },
+  {
+    "objectID": "slides/06_slides.html#and-more-of-this-2",
+    "href": "slides/06_slides.html#and-more-of-this-2",
+    "title": "Public Opinion and Policy",
+    "section": "And more of this",
+    "text": "And more of this"
+  },
+  {
+    "objectID": "slides/06_slides.html#do-we-want-surveys-to-be-representative",
+    "href": "slides/06_slides.html#do-we-want-surveys-to-be-representative",
+    "title": "Public Opinion and Policy",
+    "section": "Do we want surveys to be representative?",
+    "text": "Do we want surveys to be representative?\n\n\nPros?\nCons?\nWe always want them!\nBut when do we need them?\nRather, when can we get away with not having them?"
+  },
+  {
+    "objectID": "slides/06_slides.html#internal-an-external-validity",
+    "href": "slides/06_slides.html#internal-an-external-validity",
+    "title": "Public Opinion and Policy",
+    "section": "Internal an external validity",
+    "text": "Internal an external validity\n\n\nValidity: Approximate truth or usefulness of an inference\nInference: How we interpret the results of a study\nInternal validity: Whether inferences from a single study cannot be explained by other factors\nExternal validity: Whether inferences from a single study apply to a broader population or other target populations\nConvenience samples make it easier to achieve internal validity at the expense of external validity"
+  },
+  {
+    "objectID": "slides/06_slides.html#types-of-internal-validity",
+    "href": "slides/06_slides.html#types-of-internal-validity",
+    "title": "Public Opinion and Policy",
+    "section": "Types of internal validity",
+    "text": "Types of internal validity\n\nX-validity (endogenous variables)\nT-validity (treatments, conditions)\nY-validity (outcome variables)\nC-validity (context)\n\n\n\nSee Egami and Hartman (2022) for more"
+  },
+  {
+    "objectID": "slides/06_slides.html#x-validity",
+    "href": "slides/06_slides.html#x-validity",
+    "title": "Public Opinion and Policy",
+    "section": "X-validity",
+    "text": "X-validity\n\n\nIs the sample comparable to the target population?\nIf not, can we claim that the differences can be ignored?\nTo do that, we have to convince ourselves that:\n\n\n\n\nEffects are the same across units\n\n\n\nOR\n\n\n\nWe observe all the variables that may explain discrepancies in effects"
+  },
+  {
+    "objectID": "slides/06_slides.html#t-validity",
+    "href": "slides/06_slides.html#t-validity",
+    "title": "Public Opinion and Policy",
+    "section": "T-validity",
+    "text": "T-validity\n\n\nDo treatments (conditions) reflect what participants would encounter in the real world?\nExample: Is thinking about hypothetical countries a good reflection to how people would think about real countries?\nCan we claim that there are no different versions of the same treatment?\nTo do that, we need to convince ourselves that everyone would interpret vignettes in the same way\nEither because it is realistic enough or abstract yet believable"
+  },
+  {
+    "objectID": "slides/06_slides.html#y-validity",
+    "href": "slides/06_slides.html#y-validity",
+    "title": "Public Opinion and Policy",
+    "section": "Y-validity",
+    "text": "Y-validity\n\n\nDo the outcomes we measure in surveys reflect the outcomes we want to learn about in the real world?\nExample: Are self-reported vote intentions a good replacement for actual voting behavior?\nCan we claim that there are no different versions of the same outcome?\nNeed to convince ourselves that measured outcomes are sufficiently valid and reliable"
+  },
+  {
+    "objectID": "slides/06_slides.html#c-validity",
+    "href": "slides/06_slides.html#c-validity",
+    "title": "Public Opinion and Policy",
+    "section": "C-validity",
+    "text": "C-validity\n\n\nDo results generalize from other contexts?\nExample: If it worked with students in Sweden, will it work with students in Canada?\nCan we claim that the same units would react in the same way if the study was conducted elsewhere?\nNeed to convince ourselves that context is irrelevant for similar people in different places"
+  },
+  {
+    "objectID": "slides/06_slides.html#munger-et-al-2021-accessibility-and-generalizability",
+    "href": "slides/06_slides.html#munger-et-al-2021-accessibility-and-generalizability",
+    "title": "Public Opinion and Policy",
+    "section": "Munger et al (2021): Accessibility and generalizability",
+    "text": "Munger et al (2021): Accessibility and generalizability\n\n\nReplicate 3 convenience sample survey experiments with representative sample\n\n\nSocial commentary and news source credibility\nFacebook shares and news consumption\nIssue framing and support for gun control\n\n\nArgument: Effects vary considerably by age and digital literacy"
+  },
+  {
+    "objectID": "slides/06_slides.html#findings",
+    "href": "slides/06_slides.html#findings",
+    "title": "Public Opinion and Policy",
+    "section": "Findings",
+    "text": "Findings\n\n\nReplication 1: Participants low on digital literacy did not respond differently to vignettes\nReplication 2: Older people clicked on whatever headline came first\nReplication 3: No differences because issue had nothing to do with digital literacy\nWhat kind of validity is this about?"
+  },
+  {
+    "objectID": "slides/06_slides.html#coppock-et-al-2018-generalizability-of-heterogeneous-treatment-effect-estimates-across-samples",
+    "href": "slides/06_slides.html#coppock-et-al-2018-generalizability-of-heterogeneous-treatment-effect-estimates-across-samples",
+    "title": "Public Opinion and Policy",
+    "section": "Coppock et al (2018): Generalizability of heterogeneous treatment effect estimates across samples",
+    "text": "Coppock et al (2018): Generalizability of heterogeneous treatment effect estimates across samples\n\n\nReplicate 27 studies from nationally-representative samples with convenience samples\nCompare how effects vary across 16 demographic characteristics"
+  },
+  {
+    "objectID": "slides/06_slides.html#explanation",
+    "href": "slides/06_slides.html#explanation",
+    "title": "Public Opinion and Policy",
+    "section": "Explanation",
+    "text": "Explanation\n\n\nDifferent samples yield similar results when:\n\n\nTreatment effects are mostly homogeneous\nEffect heterogeneity is orthogonal to sample selection\n\n\nWhat type of validity is this about?"
+  },
+  {
+    "objectID": "slides/06_slides.html#after-recess",
+    "href": "slides/06_slides.html#after-recess",
+    "title": "Public Opinion and Policy",
+    "section": "After Recess",
+    "text": "After Recess\nEvidence-Informed Policy\nFocus on: New topic!"
+  },
+  {
+    "objectID": "slides/06_slides.html#break-time",
+    "href": "slides/06_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/06_slides.html#fa-laptop-code-lab",
+    "href": "slides/06_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
     "objectID": "slides/placeholder.html#coming-soon",
     "href": "slides/placeholder.html#coming-soon",
     "title": "Public Opinion and Policy",
@@ -1209,124 +1370,5 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
-  },
-  {
-    "objectID": "content/06_content.html#reading",
-    "href": "content/06_content.html#reading",
-    "title": "Convenience Samples",
-    "section": "Reading",
-    "text": "Reading\n\n Munger, Kevin, Ishita Gopal, Jonathan Nagler, Josuah A. Tucker. 2021. “Accessibility and generalizability: Are social media effects moderated by age or digital literacy?” Research & Politics 8 (2)\n Coppock, Alexander, Thomas J. Leeper, and Kevin J. Mullinix. 2018. “Generalizability of heterogeneous treatment effect estimates across samples.” Proceedings of the National Academy of Sciences 115 (49): 12441-12446"
-  },
-  {
-    "objectID": "content/06_content.html#slides",
-    "href": "content/06_content.html#slides",
-    "title": "Convenience Samples",
-    "section": "Slides",
-    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
-  },
-  {
-    "objectID": "content/06_content.html#lab",
-    "href": "content/06_content.html#lab",
-    "title": "Convenience Samples",
-    "section": "Lab",
-    "text": "Lab\nExternal Validity  (coming soon!)"
-  },
-  {
-    "objectID": "slides/05_slides.html",
-    "href": "slides/05_slides.html",
-    "title": "Public Opinion and Policy",
-    "section": "",
-    "text": "POLSCI 4SS3\nWinter 2023"
-  },
-  {
-    "objectID": "slides/06_slides.html#convenience-samples",
-    "href": "slides/06_slides.html#convenience-samples",
-    "title": "Public Opinion and Policy",
-    "section": "Convenience Samples",
-    "text": "Convenience Samples\n \nPOLSCI 4SS3\nWinter 2023"
-  },
-  {
-    "objectID": "slides/06_slides.html#last-week",
-    "href": "slides/06_slides.html#last-week",
-    "title": "Public Opinion and Policy",
-    "section": "Last week",
-    "text": "Last week"
-  },
-  {
-    "objectID": "slides/06_slides.html#after-recess",
-    "href": "slides/06_slides.html#after-recess",
-    "title": "Public Opinion and Policy",
-    "section": "After Recess",
-    "text": "After Recess\nEvidence-Informed Policy\nFocus on: New topic!"
-  },
-  {
-    "objectID": "slides/06_slides.html#break-time",
-    "href": "slides/06_slides.html#break-time",
-    "title": "Public Opinion and Policy",
-    "section": "Break time!",
-    "text": "Break time!"
-  },
-  {
-    "objectID": "slides/06_slides.html#fa-laptop-code-lab",
-    "href": "slides/06_slides.html#fa-laptop-code-lab",
-    "title": "Public Opinion and Policy",
-    "section": " Lab",
-    "text": "Lab"
-  },
-  {
-    "objectID": "slides/06_slides.html#course-so-far",
-    "href": "slides/06_slides.html#course-so-far",
-    "title": "Public Opinion and Policy",
-    "section": "Course so far",
-    "text": "Course so far\n\nRepresentative surveys as the gold standard\nOther research design help us learn more but tend to use convenience samples\nToday: Talk more about convenience samples"
-  },
-  {
-    "objectID": "slides/06_slides.html#do-we-want-surveys-to-be-representative",
-    "href": "slides/06_slides.html#do-we-want-surveys-to-be-representative",
-    "title": "Public Opinion and Policy",
-    "section": "Do we want surveys to be representative?",
-    "text": "Do we want surveys to be representative?\n\n\nPros?\nCons?\nWe always want them!\nBut when do we need them?\nRather, when can we get away with not having them?"
-  },
-  {
-    "objectID": "slides/06_slides.html#gold-standard",
-    "href": "slides/06_slides.html#gold-standard",
-    "title": "Public Opinion and Policy",
-    "section": "Gold standard",
-    "text": "Gold standard"
-  },
-  {
-    "objectID": "slides/06_slides.html#more-common-these-days",
-    "href": "slides/06_slides.html#more-common-these-days",
-    "title": "Public Opinion and Policy",
-    "section": "More common these days",
-    "text": "More common these days"
-  },
-  {
-    "objectID": "slides/06_slides.html#internal-an-external-validity",
-    "href": "slides/06_slides.html#internal-an-external-validity",
-    "title": "Public Opinion and Policy",
-    "section": "Internal an external validity",
-    "text": "Internal an external validity\n\n\nValidity: Approximate truth or usefulness of an inference\nInference: How we interpret the results of a study\nInternal validity: Whether inferences from a single study cannot be explained by other factors\nExternal validity: Whether inferences from a single study apply to a broader population or other target populations\nConvenience samples make it easier to achieve internal validity at the expense of external validity"
-  },
-  {
-    "objectID": "slides/06_slides.html#we-are-seeing-less-of-this",
-    "href": "slides/06_slides.html#we-are-seeing-less-of-this",
-    "title": "Public Opinion and Policy",
-    "section": "We are seeing less of this",
-    "text": "We are seeing less of this\n[Here pic of CES]"
-  },
-  {
-    "objectID": "slides/06_slides.html#and-more-of-this",
-    "href": "slides/06_slides.html#and-more-of-this",
-    "title": "Public Opinion and Policy",
-    "section": "And more of this",
-    "text": "And more of this\n[Here pic of online survey platforms]"
-  },
-  {
-    "objectID": "slides/06_slides.html#types-of-internal-validity",
-    "href": "slides/06_slides.html#types-of-internal-validity",
-    "title": "Public Opinion and Policy",
-    "section": "Types of internal validity",
-    "text": "Types of internal validity\n\nX-validity (endogenous variables)\nT-validity (treatments, conditions)\nY-validity (outcome variables)\nC-validity (context)\n\n\n\nSee Egami and Hartman (2022) for more"
   }
 ]
