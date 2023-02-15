@@ -42,4 +42,4 @@ slide_buttons("/slides/06_slides")
 
 ## Lab
 
-External Validity {{< fa laptop-code >}} (coming soon!)
+[External validity {{< fa laptop-code >}}](labs/06_lab.Rmd)
