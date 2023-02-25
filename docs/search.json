@@ -212,16 +212,58 @@
   {
     "objectID": "content/08_content.html",
     "href": "content/08_content.html",
-    "title": "Course material",
+    "title": "Evidence-Informed Policy",
     "section": "",
-    "text": "Coming soon!"
+    "text": "This week we change topics. We’ll start our discussion of public policy with an introduction to the evidence-informed policy movement. This movement emerges from collaborations between governments and academics using cutting-edge statistical techniques to produce more credible evidence to determine what policies work, where, and why.\nThe lab discusses hypothesis testing, a commonly used approach to quantify statements on whether a policy works."
+  },
+  {
+    "objectID": "content/08_content.html#reading",
+    "href": "content/08_content.html#reading",
+    "title": "Evidence-Informed Policy",
+    "section": "Reading",
+    "text": "Reading\n\n RD sections 11-13\nBowers, Jake, and Paul F. Testa. 2019. “Better Government, Better Science: The Promise of and Challenges Facing the Evidence-Informed Policy Movement.” Annual Review of Political Science 22: 521-542"
+  },
+  {
+    "objectID": "content/08_content.html#slides",
+    "href": "content/08_content.html#slides",
+    "title": "Evidence-Informed Policy",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/08_content.html#lab",
+    "href": "content/08_content.html#lab",
+    "title": "Evidence-Informed Policy",
+    "section": "Lab",
+    "text": "Lab\nHypothesis testing  (coming soon!)"
   },
   {
     "objectID": "content/09_content.html",
     "href": "content/09_content.html",
-    "title": "Course material",
+    "title": "Field Experiments I",
     "section": "",
-    "text": "Coming soon!"
+    "text": "The next two weeks are about field experiments, also known as randomized controlled trials (RCTs) or A/B testing. These are experiments aimed testing the impact of a policy intervention.\n[CONTINUE HERE SO MANY VARIANTS. ALSO ONLY FOCUS ON THE DESIGN FOR THE LONG TERM PROGRAM READING]"
+  },
+  {
+    "objectID": "content/09_content.html#reading",
+    "href": "content/09_content.html#reading",
+    "title": "Field Experiments I",
+    "section": "Reading",
+    "text": "Reading\n\n RD section 18\nBowers, Jake, and Paul F. Testa. 2019. “Better Government, Better Science: The Promise of and Challenges Facing the Evidence-Informed Policy Movement.” Annual Review of Political Science 22: 521-542"
+  },
+  {
+    "objectID": "content/09_content.html#slides",
+    "href": "content/09_content.html#slides",
+    "title": "Field Experiments I",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/09_content.html#lab",
+    "href": "content/09_content.html#lab",
+    "title": "Field Experiments I",
+    "section": "Lab",
+    "text": "Lab\nField experimental designs I  (coming soon!)"
   },
   {
     "objectID": "content/10_content.html",

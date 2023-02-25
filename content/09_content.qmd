@@ -1,5 +1,41 @@
 ---
-title: "Course material"
+title: "Field Experiments I"
+date: "March 8, 2023"
+format: html
 ---
 
-Coming soon!
+
+```{r setup, echo = FALSE, results = "asis"}
+# Slide showing functions
+source(here::here("R", "show_slides.R"))
+```
+
+## Overview
+
+The next two weeks are about field experiments, also known as randomized controlled trials (RCTs) or A/B testing. These are experiments aimed testing the impact of a policy intervention.
+
+[CONTINUE HERE SO MANY VARIANTS. ALSO ONLY FOCUS ON THE DESIGN FOR THE LONG TERM PROGRAM READING]
+
+
+## Reading
+
+- [{{< fa book >}}]{style="color: #ac1455;"} [RD section 18](https://book.declaredesign.org/experimental-causal.html)
+
+- Bowers, Jake, and Paul F. Testa. 2019. [“Better Government, Better Science: The Promise of and Challenges Facing the Evidence-Informed Policy Movement.”](https://doi.org/10.1146/annurev-polisci-050517-124041) *Annual Review of Political Science* 22: 521-542
+
+## Slides
+
+::: {.callout-tip}
+## Navigation
+
+Click on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.
+:::
+
+```{r show-slides, echo = FALSE, results = "asis"}
+show_slide("/slides/placeholder")
+slide_buttons("/slides/09_slides")
+```
+
+## Lab
+
+Field experimental designs I {{< fa laptop-code >}} (coming soon!)
