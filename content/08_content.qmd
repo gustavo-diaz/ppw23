@@ -21,7 +21,7 @@ The lab discusses hypothesis testing, a commonly used approach to quantify state
 
 - [{{< fa book >}}]{style="color: #ac1455;"} [RD sections 11-13](https://book.declaredesign.org/redesigning.html)
 
-- Bowers, Jake, and Paul F. Testa. 2019. [“Better Government, Better Science: The Promise of and Challenges Facing the Evidence-Informed Policy Movement.”](https://doi.org/10.1146/annurev-polisci-050517-124041) *Annual Review of Political Science* 22: 521-542
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Bowers, Jake, and Paul F. Testa. 2019. [“Better Government, Better Science: The Promise of and Challenges Facing the Evidence-Informed Policy Movement.”](https://doi.org/10.1146/annurev-polisci-050517-124041) *Annual Review of Political Science* 22: 521-542
 
 ## Slides
 

@@ -1,5 +1,46 @@
 ---
-title: "Course material"
+title: "Beyond Experimentation"
+date: "March 22, 2023"
+format: html
 ---
 
-Coming soon!
+
+```{r setup, echo = FALSE, results = "asis"}
+# Slide showing functions
+source(here::here("R", "show_slides.R"))
+```
+
+## Overview
+
+We use experiments to understand whether a policy would work. We usually care about whether said policy works **outside** of the experimental setting. Experiments alone do not answer that question. Which opens a conversation on the scope and limitations of using experiments to inform policy-making.
+
+The lab illustrates these ideas by trying to compare experiments in different contexts.
+
+
+## Reading
+
+- [{{< fa book >}}]{style="color: #ac1455;"} [RD section 23](https://book.declaredesign.org/integration.html)
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Deaton, Angus, and Nancy Cartwright. 2018. [“Understanding and misunderstanding randomized controlled trials.”](https://doi.org/10.1016/j.socscimed.2017.12.005) *Social Science & Medicine* 210: 2-21
+
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Slough, Tara, Daniel Rubenson, Ro’ee Levy, et al. 2021. [“Adoption of community monitoring improves common pool resource management across contexts.”](https://doi.org/10.1073/pnas.2015367118) *Proceedings of the National Academy of Sciences* 118 (29): e2015367118
+
+
+
+## Slides
+
+::: {.callout-tip}
+## Navigation
+
+Click on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.
+:::
+
+```{r show-slides, echo = FALSE, results = "asis"}
+show_slide("/slides/placeholder")
+slide_buttons("/slides/11_slides")
+```
+
+## Lab
+
+Limitations of experiments {{< fa laptop-code >}} (coming soon!)

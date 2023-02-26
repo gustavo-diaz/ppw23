@@ -1,5 +1,44 @@
 ---
-title: "Course material"
+title: "Field Experiments II"
+date: "March 15, 2023"
+format: html
 ---
 
-Coming soon!
+
+```{r setup, echo = FALSE, results = "asis"}
+# Slide showing functions
+source(here::here("R", "show_slides.R"))
+```
+
+## Overview
+
+This is the second week of field experiments. We discuss block randomization and pre-post designs as variants from the canonical design. The Diaz and Rossiter (2023) reading is a bit technical, focus on understanding what block randomization and pre-post designs are. I suggest paying attention to sections 1 through 3 and then skimming the rest.
+
+The lab focuses on the trade-offs of adopting these research design variants.
+
+
+## Reading
+
+- [{{< fa book >}}]{style="color: #ac1455;"} [RD sections 20-22](https://book.declaredesign.org/research-design-lifecycle.html)
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Kalla, Joshua, Frances Rosenbluth, and Dawn Langan Teele. 2018. [“Are You My Mentor? A Field Experiment on Gender, Ethnicity, and Political Self-Starters.”](https://doi.org/10.1086/693984) *Journal of Politics* 80 (1): 337-341
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Diaz, Gustavo, and Erin Rossiter. 2023. [“Balancing Precision and Retention in Experimental Design.”](https://gustavodiaz.org/files/research/precision_retention.pdf) *Working Paper*
+
+
+## Slides
+
+::: {.callout-tip}
+## Navigation
+
+Click on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.
+:::
+
+```{r show-slides, echo = FALSE, results = "asis"}
+show_slide("/slides/placeholder")
+slide_buttons("/slides/10_slides")
+```
+
+## Lab
+
+Field experimental designs II {{< fa laptop-code >}} (coming soon!)

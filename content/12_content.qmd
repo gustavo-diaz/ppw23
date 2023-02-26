@@ -1,5 +1,41 @@
 ---
-title: "Course material"
+title: "Quasi-experiments I"
+date: "March 29, 2023"
+format: html
 ---
 
-Coming soon!
+
+```{r setup, echo = FALSE, results = "asis"}
+# Slide showing functions
+source(here::here("R", "show_slides.R"))
+```
+
+## Overview
+
+Experiments are helpful tools in trying to determine whether a policy works. But in many cases experimentation is unethical or unfeasible. In these contexts, researchers can try to leverage features of naturally occurring data that provide comparable levels of control. These are called **quasi-experiments** because we are **assuming** we can analyze them as if they were experiments.
+
+The lab introduces regression discontinuity designs, a common answer strategy for policies that use deterministic thresholds to determine eligibility.
+
+## Reading
+
+- [{{< fa book >}}]{style="color: #ac1455;"} [RD section 16](https://book.declaredesign.org/observational-causal.html)
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Hoekstra, Mark. 2009. [“The Effect of Attending the Flagship State University on Earnings: A Discontinuity-Based Approach.”](https://doi.org/10.1162/rest.91.4.717) *The Review of Economics and Statistics* 91 (4): 717-724
+
+
+## Slides
+
+::: {.callout-tip}
+## Navigation
+
+Click on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.
+:::
+
+```{r show-slides, echo = FALSE, results = "asis"}
+show_slide("/slides/placeholder")
+slide_buttons("/slides/12_slides")
+```
+
+## Lab
+
+Quasi-experimental designs I {{< fa laptop-code >}} (coming soon!)

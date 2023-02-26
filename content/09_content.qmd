@@ -14,14 +14,19 @@ source(here::here("R", "show_slides.R"))
 
 The next two weeks are about field experiments, also known as randomized controlled trials (RCTs) or A/B testing. These are experiments aimed testing the impact of a policy intervention.
 
-[CONTINUE HERE SO MANY VARIANTS. ALSO ONLY FOCUS ON THE DESIGN FOR THE LONG TERM PROGRAM READING]
+Field experiments are diverse both in terms of design and their domains of application, hence the need for two weeks.
+
+The lab focuses on the stepped-wedge or staggered adoption design.
 
 
 ## Reading
 
 - [{{< fa book >}}]{style="color: #ac1455;"} [RD section 18](https://book.declaredesign.org/experimental-causal.html)
 
-- Bowers, Jake, and Paul F. Testa. 2019. [“Better Government, Better Science: The Promise of and Challenges Facing the Evidence-Informed Policy Movement.”](https://doi.org/10.1146/annurev-polisci-050517-124041) *Annual Review of Political Science* 22: 521-542
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Banerjee, Abhijit, Esther Duflo, and Garima Sharma. 2021. [“Long-Term Effects of the Targeting the Ultra Poor Program.”](https://www.nber.org/system/files/working_papers/w28074/w28074.pdf) *American Economic Review: Insights* 3 (4): 471-486
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Pennycook, Gordon, Ziv Epstein, Mohsen Mosleh, Antonio A. Arechar, Dean Eckles, and David G. Rand. 2021. [“Shifting attention to accuracy can reduce misinformation online.”](https://www.nature.com/articles/s41586-021-03344-2) *Nature* 592: 590-595
+
 
 ## Slides
 

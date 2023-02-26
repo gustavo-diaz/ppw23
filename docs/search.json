@@ -221,7 +221,7 @@
     "href": "content/08_content.html#reading",
     "title": "Evidence-Informed Policy",
     "section": "Reading",
-    "text": "Reading\n\n RD sections 11-13\nBowers, Jake, and Paul F. Testa. 2019. “Better Government, Better Science: The Promise of and Challenges Facing the Evidence-Informed Policy Movement.” Annual Review of Political Science 22: 521-542"
+    "text": "Reading\n\n RD sections 11-13\n Bowers, Jake, and Paul F. Testa. 2019. “Better Government, Better Science: The Promise of and Challenges Facing the Evidence-Informed Policy Movement.” Annual Review of Political Science 22: 521-542"
   },
   {
     "objectID": "content/08_content.html#slides",
@@ -242,14 +242,14 @@
     "href": "content/09_content.html",
     "title": "Field Experiments I",
     "section": "",
-    "text": "The next two weeks are about field experiments, also known as randomized controlled trials (RCTs) or A/B testing. These are experiments aimed testing the impact of a policy intervention.\n[CONTINUE HERE SO MANY VARIANTS. ALSO ONLY FOCUS ON THE DESIGN FOR THE LONG TERM PROGRAM READING]"
+    "text": "The next two weeks are about field experiments, also known as randomized controlled trials (RCTs) or A/B testing. These are experiments aimed testing the impact of a policy intervention.\nField experiments are diverse both in terms of design and their domains of application, hence the need for two weeks.\nThe lab focuses on the stepped-wedge or staggered adoption design."
   },
   {
     "objectID": "content/09_content.html#reading",
     "href": "content/09_content.html#reading",
     "title": "Field Experiments I",
     "section": "Reading",
-    "text": "Reading\n\n RD section 18\nBowers, Jake, and Paul F. Testa. 2019. “Better Government, Better Science: The Promise of and Challenges Facing the Evidence-Informed Policy Movement.” Annual Review of Political Science 22: 521-542"
+    "text": "Reading\n\n RD section 18\n Banerjee, Abhijit, Esther Duflo, and Garima Sharma. 2021. “Long-Term Effects of the Targeting the Ultra Poor Program.” American Economic Review: Insights 3 (4): 471-486\n Pennycook, Gordon, Ziv Epstein, Mohsen Mosleh, Antonio A. Arechar, Dean Eckles, and David G. Rand. 2021. “Shifting attention to accuracy can reduce misinformation online.” Nature 592: 590-595"
   },
   {
     "objectID": "content/09_content.html#slides",
@@ -268,37 +268,121 @@
   {
     "objectID": "content/10_content.html",
     "href": "content/10_content.html",
-    "title": "Course material",
+    "title": "Field Experiments II",
     "section": "",
-    "text": "Coming soon!"
+    "text": "This is the second week of field experiments. We discuss block randomization and pre-post designs as variants from the canonical design. The Diaz and Rossiter (2023) reading is a bit technical, focus on understanding what block randomization and pre-post designs are. I suggest paying attention to sections 1 through 3 and then skimming the rest.\nThe lab focuses on the trade-offs of adopting these research design variants."
+  },
+  {
+    "objectID": "content/10_content.html#reading",
+    "href": "content/10_content.html#reading",
+    "title": "Field Experiments II",
+    "section": "Reading",
+    "text": "Reading\n\n RD sections 20-22\n Kalla, Joshua, Frances Rosenbluth, and Dawn Langan Teele. 2018. “Are You My Mentor? A Field Experiment on Gender, Ethnicity, and Political Self-Starters.” Journal of Politics 80 (1): 337-341\n Diaz, Gustavo, and Erin Rossiter. 2023. “Balancing Precision and Retention in Experimental Design.” Working Paper"
+  },
+  {
+    "objectID": "content/10_content.html#slides",
+    "href": "content/10_content.html#slides",
+    "title": "Field Experiments II",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/10_content.html#lab",
+    "href": "content/10_content.html#lab",
+    "title": "Field Experiments II",
+    "section": "Lab",
+    "text": "Lab\nField experimental designs II  (coming soon!)"
   },
   {
     "objectID": "content/11_content.html",
     "href": "content/11_content.html",
-    "title": "Course material",
+    "title": "Beyond Experimentation",
     "section": "",
-    "text": "Coming soon!"
+    "text": "We use experiments to understand whether a policy would work. We usually care about whether said policy works outside of the experimental setting. Experiments alone do not answer that question. Which opens a conversation on the scope and limitations of using experiments to inform policy-making.\nThe lab illustrates these ideas by trying to compare experiments in different contexts."
+  },
+  {
+    "objectID": "content/11_content.html#reading",
+    "href": "content/11_content.html#reading",
+    "title": "Beyond Experimentation",
+    "section": "Reading",
+    "text": "Reading\n\n RD section 23\n Deaton, Angus, and Nancy Cartwright. 2018. “Understanding and misunderstanding randomized controlled trials.” Social Science & Medicine 210: 2-21\n Slough, Tara, Daniel Rubenson, Ro’ee Levy, et al. 2021. “Adoption of community monitoring improves common pool resource management across contexts.” Proceedings of the National Academy of Sciences 118 (29): e2015367118"
+  },
+  {
+    "objectID": "content/11_content.html#slides",
+    "href": "content/11_content.html#slides",
+    "title": "Beyond Experimentation",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/11_content.html#lab",
+    "href": "content/11_content.html#lab",
+    "title": "Beyond Experimentation",
+    "section": "Lab",
+    "text": "Lab\nLimitations of experiments  (coming soon!)"
   },
   {
     "objectID": "content/12_content.html",
     "href": "content/12_content.html",
-    "title": "Course material",
+    "title": "Quasi-experiments I",
     "section": "",
-    "text": "Coming soon!"
+    "text": "Experiments are helpful tools in trying to determine whether a policy works. But in many cases experimentation is unethical or unfeasible. In these contexts, researchers can try to leverage features of naturally occurring data that provide comparable levels of control. These are called quasi-experiments because we are assuming we can analyze them as if they were experiments.\nThe lab introduces regression discontinuity designs, a common answer strategy for policies that use deterministic thresholds to determine eligibility."
+  },
+  {
+    "objectID": "content/12_content.html#reading",
+    "href": "content/12_content.html#reading",
+    "title": "Quasi-experiments I",
+    "section": "Reading",
+    "text": "Reading\n\n RD section 16\n Hoekstra, Mark. 2009. “The Effect of Attending the Flagship State University on Earnings: A Discontinuity-Based Approach.” The Review of Economics and Statistics 91 (4): 717-724"
+  },
+  {
+    "objectID": "content/12_content.html#slides",
+    "href": "content/12_content.html#slides",
+    "title": "Quasi-experiments I",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/12_content.html#lab",
+    "href": "content/12_content.html#lab",
+    "title": "Quasi-experiments I",
+    "section": "Lab",
+    "text": "Lab\nQuasi-experimental designs I  (coming soon!)"
   },
   {
     "objectID": "content/13_content.html",
     "href": "content/13_content.html",
-    "title": "Course material",
+    "title": "Quasi-experiments II",
     "section": "",
-    "text": "Coming soon!"
+    "text": "We continue the conversation on quasi-experiments. This time we focus on difference-in-differences, a research design that relies on repeated observations of units before and after a policy is implemented to make claims about cause and effect. Unlike the previous week, we are not pretending that our data looks as if an experiment was conducted.\nThe lab discusses difference-in-differences designs."
+  },
+  {
+    "objectID": "content/13_content.html#reading",
+    "href": "content/13_content.html#reading",
+    "title": "Quasi-experiments II",
+    "section": "Reading",
+    "text": "Reading\n\n RD section 16\n Leninger, Arndt, Marie-Lou Sohnius, Thorsten Faas, Sigrid Roßteutscher, and Armin Schäfer. 2022. “Temporary Disenfranchisement: Negative Side Effects of Lowering the Voting Age.” American Political Science Review"
+  },
+  {
+    "objectID": "content/13_content.html#slides",
+    "href": "content/13_content.html#slides",
+    "title": "Quasi-experiments II",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/13_content.html#lab",
+    "href": "content/13_content.html#lab",
+    "title": "Quasi-experiments II",
+    "section": "Lab",
+    "text": "Lab\nQuasi-experimental designs II  (coming soon!)"
   },
   {
     "objectID": "content/14_content.html",
     "href": "content/14_content.html",
     "title": "Week 14: Flex Class or Open Lab",
     "section": "",
-    "text": "We are leaving one empty spot in our schedule just in case, we can use our time this week in four ways:\n\nCatch up on missed content due to unforeseen circumstances\nLearn more about a topic that caught our attention during the semester\nDiscuss steps to learn more about the topic of this class or to take advantage of what you learned this semester\nHave an unstructured lab session so we can work on final projects and help each other out\n\nThese are not mutually exclusive. We will collectively decide what to do and I will update this page accordingly."
+    "text": "We are leaving one empty spot in our schedule just in case, we can use our time this week in four ways:\n\nCatch up on missed content\nLearn more about a topic that caught our attention during the semester\nDiscuss steps to learn more about the topic of this class or to take advantage of what you learned this semester\nHave an unstructured lab session so we can work on final projects and help each other out\n\nThese are not mutually exclusive. We will collectively decide what to do and I will update this page accordingly."
   },
   {
     "objectID": "content/index.html",
