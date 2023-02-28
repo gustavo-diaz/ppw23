@@ -1,0 +1,226 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(ggdag)
+
+# Global options
+theme_set(theme_dag(base_size = 40))
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Evidence-Informed Policy {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Policy
+
+::: incremental
+
+- **Policy** is an umbrella term to describe government programs or operations at different levels
+
+- **Examples:**
+
+    - How long should form 57B be?
+    
+    - Should we get help from private clinics to clear surgey backlogs?
+    
+    - Should the education budget increase?
+    
+    - When should the next federal election be held?
+
+:::
+
+## Evidence-Informed
+
+::: incremental
+- Of course we want to base policy on evidence!
+
+- But there is no *objective* evidence when it comes to human behavior
+
+- We say evidence-*informed* because the best we can do is try to prove ourselves wrong, but we cannot *base* policy on evidence the same way medicine does
+
+:::
+
+## Two approaches
+
+::: {.fragment .semi-fade-out fragment-index=1}
+1. Evidence as **insight**
+:::
+
+::: {.fragment .highlight-red fragment-index=1}
+2. Evidence as **evaluation**
+:::
+
+# How can you determine if a policy works?
+
+## Example
+
+![](figs/fisher_book.png){fig-align="center"}
+
+## The lady tasting tea
+
+. . . 
+
+*A lady declares that by tasting a cup of tea made with milk she can discriminate whether the milk or the tea infusion was first added to the cup*
+
+. . .
+
+&nbsp;
+
+::: {style="text-align: center"}
+How do you **evaluate** this claim?
+:::
+
+## An experiment
+
+::: incremental
+- Suppose we have eight milk tea cups
+
+- 4 milk first, 4 tea first
+
+- We arrange them in random order
+
+- Lady knows there are 4 of each, but not which ones
+:::
+
+## Results
+
+```{r}
+tea = tribble(
+  ~Lady, ~Tea, ~Milk,
+  "Tea", 3, 1,
+  "Milk", 1, 3
+)
+
+tea = tea %>% mutate(
+  Lady = ifelse(Lady == "Tea", 
+                "Tea First",
+                "Milk First"))
+
+colnames(tea) = c("Lady's Guesses", "Tea First", "Milk First")
+
+tea %>% 
+  kbl() %>% 
+  add_header_above(c(" " = 1, "True Order" = 2))
+```
+
+::: incremental
+- She gets it right $6/8$ times
+
+- What can we conclude?
+:::
+
+
+## Problem
+
+::: incremental
+- How does "being able to discriminate" look like?
+
+- Same for policy, we don't know how the world where the policy works look like
+
+- But we **do know** how a person without the ability to discriminate milk/tea order looks like
+
+- This lets us make **probability statements** about this **hypothetical world of no effect** 
+:::
+
+## A person with no ability
+
+```{r}
+nulldist = tribble(
+  ~count, ~combinations, ~number,
+  0, "xxxx", "\\(1 \\times 1 = 1\\)",
+  1, "xxxo, xxox, xoxx, oxxx", "\\(4 \\times 4 = 16\\)", 
+  2, "xxoo, xoxo, xoox, oxox, ooxx, oxxo", "\\(6 \\times 6 = 36\\)",
+  3, "xooo, oxoo, ooxo, ooox", "\\(4 \\times 4 = 16\\)",
+  4, "oooo", "\\(1 \\times 1 = 1\\)"
+)
+
+colnames(nulldist) = c("Count", "Possible combinations", "Total")
+
+nulldist %>% 
+  kbl(escape = FALSE) %>% 
+  column_spec(3, color = "white")
+  
+```
+
+. . .
+
+- We can repeat this for both successes and failures
+
+
+## A person with no ability {visiblity="uncounted"}
+
+```{r}
+nulldist %>% 
+  kbl(escape = FALSE)
+```
+
+::: incremental
+- A person just guessing gets $6/8$ cups right with probability $\frac{16}{70} \approx 0.23$
+- And **at least** $6/8$ cups with $\frac{16 + 1}{70} \approx 0.24$
+:::
+
+## p-values
+
+::: incremental
+- If the lady is not able to discriminate milk-tea order, the chance of observing 6/8 correct guesses or better is 24%
+
+- We can translate this to general statements about policies or experiments
+
+- If the **null hypothesis** of no effect is true...
+
+- ... the **p-value** is the probability of observing a result *equal or more extreme* than what is originally observed
+
+- Smaller p-values give more evidence **against** the null, which helps us make a case for the policy having an effect
+
+:::
+
+## Diagnosing hypothesis tests
+
+::: incremental
+
+- A convention in the social sciences is to claim that something with $p < 0.05$ is *statistically significant*^[There is no good reason for this other than path dependency]
+
+- Committing to a **significance level** implies accepting that sometimes we will get $p < 0.05$ by chance
+
+- This is a **false positive** result
+
+- A good answer strategy as a **controlled** false positive rate  `(more in the lab!)`
+
+:::
+
+
+::: {style="text-align: center"}
+## Next Two Weeks {.center background-color="#8BD3E6"}
+### Field Experiments
+
+**Focus on:** Research design alternatives
+:::
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::

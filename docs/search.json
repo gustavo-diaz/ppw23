@@ -1496,5 +1496,131 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
+  },
+  {
+    "objectID": "slides/08_slides.html#evidence-informed-policy",
+    "href": "slides/08_slides.html#evidence-informed-policy",
+    "title": "Public Opinion and Policy",
+    "section": "Evidence-Informed Policy",
+    "text": "Evidence-Informed Policy\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/08_slides.html#policy",
+    "href": "slides/08_slides.html#policy",
+    "title": "Public Opinion and Policy",
+    "section": "Policy",
+    "text": "Policy\n\n\nPolicy is an umbrella term to describe government programs or operations at different levels\nExamples:\n\nHow long should form 57B be?\nShould we get help from private clinics to clear surgey backlogs?\nShould the education budget increase?\nWhen should the next federal election be held?"
+  },
+  {
+    "objectID": "slides/08_slides.html#evidence-informed",
+    "href": "slides/08_slides.html#evidence-informed",
+    "title": "Public Opinion and Policy",
+    "section": "Evidence-Informed",
+    "text": "Evidence-Informed\n\n\nOf course we want to base policy on evidence!\nBut there is no objective evidence when it comes to human behavior\nWe say evidence-informed because the best we can do is try to prove ourselves wrong, but we cannot base policy on evidence the same way medicine does"
+  },
+  {
+    "objectID": "slides/08_slides.html#next-two-weeks",
+    "href": "slides/08_slides.html#next-two-weeks",
+    "title": "Public Opinion and Policy",
+    "section": "Next Two Weeks",
+    "text": "Next Two Weeks\nField Experiments\nFocus on: Research design alternatives"
+  },
+  {
+    "objectID": "slides/08_slides.html#break-time",
+    "href": "slides/08_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/08_slides.html#fa-laptop-code-lab",
+    "href": "slides/08_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
+    "objectID": "slides/08_slides.html#two-approaches",
+    "href": "slides/08_slides.html#two-approaches",
+    "title": "Public Opinion and Policy",
+    "section": "Two approaches",
+    "text": "Two approaches\n\n\nEvidence as insight\n\n\n\n\nEvidence as evaluation"
+  },
+  {
+    "objectID": "slides/08_slides.html#example",
+    "href": "slides/08_slides.html#example",
+    "title": "Public Opinion and Policy",
+    "section": "Example",
+    "text": "Example"
+  },
+  {
+    "objectID": "slides/08_slides.html#the-lady-tasting-tea",
+    "href": "slides/08_slides.html#the-lady-tasting-tea",
+    "title": "Public Opinion and Policy",
+    "section": "The lady tasting tea",
+    "text": "The lady tasting tea\n\nA lady declares that by tasting a cup of tea made with milk she can discriminate whether the milk or the tea infusion was first added to the cup\n\n\n \n\nHow do you evaluate this claim?"
+  },
+  {
+    "objectID": "slides/08_slides.html#problem",
+    "href": "slides/08_slides.html#problem",
+    "title": "Public Opinion and Policy",
+    "section": "Problem",
+    "text": "Problem\n\n\nHow does “being able to discriminate” look like?\nSame for policy, we don’t know how the world where the policy works look like\nBut we do know how a person without the ability to discriminate milk/tea order looks like\nThis lets us make probability statements about this hypothetical world of no effect"
+  },
+  {
+    "objectID": "slides/08_slides.html#an-experiment",
+    "href": "slides/08_slides.html#an-experiment",
+    "title": "Public Opinion and Policy",
+    "section": "An experiment",
+    "text": "An experiment\n\n\nSuppose we have eight milk tea cups\n4 milk first, 4 tea first\nWe arrange them in random order\nLady knows there are 4 of each, but not which ones"
+  },
+  {
+    "objectID": "slides/08_slides.html#results",
+    "href": "slides/08_slides.html#results",
+    "title": "Public Opinion and Policy",
+    "section": "Results",
+    "text": "Results\n\n\n\n \n\n\nTrue Order\n\n  \n    Lady's Guesses \n    Tea First \n    Milk First \n  \n \n\n  \n    Tea First \n    3 \n    1 \n  \n  \n    Milk First \n    1 \n    3 \n  \n\n\n\n\n\n\nShe gets it right \\(6/8\\) times\nWhat can we conclude?"
+  },
+  {
+    "objectID": "slides/08_slides.html#a-person-with-no-ability",
+    "href": "slides/08_slides.html#a-person-with-no-ability",
+    "title": "Public Opinion and Policy",
+    "section": "A person with no ability",
+    "text": "A person with no ability\n\n\n\n \n  \n    Count \n    Possible combinations \n    Total \n  \n \n\n  \n    0 \n    xxxx \n    \\(1 \\times 1 = 1\\) \n  \n  \n    1 \n    xxxo, xxox, xoxx, oxxx \n    \\(4 \\times 4 = 16\\) \n  \n  \n    2 \n    xxoo, xoxo, xoox, oxox, ooxx, oxxo \n    \\(6 \\times 6 = 36\\) \n  \n  \n    3 \n    xooo, oxoo, ooxo, ooox \n    \\(4 \\times 4 = 16\\) \n  \n  \n    4 \n    oooo \n    \\(1 \\times 1 = 1\\) \n  \n\n\n\n\n\n\nWe can repeat this for both successes and failures"
+  },
+  {
+    "objectID": "slides/08_slides.html#incremental",
+    "href": "slides/08_slides.html#incremental",
+    "title": "Public Opinion and Policy",
+    "section": "::: incremental",
+    "text": "::: incremental"
+  },
+  {
+    "objectID": "slides/08_slides.html#a-person-with-no-ability-1",
+    "href": "slides/08_slides.html#a-person-with-no-ability-1",
+    "title": "Public Opinion and Policy",
+    "section": "A person with no ability",
+    "text": "A person with no ability\n\n\n\n \n  \n    Count \n    Possible combinations \n    Total \n  \n \n\n  \n    0 \n    xxxx \n    \\(1 \\times 1 = 1\\) \n  \n  \n    1 \n    xxxo, xxox, xoxx, oxxx \n    \\(4 \\times 4 = 16\\) \n  \n  \n    2 \n    xxoo, xoxo, xoox, oxox, ooxx, oxxo \n    \\(6 \\times 6 = 36\\) \n  \n  \n    3 \n    xooo, oxoo, ooxo, ooox \n    \\(4 \\times 4 = 16\\) \n  \n  \n    4 \n    oooo \n    \\(1 \\times 1 = 1\\) \n  \n\n\n\n\n\n\nA person just guessing gets \\(6/8\\) cups right with probability \\(\\frac{16}{70} \\approx 0.23\\)\nAnd at least \\(6/8\\) cups with \\(\\frac{16 + 1}{70} \\approx 0.24\\)"
+  },
+  {
+    "objectID": "slides/08_slides.html#p-values",
+    "href": "slides/08_slides.html#p-values",
+    "title": "Public Opinion and Policy",
+    "section": "p-values",
+    "text": "p-values\n\n\nIf the lady is not able to discriminate milk-tea order, the chance of observing 6/8 correct guesses or better is 24%\nWe can translate this to general statements about policies or experiments\nIf the null hypothesis of no effect is true…\n… the p-value is the probability of observing a result equal or more extreme than what is originally observed\nSmaller p-values give more evidence against the null, which helps us make a case for the policy having an effect"
+  },
+  {
+    "objectID": "slides/08_slides.html#diagnosing-hypothesis-tests",
+    "href": "slides/08_slides.html#diagnosing-hypothesis-tests",
+    "title": "Public Opinion and Policy",
+    "section": "Diagnosing hypothesis tests",
+    "text": "Diagnosing hypothesis tests\n\n\nA convention in the social sciences is to claim that something with \\(p < 0.05\\) is statistically significant1\nCommitting to a significance level implies accepting that sometimes we will get \\(p < 0.05\\) by chance\nThis is a false positive result\nA good answer strategy as a controlled false positive rate (more in the lab!)\n\n\nThere is no good reason for this other than path dependency"
+  },
+  {
+    "objectID": "slides/08_slides.html",
+    "href": "slides/08_slides.html",
+    "title": "Public Opinion and Policy",
+    "section": "",
+    "text": "POLSCI 4SS3\nWinter 2023"
   }
 ]
