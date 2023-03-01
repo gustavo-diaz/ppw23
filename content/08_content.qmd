@@ -39,4 +39,4 @@ slide_buttons("/slides/08_slides")
 
 ## Lab
 
-[Hypothesis testing {{< fa laptop-code >}}]((labs/08_lab.Rmd))
+[Hypothesis testing {{< fa laptop-code >}}](labs/08_lab.Rmd)
