@@ -24,7 +24,7 @@ schedule =
     5, "February 8", "[Survey experiments](content/05_content.qmd)", "Survey experimental designs",
     6, "February 15", "[Convenience samples](content/06_content.qmd)", "External validity",
     7, "February 22", "Mid-term recess", NA,
-    8, "March 1", "[Evidence-informed policy]((content/08_content.qmd))", "Hypothesis testing",
+    8, "March 1", "[Evidence-informed policy](content/08_content.qmd)", "Hypothesis testing",
     9, "March 8", "[Field experiments I](content/09_content.qmd)", "Field experimental designs I",
     10, "March 15", "[Field experiments II](content/10_content.qmd)", "Field experimental designs II",
     11, "March 22", "[Beyond experimentation](content/11_content.qmd)", "Limitations of experiments",
