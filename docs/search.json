@@ -1622,5 +1622,138 @@
     "title": "Public Opinion and Policy",
     "section": "",
     "text": "POLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/09_slides.html#field-experiments-i",
+    "href": "slides/09_slides.html#field-experiments-i",
+    "title": "Public Opinion and Policy",
+    "section": "Field Experiments I",
+    "text": "Field Experiments I\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/09_slides.html#last-time",
+    "href": "slides/09_slides.html#last-time",
+    "title": "Public Opinion and Policy",
+    "section": "Last time",
+    "text": "Last time\n\nHypothesis testing as a standard to evaluate if experiments suggest that policies works\nWe don’t know how things look when the policy work, but we can contrast with the hypothetical world in which it doesn’t work\nWe can only do this if we know how the experiment was conducted!\nLab: Statistical power as a diagnosand to determine if an experiment is well equipped to detect “true” effects\nToday: Start applying these concepts to field experiments"
+  },
+  {
+    "objectID": "slides/09_slides.html#field-experiments",
+    "href": "slides/09_slides.html#field-experiments",
+    "title": "Public Opinion and Policy",
+    "section": "Field Experiments",
+    "text": "Field Experiments\n\n\nField: Interventions in real world settings (vs. surveys, laboratory)\nExperiment: Randomization determines assignment of units to conditions\nAKA randomized controlled trials in policy or A/B testing in industry\nCore idea: Randomization allows us to produce credible evidence on whether something works\nIn practice: A lot of implementation details and research design choices to navigate"
+  },
+  {
+    "objectID": "slides/09_slides.html#tup-program",
+    "href": "slides/09_slides.html#tup-program",
+    "title": "Public Opinion and Policy",
+    "section": "TUP program",
+    "text": "TUP program"
+  },
+  {
+    "objectID": "slides/09_slides.html#next-week",
+    "href": "slides/09_slides.html#next-week",
+    "title": "Public Opinion and Policy",
+    "section": "Next Week",
+    "text": "Next Week\nMore field experiments\nFocus on: Sections 1-3 of Diaz and Rossitter (2023)"
+  },
+  {
+    "objectID": "slides/09_slides.html#break-time",
+    "href": "slides/09_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/09_slides.html#fa-laptop-code-lab",
+    "href": "slides/09_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
+    "objectID": "slides/09_slides.html#banerjee-et-al-2021-tup-program",
+    "href": "slides/09_slides.html#banerjee-et-al-2021-tup-program",
+    "title": "Public Opinion and Policy",
+    "section": "Banerjee et al (2021): TUP program",
+    "text": "Banerjee et al (2021): TUP program\n\n\nPoverty trap: Most programs to help the poor improve living conditions in the short term, but revert afterwards\nSolution: Multidimensional “big push” to overcome poverty traps\nEvaluate long-term effect on poorest villages in West Bengal, India"
+  },
+  {
+    "objectID": "slides/09_slides.html#household-eligibility-criteria",
+    "href": "slides/09_slides.html#household-eligibility-criteria",
+    "title": "Public Opinion and Policy",
+    "section": "Household eligibility criteria",
+    "text": "Household eligibility criteria\n\n\nAble bodied female member (why?)\nNo credit access\n\n\n\nAND at least three out of\n\n\n\nBelow 0.2 acres of land (about 2 basketball courts)\nNo productive assets\nNo able-bodied male member\nKids who work instead of going to school\nNo formal source of income"
+  },
+  {
+    "objectID": "slides/09_slides.html#data-strategy",
+    "href": "slides/09_slides.html#data-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Data strategy",
+    "text": "Data strategy\n\nSample: 978 eligible households\n514 assigned to treatment\n266 accepted treatment\n\n\n \n\nWhat was the treatment?"
+  },
+  {
+    "objectID": "slides/09_slides.html#answer-strategy",
+    "href": "slides/09_slides.html#answer-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Answer strategy",
+    "text": "Answer strategy\n\n\nTrack economic and health outcomes after 18 months, 3, 7, and 10 years\nOf all household members\nFocus on average treatment effect among the treated (more in the lab)"
+  },
+  {
+    "objectID": "slides/09_slides.html#findings",
+    "href": "slides/09_slides.html#findings",
+    "title": "Public Opinion and Policy",
+    "section": "Findings",
+    "text": "Findings"
+  },
+  {
+    "objectID": "slides/09_slides.html#why-does-this-work",
+    "href": "slides/09_slides.html#why-does-this-work",
+    "title": "Public Opinion and Policy",
+    "section": "Why does this work?",
+    "text": "Why does this work?\n\n\n\n \n\n\nATE on income from...\n\n  \n    Time \n    Livestock \n    Micro-enterprise \n    Self-employment \n    Remittances \n  \n \n\n  \n    18 months \n    10.26 \n    7.93 \n    18.67 \n    0.00 \n  \n  \n    3 years \n    7.68 \n    25.12 \n    31.06 \n    3.70 \n  \n  \n    7 years \n    27.26 \n    67.59 \n    108.36 \n    8.87 \n  \n  \n    10 years \n    16.71 \n    36.82 \n    93.87 \n    19.06 \n  \n\n\n\n\n\n\nTakeaway: Big push works because it helps people diversify their income sources over time\n\n\n\n\nFull results on Table 3 of the reading"
+  },
+  {
+    "objectID": "slides/09_slides.html#pennycook-et-al-2021-shifting-attention-to-accuracy-can-reduce-misinformation-online",
+    "href": "slides/09_slides.html#pennycook-et-al-2021-shifting-attention-to-accuracy-can-reduce-misinformation-online",
+    "title": "Public Opinion and Policy",
+    "section": "Pennycook et al (2021): Shifting attention to accuracy can reduce misinformation online",
+    "text": "Pennycook et al (2021): Shifting attention to accuracy can reduce misinformation online\n\n\nWhy do people share fake news in social media?\n\n\n\nThree explanations:\n\n\nConfusion about accuracy\n\n\n\n\nPartisanship \\(>\\) accuracy\n\n\n\n\nInattention to accuracy"
+  },
+  {
+    "objectID": "slides/09_slides.html#study-7-application-to-twitter",
+    "href": "slides/09_slides.html#study-7-application-to-twitter",
+    "title": "Public Opinion and Policy",
+    "section": "Study 7: Application to Twitter",
+    "text": "Study 7: Application to Twitter\n\n\nStudies 1-7 were all survey experiments\nStudy 7 deploys intervention on Twitter to see if priming accuracy works\nN = 5,739 users who previously shared news from untrustworthy sources\nTreatment: Send a DM asking to evaluate accuracy of news article"
+  },
+  {
+    "objectID": "slides/09_slides.html#challenge-to-data-strategy",
+    "href": "slides/09_slides.html#challenge-to-data-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Challenge to data strategy",
+    "text": "Challenge to data strategy\n\n\n\n\nCan only send DM to someone who follows you\nNeed to create bot accounts and hope for follow-backs\nIdentify those who retweet fake news\nLimit 20 DMs per account per day\n3 waves with many 24-hour blocks in each"
+  },
+  {
+    "objectID": "slides/09_slides.html#stepped-wedge-design",
+    "href": "slides/09_slides.html#stepped-wedge-design",
+    "title": "Public Opinion and Policy",
+    "section": "Stepped-wedge design",
+    "text": "Stepped-wedge design\n\n\n\n\n\n\n\nAKA staggered adoption design"
+  },
+  {
+    "objectID": "slides/09_slides.html#findings-1",
+    "href": "slides/09_slides.html#findings-1",
+    "title": "Public Opinion and Policy",
+    "section": "Findings",
+    "text": "Findings\n\n\n\n\n\n\n\nThe size of each dot represents the proportion of pre-treatment posts from that outlet"
+  },
+  {
+    "objectID": "slides/09_slides.html#program",
+    "href": "slides/09_slides.html#program",
+    "title": "Public Opinion and Policy",
+    "section": "Program",
+    "text": "Program\n\nChoose a productive asset (82% chose livestock)\nWeekly consumption support for 30–40 weeks\nAccess to savings\nWeekly visits from program staff over a span of 18 months\n\n\n \n\nWhy would someone reject this?"
   }
 ]

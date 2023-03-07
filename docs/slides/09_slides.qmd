@@ -1,0 +1,253 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+
+# Global options
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Field Experiments I {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Last time {background-color="#FDBF57"}
+
+- Hypothesis testing as a standard to evaluate if experiments suggest that policies works
+
+- We don't know how things look when the policy work, but we can contrast with the hypothetical world in which it doesn't work
+
+- We can only do this if we know how the experiment was conducted!
+
+- **Lab:** Statistical power as a diagnosand to determine if an experiment is well equipped to detect "true" effects
+
+- **Today:** Start applying these concepts to **field experiments**
+
+## Field Experiments
+
+::: incremental
+
+- **Field:** Interventions in real world settings `(vs. surveys, laboratory)`
+
+- **Experiment:** Randomization determines assignment of units to conditions
+
+- AKA *randomized controlled trials* in policy or *A/B testing* in industry
+
+- **Core idea:** Randomization allows us to produce credible evidence on whether something works
+
+- **In practice:** A lot of implementation details and research design choices to navigate
+:::
+
+# Examples
+
+## Banerjee et al (2021): TUP program
+
+::: incremental
+
+- **Poverty trap:** Most programs to help the poor improve living conditions in the short term, but revert afterwards
+
+- **Solution:** Multidimensional "big push" to overcome poverty traps
+
+- Evaluate long-term effect on poorest villages in West Bengal, India
+
+:::
+
+## Household eligibility criteria
+
+. . .
+
+1. Able bodied female member `(why?)`
+2. No credit access
+
+. . . 
+
+**AND** at least three out of
+
+. . .
+
+1. Below 0.2 acres of land `(about 2 basketball courts)`
+2. No productive assets
+3. No able-bodied male member
+4. Kids who work instead of going to school
+5. No formal source of income
+
+## Data strategy
+
+- **Sample:** 978 eligible households
+
+- 514 **assigned** to treatment
+
+- 266 **accepted** treatment 
+
+. . .
+
+&nbsp;
+
+::: {style="text-align: center"}
+What was the treatment?
+:::
+
+## Program
+
+- Choose a productive asset `(82% chose livestock)`
+
+- Weekly consumption support for 30–40 weeks
+
+- Access to savings
+
+- Weekly visits from program staff over a span of 18 months
+
+. . .
+
+&nbsp;
+
+::: {style="text-align: center"}
+Why would someone reject this?
+:::
+
+## Answer strategy
+
+::: incremental
+- Track economic and health outcomes after 18 months, 3, 7, and 10 years
+
+- Of all household members
+
+- Focus on average treatment effect **among the treated** `(more in the lab)`
+:::
+
+## Findings
+
+![](figs/8_tup_1.png){fig-align="center"}
+
+## Why does this work?
+
+```{r}
+tup_tab = data.frame(
+  Time = c("18 months", "3 years", "7 years", "10 years"),
+  Livestock = c(10.26, 7.68, 27.26, 16.71),
+  Micro = c(7.93, 25.12, 67.59, 36.82),
+  Self = c(18.67, 31.06, 108.36, 93.87),
+  Remittances = c(0.00, 3.70, 8.87, 19.06)
+)
+colnames(tup_tab) = c("Time", "Livestock", "Micro-enterprise", "Self-employment", "Remittances")
+
+tup_tab %>% 
+  kbl() %>% 
+  kable_styling(font_size = 30) %>% 
+  add_header_above(c(" " = 1, "ATE on income from..." = 4))
+  
+```
+
+. . .
+
+- **Takeaway:** Big push works because it helps people diversify their income sources over time
+
+::: aside
+Full results on Table 3 of the reading
+:::
+
+## Pennycook et al (2021): Shifting attention to accuracy can reduce misinformation online
+
+::: {.fragment fragment-index=1}
+- Why do people share fake news in social media?
+:::
+
+::: {.fragment fragment-index=2}
+Three explanations:
+
+::: {.fragment .semi-fade-out fragment-index=3}
+1. Confusion about accuracy
+:::
+
+::: {.fragment .semi-fade-out fragment-index=3}
+2. Partisanship $>$ accuracy
+:::
+
+::: {.fragment .highlight-red fragment-index=3}
+3. Inattention to accuracy
+:::
+:::
+
+## Study 7: Application to Twitter
+
+::: incremental
+- Studies 1-7 were all survey experiments
+
+- Study 7 deploys intervention on Twitter to see if priming accuracy works
+
+- N = 5,739 users who previously shared news from untrustworthy sources
+
+- **Treatment:** Send a DM asking to evaluate accuracy of news article
+:::
+
+## Challenge to data strategy
+
+:::: {.columns}
+::: {.column width="60%"}
+::: incremental
+- Can only send DM to someone who follows you
+
+- Need to create bot accounts and hope for follow-backs
+
+- Identify those who retweet fake news
+
+- Limit 20 DMs per account per day
+
+- 3 waves with many 24-hour blocks in each
+:::
+:::
+
+::: {.column width="40%"}
+![](figs/pennycook_1.png)
+:::
+::::
+
+## Stepped-wedge design
+
+![](figs/step_wedge.png){fig-align="center"}
+
+::: aside
+AKA staggered adoption design
+:::
+
+## Findings
+
+![](figs/pennycook_2.png){fig-align="center"}
+
+::: aside
+The size of each dot represents the proportion of pre-treatment posts from that outlet
+:::
+
+::: {style="text-align: center"}
+## Next Week {.center background-color="#8BD3E6"}
+### More field experiments
+
+**Focus on:** Sections 1-3 of Diaz and Rossitter (2023)
+:::
+
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::
