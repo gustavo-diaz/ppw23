@@ -1,0 +1,114 @@
+---
+title: "Final Project Template"
+author:
+  - "Firstname Lastname (Mac ID)"
+  - "Firstname Lastname (Mac ID)"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output: 
+  pdf_document:
+    number_sections: true
+    fig_caption: yes
+urlcolor: blue
+header-includes:
+    - \usepackage{setspace}
+    - \doublespacing
+    - \usepackage{float}
+    - \floatplacement{figure}{t}
+    - \floatplacement{table}{t}
+    - \usepackage{flafter}
+    - \usepackage[T1]{fontenc}
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{ragged2e}
+    - \usepackage{booktabs}
+    - \usepackage{amsmath}
+fontsize: 12pt
+---
+
+# Introduction
+
+The introduction should take no more than two pages and summarize the project. From, it should be clear:
+
+- What are you studying
+
+- What we know about it so far
+
+- Why it is important to study it further
+
+- What are you proposing to do
+
+- What research design are you using
+
+- How good the research design is
+
+- What challenged does your proposal or research design face
+
+# Background
+
+This section should outline what we know about the topic so far and why it is important to conduct new analyses on the subject. This should be no more than five pages.
+
+If your project is of academic interest, you should reference findings in previous research and identify an important missing piece in our current knowledge. 
+
+If your project is of policy or industry interest, you should explain why the topic is relevant, discuss what governments and firms have done already, what remains to be done, and why it is important for this to take priority.
+
+You can use facts and figures from trusted sources at this stage. For example, showing how political participation has steadily declined in a place of interest. If you do so, make sure you attribute credit appropriately to the source.
+
+
+# Proposal
+
+In this project you will introduce the research project that you plan to conduct, argue why it is important, and what would you believe its impact should be. This section should be no more than 4 pages.
+
+A key question is here is. Why should we do this? Why should we do it this way and not another way? You are preparing the reader to agree with the research design choices that you will outline in the next section.
+
+# Research Design
+
+In this section you outline the details of your research design, combining coding and writing to justify the choices you make about the world. This section should be around 6 pages in total, code included.
+
+I don't go into every detail of the research design steps, since we have enough to go on elsewhere in the course materials.
+
+## Model
+
+Here you encode your beliefs about the world. What are the main outcomes of interest? How are they distributed, what is their range? Are there any endogenous and exogenous variables to consider?
+
+Formulating these beliefs about the world as a directed acyclic graph or as potential outcomes may help clarify what to code.
+
+## Inquiry
+
+Here you specify and justify the main quantity of interest. Why these quantity and not others? You can have more than one inquiry if you deem it necessary, but you should explain why you need more than one.
+
+## Data strategy
+
+Here you specify how would you collect data from the world. Is this an experiment? How will you assign conditions? Why did you choose this design over other alternatives? Why did you choose to ask the survey question in this way?
+
+## Answer strategy
+
+Here you specify the procedures to summarize your data. You should convince the reader here that the estimator you choose is the best approximation available to the inquiry of interest, so you should mention at least one alternative or explain whether a superior estimation procedure is not available in this application.
+
+# Diagnosis
+
+Here you should show that your design is well-equipped to capture the inquiries of interest, or at least as best as possible given the context.
+
+This involves two steps. First, you must identify and justify the diagnosands you will use. Second, you will evaluate your design in light of those diagnosands.
+
+Here's an example of standards that you may use:
+
+- Is the measurement valid and precise? Does it strike the right balance of validity and precision?
+- Are the bias and RMSE low enough?
+- Does the experimental design achieve at least 80% power?
+- Is the sample size large enough?
+- How big should the effect be for you to feel confident on the performance of a research design with a sample that cannot increase further?
+
+For this section, you may end up trying many research designs before committing to the final one. You only need to show the performance ofthe last one, but it may be helpful to discuss why you let go of previous versions.
+
+Alternatively, you may get lucky and get a good design on your first design. Ask yourselves, could you implement a cheaper design with minimal sacrifices to performance? Remember that data collection is costly.
+
+# Conclusion
+
+Here you conclude with a summary of the project and its importance. You should also include any considerations we should keep in mind before actually conducting the study. For example, if you were to collect funds for a survey, how would you do so? Is this project's application limited by time constraints, such as needing to happen before the next election?
+
+The conclusion should be no more than two pages.
+
+# References {.unnumbered}
+
+Unlike response papers, your final project needs to use proper citation. See the syllabus PDF for details.
+
+If you are using the visual editor in RStudio, you can follow these instructions to automatically format your citations by just giving the DOI: <https://rstudio.github.io/visual-markdown-editing/citations.html>

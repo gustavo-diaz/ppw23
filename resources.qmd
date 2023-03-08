@@ -14,6 +14,8 @@ For the weekly labs, you can use the corresponding files in the [Content](/conte
 
 - [Response paper template {{< fa laptop-code >}}](/resources/response_paper_template.Rmd)
 
+- [Final project template {{< fa laptop-code >}}](/resources/final_project_template.Rmd)
+
 ## Coding
 
 ### Accessing software
