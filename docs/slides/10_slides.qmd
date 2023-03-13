@@ -1,0 +1,74 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+
+# Global options
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Field Experiments II {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Last time {background-color="#FDBF57"}
+
+
+- We learned about implementing practical details
+
+- Lots of details!
+
+- Sometimes cannot simply randomly assign
+
+- **Today:** Thinking about how to do better
+
+## Why do better?
+
+::: incremental
+
+- Conducting research is expensive
+
+- Field experiments are **very** expensive
+
+- Even if you had the resources, we have a mandate to do better
+
+:::
+
+## Research ethics
+
+::: incremental
+
+- [**Belmont report:**](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html) Benefits should outweigh costs
+
+- **{{< fa book >}}:** Researchers have duties beyond getting review board approval
+
+- At a minimum, participating in a study takes time
+
+:::
+
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::
