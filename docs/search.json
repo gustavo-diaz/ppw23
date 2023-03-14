@@ -403,7 +403,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "I will upload .Rmd templates here that you can use to work on your assignments in R.\nFor the weekly labs, you can use the corresponding files in the Content page as templates.\n\nResponse paper template"
+    "text": "I will upload .Rmd templates here that you can use to work on your assignments in R.\nFor the weekly labs, you can use the corresponding files in the Content page as templates.\n\nResponse paper template \nFinal project template"
   },
   {
     "objectID": "resources.html#coding",
@@ -1449,55 +1449,6 @@
     "text": "Lab"
   },
   {
-    "objectID": "slides/placeholder.html#coming-soon",
-    "href": "slides/placeholder.html#coming-soon",
-    "title": "Public Opinion and Policy",
-    "section": "Coming soon!",
-    "text": "Coming soon!"
-  },
-  {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Dr. Gustavo Diaz\n   Kenneth Taylor Hall 711\n   diazg2@mcmaster.ca\n   Schedule a meeting\n\n\n\n\n\n   Wednesdays\n   9:00–11:20\n   Kenneth Taylor Hall B121\n   January 11–April 12, 2023"
-  },
-  {
-    "objectID": "syllabus.html#description-fa-file-pdf",
-    "href": "syllabus.html#description-fa-file-pdf",
-    "title": "Syllabus",
-    "section": "Description ",
-    "text": "Description \nThis course explores quantitative research designs to answer questions about public opinion and policy in academia, government, and industry. We will examine how to conduct surveys to understand variation in public opinion or attitudes toward several subjects across the world. We will also examine empirical strategies to generate credible evidence to inform policy decisions in different contexts.\nThe main learning objective of this course to develop standards to think about the appropriate research design before conducting a study. This is useful to those working with quantitative data either directly or indirectly. We will work towards that goal through a combination of reading, discussion, and hands-on practice.\nStudents will have the opportunity to practice working with statistical software in preparation to write a pre-analysis plan document that outlines the steps of a future study that addresses a novel question of academic interest or policy/industry relevance.\nThis course contributes to the Research Methods and/or Analysis requirement for the Concurrent Certificate in Applied Social Sciences Research. As such, it relies heavily on statistics as the main tool to think about research design. Students are expected to have taken at least POLSCI 4NN3 – Statistical Analysis or have equivalent experience with statistics and statistical programming software. I expect us to understand the main findings of a quantitative social science study and work backwards from there to understand the research design choices that researchers made. I also expect, but not assume, some experience with loading, cleaning, and analyzing data."
-  },
-  {
-    "objectID": "syllabus.html#objectives",
-    "href": "syllabus.html#objectives",
-    "title": "Syllabus",
-    "section": "Objectives",
-    "text": "Objectives\nBy the end of the course students should be able to:\n\nUnderstand the components of a research design and their properties\nRead and critically evaluate research outputs about public opinion and policy\nWork fluently with statistical programming software and learn new techniques on their own\nDesign, evaluate, and implement quantitative studies using the workflow proposed in this course"
-  },
-  {
-    "objectID": "syllabus.html#materials",
-    "href": "syllabus.html#materials",
-    "title": "Syllabus",
-    "section": "Materials",
-    "text": "Materials\n\nReading\nThe main textbook we will follow is:\n\nBlair, Graeme, Alexander Coppock, and Macartan Humphreys. 2022. Research Design: Declaration, Diagnosis, Redesign. Forthcoming at Princeton University Press\n\nYou can read the digital copy of the book for free by using the link above. The physical version is not available for purchase yet. The rest of the syllabus refers to this book with the initials RD.\nThe companion textbook is:\n\nGrolemund, Garret and Hadley Wickham. 2017. R for Data Science. O’Reilly Media Inc\n\nOnce again, you can read the digital copy of this book for free with the link above. You are not required to read this book for this course but consulting it on occasion may help you overcome hurdles while working with statistical software. Since the digital version is constantly updated, I do not recommend buying a physical copy.\nWe will also read academic papers that discuss or apply the research designs we will cover. Most of these are available through the library’s subscription. See this link for instructions to access library resources while off campus. If not available through the library or elsewhere online, I will upload them to the course website.\n\n\nSoftware\nWe will use R and RStudio to program research designs and evaluate their properties. The advantage of R is that it is free and open source, meaning that you will be able to apply everything you learn in this course anywhere else. The disadvantage is a somewhat steep learning curve. I believe the investment is worthwhile for anyone working with data or in data-adjacent careers.\nThe computers in our classroom should have a recent installation of both programs. While I expect us to spend some class meeting time working with R, you will most likely need access to the software outside of the classroom. You are welcome to bring a laptop to class.\nYou can install R and RStudio in your personal computer. You can use this link for installation instructions on Windows and MacOS (ignore the parts about package building). See this link for installation instructions on Chromebooks, which is a bit more involved.\nYou can also use Posit Cloud to access RStudio from any web browser. A free account should be sufficient for the purposes of this course and has the advantage of letting you access your work across devices.\nYou should reach out to the instructor if you foresee any challenges with accessing computing resources outside of the classroom."
-  },
-  {
-    "objectID": "syllabus.html#evaluation",
-    "href": "syllabus.html#evaluation",
-    "title": "Syllabus",
-    "section": "Evaluation",
-    "text": "Evaluation\nSee the Assignments page for more details.\n\n\n\n\n\n\n\n\nAssignment\nPercent\n\n\n\n\nAttendance and participation\n10%\n\n\nWeekly lab assignments (best 10)\n30% (3% each)\n\n\nResponse papers (best 3)\n30% (10% each)\n\n\nFinal project meetings\n10%\n\n\nFinal project: Pre-analysis plan\n20%\n\n\n\n\nGrades will be based on the McMaster University scale:\n\n\n\n\n\n\n\n\n\n\nMark\nGrade\nMark\nGrade\n\n\n\n\n90-100%\nA+\n63-66%\nC\n\n\n85-90%\nA\n60-62%\nC-\n\n\n80-84%\nA-\n57-59%\nD+\n\n\n77-79%\nB+\n53-56%\nD\n\n\n73-76%\nB\n50-52%\nD-\n\n\n70-72%\nB-\n0-49%\nF\n\n\n67-69%\nC+"
-  },
-  {
-    "objectID": "syllabus.html#policies",
-    "href": "syllabus.html#policies",
-    "title": "Syllabus",
-    "section": "Policies",
-    "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
-  },
-  {
     "objectID": "slides/08_slides.html#evidence-informed-policy",
     "href": "slides/08_slides.html#evidence-informed-policy",
     "title": "Public Opinion and Policy",
@@ -1517,27 +1468,6 @@
     "title": "Public Opinion and Policy",
     "section": "Evidence-Informed",
     "text": "Evidence-Informed\n\n\nOf course we want to base policy on evidence!\nBut there is no objective evidence when it comes to human behavior\nWe say evidence-informed because the best we can do is try to prove ourselves wrong, but we cannot base policy on evidence the same way medicine does"
-  },
-  {
-    "objectID": "slides/08_slides.html#next-two-weeks",
-    "href": "slides/08_slides.html#next-two-weeks",
-    "title": "Public Opinion and Policy",
-    "section": "Next Two Weeks",
-    "text": "Next Two Weeks\nField Experiments\nFocus on: Research design alternatives"
-  },
-  {
-    "objectID": "slides/08_slides.html#break-time",
-    "href": "slides/08_slides.html#break-time",
-    "title": "Public Opinion and Policy",
-    "section": "Break time!",
-    "text": "Break time!"
-  },
-  {
-    "objectID": "slides/08_slides.html#fa-laptop-code-lab",
-    "href": "slides/08_slides.html#fa-laptop-code-lab",
-    "title": "Public Opinion and Policy",
-    "section": " Lab",
-    "text": "Lab"
   },
   {
     "objectID": "slides/08_slides.html#two-approaches",
@@ -1561,13 +1491,6 @@
     "text": "The lady tasting tea\n\nA lady declares that by tasting a cup of tea made with milk she can discriminate whether the milk or the tea infusion was first added to the cup\n\n\n \n\nHow do you evaluate this claim?"
   },
   {
-    "objectID": "slides/08_slides.html#problem",
-    "href": "slides/08_slides.html#problem",
-    "title": "Public Opinion and Policy",
-    "section": "Problem",
-    "text": "Problem\n\n\nHow does “being able to discriminate” look like?\nSame for policy, we don’t know how the world where the policy works look like\nBut we do know how a person without the ability to discriminate milk/tea order looks like\nThis lets us make probability statements about this hypothetical world of no effect"
-  },
-  {
     "objectID": "slides/08_slides.html#an-experiment",
     "href": "slides/08_slides.html#an-experiment",
     "title": "Public Opinion and Policy",
@@ -1582,18 +1505,18 @@
     "text": "Results\n\n\n\n \n\n\nTrue Order\n\n  \n    Lady's Guesses \n    Tea First \n    Milk First \n  \n \n\n  \n    Tea First \n    3 \n    1 \n  \n  \n    Milk First \n    1 \n    3 \n  \n\n\n\n\n\n\nShe gets it right \\(6/8\\) times\nWhat can we conclude?"
   },
   {
+    "objectID": "slides/08_slides.html#problem",
+    "href": "slides/08_slides.html#problem",
+    "title": "Public Opinion and Policy",
+    "section": "Problem",
+    "text": "Problem\n\n\nHow does “being able to discriminate” look like?\nSame for policy, we don’t know how the world where the policy works look like\nBut we do know how a person without the ability to discriminate milk/tea order looks like\nThis lets us make probability statements about this hypothetical world of no effect"
+  },
+  {
     "objectID": "slides/08_slides.html#a-person-with-no-ability",
     "href": "slides/08_slides.html#a-person-with-no-ability",
     "title": "Public Opinion and Policy",
     "section": "A person with no ability",
     "text": "A person with no ability\n\n\n\n \n  \n    Count \n    Possible combinations \n    Total \n  \n \n\n  \n    0 \n    xxxx \n    \\(1 \\times 1 = 1\\) \n  \n  \n    1 \n    xxxo, xxox, xoxx, oxxx \n    \\(4 \\times 4 = 16\\) \n  \n  \n    2 \n    xxoo, xoxo, xoox, oxox, ooxx, oxxo \n    \\(6 \\times 6 = 36\\) \n  \n  \n    3 \n    xooo, oxoo, ooxo, ooox \n    \\(4 \\times 4 = 16\\) \n  \n  \n    4 \n    oooo \n    \\(1 \\times 1 = 1\\) \n  \n\n\n\n\n\n\nWe can repeat this for both successes and failures"
-  },
-  {
-    "objectID": "slides/08_slides.html#incremental",
-    "href": "slides/08_slides.html#incremental",
-    "title": "Public Opinion and Policy",
-    "section": "::: incremental",
-    "text": "::: incremental"
   },
   {
     "objectID": "slides/08_slides.html#a-person-with-no-ability-1",
@@ -1617,11 +1540,25 @@
     "text": "Diagnosing hypothesis tests\n\n\nA convention in the social sciences is to claim that something with \\(p < 0.05\\) is statistically significant1\nCommitting to a significance level implies accepting that sometimes we will get \\(p < 0.05\\) by chance\nThis is a false positive result\nA good answer strategy as a controlled false positive rate (more in the lab!)\n\n\nThere is no good reason for this other than path dependency"
   },
   {
-    "objectID": "slides/08_slides.html",
-    "href": "slides/08_slides.html",
+    "objectID": "slides/08_slides.html#next-two-weeks",
+    "href": "slides/08_slides.html#next-two-weeks",
     "title": "Public Opinion and Policy",
-    "section": "",
-    "text": "POLSCI 4SS3\nWinter 2023"
+    "section": "Next Two Weeks",
+    "text": "Next Two Weeks\nField Experiments\nFocus on: Research design alternatives"
+  },
+  {
+    "objectID": "slides/08_slides.html#break-time",
+    "href": "slides/08_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/08_slides.html#fa-laptop-code-lab",
+    "href": "slides/08_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
   },
   {
     "objectID": "slides/09_slides.html#field-experiments-i",
@@ -1645,34 +1582,6 @@
     "text": "Field Experiments\n\n\nField: Interventions in real world settings (vs. surveys, laboratory)\nExperiment: Randomization determines assignment of units to conditions\nAKA randomized controlled trials in policy or A/B testing in industry\nCore idea: Randomization allows us to produce credible evidence on whether something works\nIn practice: A lot of implementation details and research design choices to navigate"
   },
   {
-    "objectID": "slides/09_slides.html#tup-program",
-    "href": "slides/09_slides.html#tup-program",
-    "title": "Public Opinion and Policy",
-    "section": "TUP program",
-    "text": "TUP program"
-  },
-  {
-    "objectID": "slides/09_slides.html#next-week",
-    "href": "slides/09_slides.html#next-week",
-    "title": "Public Opinion and Policy",
-    "section": "Next Week",
-    "text": "Next Week\nMore field experiments\nFocus on: Sections 1-3 of Diaz and Rossitter (2023)"
-  },
-  {
-    "objectID": "slides/09_slides.html#break-time",
-    "href": "slides/09_slides.html#break-time",
-    "title": "Public Opinion and Policy",
-    "section": "Break time!",
-    "text": "Break time!"
-  },
-  {
-    "objectID": "slides/09_slides.html#fa-laptop-code-lab",
-    "href": "slides/09_slides.html#fa-laptop-code-lab",
-    "title": "Public Opinion and Policy",
-    "section": " Lab",
-    "text": "Lab"
-  },
-  {
     "objectID": "slides/09_slides.html#banerjee-et-al-2021-tup-program",
     "href": "slides/09_slides.html#banerjee-et-al-2021-tup-program",
     "title": "Public Opinion and Policy",
@@ -1692,6 +1601,13 @@
     "title": "Public Opinion and Policy",
     "section": "Data strategy",
     "text": "Data strategy\n\nSample: 978 eligible households\n514 assigned to treatment\n266 accepted treatment\n\n\n \n\nWhat was the treatment?"
+  },
+  {
+    "objectID": "slides/09_slides.html#program",
+    "href": "slides/09_slides.html#program",
+    "title": "Public Opinion and Policy",
+    "section": "Program",
+    "text": "Program\n\nChoose a productive asset (82% chose livestock)\nWeekly consumption support for 30–40 weeks\nAccess to savings\nWeekly visits from program staff over a span of 18 months\n\n\n \n\nWhy would someone reject this?"
   },
   {
     "objectID": "slides/09_slides.html#answer-strategy",
@@ -1750,11 +1666,25 @@
     "text": "Findings\n\n\n\n\n\n\n\nThe size of each dot represents the proportion of pre-treatment posts from that outlet"
   },
   {
-    "objectID": "slides/09_slides.html#program",
-    "href": "slides/09_slides.html#program",
+    "objectID": "slides/09_slides.html#next-week",
+    "href": "slides/09_slides.html#next-week",
     "title": "Public Opinion and Policy",
-    "section": "Program",
-    "text": "Program\n\nChoose a productive asset (82% chose livestock)\nWeekly consumption support for 30–40 weeks\nAccess to savings\nWeekly visits from program staff over a span of 18 months\n\n\n \n\nWhy would someone reject this?"
+    "section": "Next Week",
+    "text": "Next Week\nMore field experiments\nFocus on: Sections 1-3 of Diaz and Rossitter (2023)"
+  },
+  {
+    "objectID": "slides/09_slides.html#break-time",
+    "href": "slides/09_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/09_slides.html#fa-laptop-code-lab",
+    "href": "slides/09_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
   },
   {
     "objectID": "slides/10_slides.html#field-experiments-ii",
@@ -1768,7 +1698,7 @@
     "href": "slides/10_slides.html#last-time",
     "title": "Public Opinion and Policy",
     "section": "Last time",
-    "text": "Last time\n\nWe learned about implementing practical details\nLots of details!\nSometimes cannot simply randomly assign\nToday: Thinking about how to do better"
+    "text": "Last time\n\nWe learned about implementing field experients\nLots of details!\nSometimes cannot simply randomly assign (stepped-wedge design)\nToday: Thinking about how to do better"
   },
   {
     "objectID": "slides/10_slides.html#why-do-better",
@@ -1782,7 +1712,98 @@
     "href": "slides/10_slides.html#research-ethics",
     "title": "Public Opinion and Policy",
     "section": "Research ethics",
-    "text": "Research ethics\n\n\nBelmont report: Benefits should outweigh costs\n: Researchers have duties beyond getting review board approval\nAt a minimum, participating in a study takes time"
+    "text": "Research ethics\n\n\nBelmont report: Benefits should outweigh costs\n: Researchers have duties beyond getting review board approval\nAt a minimum, participating in a study takes time\nMandate: Find the most efficient, ethical study before collecting data\nSometimes that means doing more with a smaller sample"
+  },
+  {
+    "objectID": "slides/10_slides.html#pre-post-design",
+    "href": "slides/10_slides.html#pre-post-design",
+    "title": "Public Opinion and Policy",
+    "section": "Pre-post design",
+    "text": "Pre-post design\n\n\nSimilar to panel studies\nOutcomes are measured at least twice\nOnce before treatment, once after treatment\n\n\n\n\n\n\n \n  \n    Condition \n    \\(t=1\\) \n    Treatment \n    \\(t=2\\) \n  \n \n\n  \n    \\(Z_i=1\\) \n    \\(Y_{i, t=1}\\) \n    X \n    \\(Y_{i, t=2}(1)\\) \n  \n  \n    \\(Z_i=0\\) \n    \\(Y_{i, t=1}\\) \n     \n    \\(Y_{i, t=2}(0)\\) \n  \n\n\n\n\n\n\n\nAKA repeated measures design"
+  },
+  {
+    "objectID": "slides/10_slides.html#how-does-this-work",
+    "href": "slides/10_slides.html#how-does-this-work",
+    "title": "Public Opinion and Policy",
+    "section": "How does this work?",
+    "text": "How does this work?\n\n\nStandard ATE estimator:\n\n\\[\nE[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\n\n\nPre-post ATE estimator:\n\n\\[\nE[(Y_{i,t=2}(1) - Y_{i,t=1}) | Z_i = 1] - E[(Y_{i,t=2}(0) - Y_{i,t=1}) | Z_i = 0]\n\\]"
+  },
+  {
+    "objectID": "slides/10_slides.html#how-does-this-work-1",
+    "href": "slides/10_slides.html#how-does-this-work-1",
+    "title": "Public Opinion and Policy",
+    "section": "How does this work?",
+    "text": "How does this work?\n\nStandard ATE estimator:\n\n\\[\nE[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]\n\\]\n\nPre-post ATE estimator:\n\n\\[\nE[(Y_{i,t=2}(1) \\color{#ac1455} {- Y_{i,t=1}}) | Z_i = 1] - E[(Y_{i,t=2}(0) \\color{#ac1455} {- Y_{i,t=1}}) | Z_i = 0]\n\\]\n\n\nWe improve precision by subtracting the variation in the outcome that is unrelated to the treatment"
+  },
+  {
+    "objectID": "slides/10_slides.html#pre-post-design-as-a-graph",
+    "href": "slides/10_slides.html#pre-post-design-as-a-graph",
+    "title": "Public Opinion and Policy",
+    "section": "Pre-post design as a graph",
+    "text": "Pre-post design as a graph"
+  },
+  {
+    "objectID": "slides/10_slides.html#block-randomization",
+    "href": "slides/10_slides.html#block-randomization",
+    "title": "Public Opinion and Policy",
+    "section": "Block randomization",
+    "text": "Block randomization\n\n\nChange how randomization happens\nGroup units in blocks or strata\nEstimate average treatment effect within each\nAggregate with a weighted average"
+  },
+  {
+    "objectID": "slides/10_slides.html#how-does-it-work",
+    "href": "slides/10_slides.html#how-does-it-work",
+    "title": "Public Opinion and Policy",
+    "section": "How does it work?",
+    "text": "How does it work?\n\n\nWithin-block ATE estimator:\n\n\\[\n\\widehat{ATE}_b = E[Y_{ib}(1) | Z_{ib} = 1] - E[Y_{ib}(0) | Z_{ib} = 0]\n\\]\n\n\n\nOverall ATE estimator:\n\n\\[\n\\widehat{ATE}_{\\text{Block}} = \\sum_{b=1}^B \\frac{n_b}{N} \\widehat{ATE}_b\n\\]"
+  },
+  {
+    "objectID": "slides/10_slides.html#illustration",
+    "href": "slides/10_slides.html#illustration",
+    "title": "Public Opinion and Policy",
+    "section": "Illustration",
+    "text": "Illustration\n\n\n\n\n\n \n  \n    ID \n    Block \n    \\(Y_i(0)\\) \n    \\(Y_i(1)\\) \n  \n \n\n  \n    1 \n    1 \n    1 \n    4 \n  \n  \n    2 \n    1 \n    2 \n    5 \n  \n  \n    3 \n    1 \n    1 \n    4 \n  \n  \n    4 \n    1 \n    2 \n    5 \n  \n  \n    5 \n    2 \n    3 \n    8 \n  \n  \n    6 \n    2 \n    4 \n    9 \n  \n  \n    7 \n    2 \n    3 \n    8 \n  \n  \n    8 \n    2 \n    4 \n    9 \n  \n\n\n\n\n\n\n\nPotential outcomes correlate with blocks\nTrue \\(ATE = 4\\)\nDo 500 experiments\nCompare complete and block-randomized experiment"
+  },
+  {
+    "objectID": "slides/10_slides.html#simulation",
+    "href": "slides/10_slides.html#simulation",
+    "title": "Public Opinion and Policy",
+    "section": "Simulation",
+    "text": "Simulation\n\n\n\n\n\n\n\n\nBlock randomization yields a narrower distribution of estimates"
+  },
+  {
+    "objectID": "slides/10_slides.html#reasons-to-block-randomize",
+    "href": "slides/10_slides.html#reasons-to-block-randomize",
+    "title": "Public Opinion and Policy",
+    "section": "Reasons to block randomize",
+    "text": "Reasons to block randomize\n\nTo increase precision in ATE estimates\nTo account for possible heterogeneous treatment effects\n\n\n\nThe more blocking variables correlate with potential outcomes, the more useful block randomization is\nAnd it rarely hurts when they do not correlate! (more in the lab!)"
+  },
+  {
+    "objectID": "slides/10_slides.html#kalla-et-al-2018-are-you-my-mentor",
+    "href": "slides/10_slides.html#kalla-et-al-2018-are-you-my-mentor",
+    "title": "Public Opinion and Policy",
+    "section": "Kalla et al (2018): Are You My Mentor?",
+    "text": "Kalla et al (2018): Are You My Mentor?\n\n\nCorrespondence experiment with \\(N = 8189\\) legislators in the US\nSend email about fake student seeking advice to become politician\nCue gender with student’s name\n\n\n\n\nAlso called audit experiments since they were originally designed to audit how responsive elected officials are"
+  },
+  {
+    "objectID": "slides/10_slides.html#sample-email",
+    "href": "slides/10_slides.html#sample-email",
+    "title": "Public Opinion and Policy",
+    "section": "Sample email",
+    "text": "Sample email"
+  },
+  {
+    "objectID": "slides/10_slides.html#data-strategy",
+    "href": "slides/10_slides.html#data-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Data strategy",
+    "text": "Data strategy\n\nBlock-randomize by legislator’s gender (why?)\nOutcomes: Reply content and length"
+  },
+  {
+    "objectID": "slides/10_slides.html#findings",
+    "href": "slides/10_slides.html#findings",
+    "title": "Public Opinion and Policy",
+    "section": "Findings",
+    "text": "Findings\n\n\n\n \n  \n    Outcome \n    Male Sender \n    Female Sender \n    p-value \n  \n \n\n  \n    Received reply \n    0.25 \n    0.27 \n    0.15 \n  \n  \n    Meaningful response \n    0.11 \n    0.13 \n    0.47 \n  \n  \n    Praised \n    0.05 \n    0.06 \n    0.17 \n  \n  \n    Offer to help \n    0.03 \n    0.05 \n    0.09 \n  \n  \n    Warned against running \n    0.01 \n    0.02 \n    0.14 \n  \n  \n    Substantive advice \n    0.07 \n    0.08 \n    0.33 \n  \n  \n    Word count (logged) \n    1.00 \n    1.10 \n    0.06 \n  \n  \n    Character count \n    145.00 \n    170.00 \n    0.04 \n  \n\n\n\n\n\n\nWhy not much difference by gender?\n\n\n\n\nAdapted from Table 1"
   },
   {
     "objectID": "slides/10_slides.html#break-time",
@@ -1797,5 +1818,54 @@
     "title": "Public Opinion and Policy",
     "section": " Lab",
     "text": "Lab"
+  },
+  {
+    "objectID": "slides/placeholder.html#coming-soon",
+    "href": "slides/placeholder.html#coming-soon",
+    "title": "Public Opinion and Policy",
+    "section": "Coming soon!",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Dr. Gustavo Diaz\n   Kenneth Taylor Hall 711\n   diazg2@mcmaster.ca\n   Schedule a meeting\n\n\n\n\n\n   Wednesdays\n   9:00–11:20\n   Kenneth Taylor Hall B121\n   January 11–April 12, 2023"
+  },
+  {
+    "objectID": "syllabus.html#description-fa-file-pdf",
+    "href": "syllabus.html#description-fa-file-pdf",
+    "title": "Syllabus",
+    "section": "Description ",
+    "text": "Description \nThis course explores quantitative research designs to answer questions about public opinion and policy in academia, government, and industry. We will examine how to conduct surveys to understand variation in public opinion or attitudes toward several subjects across the world. We will also examine empirical strategies to generate credible evidence to inform policy decisions in different contexts.\nThe main learning objective of this course to develop standards to think about the appropriate research design before conducting a study. This is useful to those working with quantitative data either directly or indirectly. We will work towards that goal through a combination of reading, discussion, and hands-on practice.\nStudents will have the opportunity to practice working with statistical software in preparation to write a pre-analysis plan document that outlines the steps of a future study that addresses a novel question of academic interest or policy/industry relevance.\nThis course contributes to the Research Methods and/or Analysis requirement for the Concurrent Certificate in Applied Social Sciences Research. As such, it relies heavily on statistics as the main tool to think about research design. Students are expected to have taken at least POLSCI 4NN3 – Statistical Analysis or have equivalent experience with statistics and statistical programming software. I expect us to understand the main findings of a quantitative social science study and work backwards from there to understand the research design choices that researchers made. I also expect, but not assume, some experience with loading, cleaning, and analyzing data."
+  },
+  {
+    "objectID": "syllabus.html#objectives",
+    "href": "syllabus.html#objectives",
+    "title": "Syllabus",
+    "section": "Objectives",
+    "text": "Objectives\nBy the end of the course students should be able to:\n\nUnderstand the components of a research design and their properties\nRead and critically evaluate research outputs about public opinion and policy\nWork fluently with statistical programming software and learn new techniques on their own\nDesign, evaluate, and implement quantitative studies using the workflow proposed in this course"
+  },
+  {
+    "objectID": "syllabus.html#materials",
+    "href": "syllabus.html#materials",
+    "title": "Syllabus",
+    "section": "Materials",
+    "text": "Materials\n\nReading\nThe main textbook we will follow is:\n\nBlair, Graeme, Alexander Coppock, and Macartan Humphreys. 2022. Research Design: Declaration, Diagnosis, Redesign. Forthcoming at Princeton University Press\n\nYou can read the digital copy of the book for free by using the link above. The physical version is not available for purchase yet. The rest of the syllabus refers to this book with the initials RD.\nThe companion textbook is:\n\nGrolemund, Garret and Hadley Wickham. 2017. R for Data Science. O’Reilly Media Inc\n\nOnce again, you can read the digital copy of this book for free with the link above. You are not required to read this book for this course but consulting it on occasion may help you overcome hurdles while working with statistical software. Since the digital version is constantly updated, I do not recommend buying a physical copy.\nWe will also read academic papers that discuss or apply the research designs we will cover. Most of these are available through the library’s subscription. See this link for instructions to access library resources while off campus. If not available through the library or elsewhere online, I will upload them to the course website.\n\n\nSoftware\nWe will use R and RStudio to program research designs and evaluate their properties. The advantage of R is that it is free and open source, meaning that you will be able to apply everything you learn in this course anywhere else. The disadvantage is a somewhat steep learning curve. I believe the investment is worthwhile for anyone working with data or in data-adjacent careers.\nThe computers in our classroom should have a recent installation of both programs. While I expect us to spend some class meeting time working with R, you will most likely need access to the software outside of the classroom. You are welcome to bring a laptop to class.\nYou can install R and RStudio in your personal computer. You can use this link for installation instructions on Windows and MacOS (ignore the parts about package building). See this link for installation instructions on Chromebooks, which is a bit more involved.\nYou can also use Posit Cloud to access RStudio from any web browser. A free account should be sufficient for the purposes of this course and has the advantage of letting you access your work across devices.\nYou should reach out to the instructor if you foresee any challenges with accessing computing resources outside of the classroom."
+  },
+  {
+    "objectID": "syllabus.html#evaluation",
+    "href": "syllabus.html#evaluation",
+    "title": "Syllabus",
+    "section": "Evaluation",
+    "text": "Evaluation\nSee the Assignments page for more details.\n\n\n\n\n\n\n\n\nAssignment\nPercent\n\n\n\n\nAttendance and participation\n10%\n\n\nWeekly lab assignments (best 10)\n30% (3% each)\n\n\nResponse papers (best 3)\n30% (10% each)\n\n\nFinal project meetings\n10%\n\n\nFinal project: Pre-analysis plan\n20%\n\n\n\n\nGrades will be based on the McMaster University scale:\n\n\n\n\n\n\n\n\n\n\nMark\nGrade\nMark\nGrade\n\n\n\n\n90-100%\nA+\n63-66%\nC\n\n\n85-90%\nA\n60-62%\nC-\n\n\n80-84%\nA-\n57-59%\nD+\n\n\n77-79%\nB+\n53-56%\nD\n\n\n73-76%\nB\n50-52%\nD-\n\n\n70-72%\nB-\n0-49%\nF\n\n\n67-69%\nC+"
+  },
+  {
+    "objectID": "syllabus.html#policies",
+    "href": "syllabus.html#policies",
+    "title": "Syllabus",
+    "section": "Policies",
+    "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
   }
 ]

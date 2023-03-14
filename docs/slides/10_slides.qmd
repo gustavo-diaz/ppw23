@@ -9,8 +9,14 @@ format:
 library(tidyverse)
 library(DeclareDesign)
 library(kableExtra)
+library(ggdag)
+# remotes::install_github("AllanCameron/geomtextpath")
+library(geomtextpath)
+
 
 # Global options
+theme_set(theme_dag(base_size = 40))
+
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
                       results = "asis")
 ```
@@ -27,12 +33,11 @@ Winter 2023
 
 ## Last time {background-color="#FDBF57"}
 
-
-- We learned about implementing practical details
+- We learned about implementing field experients
 
 - Lots of details!
 
-- Sometimes cannot simply randomly assign
+- Sometimes cannot simply randomly assign `(stepped-wedge design)`
 
 - **Today:** Thinking about how to do better
 
@@ -58,6 +63,305 @@ Winter 2023
 
 - At a minimum, participating in a study takes time
 
+- **Mandate:** Find the most efficient, ethical study before collecting data
+
+- Sometimes that means doing more with a *smaller sample*
+
+:::
+
+# Improving Precision
+
+## Pre-post design
+
+. . .
+
+- Similar to panel studies
+
+- Outcomes are measured *at least* twice
+
+- Once before treatment, once after treatment
+
+. . .
+
+
+```{r}
+prepost = tribble(
+  ~Condition, ~T1, ~Treatment, ~T2,
+  "\\(Z_i=1\\)", "\\(Y_{i, t=1}\\)", "X", "\\(Y_{i, t=2}(1)\\)",
+  "\\(Z_i=0\\)", "\\(Y_{i, t=1}\\)", " ", "\\(Y_{i, t=2}(0)\\)"
+)
+
+colnames(prepost) = c("Condition", "\\(t=1\\)", "Treatment", "\\(t=2\\)")
+
+prepost %>% kbl(escape = FALSE, align = "llcl")
+```
+
+::: aside
+AKA repeated measures design
+:::
+
+
+## How does this work?
+
+. . .
+
+- Standard ATE estimator:
+
+$$
+E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]
+$$
+
+. . .
+
+- Pre-post ATE estimator:
+
+$$
+E[(Y_{i,t=2}(1) - Y_{i,t=1}) | Z_i = 1] - E[(Y_{i,t=2}(0) - Y_{i,t=1}) | Z_i = 0]
+$$
+
+## How does this work? {visibility="uncounted"}
+
+- Standard ATE estimator:
+
+$$
+E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]
+$$
+
+- Pre-post ATE estimator:
+
+$$
+E[(Y_{i,t=2}(1) \color{#ac1455} {- Y_{i,t=1}}) | Z_i = 1] - E[(Y_{i,t=2}(0) \color{#ac1455} {- Y_{i,t=1}}) | Z_i = 0]
+$$
+
+. . .
+
+- We improve precision by subtracting the variation in the outcome that is unrelated to the treatment
+
+## Pre-post design as a graph
+
+```{r, results = "asis"}
+dag = dagify(Y2 ~ Z + U + Y1,
+             Y1 ~ U,
+             exposure = "Z",
+             outcome = "Y2",
+             coords = data.frame(
+               x = c(1, 0, 0, 1),
+               y = c(0, 0, 1, 1),
+               name = c("Y2", "Y1", "U", "Z")
+             ))
+
+dag = dag %>% 
+  tidy_dagitty(layout = "auto", seed = 12345) %>%
+  arrange(name) 
+
+ggplot(dag) +
+  aes(x = x, y = y, xend = xend, yend = yend) +
+  geom_dag_point(size = 20) +
+  geom_dag_edges() +
+  geom_dag_text(parse = TRUE,
+                size = 5,
+                label = c(expression(U),
+                          expression(Y[t==1]),
+                          expression(Y[t==2]),
+                          expression(Z)))
+```
+
+## Block randomization
+
+::: incremental
+
+- Change how randomization happens
+
+- Group units in *blocks* or *strata*
+
+- Estimate average treatment effect within each
+
+- Aggregate with a weighted average
+
+:::
+
+## How does it work?
+
+. . .
+
+- Within-block ATE estimator:
+
+$$
+\widehat{ATE}_b = E[Y_{ib}(1) | Z_{ib} = 1] - E[Y_{ib}(0) | Z_{ib} = 0]
+$$
+
+. . .
+
+- Overall ATE estimator:
+
+$$
+\widehat{ATE}_{\text{Block}} = \sum_{b=1}^B \frac{n_b}{N} \widehat{ATE}_b
+$$
+
+## Illustration
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+```{r}
+population = data.frame(
+  ID = 1:8,
+  Block = c(rep(1, 4), rep(2, 4)),
+  y0 = c(rep(1:2, 2), rep(3:4, 2)),
+  y1 = c(rep(4:5, 2), rep(8:9, 2))
+)
+
+
+kbl(population,
+    escape = FALSE,
+    col.names = c("ID", "Block", '\\(Y_i(0)\\)', '\\(Y_i(1)\\)')) %>% 
+  row_spec(1:4, background = "#dcdcdc")
+
+# Back of the envelope calculation
+true_ate = population %>% 
+  mutate(diff = y1 - y0) %>% 
+  summarize(ate = mean(diff)) %>% 
+  .$ate
+```
+
+:::
+
+::: {.column width="40%"}
+
+::: incremental
+- Potential outcomes *correlate* with blocks
+
+- True $ATE = 4$
+
+- Do 500 experiments
+
+- Compare complete and block-randomized experiment
+:::
+
+:::
+
+::::
+
+## Simulation
+
+```{r sims, cache = TRUE}
+pop = declare_population(
+  N = 8,
+  Block = c(rep(1, 4),
+            rep(2, 4)),
+  Y_Z_0 = c(1,2,1,2,3,4,3,4),
+  Y_Z_1 = c(4,5,4,5,8,9,8,9)
+  )
+
+inq = declare_inquiry(ATE = mean(Y_Z_1 - Y_Z_0))
+
+comp_rand = declare_assignment(Z =complete_ra(N))
+
+block_rand = declare_assignment(Z = block_ra(blocks = Block))
+
+reveal = declare_measurement(Y = reveal_outcomes(Y ~ Z))
+
+comp_est = declare_estimator( Y ~ Z, inquiry = "ATE", label = "Complete randomization")
+
+block_est = declare_estimator(Y ~ Z, blocks = Block, inquiry = "ATE",
+                              .method = difference_in_means,
+                              label = "Block randomization")
+
+dc = pop + inq + comp_rand + reveal + comp_est
+
+db = pop + inq + block_rand +  reveal + block_est
+
+set.seed(20230314)
+simc = simulate_design(dc)
+simb = simulate_design(db)
+
+sim = rbind(simc, simb)
+```
+
+```{r}
+ggplot(sim) +
+  aes(x = estimate, color = estimator) +
+  geom_vline(xintercept = true_ate, linetype = "dashed") +
+  annotate("text", x = true_ate + 0.4, y = 2, 
+           label = "True ATE", size = 5) +
+  geom_density(linewidth = 2) +
+  theme_bw(base_size = 20) +
+  theme(legend.position = "bottom") +
+  scale_color_viridis_d(labels = c("Block", "Complete")) +
+  labs(x = "Estimate", 
+       y = "Density",
+       color = "Randomization")
+```
+
+::: aside
+Block randomization yields a narrower distribution of estimates
+:::
+
+## Reasons to block randomize
+
+1. To increase precision in ATE estimates
+
+2. To account for possible heterogeneous treatment effects
+
+. . .
+
+- The more blocking variables correlate with potential outcomes, the more useful block randomization is
+
+- And it rarely hurts when they do not correlate! `(more in the lab!)`
+
+# Example
+
+## Kalla et al (2018): Are You My Mentor?
+
+::: incremental
+- Correspondence experiment with $N = 8189$ legislators in the US
+
+- Send email about fake student seeking advice to become politician
+
+- Cue gender with student's name
+:::
+
+::: aside
+Also called *audit* experiments since they were originally designed to audit how responsive elected officials are
+:::
+
+## Sample email
+
+![](figs/kalla_0.png){fig-align="center"}
+
+## Data strategy
+
+- Block-randomize by legislator's gender `(why?)`
+
+- **Outcomes:** Reply content and length
+
+## Findings {.smaller}
+
+```{r}
+kalla = tribble(
+  ~Outcome, ~Male, ~Female, ~p,
+  "Received reply", 0.25, 0.27, 0.15,
+  "Meaningful response", 0.11, 0.13, 0.47,
+  "Praised", 0.05, 0.06, 0.17,
+  "Offer to help", 0.03, 0.05, 0.09,
+  "Warned against running", 0.01, 0.02, 0.14,
+  "Substantive advice", 0.07, 0.08, 0.33,
+  "Word count (logged)", 1, 1.1, 0.06,
+  "Character count", 145, 170, 0.04
+)
+
+colnames(kalla) = c("Outcome", "Male Sender", "Female Sender", "p-value")
+
+kalla %>% kbl()
+```
+
+. . .
+
+- Why not much difference by gender?
+
+::: aside
+Adapted from Table 1
 :::
 
 

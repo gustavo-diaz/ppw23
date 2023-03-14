@@ -319,6 +319,9 @@
       margin-right: 0; 
     }
   </style>
+  
+  <script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -334,9 +337,9 @@ Winter 2023</p>
 <section id="last-time" class="slide level2" data-background-color="#FDBF57">
 <h2>Last time</h2>
 <ul>
-<li><p>We learned about implementing practical details</p></li>
+<li><p>We learned about implementing field experients</p></li>
 <li><p>Lots of details!</p></li>
-<li><p>Sometimes cannot simply randomly assign</p></li>
+<li><p>Sometimes cannot simply randomly assign <code>(stepped-wedge design)</code></p></li>
 <li><p><strong>Today:</strong> Thinking about how to do better</p></li>
 </ul>
 </section>
@@ -357,9 +360,343 @@ Winter 2023</p>
 <li class="fragment"><p><a href="https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html"><strong>Belmont report:</strong></a> Benefits should outweigh costs</p></li>
 <li class="fragment"><p><strong><i class="fa-solid fa-book" aria-hidden="true"></i>:</strong> Researchers have duties beyond getting review board approval</p></li>
 <li class="fragment"><p>At a minimum, participating in a study takes time</p></li>
+<li class="fragment"><p><strong>Mandate:</strong> Find the most efficient, ethical study before collecting data</p></li>
+<li class="fragment"><p>Sometimes that means doing more with a <em>smaller sample</em></p></li>
 </ul>
 </div>
 </section>
+<section>
+<section id="improving-precision" class="title-slide slide level1 center">
+<h1>Improving Precision</h1>
+
+</section>
+<section id="pre-post-design" class="slide level2">
+<h2>Pre-post design</h2>
+<div class="fragment">
+<ul>
+<li><p>Similar to panel studies</p></li>
+<li><p>Outcomes are measured <em>at least</em> twice</p></li>
+<li><p>Once before treatment, once after treatment</p></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Condition </th>
+   <th style="text-align:left;"> \(t=1\) </th>
+   <th style="text-align:center;"> Treatment </th>
+   <th style="text-align:left;"> \(t=2\) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> \(Z_i=1\) </td>
+   <td style="text-align:left;"> \(Y_{i, t=1}\) </td>
+   <td style="text-align:center;"> X </td>
+   <td style="text-align:left;"> \(Y_{i, t=2}(1)\) </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> \(Z_i=0\) </td>
+   <td style="text-align:left;"> \(Y_{i, t=1}\) </td>
+   <td style="text-align:center;">  </td>
+   <td style="text-align:left;"> \(Y_{i, t=2}(0)\) </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+<aside><div>
+<p>AKA repeated measures design</p>
+</div></aside></section>
+<section id="how-does-this-work" class="slide level2">
+<h2>How does this work?</h2>
+<div class="fragment">
+<ul>
+<li>Standard ATE estimator:</li>
+</ul>
+<p><span class="math display">\[
+E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]
+\]</span></p>
+</div>
+<div class="fragment">
+<ul>
+<li>Pre-post ATE estimator:</li>
+</ul>
+<p><span class="math display">\[
+E[(Y_{i,t=2}(1) - Y_{i,t=1}) | Z_i = 1] - E[(Y_{i,t=2}(0) - Y_{i,t=1}) | Z_i = 0]
+\]</span></p>
+</div>
+</section>
+<section id="how-does-this-work-1" class="slide level2" data-visibility="uncounted">
+<h2>How does this work?</h2>
+<ul>
+<li>Standard ATE estimator:</li>
+</ul>
+<p><span class="math display">\[
+E[Y_i(1) | Z_i = 1] - E[Y_i(0) | Z_i = 0]
+\]</span></p>
+<ul>
+<li>Pre-post ATE estimator:</li>
+</ul>
+<p><span class="math display">\[
+E[(Y_{i,t=2}(1) \color{#ac1455} {- Y_{i,t=1}}) | Z_i = 1] - E[(Y_{i,t=2}(0) \color{#ac1455} {- Y_{i,t=1}}) | Z_i = 0]
+\]</span></p>
+<div class="fragment">
+<ul>
+<li>We improve precision by subtracting the variation in the outcome that is unrelated to the treatment</li>
+</ul>
+</div>
+</section>
+<section id="pre-post-design-as-a-graph" class="slide level2">
+<h2>Pre-post design as a graph</h2>
+<div class="cell-output-display">
+<p><img data-src="10_slides_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+</div>
+</section>
+<section id="block-randomization" class="slide level2">
+<h2>Block randomization</h2>
+<div>
+<ul>
+<li class="fragment"><p>Change how randomization happens</p></li>
+<li class="fragment"><p>Group units in <em>blocks</em> or <em>strata</em></p></li>
+<li class="fragment"><p>Estimate average treatment effect within each</p></li>
+<li class="fragment"><p>Aggregate with a weighted average</p></li>
+</ul>
+</div>
+</section>
+<section id="how-does-it-work" class="slide level2">
+<h2>How does it work?</h2>
+<div class="fragment">
+<ul>
+<li>Within-block ATE estimator:</li>
+</ul>
+<p><span class="math display">\[
+\widehat{ATE}_b = E[Y_{ib}(1) | Z_{ib} = 1] - E[Y_{ib}(0) | Z_{ib} = 0]
+\]</span></p>
+</div>
+<div class="fragment">
+<ul>
+<li>Overall ATE estimator:</li>
+</ul>
+<p><span class="math display">\[
+\widehat{ATE}_{\text{Block}} = \sum_{b=1}^B \frac{n_b}{N} \widehat{ATE}_b
+\]</span></p>
+</div>
+</section>
+<section id="illustration" class="slide level2">
+<h2>Illustration</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> ID </th>
+   <th style="text-align:right;"> Block </th>
+   <th style="text-align:right;"> \(Y_i(0)\) </th>
+   <th style="text-align:right;"> \(Y_i(1)\) </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 1 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 1 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 1 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 2 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 1 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 2 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 3 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 1 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 1 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 4 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 1 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 2 </td>
+   <td style="text-align:right;background-color: #dcdcdc !important;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 8 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 9 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div><div class="column" style="width:40%;">
+<div>
+<ul>
+<li class="fragment"><p>Potential outcomes <em>correlate</em> with blocks</p></li>
+<li class="fragment"><p>True <span class="math inline">\(ATE = 4\)</span></p></li>
+<li class="fragment"><p>Do 500 experiments</p></li>
+<li class="fragment"><p>Compare complete and block-randomized experiment</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="simulation" class="slide level2">
+<h2>Simulation</h2>
+<div class="cell" data-hash="10_slides_cache/revealjs/sims_e4762a1d16b7bcdb5d149ca91d5b39a3">
+
+</div>
+<div class="cell-output-display">
+<p><img data-src="10_slides_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+</div>
+
+<aside><div>
+<p>Block randomization yields a narrower distribution of estimates</p>
+</div></aside></section>
+<section id="reasons-to-block-randomize" class="slide level2">
+<h2>Reasons to block randomize</h2>
+<ol type="1">
+<li><p>To increase precision in ATE estimates</p></li>
+<li><p>To account for possible heterogeneous treatment effects</p></li>
+</ol>
+<div class="fragment">
+<ul>
+<li><p>The more blocking variables correlate with potential outcomes, the more useful block randomization is</p></li>
+<li><p>And it rarely hurts when they do not correlate! <code>(more in the lab!)</code></p></li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="example" class="title-slide slide level1 center">
+<h1>Example</h1>
+
+</section>
+<section id="kalla-et-al-2018-are-you-my-mentor" class="slide level2">
+<h2>Kalla et al (2018): Are You My Mentor?</h2>
+<div>
+<ul>
+<li class="fragment"><p>Correspondence experiment with <span class="math inline">\(N = 8189\)</span> legislators in the US</p></li>
+<li class="fragment"><p>Send email about fake student seeking advice to become politician</p></li>
+<li class="fragment"><p>Cue gender with student’s name</p></li>
+</ul>
+</div>
+
+<aside><div>
+<p>Also called <em>audit</em> experiments since they were originally designed to audit how responsive elected officials are</p>
+</div></aside></section>
+<section id="sample-email" class="slide level2">
+<h2>Sample email</h2>
+
+<img data-src="figs/kalla_0.png" class="r-stretch quarto-figure-center"></section>
+<section id="data-strategy" class="slide level2">
+<h2>Data strategy</h2>
+<ul>
+<li><p>Block-randomize by legislator’s gender <code>(why?)</code></p></li>
+<li><p><strong>Outcomes:</strong> Reply content and length</p></li>
+</ul>
+</section>
+<section id="findings" class="slide level2 smaller">
+<h2>Findings</h2>
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Outcome </th>
+   <th style="text-align:right;"> Male Sender </th>
+   <th style="text-align:right;"> Female Sender </th>
+   <th style="text-align:right;"> p-value </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Received reply </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> 0.27 </td>
+   <td style="text-align:right;"> 0.15 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Meaningful response </td>
+   <td style="text-align:right;"> 0.11 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.47 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Praised </td>
+   <td style="text-align:right;"> 0.05 </td>
+   <td style="text-align:right;"> 0.06 </td>
+   <td style="text-align:right;"> 0.17 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Offer to help </td>
+   <td style="text-align:right;"> 0.03 </td>
+   <td style="text-align:right;"> 0.05 </td>
+   <td style="text-align:right;"> 0.09 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Warned against running </td>
+   <td style="text-align:right;"> 0.01 </td>
+   <td style="text-align:right;"> 0.02 </td>
+   <td style="text-align:right;"> 0.14 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Substantive advice </td>
+   <td style="text-align:right;"> 0.07 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.33 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Word count (logged) </td>
+   <td style="text-align:right;"> 1.00 </td>
+   <td style="text-align:right;"> 1.10 </td>
+   <td style="text-align:right;"> 0.06 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Character count </td>
+   <td style="text-align:right;"> 145.00 </td>
+   <td style="text-align:right;"> 170.00 </td>
+   <td style="text-align:right;"> 0.04 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div class="fragment">
+<ul>
+<li>Why not much difference by gender?</li>
+</ul>
+
+</div>
+<aside><div>
+<p>Adapted from Table 1</p>
+</div></aside></section>
 <section id="break-time" class="slide level2 center" data-background-color="#D2D755" style="text-align: center">
 <h2>Break time!</h2>
 <p>&nbsp;</p>
@@ -375,7 +712,7 @@ Winter 2023</p>
 
 <div class="footer footer-default">
 
-</div>
+</div></section>
     </div>
   </div>
 
