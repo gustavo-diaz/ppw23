@@ -31,6 +31,17 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
 Winter 2023
 :::
 
+## Announcements {background-color="#8BD3E6"}
+
+- No class on March 29
+
+- Optional lab that week
+
+- Will use flex session on April 12 to catch up
+
+- No office hours between March 23-29
+
+
 ## Last time {background-color="#FDBF57"}
 
 - We learned about implementing field experients
