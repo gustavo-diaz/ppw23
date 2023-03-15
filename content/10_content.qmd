@@ -41,4 +41,4 @@ slide_buttons("/slides/10_slides")
 
 ## Lab
 
-Field experimental designs II {{< fa laptop-code >}} (coming soon!)
+[Field experimental designs II {{< fa laptop-code >}}](labs/10_lab.Rmd)
