@@ -56,11 +56,11 @@ website:
               file: content/10_content.qmd
             - text: "11. Beyond experimentation"
               file: content/11_content.qmd
-            - text: "12. Quasi-experiments I"
+            - text: "12. NO CLASS"
               file: content/12_content.qmd
-            - text: "13. Quasi-experiments II"
+            - text: "13. Quasi-experiments I"
               file: content/13_content.qmd
-            - text: "14. Flex class or open lab"
+            - text: "12. Quasi-experiments II"
               file: content/14_content.qmd
       
 

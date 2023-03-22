@@ -324,65 +324,65 @@
   {
     "objectID": "content/12_content.html",
     "href": "content/12_content.html",
+    "title": "Week 12: NO CLASS DUE TO INSTRUCTOR TRAVEL",
+    "section": "",
+    "text": "I have to cancel our meeting for this week. The course content has shifted one week.\nYou can participate in the following optional activities to improve your grade:\n\nRedo one of your previously submitted labs, or complete a lab that you missed\nSubmit a response paper for one of the weeks that you may have missed\n\nYou can do up to one lab and up to one response paper. These are due on April 2 at 11:59 PM.\nI hope this helps to make a smoother end of the semester."
+  },
+  {
+    "objectID": "content/13_content.html",
+    "href": "content/13_content.html",
     "title": "Quasi-experiments I",
     "section": "",
     "text": "Experiments are helpful tools in trying to determine whether a policy works. But in many cases experimentation is unethical or unfeasible. In these contexts, researchers can try to leverage features of naturally occurring data that provide comparable levels of control. These are called quasi-experiments because we are assuming we can analyze them as if they were experiments.\nThe lab introduces regression discontinuity designs, a common answer strategy for policies that use deterministic thresholds to determine eligibility."
   },
   {
-    "objectID": "content/12_content.html#reading",
-    "href": "content/12_content.html#reading",
+    "objectID": "content/13_content.html#reading",
+    "href": "content/13_content.html#reading",
     "title": "Quasi-experiments I",
     "section": "Reading",
     "text": "Reading\n\n RD section 16\n Hoekstra, Mark. 2009. “The Effect of Attending the Flagship State University on Earnings: A Discontinuity-Based Approach.” The Review of Economics and Statistics 91 (4): 717-724"
   },
   {
-    "objectID": "content/12_content.html#slides",
-    "href": "content/12_content.html#slides",
-    "title": "Quasi-experiments I",
-    "section": "Slides",
-    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
-  },
-  {
-    "objectID": "content/12_content.html#lab",
-    "href": "content/12_content.html#lab",
-    "title": "Quasi-experiments I",
-    "section": "Lab",
-    "text": "Lab\nQuasi-experimental designs I  (coming soon!)"
-  },
-  {
-    "objectID": "content/13_content.html",
-    "href": "content/13_content.html",
-    "title": "Quasi-experiments II",
-    "section": "",
-    "text": "We continue the conversation on quasi-experiments. This time we focus on difference-in-differences, a research design that relies on repeated observations of units before and after a policy is implemented to make claims about cause and effect. Unlike the previous week, we are not pretending that our data looks as if an experiment was conducted.\nThe lab discusses difference-in-differences designs."
-  },
-  {
-    "objectID": "content/13_content.html#reading",
-    "href": "content/13_content.html#reading",
-    "title": "Quasi-experiments II",
-    "section": "Reading",
-    "text": "Reading\n\n RD section 16\n Leninger, Arndt, Marie-Lou Sohnius, Thorsten Faas, Sigrid Roßteutscher, and Armin Schäfer. 2022. “Temporary Disenfranchisement: Negative Side Effects of Lowering the Voting Age.” American Political Science Review"
-  },
-  {
     "objectID": "content/13_content.html#slides",
     "href": "content/13_content.html#slides",
-    "title": "Quasi-experiments II",
+    "title": "Quasi-experiments I",
     "section": "Slides",
     "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
   },
   {
     "objectID": "content/13_content.html#lab",
     "href": "content/13_content.html#lab",
-    "title": "Quasi-experiments II",
+    "title": "Quasi-experiments I",
     "section": "Lab",
-    "text": "Lab\nQuasi-experimental designs II  (coming soon!)"
+    "text": "Lab\nQuasi-experimental designs I  (coming soon!)"
   },
   {
     "objectID": "content/14_content.html",
     "href": "content/14_content.html",
-    "title": "Week 14: Flex Class or Open Lab",
+    "title": "Quasi-experiments II",
     "section": "",
-    "text": "We are leaving one empty spot in our schedule just in case, we can use our time this week in four ways:\n\nCatch up on missed content\nLearn more about a topic that caught our attention during the semester\nDiscuss steps to learn more about the topic of this class or to take advantage of what you learned this semester\nHave an unstructured lab session so we can work on final projects and help each other out\n\nThese are not mutually exclusive. We will collectively decide what to do and I will update this page accordingly."
+    "text": "We continue the conversation on quasi-experiments. This time we focus on difference-in-differences, a research design that relies on repeated observations of units before and after a policy is implemented to make claims about cause and effect. Unlike the previous week, we are not pretending that our data looks as if an experiment was conducted.\nThe lab discusses difference-in-differences designs."
+  },
+  {
+    "objectID": "content/14_content.html#reading",
+    "href": "content/14_content.html#reading",
+    "title": "Quasi-experiments II",
+    "section": "Reading",
+    "text": "Reading\n\n RD section 16\n Leninger, Arndt, Marie-Lou Sohnius, Thorsten Faas, Sigrid Roßteutscher, and Armin Schäfer. 2022. “Temporary Disenfranchisement: Negative Side Effects of Lowering the Voting Age.” American Political Science Review"
+  },
+  {
+    "objectID": "content/14_content.html#slides",
+    "href": "content/14_content.html#slides",
+    "title": "Quasi-experiments II",
+    "section": "Slides",
+    "text": "Slides\n\n\n\n\n\n\nNavigation\n\n\n\nClick on the frame below and use the arrows to navigate. You can type ? (or shift + /) to see useful commands.\n\n\n\nYour browser does not support frame view, please use the links below.\n\n\n Open in a new window  Download PDF"
+  },
+  {
+    "objectID": "content/14_content.html#lab",
+    "href": "content/14_content.html#lab",
+    "title": "Quasi-experiments II",
+    "section": "Lab",
+    "text": "Lab\nQuasi-experimental designs II  (coming soon!)"
   },
   {
     "objectID": "content/index.html",
@@ -424,7 +424,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This is an overview of the semester. As the semester goes on, I will update this page with links to slides, readings, and lab assignments.\nYou can also check the Content page for details.\n\n\n\n\n Week\n Date\n Content\n Lab\n\n\n\n\n1\nJanuary 11\nIntroduction\nResearch interests survey\n\n\n2\nJanuary 18\nRepresentative surveys\nIntro to R; sampling from populations\n\n\n3\nJanuary 25\nPanel surveys\nDescriptive inference\n\n\n4\nFebruary 1\nSensitive questions\nReducing sensitivity bias\n\n\n5\nFebruary 8\nSurvey experiments\nSurvey experimental designs\n\n\n6\nFebruary 15\nConvenience samples\nExternal validity\n\n\n7\nFebruary 22\nMid-term recess\n\n\n\n8\nMarch 1\nEvidence-informed policy\nHypothesis testing\n\n\n9\nMarch 8\nField experiments I\nField experimental designs I\n\n\n10\nMarch 15\nField experiments II\nField experimental designs II\n\n\n11\nMarch 22\nBeyond experimentation\nLimitations of experiments\n\n\n12\nMarch 29\nQuasi-experiments I\nQuasi-experimental designs I\n\n\n13\nApril 5\nQuasi-experiments II\nQuasi-experimental designs II\n\n\n14\nApril 12\nFlex class or open lab\n\n\n\n\nApril 21\nFinal project due"
+    "text": "This is an overview of the semester. As the semester goes on, I will update this page with links to slides, readings, and lab assignments.\nYou can also check the Content page for details.\n\n\n\n\n Week\n Date\n Content\n Lab\n\n\n\n\n1\nJanuary 11\nIntroduction\nResearch interests survey\n\n\n2\nJanuary 18\nRepresentative surveys\nIntro to R; sampling from populations\n\n\n3\nJanuary 25\nPanel surveys\nDescriptive inference\n\n\n4\nFebruary 1\nSensitive questions\nReducing sensitivity bias\n\n\n5\nFebruary 8\nSurvey experiments\nSurvey experimental designs\n\n\n6\nFebruary 15\nConvenience samples\nExternal validity\n\n\n7\nFebruary 22\nMid-term recess\n\n\n\n8\nMarch 1\nEvidence-informed policy\nHypothesis testing\n\n\n9\nMarch 8\nField experiments I\nField experimental designs I\n\n\n10\nMarch 15\nField experiments II\nField experimental designs II\n\n\n11\nMarch 22\nBeyond experimentation\nLimitations of experiments\n\n\n12\nMarch 29\nNO CLASS DUE TO INSTRUCTOR TRAVEL\n\n\n\n13\nApril 5\nQuasi-experiments I\nQuasi-experimental designs I\n\n\n14\nApril 12\nQuasi-experiments II\nQuasi-experimental designs II\n\n\n\nApril 21\nFinal project due"
   },
   {
     "objectID": "slides/01_slides.html#public-opinion-and-policy",

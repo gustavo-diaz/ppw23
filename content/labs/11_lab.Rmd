@@ -4,7 +4,7 @@ subtitle: "Writing your own design"
 author: |
         | **Name:** Your name here
         | **Mac ID:** Your Mac ID here
-date: "**Due:** Friday, March 24, 5 PM"
+date: "**Due:** Friday, March 31, 5 PM"
 output: 
   pdf_document:
     highlight: espresso

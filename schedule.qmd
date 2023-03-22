@@ -28,9 +28,9 @@ schedule =
     9, "March 8", "[Field experiments I](content/09_content.qmd)", "Field experimental designs I",
     10, "March 15", "[Field experiments II](content/10_content.qmd)", "Field experimental designs II",
     11, "March 22", "[Beyond experimentation](content/11_content.qmd)", "Limitations of experiments",
-    12, "March 29", "[Quasi-experiments I](content/12_content.qmd)", "Quasi-experimental designs I",
-    13, "April 5", "[Quasi-experiments II](content/13_content.qmd)", "Quasi-experimental designs II",
-    14, "April 12", "[Flex class or open lab](content/14_content.qmd)", NA,
+    12, "March 29", "NO CLASS DUE TO INSTRUCTOR TRAVEL", NA,
+    13, "April 5", "[Quasi-experiments I](content/13_content.qmd)", "Quasi-experimental designs I",
+    14, "April 12", "[Quasi-experiments II](content/14_content.qmd)", "Quasi-experimental designs II",
     NA, "**April 21**", "**Final project due**", NA
   )
 ```

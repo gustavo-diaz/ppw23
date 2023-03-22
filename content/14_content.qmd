@@ -1,15 +1,40 @@
 ---
-title: "Week 14: Flex Class or Open Lab"
+title: "Quasi-experiments II"
 date: "April 12, 2023"
+format: html
 ---
+
+
+```{r setup, echo = FALSE, results = "asis"}
+# Slide showing functions
+source(here::here("R", "show_slides.R"))
+```
 
 ## Overview
 
-We are leaving one empty spot in our schedule just in case, we can use our time this week in four ways:
+We continue the conversation on quasi-experiments. This time we focus on difference-in-differences, a research design that relies on repeated observations of units before and after a policy is implemented to make claims about cause and effect. Unlike the previous week, we are not pretending that our data looks as if an experiment was conducted.
 
-1. Catch up on missed content
-2. Learn more about a topic that caught our attention during the semester
-3. Discuss steps to learn more about the topic of this class or to take advantage of what you learned this semester
-4. Have an unstructured lab session so we can work on final projects and help each other out
+The lab discusses difference-in-differences designs.
 
-These are not mutually exclusive. We will collectively decide what to do and I will update this page accordingly.
+## Reading
+
+- [{{< fa book >}}]{style="color: #ac1455;"} [RD section 16](https://book.declaredesign.org/observational-causal.html)
+
+- [{{< fa file-lines >}}]{style="color: #ac1455;"} Leninger, Arndt, Marie-Lou Sohnius, Thorsten Faas, Sigrid Roßteutscher, and Armin Schäfer. 2022. [“Temporary Disenfranchisement: Negative Side Effects of Lowering the Voting Age.”](https://doi.org/10.1017/S000305542200034X) *American Political Science Review*
+
+## Slides
+
+::: {.callout-tip}
+## Navigation
+
+Click on the frame below and use the arrows to navigate. You can type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) to see useful commands.
+:::
+
+```{r show-slides, echo = FALSE, results = "asis"}
+show_slide("/slides/placeholder")
+slide_buttons("/slides/14_slides")
+```
+
+## Lab
+
+Quasi-experimental designs II {{< fa laptop-code >}} (coming soon!)
