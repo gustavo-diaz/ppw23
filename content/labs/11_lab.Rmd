@@ -1,0 +1,101 @@
+---
+title: "Lab 9"
+subtitle: "Writing your own design"
+author: |
+        | **Name:** Your name here
+        | **Mac ID:** Your Mac ID here
+date: "**Due:** Friday, March 24, 5 PM"
+output: 
+  pdf_document:
+    highlight: espresso
+    fig_caption: yes
+urlcolor: blue
+header-includes:
+    - \usepackage{setspace}
+    - \doublespacing
+    - \usepackage{float}
+    - \floatplacement{figure}{t}
+    - \floatplacement{table}{t}
+    - \usepackage{flafter}
+    - \usepackage[T1]{fontenc}
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{ragged2e}
+    - \usepackage{booktabs}
+    - \usepackage{amsmath}
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+# Global options for the knitting behavior of all subsequent code chunks
+# Adding an option to store previous results to save computing time
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, cache = TRUE)
+
+# Packages
+library(tidyverse)
+library(DeclareDesign)
+
+# Package global options
+theme_set(theme_bw(base_size = 20)) # bigger figure font and white background
+
+# Add extra packages here if needed
+```
+
+# Instructions
+
+For the final project, your group will have to propose and encode a research design. You should practice writing a research design at least once before then.
+
+Look at the [research design library](https://book.declaredesign.org/research-design-library.html) in chapters 14-18 of the RD textbook. If you are feeling adventurous, you may also look at [this library](https://declaredesign.org/r/designlibrary/) with more complicated designs.
+
+Pick one research design and come up with a story for a survey or experiment that represents this research design.
+
+Remember to use `set.seed()` with your student number whenever you simulate or diagnose a design!
+
+## Study
+
+Write here one or two paragraphs about what your study is about. If you can't think of anything to write about, maybe start with one of the assigned readings for the course and think about what you would do differently. Another option is to go back to previous labs, since some of them mimic research that we have already discussed.
+
+## Model
+
+Write here about your model of the world, which variables are endogenous, which variables are exogenous? If you need to specify potential outcomes, why did you specify them the way you did?
+
+```{r}
+# Work on model here
+```
+
+## Inquiry
+
+What is the abstract quantity or quantities of interest? Why is it meaningful? (*Hint:* Don't include too many inquiries!)
+
+```{r}
+# Work on inquiry here
+```
+
+## Data strategy
+
+How are you collecting data from the world? Are you sampling from a population? Are you assigning conditions? What randomization procedure, if any, are you using?
+
+```{r}
+# work on data strategy here
+```
+
+
+## Answer strategy
+
+What statistical procedure are you using to summarize the data you collect? Remember that each inquiry has at least one corresponding estimator. If an inquiry has more than one estimator, it may be interesting to compare how different estimators perform.
+
+```{r}
+# work on answer strategy here
+```
+
+
+# Questions
+
+**1. Diagnose your design. How does it perform in terms of bias, RMSE, and power. Are you satisfied with its current performance? Why do you think so?**
+
+**2. If you feel satisfied. Can you change anything about this design to make it more efficient? Remember that studies are expensive and impose a burden on human subjects, so we should reduce the scale if we can. Change one thing about the design and diagnose it again. How did performance change in terms of bias, RMSE, and power?**
+
+**If you were not satisfied. Can you change anything to improve performance? Change one thing about the design and diagnose it again. How did performance change in terms of bias, RMSE, and power? Is the improvement in performance worth the additional cost or burden on human subjects?**
+
+**3. In what other contexts would this design yield similar results? List at least three support factors. How common are they? What would you need to change to apply your current design to a different setting? (no need to show code for this one)**
+
+

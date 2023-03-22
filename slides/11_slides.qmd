@@ -1,0 +1,416 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(ggdag)
+# remotes::install_github("AllanCameron/geomtextpath")
+library(geomtextpath)
+
+
+# Global options
+theme_set(theme_bw(base_size = 20))
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Beyond Experimentation {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Announcements {background-color="#8BD3E6"}
+
+- No class on March 29
+
+- Optional lab that week
+
+- Will use flex session on April 12 to catch up
+
+- No office hours between March 23-29
+
+## New timeline {background-color="#8BD3E6"}
+
+- **March 22 (today):** Beyond Experimentation
+
+- **March 29:** NO CLASS
+
+- **April 5:** Quasi-experiments I
+
+- **April 12:** Quasi-experiments II
+
+- **April 21:** Final project due
+
+
+## Last two weeks {background-color="#FDBF57"}
+
+- Field experiments as the gold standard to evaluate policy
+
+- Many choices in research design and implementation
+
+- **Today:** How do we learn from experiments?
+
+## Learning from experiments
+
+- How do you prove that a policy intervention works?
+
+. . .
+
+- We want to make statements about *causation*
+
+    - *TUP program improves income*
+
+. . .
+
+- To back up those statements, we need to rule out **confounding factors**
+
+    - *Those who join the TUP program are more likely to seek economic opportunities*
+    
+## Ruling out confounders
+
+- One way to rule out potential confounders is to conduct an experiment or analyze existing data that looks like an experiment `(coming soon!)`
+
+. . .
+
+- **Challenge:** This is only true *in expectation*
+
+## A small experiment
+
+
+```{r}
+pop = declare_population(
+  N = 4,
+  female = c(0, 0, 1, 1),
+  Y0 = c(0, 0, 0, 1),
+  Y1 = c(0, 1, 1, 1)
+)
+pot = declare_potential_outcomes(Y ~ Y1 * Z + Y0 * (1-Z))
+estimand = declare_inquiry(ATE = mean(Y1 - Y0))
+assign = declare_assignment(Z = complete_ra(N, m = 2))
+reveal = declare_measurement(Y = reveal_outcomes(Y ~ Z))
+estimator = declare_estimator(Y ~ Z, inquiry = "ATE")
+design_1 = pop + pot + estimand + assign + reveal + estimator
+```
+
+
+```{r}
+set.seed(141)
+dat = draw_data(design_1)
+dat_0 = dat %>% select(ID, female, Y0, Y1)
+colnames(dat_0) = c("ID", "Female", "Y(0)", "Y(1)")
+dat_0 %>% kbl()
+```
+
+. . .
+
+- $Y(*)$ are the **potential outcomes** under control `(0)`  and treatment `(1)`, respectively
+
+- $Y(*) = 1$ means person's life improves, $Y(*) = 0$ means life stays the same
+
+## A small experiment {visibility="uncounted"}
+
+
+```{r}
+set.seed(141)
+dat = draw_data(design_1)
+dat_0 = dat %>% select(ID, female, Y0, Y1)
+colnames(dat_0) = c("ID", "Female", "Y(0)", "Y(1)")
+dat_0 %>% kbl()
+```
+
+- We have:
+
+    - One person for which the policy would do nothing
+    - Two people for which the policy improves life
+    - One person who improves their life either way
+    
+## Assign policy treatment at random
+
+```{r}
+dat_1 = dat %>% select(ID, female, Y0, Y1, Z)
+colnames(dat_1) = c("ID", "Female", "Y(0)", "Y(1)", "Z")
+dat_1 %>% kbl()
+```
+
+. . .
+
+- We happened to randomly assign the policy to the two women
+
+- We only observe the potential outcomes that corresponds to the treatment status
+
+## Revealing outcomes
+
+```{r}
+dat_2 = dat %>% select(ID, female, Y0, Y1, Z, Y)
+colnames(dat_2) = c("ID", "Female", "Y(0)", "Y(1)", "Z", "Y obs")
+dat_2 %>% kbl()
+```
+
+. . .
+
+- The **true** treatment effect is 
+
+$$ATE = E[Y(1)] - E[Y(0)] = 3/4 - 1/4 = 1/2$$
+
+- Which we **cannot observe in the real world**
+
+## Revealing outcomes {visibility="uncounted"}
+
+```{r}
+dat_2 = dat %>% select(ID, female, Y0, Y1, Z, Y)
+colnames(dat_2) = c("ID", "Female", "Y(0)", "Y(1)", "Z", "Y obs")
+dat_2 %>% kbl()
+```
+
+- We can **approximate** the ATE with $\widehat{ATE} = 2/2 - 0/2 = 1$
+
+- We are off the mark! What happens if we redo the experiment?
+
+## Redoing the experiment
+
+```{r}
+set.seed(142)
+redo = draw_data(design_1)
+dat_3 = redo %>% select(ID, female, Y0, Y1, Z, Y)
+colnames(dat_3) = c("ID", "Female", "Y(0)", "Y(1)", "Z", "Y obs")
+dat_3 %>% kbl()
+```
+
+. . .
+
+- We still have $ATE = 1/2$
+
+- But now $\widehat{ATE} = 1/2 - 1/2 = 0$
+
+- Off the mark in the opposite direction
+
+## Why does this happen?
+
+```{r}
+dat_4 = dat %>% select(ID, female, Y0, Y1, Z, Y)
+dat_4$Z2 = dat_3[, 5]
+dat_4$Y2 = dat_3[, 6]
+colnames(dat_4) = c("ID", "Female", "Y(0)", "Y(1)", "Z", "Y obs", "Z", "Y obs")
+dat_4 %>% kbl() %>% add_header_above(c(" " = 4, "Experiment 1" = 2, "Experiment 2" = 2))
+```
+
+. . .
+
+- Perhaps men and women react to the policy differently
+
+- We want to rule out results depending on whether we assign treatments to men or women
+
+## Why does this happen? {visibility="uncounted"}
+
+- **Experiment 1:** 2/2 women in treatment and 0/2 in control `(imbalanced)`
+
+- **Experiment 2:** 1/2 woman in treatment and 1/2 in control `(balanced)`
+
+. . .
+
+- Does that mean that experiment 2 is free from **random confounding**?
+
+
+## Redo 1,000 experiments
+
+
+```{r, fig.pos = "center", cache = TRUE}
+set.seed(20220425)
+sims = simulate_design(design_1, sims = 1000)
+ggplot(sims) +
+  aes(x = estimate) +
+  geom_vline(xintercept = mean(sims$estimand), linetype = "dashed", size = 2) +
+  geom_density(size = 2) +
+  labs(x = "Observed ATEs", y = "Density") +
+  annotate("text", x = mean(sims$estimand) + 0.1, y = 1.5, label = "True ATE", 
+           size = 6)
+```
+
+::: aside
+Half of the time we are spot on, half of the time we are wrong in either direction
+:::
+
+## What does this mean?
+
+. . .
+
+- Experiments only rule out the role of potential confounders **IN EXPECTATION**
+
+- We can sustain this claim in two ways
+
+. . .
+
+1. With a sufficiently large sample `(But how large is large enough?)`
+    
+2. By repeating the same experiment multiple times `(Nobody does this)`
+
+## In practice
+
+::: incremental
+- We only know bias, RMSE, and power in our simulations
+
+- Need a lot of domain expertise to attribute ATE to policy
+
+- This involves **explaining why it works**
+
+- First step toward knowing whether it would **work somewhere else**
+:::
+
+## Generalization and extrapolation
+
+- **Critique:** Experiments invest in *internal validity* at the expense of *external validity*
+
+. . .
+
+- **Internal validity:** We can `(probabilistically)` attribute effect to policy intervention
+
+- **External validity:** Whether effect *extrapolates* or *generalizes*
+
+. . .
+
+- **Extrapolation:** Whether it works *elsewhere*
+
+- **Generalization:** Whether it works *everywhere*
+
+## Support factors
+
+::: incremental
+- **Example:** A house burns down because the television was left on
+
+- Not all houses with TVs left on burn down, but sometimes they do, perhaps because the wiring was poor
+
+- A **support factor** is one part of the **causal pie**
+
+- **Causal pie:** A set of causes that are jointly but not separately sufficient for a contribution to an effect `(INUS causation)`
+
+- **Analogy:** TUP only works if we have good schools
+:::
+
+## Scales and drills
+
+. . .
+
+- **Scaling up:** Whether we can apply intervention to broader area 
+
+    - Small scale interventions can become **unfeasible** or **cost-prohibitive** in a larger scale
+
+    - Some policies only work at a small scale!
+    
+## Scales and drills {visibility="uncounted"}
+
+- **Drilling down:** Can we apply the results of an intervention to individual units?
+
+    - Just because it works **on average**, it does not mean that everyone will benefit from it
+
+    - May waste money on people for whom the policy does not work
+
+    - This can be **unethical**
+    
+## Coordinated trials 
+
+. . .
+
+- Multi-site interventions that evaluate `(more or less)` the same policy
+
+. . .
+
+- **Goals:**
+
+    1. Establish whether a policy is generally advisable `(pooling results)`
+    
+    2. Understand why things work in some places but not others `(support factors)`
+    
+## Slough et al (2021): Community monitoring of common pool resources
+
+::: incremental
+- **CPRs:** Non-excludable, rivalrous
+
+- Examples?
+
+- **Problem:** Prone to congestion, overextraction
+
+:::
+
+## 6 different contexts
+
+```{r}
+cpr = tribble(
+  ~Country, ~Resource, ~Community, ~Threat,
+  "Brazil", "Groundwater", "Rural villages", "Drought, overuse",
+  "China", "Surface water", "Urban neighborhoods", "Pollution",
+  "Costa Rica", "Groundwater", "Rural villages", "Drought, overuse",
+  "Liberia", "Forest", "Villages", "Overcutting",
+  "Peru", "Forest", "Indigenous communities", "Extraction",
+  "Uganda", "Forest", "Villages", "Overcutting"
+)
+
+
+
+cpr %>% 
+  kbl() %>% 
+  kable_styling(font_size = 35) %>% 
+  column_spec(1, bold = T)
+```
+
+## Interventions
+
+```{r}
+cpr_t = tribble(
+  ~Country, ~Wokshops, ~Training, ~Monitoring, ~Citizens, ~Management,
+  "Brazil", "X", "X", "X", "X", " ",
+  "China", " ", "X", "X", "X", " ",
+  "Costa Rica", "X", "X", "X", "X", "X",
+  "Liberia", "X", "X", "X", "X", "X",
+  "Peru", "X", "X", "X", "X", "X",
+  "Uganda", "X", "X", "X", "X", "X"
+)
+
+cpr_t %>% 
+  kbl(align = "lccccc") %>% 
+  kable_styling(font_size = 32) %>% 
+  add_header_above(c(" " = 4, "Dissemination" = 2)) %>% 
+  column_spec(1, bold = T)
+```
+
+## Findings
+
+![](figs/slough_1.png){fig-align="center"}
+
+## Why without Brazil?
+
+. . .
+
+![](figs/slough_2.png){fig-align="center"}
+
+
+::: {style="text-align: center"}
+## Next Week {.center background-color="#8BD3E6"}
+### NO CLASS
+
+Back on April 5!
+:::
+
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::

@@ -37,10 +37,10 @@ Click on the frame below and use the arrows to navigate. You can type <kbd>?</kb
 :::
 
 ```{r show-slides, echo = FALSE, results = "asis"}
-show_slide("/slides/placeholder")
+show_slide("/slides/11_slides")
 slide_buttons("/slides/11_slides")
 ```
 
 ## Lab
 
-Limitations of experiments {{< fa laptop-code >}} (coming soon!)
+[Limitations of experiments {{< fa laptop-code >}}](labs/11_lab.Rmd)

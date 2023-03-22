@@ -319,7 +319,7 @@
     "href": "content/11_content.html#lab",
     "title": "Beyond Experimentation",
     "section": "Lab",
-    "text": "Lab\nLimitations of experiments  (coming soon!)"
+    "text": "Lab\nLimitations of experiments"
   },
   {
     "objectID": "content/12_content.html",
@@ -1694,6 +1694,13 @@
     "text": "Field Experiments II\n \nPOLSCI 4SS3\nWinter 2023"
   },
   {
+    "objectID": "slides/10_slides.html#announcements",
+    "href": "slides/10_slides.html#announcements",
+    "title": "Public Opinion and Policy",
+    "section": "Announcements",
+    "text": "Announcements\n\nNo class on March 29\nOptional lab that week\nWill use flex session on April 12 to catch up\nNo office hours between March 23-29"
+  },
+  {
     "objectID": "slides/10_slides.html#last-time",
     "href": "slides/10_slides.html#last-time",
     "title": "Public Opinion and Policy",
@@ -1820,6 +1827,216 @@
     "text": "Lab"
   },
   {
+    "objectID": "slides/11_slides.html#beyond-experimentation",
+    "href": "slides/11_slides.html#beyond-experimentation",
+    "title": "Public Opinion and Policy",
+    "section": "Beyond Experimentation",
+    "text": "Beyond Experimentation\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/11_slides.html#announcements",
+    "href": "slides/11_slides.html#announcements",
+    "title": "Public Opinion and Policy",
+    "section": "Announcements",
+    "text": "Announcements\n\nNo class on March 29\nOptional lab that week\nWill use flex session on April 12 to catch up\nNo office hours between March 23-29"
+  },
+  {
+    "objectID": "slides/11_slides.html#new-timeline",
+    "href": "slides/11_slides.html#new-timeline",
+    "title": "Public Opinion and Policy",
+    "section": "New timeline",
+    "text": "New timeline\n\nMarch 22 (today): Beyond Experimentation\nMarch 29: NO CLASS\nApril 5: Quasi-experiments I\nApril 12: Quasi-experiments II\nApril 21: Final project due"
+  },
+  {
+    "objectID": "slides/11_slides.html#last-two-weeks",
+    "href": "slides/11_slides.html#last-two-weeks",
+    "title": "Public Opinion and Policy",
+    "section": "Last two weeks",
+    "text": "Last two weeks\n\nField experiments as the gold standard to evaluate policy\nMany choices in research design and implementation\nToday: How do we learn from experiments?"
+  },
+  {
+    "objectID": "slides/11_slides.html#learning-from-experiments",
+    "href": "slides/11_slides.html#learning-from-experiments",
+    "title": "Public Opinion and Policy",
+    "section": "Learning from experiments",
+    "text": "Learning from experiments\n\nHow do you prove that a policy intervention works?\n\n\n\nWe want to make statements about causation\n\nTUP program improves income\n\n\n\n\n\nTo back up those statements, we need to rule out confounding factors\n\nThose who join the TUP program are more likely to seek economic opportunities"
+  },
+  {
+    "objectID": "slides/11_slides.html#ruling-out-confounders",
+    "href": "slides/11_slides.html#ruling-out-confounders",
+    "title": "Public Opinion and Policy",
+    "section": "Ruling out confounders",
+    "text": "Ruling out confounders\n\nOne way to rule out potential confounders is to conduct an experiment or analyze existing data that looks like an experiment (coming soon!)\n\n\n\nChallenge: This is only true in expectation"
+  },
+  {
+    "objectID": "slides/11_slides.html#a-small-experiment",
+    "href": "slides/11_slides.html#a-small-experiment",
+    "title": "Public Opinion and Policy",
+    "section": "A small experiment",
+    "text": "A small experiment\n\n\n\n \n  \n    ID \n    Female \n    Y(0) \n    Y(1) \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n  \n  \n    2 \n    0 \n    0 \n    1 \n  \n  \n    3 \n    1 \n    0 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n  \n\n\n\n\n\n\n\\(Y(*)\\) are the potential outcomes under control (0) and treatment (1), respectively\n\\(Y(*) = 1\\) means person’s life improves, \\(Y(*) = 0\\) means life stays the same"
+  },
+  {
+    "objectID": "slides/11_slides.html#a-small-experiment-1",
+    "href": "slides/11_slides.html#a-small-experiment-1",
+    "title": "Public Opinion and Policy",
+    "section": "A small experiment",
+    "text": "A small experiment\n\n\n\n \n  \n    ID \n    Female \n    Y(0) \n    Y(1) \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n  \n  \n    2 \n    0 \n    0 \n    1 \n  \n  \n    3 \n    1 \n    0 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n  \n\n\n\n\n\nWe have:\n\nOne person for which the policy would do nothing\nTwo people for which the policy improves life\nOne person who improves their life either way"
+  },
+  {
+    "objectID": "slides/11_slides.html#assign-policy-treatment-at-random",
+    "href": "slides/11_slides.html#assign-policy-treatment-at-random",
+    "title": "Public Opinion and Policy",
+    "section": "Assign policy treatment at random",
+    "text": "Assign policy treatment at random\n\n\n\n \n  \n    ID \n    Female \n    Y(0) \n    Y(1) \n    Z \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    2 \n    0 \n    0 \n    1 \n    0 \n  \n  \n    3 \n    1 \n    0 \n    1 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n    1 \n  \n\n\n\n\n\n\nWe happened to randomly assign the policy to the two women\nWe only observe the potential outcomes that corresponds to the treatment status"
+  },
+  {
+    "objectID": "slides/11_slides.html#revealing-outcomes",
+    "href": "slides/11_slides.html#revealing-outcomes",
+    "title": "Public Opinion and Policy",
+    "section": "Revealing outcomes",
+    "text": "Revealing outcomes\n\n\n\n \n  \n    ID \n    Female \n    Y(0) \n    Y(1) \n    Z \n    Y obs \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    2 \n    0 \n    0 \n    1 \n    0 \n    0 \n  \n  \n    3 \n    1 \n    0 \n    1 \n    1 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n    1 \n    1 \n  \n\n\n\n\n\n\nThe true treatment effect is\n\n\\[ATE = E[Y(1)] - E[Y(0)] = 3/4 - 1/4 = 1/2\\]\n\nWhich we cannot observe in the real world"
+  },
+  {
+    "objectID": "slides/11_slides.html#revealing-outcomes-1",
+    "href": "slides/11_slides.html#revealing-outcomes-1",
+    "title": "Public Opinion and Policy",
+    "section": "Revealing outcomes",
+    "text": "Revealing outcomes\n\n\n\n \n  \n    ID \n    Female \n    Y(0) \n    Y(1) \n    Z \n    Y obs \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    2 \n    0 \n    0 \n    1 \n    0 \n    0 \n  \n  \n    3 \n    1 \n    0 \n    1 \n    1 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n    1 \n    1 \n  \n\n\n\n\n\nWe can approximate the ATE with \\(\\widehat{ATE} = 2/2 - 0/2 = 1\\)\nWe are off the mark! What happens if we redo the experiment?"
+  },
+  {
+    "objectID": "slides/11_slides.html#redoing-the-experiment",
+    "href": "slides/11_slides.html#redoing-the-experiment",
+    "title": "Public Opinion and Policy",
+    "section": "Redoing the experiment",
+    "text": "Redoing the experiment\n\n\n\n \n  \n    ID \n    Female \n    Y(0) \n    Y(1) \n    Z \n    Y obs \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n    1 \n    0 \n  \n  \n    2 \n    0 \n    0 \n    1 \n    0 \n    0 \n  \n  \n    3 \n    1 \n    0 \n    1 \n    1 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n    0 \n    1 \n  \n\n\n\n\n\n\nWe still have \\(ATE = 1/2\\)\nBut now \\(\\widehat{ATE} = 1/2 - 1/2 = 0\\)\nOff the mark in the opposite direction"
+  },
+  {
+    "objectID": "slides/11_slides.html#why-does-this-happen",
+    "href": "slides/11_slides.html#why-does-this-happen",
+    "title": "Public Opinion and Policy",
+    "section": "Why does this happen?",
+    "text": "Why does this happen?\n\n\n\n \n\n\nExperiment 1\nExperiment 2\n\n  \n    ID \n    Female \n    Y(0) \n    Y(1) \n    Z \n    Y obs \n    Z \n    Y obs \n  \n \n\n  \n    1 \n    0 \n    0 \n    0 \n    0 \n    0 \n    1 \n    0 \n  \n  \n    2 \n    0 \n    0 \n    1 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    3 \n    1 \n    0 \n    1 \n    1 \n    1 \n    1 \n    1 \n  \n  \n    4 \n    1 \n    1 \n    1 \n    1 \n    1 \n    0 \n    1 \n  \n\n\n\n\n\n\nPerhaps men and women react to the policy differently\nWe want to rule out results depending on whether we assign treatments to men or women"
+  },
+  {
+    "objectID": "slides/11_slides.html#why-does-this-happen-1",
+    "href": "slides/11_slides.html#why-does-this-happen-1",
+    "title": "Public Opinion and Policy",
+    "section": "Why does this happen?",
+    "text": "Why does this happen?\n\nExperiment 1: 2/2 women in treatment and 0/2 in control (imbalanced)\nExperiment 2: 1/2 woman in treatment and 1/2 in control (balanced)\n\n\n\nDoes that mean that experiment 2 is free from random confounding?"
+  },
+  {
+    "objectID": "slides/11_slides.html#redo-1000-experiments",
+    "href": "slides/11_slides.html#redo-1000-experiments",
+    "title": "Public Opinion and Policy",
+    "section": "Redo 1,000 experiments",
+    "text": "Redo 1,000 experiments\n\n\n\n\n\n\n\n\n\n\n\nHalf of the time we are spot on, half of the time we are wrong in either direction"
+  },
+  {
+    "objectID": "slides/11_slides.html#what-does-this-mean",
+    "href": "slides/11_slides.html#what-does-this-mean",
+    "title": "Public Opinion and Policy",
+    "section": "What does this mean?",
+    "text": "What does this mean?\n\n\nExperiments only rule out the role of potential confounders IN EXPECTATION\nWe can sustain this claim in two ways\n\n\n\n\nWith a sufficiently large sample (But how large is large enough?)\nBy repeating the same experiment multiple times (Nobody does this)"
+  },
+  {
+    "objectID": "slides/11_slides.html#in-practice",
+    "href": "slides/11_slides.html#in-practice",
+    "title": "Public Opinion and Policy",
+    "section": "In practice",
+    "text": "In practice\n\n\nWe only know bias, RMSE, and power in our simulations\nNeed a lot of domain expertise to attribute ATE to policy\nThis involves explaining why it works\nFirst step toward knowing whether it would work somewhere else"
+  },
+  {
+    "objectID": "slides/11_slides.html#generalization-and-extrapolation",
+    "href": "slides/11_slides.html#generalization-and-extrapolation",
+    "title": "Public Opinion and Policy",
+    "section": "Generalization and extrapolation",
+    "text": "Generalization and extrapolation\n\nCritique: Experiments invest in internal validity at the expense of external validity\n\n\n\nInternal validity: We can (probabilistically) attribute effect to policy intervention\nExternal validity: Whether effect extrapolates or generalizes\n\n\n\n\nExtrapolation: Whether it works elsewhere\nGeneralization: Whether it works everywhere"
+  },
+  {
+    "objectID": "slides/11_slides.html#support-factors",
+    "href": "slides/11_slides.html#support-factors",
+    "title": "Public Opinion and Policy",
+    "section": "Support factors",
+    "text": "Support factors\n\n\nExample: A house burns down because the television was left on\nNot all houses with TVs left on burn down, but sometimes they do, perhaps because the wiring was poor\nA support factor is one part of the causal pie\nCausal pie: A set of causes that are jointly but not separately sufficient for a contribution to an effect (INUS causation)\nAnalogy: TUP only works if we have good schools"
+  },
+  {
+    "objectID": "slides/11_slides.html#scales-and-drills",
+    "href": "slides/11_slides.html#scales-and-drills",
+    "title": "Public Opinion and Policy",
+    "section": "Scales and drills",
+    "text": "Scales and drills\n\n\nScaling up: Whether we can apply intervention to broader area\n\nSmall scale interventions can become unfeasible or cost-prohibitive in a larger scale\nSome policies only work at a small scale!"
+  },
+  {
+    "objectID": "slides/11_slides.html#scales-and-drills-1",
+    "href": "slides/11_slides.html#scales-and-drills-1",
+    "title": "Public Opinion and Policy",
+    "section": "Scales and drills",
+    "text": "Scales and drills\n\nDrilling down: Can we apply the results of an intervention to individual units?\n\nJust because it works on average, it does not mean that everyone will benefit from it\nMay waste money on people for whom the policy does not work\nThis can be unethical"
+  },
+  {
+    "objectID": "slides/11_slides.html#coordinated-trials",
+    "href": "slides/11_slides.html#coordinated-trials",
+    "title": "Public Opinion and Policy",
+    "section": "Coordinated trials",
+    "text": "Coordinated trials\n\n\nMulti-site interventions that evaluate (more or less) the same policy\n\n\n\n\nGoals:\n\nEstablish whether a policy is generally advisable (pooling results)\nUnderstand why things work in some places but not others (support factors)"
+  },
+  {
+    "objectID": "slides/11_slides.html#slough-et-al-2021-community-monitoring-of-common-pool-resources",
+    "href": "slides/11_slides.html#slough-et-al-2021-community-monitoring-of-common-pool-resources",
+    "title": "Public Opinion and Policy",
+    "section": "Slough et al (2021): Community monitoring of common pool resources",
+    "text": "Slough et al (2021): Community monitoring of common pool resources\n\n\nCPRs: Non-excludable, rivalrous\nExamples?\nProblem: Prone to congestion, overextraction"
+  },
+  {
+    "objectID": "slides/11_slides.html#different-contexts",
+    "href": "slides/11_slides.html#different-contexts",
+    "title": "Public Opinion and Policy",
+    "section": "6 different contexts",
+    "text": "6 different contexts\n\n\n\n \n  \n    Country \n    Resource \n    Community \n    Threat \n  \n \n\n  \n    Brazil \n    Groundwater \n    Rural villages \n    Drought, overuse \n  \n  \n    China \n    Surface water \n    Urban neighborhoods \n    Pollution \n  \n  \n    Costa Rica \n    Groundwater \n    Rural villages \n    Drought, overuse \n  \n  \n    Liberia \n    Forest \n    Villages \n    Overcutting \n  \n  \n    Peru \n    Forest \n    Indigenous communities \n    Extraction \n  \n  \n    Uganda \n    Forest \n    Villages \n    Overcutting"
+  },
+  {
+    "objectID": "slides/11_slides.html#interventions",
+    "href": "slides/11_slides.html#interventions",
+    "title": "Public Opinion and Policy",
+    "section": "Interventions",
+    "text": "Interventions\n\n\n\n \n\n\nDissemination\n\n  \n    Country \n    Wokshops \n    Training \n    Monitoring \n    Citizens \n    Management \n  \n \n\n  \n    Brazil \n    X \n    X \n    X \n    X \n     \n  \n  \n    China \n     \n    X \n    X \n    X \n     \n  \n  \n    Costa Rica \n    X \n    X \n    X \n    X \n    X \n  \n  \n    Liberia \n    X \n    X \n    X \n    X \n    X \n  \n  \n    Peru \n    X \n    X \n    X \n    X \n    X \n  \n  \n    Uganda \n    X \n    X \n    X \n    X \n    X"
+  },
+  {
+    "objectID": "slides/11_slides.html#findings",
+    "href": "slides/11_slides.html#findings",
+    "title": "Public Opinion and Policy",
+    "section": "Findings",
+    "text": "Findings"
+  },
+  {
+    "objectID": "slides/11_slides.html#why-without-brazil",
+    "href": "slides/11_slides.html#why-without-brazil",
+    "title": "Public Opinion and Policy",
+    "section": "Why without Brazil?",
+    "text": "Why without Brazil?"
+  },
+  {
+    "objectID": "slides/11_slides.html#next-week",
+    "href": "slides/11_slides.html#next-week",
+    "title": "Public Opinion and Policy",
+    "section": "Next Week",
+    "text": "Next Week\nNO CLASS\nBack on April 5!"
+  },
+  {
+    "objectID": "slides/11_slides.html#break-time",
+    "href": "slides/11_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/11_slides.html#fa-laptop-code-lab",
+    "href": "slides/11_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
     "objectID": "slides/placeholder.html#coming-soon",
     "href": "slides/placeholder.html#coming-soon",
     "title": "Public Opinion and Policy",
@@ -1867,12 +2084,5 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
-  },
-  {
-    "objectID": "slides/10_slides.html#announcements",
-    "href": "slides/10_slides.html#announcements",
-    "title": "Public Opinion and Policy",
-    "section": "Announcements",
-    "text": "Announcements\n\nNo class on March 29\nOptional lab that week\nWill use flex session on April 12 to catch up\nNo office hours between March 23-29"
   }
 ]
