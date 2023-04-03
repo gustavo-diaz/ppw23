@@ -1,0 +1,295 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(ggdag)
+# remotes::install_github("AllanCameron/geomtextpath")
+library(geomtextpath)
+
+
+# Global options
+theme_set(theme_bw(base_size = 20))
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Quasi-Experiments I {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Course surveys due April 12, 11:59 PM {background-color="#8BD3E6"}
+
+![](figs/course_evals.png){fig-align="center"}
+
+## Announcements {background-color="#8BD3E6"}
+
+- Two more weeks left!
+
+- Final projects due **April 21**
+
+- Groups need to meet with instructor one more time before **April 19**
+
+- Extra office hour times **April 13-19**
+
+- Every group member needs to be in **at least one** group meeting to receive group meeting grade
+
+
+
+## Last time {background-color="#FDBF57"}
+
+- Learning from experiments
+
+- Good to understand what works, but not why or where
+
+- Need to think about support factors
+
+- Scaling up, drilling down
+
+- **Today:** Observational causal data strategies
+
+## Types of data strategy
+
+```{r}
+types = tribble(
+  ~Inquiry, ~Observational, ~Experimental,
+  "Descriptive", "Sample survey", "List experiment",
+  "Causal", "Quasi-experiment", "Survey/field experiment"
+)
+
+types %>% 
+  kbl() %>% 
+  add_header_above(c(" " = 1, "Data strategy" = 2)) %>% 
+  column_spec(1, bold = TRUE) %>% 
+  column_spec(2, bold = c(FALSE, TRUE)) %>% 
+  column_spec(2, color = c("black", "white"))
+```
+
+## Types of data strategy {visibility="uncounted"}
+
+```{r}
+types %>% 
+  kbl() %>% 
+  add_header_above(c(" " = 1, "Data strategy" = 2)) %>% 
+  column_spec(1, bold = TRUE) %>% 
+  column_spec(2, bold = c(FALSE, TRUE))
+```
+
+## Challenges to causal interpretations
+
+. . .
+
+### 1. Reverse causation
+
+. . .
+
+- Instead of $Z$ causing $Y$, $Y$ causes $Z$
+
+. . .
+
+- **Simultaneity:** $Z$ causes $Y$ and vice versa
+
+. . .
+
+::: {.callout-note}
+### Example
+
+Students who are likely to participate enroll in Political Science courses more often
+:::
+
+## Challenges to causal interpretations
+
+### 2. Omitted variable bias
+
+. . .
+
+- There is an unobserved factor $X$ that explains the relationship between $Z$ and $Y$
+
+. . .
+
+::: {.callout-note}
+### Example
+
+- We believe that more education increases income
+
+- But having smart parents increases both education and income
+:::
+
+
+## Challenges to causal interpretations
+
+### 3. Selection bias
+
+. . .
+
+- Individuals *sort* into condition $Z$ in a manner that predicts outcome $Y$
+
+. . .
+
+- Treatment and control are not comparable
+
+. . .
+
+::: {.callout-note}
+### Example
+
+- Always-takers are more likely to participate in the TUP program
+:::
+
+## Challenges to causal interpretations
+
+### 1. Reverse causation
+
+### 2. Omitted variable bias
+
+### 3. Selection bias
+
+
+::: incremental
+
+- Random assignment avoids this *in expectation*
+
+- Hard to overcome with *observational causal* data strategies
+
+- Need to pretend that we can analyze data as if it was an experiment
+:::
+
+## Quasi-experiments
+
+::: incremental
+- Answer strategies that produce data as-if they were drawn from an experiment
+
+- **Natural experiment:** Random assignment outside of the researcher control
+
+- **Example:** Choosing municipalities at random for auditing
+
+- **Quasi-experiment:** Conditions are assigned in a manner that is **sufficiently orthogonal** to potential outcomes
+:::
+
+## Examples of quasi-experiment
+
+::: incremental
+
+- Benefits eligible only to people under a certain income
+
+- Institutional variation based on arbitrary population thresholds
+
+- Winning an election by a narrow margin
+
+- Being barely inside/outside an administrative border
+
+- Unexpected events
+
+:::
+
+## Regression discontinuity designs
+
+- Three ingredients:
+
+. . .
+
+1. Score `(running variable)`
+
+2. Cutoff `(threshold)`
+
+3. Treatment `(at least two conditions)`
+
+## Visual representation
+
+![](figs/rdd_viz.png){fig-align="center"}
+
+## As a graph
+
+![](figs/rdd_graph.png){fig-align="center"}
+
+## Example: Hoekstra (2019)
+
+
+::: incremental
+- **Question:** Effect of higher education on earnings
+
+- **Challenge:** Selection bias
+
+- **Solution:** Focus on attendance at US state flagship university among 28-33 year olds
+
+- **Outcome:** Earnings
+
+- **Score:** SAT test scores
+
+- **Cutoff:** Admission cutoff
+
+- **Treatment:** Attending flagship university
+:::
+
+## Treatment take-up
+
+![](figs/hoekstra_1.png){fig-align="center"}
+
+## Results
+
+![](figs/hoekstra_2.png){fig-align="center"}
+
+## How do you get an estimate?
+
+. . .
+
+- Two approaches to RDD data:
+
+. . .
+
+1. Local randomization
+
+2. Continuity-based
+
+## Local randomization
+
+::: incremental
+- Potential outcomes are not random because they depend on the score `(and other things)`
+
+- However, around the cutoff, treatment assignment is as good as random
+
+- [CONTINUE EXPLAINING HERE]
+
+:::
+
+## Bandwidth tradeoff
+
+![](figs/rdd_bw.png){fig-align="center" width="90%"}
+
+::: aside
+A small bandwidth has low bias but low precision. A larger bandwidth has higher precision but more bias.
+:::
+
+
+::: {style="text-align: center"}
+## Next Week {.center background-color="#8BD3E6"}
+### Quasi-experiments II
+
+**Focus on:** Difference-in-differences design
+:::
+
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::

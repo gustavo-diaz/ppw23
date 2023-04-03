@@ -2084,5 +2084,173 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
+  },
+  {
+    "objectID": "slides/13_slides.html#quasi-experiments-i",
+    "href": "slides/13_slides.html#quasi-experiments-i",
+    "title": "Public Opinion and Policy",
+    "section": "Quasi-Experiments I",
+    "text": "Quasi-Experiments I\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/13_slides.html#announcements",
+    "href": "slides/13_slides.html#announcements",
+    "title": "Public Opinion and Policy",
+    "section": "Announcements",
+    "text": "Announcements\n\nTwo more weeks left!\nFinal projects due April 21\nGroups need to meet with instructor one more time before April 19\nExtra office hour times April 13-19\nEvery group member needs to be in at least one group meeting to receive group meeting grade"
+  },
+  {
+    "objectID": "slides/13_slides.html#last-time",
+    "href": "slides/13_slides.html#last-time",
+    "title": "Public Opinion and Policy",
+    "section": "Last time",
+    "text": "Last time\n\nLearning from experiments\nGood to understand what works, but not why or where\nNeed to think about support factors\nScaling up, drilling down\nToday: Observational causal data strategies"
+  },
+  {
+    "objectID": "slides/13_slides.html#next-week",
+    "href": "slides/13_slides.html#next-week",
+    "title": "Public Opinion and Policy",
+    "section": "Next Week",
+    "text": "Next Week\nQuasi-experiments II\nFocus on: Difference-in-differences design"
+  },
+  {
+    "objectID": "slides/13_slides.html#break-time",
+    "href": "slides/13_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/13_slides.html#fa-laptop-code-lab",
+    "href": "slides/13_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
+    "objectID": "slides/13_slides.html#course-surveys-due-april-12-1159-pm",
+    "href": "slides/13_slides.html#course-surveys-due-april-12-1159-pm",
+    "title": "Public Opinion and Policy",
+    "section": "Course surveys due April 12, 11:59 PM",
+    "text": "Course surveys due April 12, 11:59 PM"
+  },
+  {
+    "objectID": "slides/13_slides.html#types-of-data-strategy",
+    "href": "slides/13_slides.html#types-of-data-strategy",
+    "title": "Public Opinion and Policy",
+    "section": "Types of data strategy",
+    "text": "Types of data strategy\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Quasi-experiment \n    Survey/field experiment"
+  },
+  {
+    "objectID": "slides/13_slides.html#types-of-data-strategy-1",
+    "href": "slides/13_slides.html#types-of-data-strategy-1",
+    "title": "Public Opinion and Policy",
+    "section": "Types of data strategy",
+    "text": "Types of data strategy\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Quasi-experiment \n    Survey/field experiment"
+  },
+  {
+    "objectID": "slides/13_slides.html#challenges-to-causal-interpretations",
+    "href": "slides/13_slides.html#challenges-to-causal-interpretations",
+    "title": "Public Opinion and Policy",
+    "section": "Challenges to causal interpretations",
+    "text": "Challenges to causal interpretations\n\n1. Reverse causation\n\n\nInstead of \\(Z\\) causing \\(Y\\), \\(Y\\) causes \\(Z\\)\n\n\n\n\nSimultaneity: \\(Z\\) causes \\(Y\\) and vice versa\n\n\n\n\n\n\n\n\n\nExample\n\n\nStudents who are likely to participate enroll in Political Science courses more often"
+  },
+  {
+    "objectID": "slides/13_slides.html#challenges-to-causal-interpretations-1",
+    "href": "slides/13_slides.html#challenges-to-causal-interpretations-1",
+    "title": "Public Opinion and Policy",
+    "section": "Challenges to causal interpretations",
+    "text": "Challenges to causal interpretations\n2. Omitted variable bias\n\n\nThere is an unobserved factor \\(X\\) that explains the relationship between \\(Z\\) and \\(Y\\)\n\n\n\n\n\n\n\n\n\nExample\n\n\n\nWe believe that more education increases income\nBut having smart parents increases both education and income"
+  },
+  {
+    "objectID": "slides/13_slides.html#challenges-to-causal-interpretations-2",
+    "href": "slides/13_slides.html#challenges-to-causal-interpretations-2",
+    "title": "Public Opinion and Policy",
+    "section": "Challenges to causal interpretations",
+    "text": "Challenges to causal interpretations\n3. Selection bias\n\n\nIndividuals sort into condition \\(Z\\) in a manner that predicts outcome \\(Y\\)\n\n\n\n\nTreatment and control are not comparable\n\n\n\n\n\n\n\n\n\nExample\n\n\n\nAlways-takers are more likely to participate in the TUP program"
+  },
+  {
+    "objectID": "slides/13_slides.html#challenges-to-causal-interpretations-3",
+    "href": "slides/13_slides.html#challenges-to-causal-interpretations-3",
+    "title": "Public Opinion and Policy",
+    "section": "Challenges to causal interpretations",
+    "text": "Challenges to causal interpretations\n1. Reverse causation\n2. Omitted variable bias\n3. Selection bias\n\n\nRandom assignment avoids this in expectation\nHard to overcome with observational causal data strategies\nNeed to pretend that we can analyze data as if it was an experiment"
+  },
+  {
+    "objectID": "slides/13_slides.html#quasi-experiments",
+    "href": "slides/13_slides.html#quasi-experiments",
+    "title": "Public Opinion and Policy",
+    "section": "Quasi-experiments",
+    "text": "Quasi-experiments\n\n\nAnswer strategies that produce data as-if they were drawn from an experiment\nNatural experiment: Random assignment outside of the researcher control\nExample: Choosing municipalities at random for auditing\nQuasi-experiment: Conditions are assigned in a manner that is sufficiently orthogonal to potential outcomes"
+  },
+  {
+    "objectID": "slides/13_slides.html#examples-of-quasi-experiment",
+    "href": "slides/13_slides.html#examples-of-quasi-experiment",
+    "title": "Public Opinion and Policy",
+    "section": "Examples of quasi-experiment",
+    "text": "Examples of quasi-experiment\n\n\nBenefits eligible only to people under a certain income\nInstitutional variation based on arbitrary population thresholds\nWinning an election by a narrow margin\nBeing barely inside/outside an administrative border\nUnexpected events"
+  },
+  {
+    "objectID": "slides/13_slides.html#regression-discontinuity-designs",
+    "href": "slides/13_slides.html#regression-discontinuity-designs",
+    "title": "Public Opinion and Policy",
+    "section": "Regression discontinuity designs",
+    "text": "Regression discontinuity designs\n\nThree ingredients:\n\n\n\nScore (running variable)\nCutoff (threshold)\nTreatment (at least two conditions)"
+  },
+  {
+    "objectID": "slides/13_slides.html#visual-representation",
+    "href": "slides/13_slides.html#visual-representation",
+    "title": "Public Opinion and Policy",
+    "section": "Visual representation",
+    "text": "Visual representation"
+  },
+  {
+    "objectID": "slides/13_slides.html#example-hoekstra-2019",
+    "href": "slides/13_slides.html#example-hoekstra-2019",
+    "title": "Public Opinion and Policy",
+    "section": "Example: Hoekstra (2019)",
+    "text": "Example: Hoekstra (2019)\n\n\nQuestion: Effect of higher education on earnings\nChallenge: Selection bias\nSolution: Focus on attendance at US state flagship university among 28-33 year olds\nOutcome: Earnings\nScore: SAT test scores\nCutoff: Admission cutoff\nTreatment: Attending flagship university"
+  },
+  {
+    "objectID": "slides/13_slides.html#treatment-take-up",
+    "href": "slides/13_slides.html#treatment-take-up",
+    "title": "Public Opinion and Policy",
+    "section": "Treatment take-up",
+    "text": "Treatment take-up"
+  },
+  {
+    "objectID": "slides/13_slides.html#results",
+    "href": "slides/13_slides.html#results",
+    "title": "Public Opinion and Policy",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "slides/13_slides.html#as-a-graph",
+    "href": "slides/13_slides.html#as-a-graph",
+    "title": "Public Opinion and Policy",
+    "section": "As a graph",
+    "text": "As a graph"
+  },
+  {
+    "objectID": "slides/13_slides.html#how-do-you-get-an-estimate",
+    "href": "slides/13_slides.html#how-do-you-get-an-estimate",
+    "title": "Public Opinion and Policy",
+    "section": "How do you get an estimate?",
+    "text": "How do you get an estimate?\n\n\nTwo approaches to RDD data:\n\n\n\n\nLocal randomization\nContinuity-based"
+  },
+  {
+    "objectID": "slides/13_slides.html#local-randomization",
+    "href": "slides/13_slides.html#local-randomization",
+    "title": "Public Opinion and Policy",
+    "section": "Local randomization",
+    "text": "Local randomization\n\n\nPotential outcomes are not random because they depend on the score (and other things)\nHowever, around the cutoff, treatment assignment is as good as random\n[CONTINUE EXPLAINING HERE]"
+  },
+  {
+    "objectID": "slides/13_slides.html#bandwidth-tradeoff",
+    "href": "slides/13_slides.html#bandwidth-tradeoff",
+    "title": "Public Opinion and Policy",
+    "section": "Bandwidth tradeoff",
+    "text": "Bandwidth tradeoff\n\n\n\n\n\n\n\nA small bandwidth has low bias but low precision. A larger bandwidth has higher precision but more bias."
   }
 ]
