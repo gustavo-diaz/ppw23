@@ -18,7 +18,7 @@ The lab introduces regression discontinuity designs, a common answer strategy fo
 
 ## Reading
 
-- [{{< fa book >}}]{style="color: #ac1455;"} [RD section 16](https://book.declaredesign.org/observational-causal.html)
+- [{{< fa book >}}]{style="color: #ac1455;"} [RD section 16](https://book.declaredesign.org/library/observational-causal.html)
 
 - [{{< fa file-lines >}}]{style="color: #ac1455;"} Hoekstra, Mark. 2009. [“The Effect of Attending the Flagship State University on Earnings: A Discontinuity-Based Approach.”](https://doi.org/10.1162/rest.91.4.717) *The Review of Economics and Statistics* 91 (4): 717-724
 
@@ -32,10 +32,10 @@ Click on the frame below and use the arrows to navigate. You can type <kbd>?</kb
 :::
 
 ```{r show-slides, echo = FALSE, results = "asis"}
-show_slide("/slides/placeholder")
+show_slide("/slides/13_slides")
 slide_buttons("/slides/13_slides")
 ```
 
 ## Lab
 
-Quasi-experimental designs I {{< fa laptop-code >}} (coming soon!)
+[Quasi-experimental designs I {{< fa laptop-code >}}](labs/13_lab.Rmd)

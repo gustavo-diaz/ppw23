@@ -610,7 +610,7 @@ Winter 2023</p>
 <ul>
 <li class="fragment"><p>Potential outcomes are not random because they depend on the score <code>(and other things)</code></p></li>
 <li class="fragment"><p>However, around the cutoff, treatment assignment is as good as random</p></li>
-<li class="fragment"><p>[CONTINUE EXPLAINING HERE]</p></li>
+<li class="fragment"><p>So we can pretend we have an experiment within a <strong>bandwidth</strong> around the cutoff</p></li>
 </ul>
 </div>
 </section>
@@ -623,8 +623,123 @@ Winter 2023</p>
 </div>
 
 <aside><div>
-<p>A small bandwidth has low bias but low precision. A larger bandwidth has higher precision but more bias.</p>
+<p>A small bandwidth has low bias but high variance. A larger bandwidth has lower variance but more bias.</p>
 </div></aside></section>
+<section id="rdd-assumptions" class="slide level2">
+<h2>RDD assumptions</h2>
+<div class="fragment">
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>1. Continuity</strong></p>
+</div>
+<div class="callout-content">
+<p>Score is continuous at the cutoff</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>2. Comparability</strong></p>
+</div>
+<div class="callout-content">
+<p>Units are comparable at or around the cutoff</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<ul>
+<li>These imply no manipulation and no selection bias</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Local randomization is <strong>sufficient</strong> but <strong>not necessary</strong> to satisfy these assumptions</li>
+</ul>
+</div>
+</section>
+<section id="continuity-based-approach" class="slide level2">
+<h2>Continuity-based approach</h2>
+<div>
+<ul>
+<li class="fragment"><p>Treatment assignment is <strong>deterministic at</strong> the cutoff</p></li>
+<li class="fragment"><p>But usually too few or no units at the cutoff</p></li>
+<li class="fragment"><p><strong>Task:</strong> Approximate the <em>gap</em> at the cutoff as best as possible</p></li>
+<li class="fragment"><p>This becomes a <strong>line drawing</strong> problem</p></li>
+</ul>
+</div>
+</section>
+<section id="line-drawing-parametric" class="slide level2">
+<h2>Line drawing: Parametric</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/rdd_poly.png" style="width:90.0%"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>Different functional forms change the size of the gap</p>
+</div></aside></section>
+<section id="line-drawing-nonparametric" class="slide level2">
+<h2>Line drawing: Nonparametric</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/rdd_loess.png" style="width:90.0%"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>These lines are made by an algorithm that calculates the local average at many windows or bins of data</p>
+</div></aside></section>
+<section id="line-drawing-bandwidth" class="slide level2">
+<h2>Line drawing: Bandwidth</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/rdd_bw2.png" style="width:90.0%"></p>
+</figure>
+</div>
+
+<aside><div>
+<p>The size of the bandwidth determines the data you use to draw lines</p>
+</div></aside></section>
+<section id="rdds-in-balance" class="slide level2" data-background-color="#FDBF57">
+<h2>RDDs in balance</h2>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="pros">Pros</h3>
+<ul>
+<li><p>Intuitive design</p></li>
+<li><p>Widely applicable</p></li>
+<li><p>Easy to visualize</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="cons">Cons</h3>
+<ul>
+<li><p>Results are highly <em>local</em></p></li>
+<li><p>Scale up? Drill down?</p></li>
+<li><p>Too many moving parts</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Software automates most of the decisions</p></li>
+<li><p>Ideally, results are consistent under different approaches</p></li>
+</ul>
+</div>
+</section>
 <section id="next-week" class="slide level2 center" data-background-color="#8BD3E6" style="text-align: center">
 <h2>Next Week</h2>
 <h3 id="quasi-experiments-ii">Quasi-experiments II</h3>

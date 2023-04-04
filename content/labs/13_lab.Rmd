@@ -1,0 +1,126 @@
+---
+title: "Lab 10"
+subtitle: "Quasi experimental designs I"
+author: |
+        | **Name:** Your name here
+        | **Mac ID:** Your Mac ID here
+date: "**Due:** Monday, April 10, 5 PM"
+output: 
+  pdf_document:
+    highlight: espresso
+    fig_caption: yes
+urlcolor: blue
+header-includes:
+    - \usepackage{setspace}
+    - \doublespacing
+    - \usepackage{float}
+    - \floatplacement{figure}{t}
+    - \floatplacement{table}{t}
+    - \usepackage{flafter}
+    - \usepackage[T1]{fontenc}
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{ragged2e}
+    - \usepackage{booktabs}
+    - \usepackage{amsmath}
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+# Global options for the knitting behavior of all subsequent code chunks
+# Adding an option to store previous results to save computing time
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, cache = TRUE)
+
+# Packages
+library(tidyverse)
+library(DeclareDesign)
+
+# Package global options
+theme_set(theme_bw(base_size = 20)) # bigger figure font and white background
+
+# Add extra packages here if needed
+```
+
+# Regression discontinuity
+
+The following code declares a regression discontinuity design (RDD) with an arbitrary bandwidth. The model needs to account for potential outcomes varying along with the score `X`.
+
+```{r}
+# cutoff determines treatment assignment
+cutoff = 0.5
+deg = 1
+bw = 0.05
+
+# functions to simulate potential outcomes based on
+# score values
+# See RD textbook chapter 16.5 for an explanation
+control = function(X) {
+  as.vector(poly(X, 4, raw = TRUE) %*% c(.7, -.8, .5, 1))}
+
+treatment = function(X) {
+  as.vector(poly(X, 4, raw = TRUE) %*% c(0, -1.5, .5, .8)) + .15}
+
+# M
+model = declare_model(
+  N = 500,
+  # unobserved variation
+  U = rnorm(N, 0, 0.1),
+  # score centered on cutoff point
+  X = runif(N, 0, 1) + U - cutoff,
+  # treatment indicator
+  D = 1 * (X > 0),
+  # potential outcomes depend on score
+  Y_D_0 = control(X) + U,
+  Y_D_1 = treatment(X) + U
+)
+```
+
+The inquiry is the **Local Average Treatment Effect** (LATE) defined exactly at the cutoff. This quantity is not directly observable, but we will try to approximate it with our answer strategy.
+
+```{r}
+# I
+inq = declare_inquiry(
+  LATE = treatment(0.5) - control(0.5)
+)
+```
+
+Our data strategy simply reveals outcomes.
+
+```{r}
+# D
+reveal = declare_measurement(
+  Y = reveal_outcomes(Y ~ D)
+)
+```
+
+
+Our answer strategy reveals outcomes and estimates the LATE using a linear regression with an arbitrary polynomial function for X with degree `deg` and arbitrary bandwidth `bw`. We would normally use software to calibrate these, but here we will play with them manually to understand the bias-variance tradeoff.
+
+```{r}
+# A
+est = declare_estimator(
+  Y ~ D * poly(X, degree = deg),
+  subset = X > -1*bw & X < bw,
+  .method = lm_robust,
+  inquiry = "LATE",
+  label = "parametric"
+)
+```
+
+
+## TASKS
+
+**1. Diagnose the current design. How does it perform in terms of bias and RMSE?**
+
+**2. What happens if you use a higher order polynomial for** `degree`**? How does it affect bias and RMSE? Does that make the design better or worse? Explain**
+
+***Hint: Polynomials higher than 2 or 3 may make things too complicated.***
+
+**3. Stick to a value of** `degree` **that you like and see what happens when you increase the bandwidth** `bw` **to a number between the current value and 0.2. How does it affect performance in terms of bias and RMSE?**
+
+**4. Try now with the maximum possible bandwidth of** `bw = 0.5` **and keeping everything else the same as in the previous task. How does it affect performance in terms of bias and RMSE?**
+
+**5. Based on the previous tasks. What degree of polynomial and bandwidth would you recommend for this design? Why do you think so? (You do not need to write code for this one)**
+
+# Answers
+
+Write your answers here. Remember to show the code you use to get the answer and to use `set.seed` with your student number to get unique results in simulations and diagnosis.

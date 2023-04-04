@@ -261,7 +261,7 @@ Students who are likely to participate enroll in Political Science courses more 
 
 - However, around the cutoff, treatment assignment is as good as random
 
-- [CONTINUE EXPLAINING HERE]
+- So we can pretend we have an experiment within a **bandwidth** around the cutoff
 
 :::
 
@@ -273,13 +273,105 @@ Students who are likely to participate enroll in Political Science courses more 
 A small bandwidth has low bias but high variance. A larger bandwidth has lower variance but more bias.
 :::
 
-## Assumptions
+## RDD assumptions
 
-[HERE LOCAL RAND AND NO SORTING]
+. . .
+
+::: {.callout-warning}
+### 1. Continuity
+
+Score is continuous at the cutoff
+:::
+
+. . .
+
+::: {.callout-warning}
+### 2. Comparability
+Units are comparable at or around the cutoff
+:::
+
+. . .
+
+- These imply no manipulation and no selection bias
+
+. . .
+
+- Local randomization is **sufficient** but **not necessary** to satisfy these assumptions
+
 
 ## Continuity-based approach
 
-[HERE NOW ALSO HAVE TO THINK ABOUT BW]
+::: incremental
+- Treatment assignment is **deterministic at** the cutoff
+
+- But usually too few or no units at the cutoff
+
+- **Task:** Approximate the *gap* at the cutoff as best as possible
+
+- This becomes a **line drawing** problem
+:::
+
+## Line drawing: Parametric
+
+![](figs/rdd_poly.png){fig-align="center" width="90%"}
+
+::: aside
+Different functional forms change the size of the gap
+:::
+
+## Line drawing: Nonparametric
+
+![](figs/rdd_loess.png){fig-align="center" width="90%"}
+
+::: aside
+These lines are made by an algorithm that calculates the local average at many windows or bins of data
+:::
+
+## Line drawing: Bandwidth
+
+![](figs/rdd_bw2.png){fig-align="center" width="90%"}
+
+::: aside
+The size of the bandwidth determines the data you use to draw lines
+:::
+
+## RDDs in balance {background-color="#FDBF57"}
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Pros
+
+- Intuitive design
+
+- Widely applicable
+
+- Easy to visualize
+
+:::
+
+::: {.column width="50%"}
+
+### Cons
+
+- Results are highly *local*
+
+- Scale up? Drill down?
+
+- Too many moving parts
+
+:::
+
+::::
+
+. . .
+
+- Software automates most of the decisions
+
+- Ideally, results are consistent under different approaches
+
 
 ::: {style="text-align: center"}
 ## Next Week {.center background-color="#8BD3E6"}
