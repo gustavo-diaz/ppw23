@@ -1,0 +1,230 @@
+---
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(DeclareDesign)
+library(kableExtra)
+library(ggdag)
+# remotes::install_github("AllanCameron/geomtextpath")
+library(geomtextpath)
+
+
+# Global options
+theme_set(theme_bw(base_size = 20))
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warnings = FALSE,
+                      results = "asis")
+```
+
+
+::: {style="text-align: center"}
+## Quasi-Experiments II {.center background-color="#ac1455"}
+
+&nbsp;
+
+**POLSCI 4SS3**  
+Winter 2023
+:::
+
+## Course surveys due April 12, 11:59 PM {background-color="#8BD3E6"}
+
+![](figs/course_evals.png){fig-align="center"}
+
+## Announcements {background-color="#8BD3E6"}
+
+- Two more weeks left!
+
+- Final projects due **April 21**
+
+- Groups need to meet with instructor one more time before **April 19**
+
+- Extra office hour times **April 13-19**
+
+- Every group member needs to be in **at least one** group meeting to receive group meeting grade
+
+
+
+## Last time {background-color="#FDBF57"}
+
+- **Quasi-experiments:** Observational answer strategies for causal inquiries
+
+```{r}
+types = tribble(
+  ~Inquiry, ~Observational, ~Experimental,
+  "Descriptive", "Sample survey", "List experiment",
+  "Causal", "Quasi-experiment", "Survey/field experiment"
+)
+
+types %>% 
+  kbl() %>% 
+  add_header_above(c(" " = 1, "Data strategy" = 2)) %>% 
+  column_spec(1, bold = TRUE) %>% 
+  column_spec(2, bold = c(FALSE, TRUE))
+```
+
+. . .
+
+- RDD as an example of quasi-experiment
+
+- **Today:** Difference-in-differences as another common example in public policy
+
+::: {style="text-align: center"}
+## But first {.center background-color="#8BD3E6"}
+### What did you learn this semester?
+:::
+
+## Where to go from here?
+
+### Go back to foundations
+
+- Probability and statistics
+- Philosophy of science
+- Research design
+- R programming
+
+::: aside
+Happy to help if you want to know more!
+:::
+    
+## Where to go from here? {visibility="uncounted"}
+
+### Further learning
+
+- Programming in Python, Julia
+- Survey design
+- Program evaluation
+- Science of science
+
+::: aside
+Happy to help if you want to know more!
+:::
+    
+## Where to go from here? {visibility="uncounted"}
+
+### Careers & fields
+
+- Data science, computer science
+
+- Computational social science
+
+- Econometrics
+
+- Evidence-informed policy
+
+- Public administration
+
+- Business, marketing
+
+::: aside
+Happy to help if you want to know more!
+:::
+
+# Difference-in-differences {background-color="#8BD3E6"}
+
+## Reminder
+
+- Critiques to causal claims from observational data
+
+. . .
+
+1. Reverse causation
+
+2. Omitted variable bias
+
+3. Selection bias
+
+. . .
+
+- Need creativity to rule these out
+
+## Difference-in-differences design
+
+::: incremental
+- *At least* two groups or conditions `(treatment,control)`
+
+- *At least* two time periods `(pre- and post-treatment)`
+
+- Once treated, units **stay on**
+
+- We accept that selection bias is unavoidable
+
+- But comparing before-after changes between groups allows us to calculate treatment effect
+
+:::
+
+::: aside
+aka DD, DnD, Diff-in-diffs for short
+:::
+
+## Diff-in-diffs estimator
+
+```{r}
+dd = tribble(
+  ~Group, ~Before, ~After,
+  "Treatment", "A", "B",
+  "Control", "C", "D"
+)
+
+dd %>% 
+  kbl(align = "lcc") %>% 
+  add_header_above(c(" " = 1, "Timing" = 2))
+```
+
+. . .
+
+$$
+\widehat{ATE} =  [\text{Mean}(B) - \text{Mean}(A)] - [\text{Mean}(D) - \text{Mean}(C)]
+$$
+
+## Diff-in-diffs estimator {visibility="uncounted"}
+
+```{r}
+dd %>% 
+  kbl(align = "lcc") %>% 
+  add_header_above(c(" " = 1, "Timing" = 2))
+```
+
+
+$$
+\widehat{ATE} =  \underbrace{[\text{Mean}(B) - \text{Mean}(A)]}_\text{Difference} - \underbrace{[\text{Mean}(D) - \text{Mean}(C)]}_\text{Difference}
+$$
+
+## Diff-in-diffs estimator {visibility="uncounted"}
+
+```{r}
+dd %>% 
+  kbl(align = "lcc") %>% 
+  add_header_above(c(" " = 1, "Timing" = 2))
+```
+
+
+$$
+\widehat{ATE} =  \underbrace{\underbrace{[\text{Mean}(B) - \text{Mean}(A)]}_\text{Difference} - \underbrace{[\text{Mean}(D) - \text{Mean}(C)]}_\text{Difference}}_\text{Difference in differences}
+$$
+
+---
+
+![](figs/dd.png){fig-align="center"}
+
+::: {style="text-align: center"}
+## Thank you! {.center background-color="#8BD3E6"}
+
+:::
+
+
+::: {style="text-align: center"}
+## Break time! {.center background-color="#D2D755"}
+
+&nbsp;
+
+![](figs/panda_dance.gif){fig-align="center" width="10%" height="10%"} 
+:::
+
+::: {style="text-align: center"}
+## {{< fa laptop-code >}} Lab {.center background-color="#007096"}
+:::

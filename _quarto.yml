@@ -60,7 +60,7 @@ website:
               file: content/12_content.qmd
             - text: "13. Quasi-experiments I"
               file: content/13_content.qmd
-            - text: "12. Quasi-experiments II"
+            - text: "14. Quasi-experiments II"
               file: content/14_content.qmd
       
 
