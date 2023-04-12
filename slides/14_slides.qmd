@@ -37,15 +37,13 @@ Winter 2023
 
 ## Announcements {background-color="#8BD3E6"}
 
-- Two more weeks left!
-
 - Final projects due **April 21**
 
-- Groups need to meet with instructor one more time before **April 19**
+- Groups need to meet with instructor one more time before **April 19** `(Otherwise your group meeting grade is F)`
 
 - Extra office hour times **April 13-19**
 
-- Every group member needs to be in **at least one** group meeting to receive group meeting grade
+- Every group member needs to be in **at least one** group meeting to receive the group meeting grade
 
 
 
@@ -74,8 +72,7 @@ types %>%
 - **Today:** Difference-in-differences as another common example in public policy
 
 ::: {style="text-align: center"}
-## But first {.center background-color="#8BD3E6"}
-### What did you learn this semester?
+## What did you learn this semester? {.center background-color="#8BD3E6"}
 :::
 
 ## Where to go from here?
@@ -108,9 +105,9 @@ Happy to help if you want to know more!
 
 ### Careers & fields
 
-- Data science, computer science
+- Data science, computer science, statistics
 
-- Computational social science
+- Computational/quantitative social science
 
 - Econometrics
 
@@ -158,7 +155,7 @@ Happy to help if you want to know more!
 :::
 
 ::: aside
-aka DD, DnD, Diff-in-diffs for short
+aka DD, DiD, Diff-in-diffs for short
 :::
 
 ## Diff-in-diffs estimator
@@ -209,7 +206,97 @@ $$
 
 ---
 
-![](figs/dd.png){fig-align="center"}
+![](figs/dd.png){.absolute top=50 left=50}
+
+::: aside
+Assuming the treatment group follows the dotted line absent treatment, the difference in difference estimator recovers the causal effect
+:::
+
+## Assumption
+
+. . .
+
+::: {.callout-warning}
+### Parallel trends
+- Treatment and control may have different values before treatment
+
+- Absent treatment, the treatment group would have changed like the control group
+
+:::
+
+::: incremental
+- This is equivalent to claiming that treatment and control, while different, follow a similar trajectory
+
+- Ideally, you justify by observing the outcome over many pre-treatment periods
+:::
+
+## What happens if we break parallel trends?
+
+![](figs/dd_trend_1.png)
+
+## What happens if we break parallel trends? {visibility="uncounted"}
+
+![](figs/dd_trend_2.png)
+
+## What happens if we break parallel trends? {visibility="uncounted"}
+
+![](figs/dd_trend_3.png)
+
+## Variants of the design
+
+::: incremental
+- Many groups, treatments, time periods
+
+- **Increasingly common:** Units become treated at different time periods
+
+- **Example:** Policy adopted by cities over a time period
+
+- This makes similar to a **staggered adoption** design
+
+- But things get very complicated *without randomization*
+:::
+
+## Multiple treatment periods
+
+![](figs/dd_timing.png)
+
+::: aside
+Effects are positive first, negative later. The average of the two cancels out, but the policy clearly has an effect!
+:::
+
+# Example {background-color="#8BD3E6"}
+
+## Leininger et al (2023)
+
+### Temporary disenfranchisement in Germany
+
+::: incremental
+- Discrepancies of minimum voting age across elections `(municipal, state, national)`
+
+- 16-17 year olds in Schleswig-Holstein can vote in local but not national elections
+
+- **Temporary disenfranchisement** may push voters away from democracy
+:::
+
+## Research design
+
+![](figs/leininger_1.png)
+
+. . .
+
+- **Outcomes:** Survey questions about internal/external efficacy, satisfaction with democracy, political interest
+
+## Parallel trends
+
+![](figs/leininger_2.png){fig-align="center"}
+
+## Results
+
+![](figs/leininger_3.png)
+
+::: aside
+ATEs estimated via difference-in-differences
+:::
 
 ::: {style="text-align: center"}
 ## Thank you! {.center background-color="#8BD3E6"}

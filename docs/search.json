@@ -382,7 +382,7 @@
     "href": "content/14_content.html#lab",
     "title": "Quasi-experiments II",
     "section": "Lab",
-    "text": "Lab\nQuasi-experimental designs II  (coming soon!)"
+    "text": "Lab\nQuasi-experimental designs II"
   },
   {
     "objectID": "content/index.html",
@@ -2247,6 +2247,188 @@
     "text": "Lab"
   },
   {
+    "objectID": "slides/14_slides.html#quasi-experiments-ii",
+    "href": "slides/14_slides.html#quasi-experiments-ii",
+    "title": "Public Opinion and Policy",
+    "section": "Quasi-Experiments II",
+    "text": "Quasi-Experiments II\n \nPOLSCI 4SS3\nWinter 2023"
+  },
+  {
+    "objectID": "slides/14_slides.html#course-surveys-due-april-12-1159-pm",
+    "href": "slides/14_slides.html#course-surveys-due-april-12-1159-pm",
+    "title": "Public Opinion and Policy",
+    "section": "Course surveys due April 12, 11:59 PM",
+    "text": "Course surveys due April 12, 11:59 PM"
+  },
+  {
+    "objectID": "slides/14_slides.html#announcements",
+    "href": "slides/14_slides.html#announcements",
+    "title": "Public Opinion and Policy",
+    "section": "Announcements",
+    "text": "Announcements\n\nFinal projects due April 21\nGroups need to meet with instructor one more time before April 19 (Otherwise your group meeting grade is F)\nExtra office hour times April 13-19\nEvery group member needs to be in at least one group meeting to receive the group meeting grade"
+  },
+  {
+    "objectID": "slides/14_slides.html#last-time",
+    "href": "slides/14_slides.html#last-time",
+    "title": "Public Opinion and Policy",
+    "section": "Last time",
+    "text": "Last time\n\nQuasi-experiments: Observational answer strategies for causal inquiries\n\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Quasi-experiment \n    Survey/field experiment \n  \n\n\n\n\n\n\nRDD as an example of quasi-experiment\nToday: Difference-in-differences as another common example in public policy"
+  },
+  {
+    "objectID": "slides/14_slides.html#what-did-you-learn-this-semester",
+    "href": "slides/14_slides.html#what-did-you-learn-this-semester",
+    "title": "Public Opinion and Policy",
+    "section": "What did you learn this semester?",
+    "text": "What did you learn this semester?"
+  },
+  {
+    "objectID": "slides/14_slides.html#where-to-go-from-here",
+    "href": "slides/14_slides.html#where-to-go-from-here",
+    "title": "Public Opinion and Policy",
+    "section": "Where to go from here?",
+    "text": "Where to go from here?\nGo back to foundations\n\nProbability and statistics\nPhilosophy of science\nResearch design\nR programming\n\n\n\nHappy to help if you want to know more!"
+  },
+  {
+    "objectID": "slides/14_slides.html#where-to-go-from-here-1",
+    "href": "slides/14_slides.html#where-to-go-from-here-1",
+    "title": "Public Opinion and Policy",
+    "section": "Where to go from here?",
+    "text": "Where to go from here?\nFurther learning\n\nProgramming in Python, Julia\nSurvey design\nProgram evaluation\nScience of science\n\n\n\nHappy to help if you want to know more!"
+  },
+  {
+    "objectID": "slides/14_slides.html#where-to-go-from-here-2",
+    "href": "slides/14_slides.html#where-to-go-from-here-2",
+    "title": "Public Opinion and Policy",
+    "section": "Where to go from here?",
+    "text": "Where to go from here?\nCareers & fields\n\nData science, computer science, statistics\nComputational/quantitative social science\nEconometrics\nEvidence-informed policy\nPublic administration\nBusiness, marketing\n\n\n\nHappy to help if you want to know more!"
+  },
+  {
+    "objectID": "slides/14_slides.html#reminder",
+    "href": "slides/14_slides.html#reminder",
+    "title": "Public Opinion and Policy",
+    "section": "Reminder",
+    "text": "Reminder\n\nCritiques to causal claims from observational data\n\n\n\nReverse causation\nOmitted variable bias\nSelection bias\n\n\n\n\nNeed creativity to rule these out"
+  },
+  {
+    "objectID": "slides/14_slides.html#difference-in-differences-design",
+    "href": "slides/14_slides.html#difference-in-differences-design",
+    "title": "Public Opinion and Policy",
+    "section": "Difference-in-differences design",
+    "text": "Difference-in-differences design\n\n\nAt least two groups or conditions (treatment,control)\nAt least two time periods (pre- and post-treatment)\nOnce treated, units stay on\nWe accept that selection bias is unavoidable\nBut comparing before-after changes between groups allows us to calculate treatment effect\n\n\n\n\naka DD, DiD, Diff-in-diffs for short"
+  },
+  {
+    "objectID": "slides/14_slides.html#diff-in-diffs-estimator",
+    "href": "slides/14_slides.html#diff-in-diffs-estimator",
+    "title": "Public Opinion and Policy",
+    "section": "Diff-in-diffs estimator",
+    "text": "Diff-in-diffs estimator\n\n\n\n \n\n\nTiming\n\n  \n    Group \n    Before \n    After \n  \n \n\n  \n    Treatment \n    A \n    B \n  \n  \n    Control \n    C \n    D \n  \n\n\n\n\n\n\\[\n\\widehat{ATE} =  [\\text{Mean}(B) - \\text{Mean}(A)] - [\\text{Mean}(D) - \\text{Mean}(C)]\n\\]"
+  },
+  {
+    "objectID": "slides/14_slides.html#diff-in-diffs-estimator-1",
+    "href": "slides/14_slides.html#diff-in-diffs-estimator-1",
+    "title": "Public Opinion and Policy",
+    "section": "Diff-in-diffs estimator",
+    "text": "Diff-in-diffs estimator\n\n\n\n \n\n\nTiming\n\n  \n    Group \n    Before \n    After \n  \n \n\n  \n    Treatment \n    A \n    B \n  \n  \n    Control \n    C \n    D \n  \n\n\n\n\n\\[\n\\widehat{ATE} =  \\underbrace{[\\text{Mean}(B) - \\text{Mean}(A)]}_\\text{Difference} - \\underbrace{[\\text{Mean}(D) - \\text{Mean}(C)]}_\\text{Difference}\n\\]"
+  },
+  {
+    "objectID": "slides/14_slides.html#diff-in-diffs-estimator-2",
+    "href": "slides/14_slides.html#diff-in-diffs-estimator-2",
+    "title": "Public Opinion and Policy",
+    "section": "Diff-in-diffs estimator",
+    "text": "Diff-in-diffs estimator\n\n\n\n \n\n\nTiming\n\n  \n    Group \n    Before \n    After \n  \n \n\n  \n    Treatment \n    A \n    B \n  \n  \n    Control \n    C \n    D \n  \n\n\n\n\n\\[\n\\widehat{ATE} =  \\underbrace{\\underbrace{[\\text{Mean}(B) - \\text{Mean}(A)]}_\\text{Difference} - \\underbrace{[\\text{Mean}(D) - \\text{Mean}(C)]}_\\text{Difference}}_\\text{Difference in differences}\n\\]"
+  },
+  {
+    "objectID": "slides/14_slides.html#assumption",
+    "href": "slides/14_slides.html#assumption",
+    "title": "Public Opinion and Policy",
+    "section": "Assumption",
+    "text": "Assumption\n\n\n\n\n\n\n\nParallel trends\n\n\n\nTreatment and control may have different values before treatment\nAbsent treatment, the treatment group would have changed like the control group\n\n\n\n\n\n\nThis is equivalent to claiming that treatment and control, while different, follow a similar trajectory\nIdeally, you justify by observing the outcome over many pre-treatment periods"
+  },
+  {
+    "objectID": "slides/14_slides.html#what-happens-if-we-break-parallel-trends",
+    "href": "slides/14_slides.html#what-happens-if-we-break-parallel-trends",
+    "title": "Public Opinion and Policy",
+    "section": "What happens if we break parallel trends?",
+    "text": "What happens if we break parallel trends?"
+  },
+  {
+    "objectID": "slides/14_slides.html#what-happens-if-we-break-parallel-trends-1",
+    "href": "slides/14_slides.html#what-happens-if-we-break-parallel-trends-1",
+    "title": "Public Opinion and Policy",
+    "section": "What happens if we break parallel trends?",
+    "text": "What happens if we break parallel trends?"
+  },
+  {
+    "objectID": "slides/14_slides.html#what-happens-if-we-break-parallel-trends-2",
+    "href": "slides/14_slides.html#what-happens-if-we-break-parallel-trends-2",
+    "title": "Public Opinion and Policy",
+    "section": "What happens if we break parallel trends?",
+    "text": "What happens if we break parallel trends?"
+  },
+  {
+    "objectID": "slides/14_slides.html#variants-of-the-design",
+    "href": "slides/14_slides.html#variants-of-the-design",
+    "title": "Public Opinion and Policy",
+    "section": "Variants of the design",
+    "text": "Variants of the design\n\n\nMany groups, treatments, time periods\nIncreasingly common: Units become treated at different time periods\nExample: Policy adopted by cities over a time period\nThis makes similar to a staggered adoption design\nBut things get very complicated without randomization"
+  },
+  {
+    "objectID": "slides/14_slides.html#multiple-treatment-periods",
+    "href": "slides/14_slides.html#multiple-treatment-periods",
+    "title": "Public Opinion and Policy",
+    "section": "Multiple treatment periods",
+    "text": "Multiple treatment periods\n\n\n\nEffects are positive first, negative later. The average of the two cancels out, but the policy clearly has an effect!"
+  },
+  {
+    "objectID": "slides/14_slides.html#leininger-et-al-2023",
+    "href": "slides/14_slides.html#leininger-et-al-2023",
+    "title": "Public Opinion and Policy",
+    "section": "Leininger et al (2023)",
+    "text": "Leininger et al (2023)\nTemporary disenfranchisement in Germany\n\n\nDiscrepancies of minimum voting age across elections (municipal, state, national)\n16-17 year olds in Schleswig-Holstein can vote in local but not national elections\nTemporary disenfranchisement may push voters away from democracy"
+  },
+  {
+    "objectID": "slides/14_slides.html#research-design",
+    "href": "slides/14_slides.html#research-design",
+    "title": "Public Opinion and Policy",
+    "section": "Research design",
+    "text": "Research design\n\n\n\nOutcomes: Survey questions about internal/external efficacy, satisfaction with democracy, political interest"
+  },
+  {
+    "objectID": "slides/14_slides.html#parallel-trends-1",
+    "href": "slides/14_slides.html#parallel-trends-1",
+    "title": "Public Opinion and Policy",
+    "section": "Parallel trends",
+    "text": "Parallel trends"
+  },
+  {
+    "objectID": "slides/14_slides.html#results",
+    "href": "slides/14_slides.html#results",
+    "title": "Public Opinion and Policy",
+    "section": "Results",
+    "text": "Results\n\n\n\nATEs estimated via difference-in-differences"
+  },
+  {
+    "objectID": "slides/14_slides.html#thank-you",
+    "href": "slides/14_slides.html#thank-you",
+    "title": "Public Opinion and Policy",
+    "section": "Thank you!",
+    "text": "Thank you!"
+  },
+  {
+    "objectID": "slides/14_slides.html#break-time",
+    "href": "slides/14_slides.html#break-time",
+    "title": "Public Opinion and Policy",
+    "section": "Break time!",
+    "text": "Break time!"
+  },
+  {
+    "objectID": "slides/14_slides.html#fa-laptop-code-lab",
+    "href": "slides/14_slides.html#fa-laptop-code-lab",
+    "title": "Public Opinion and Policy",
+    "section": " Lab",
+    "text": "Lab"
+  },
+  {
     "objectID": "slides/placeholder.html#coming-soon",
     "href": "slides/placeholder.html#coming-soon",
     "title": "Public Opinion and Policy",
@@ -2294,124 +2476,5 @@
     "title": "Syllabus",
     "section": "Policies",
     "text": "Policies\n\nSubmitting assignments\nPrompts for assignments will be available in the course website. You should upload assignments via Avenue.\nAssignments should use the author-date citation style of the Chicago Manual of Style. You do not need to include citations for the weekly lab assignments, but you can do so if you wish.\nYou can use the templates available in the course website to format your assignments, slight modifications within RStudio are acceptable. If you write assignments outside RStudio, they should be double-spaced, 12 pt font, with 1-inch margins. Assignments do not require a cover sheet. Figures, tables, and bibliography are not part of word counts. You can use this tool to count words in PDF documents.\n\n\nLate assignments\nIn this course, assignments are designed to be cumulative; each assignment builds on the last. For this reason, it is important to not fall behind and to complete assignments on time. Assignments turned in within one hour of the due date will only be eligible for 95% of the total value. Assignments turned after one hour but within 24 hours of the due date will be eligible for a maximum grade of B+. Assignments received after 24 hours of the due date will be eligible for a maximum grade of C+. Late assignments will not be accepted after 48 hours after the original due date.\nUse of the MSAF form will automatically move the due date 72 hours, with no other possibility of extension or late submission without additional confirmation of the circumstances by the Faculty advising office. If you use the MSAF form for an assignment, you do not need to email me. Just turn in the assignment within 72 hours via Avenue or to the Political Science office (KTH 527). There is a drop box for after hours.\n\n\nOther policies\nSee the PDF version of the syllabus for McMaster University policies that may apply to this course."
-  },
-  {
-    "objectID": "slides/14_slides.html#quasi-experiments-ii",
-    "href": "slides/14_slides.html#quasi-experiments-ii",
-    "title": "Public Opinion and Policy",
-    "section": "Quasi-Experiments II",
-    "text": "Quasi-Experiments II\n \nPOLSCI 4SS3\nWinter 2023"
-  },
-  {
-    "objectID": "slides/14_slides.html#course-surveys-due-april-12-1159-pm",
-    "href": "slides/14_slides.html#course-surveys-due-april-12-1159-pm",
-    "title": "Public Opinion and Policy",
-    "section": "Course surveys due April 12, 11:59 PM",
-    "text": "Course surveys due April 12, 11:59 PM"
-  },
-  {
-    "objectID": "slides/14_slides.html#announcements",
-    "href": "slides/14_slides.html#announcements",
-    "title": "Public Opinion and Policy",
-    "section": "Announcements",
-    "text": "Announcements\n\nTwo more weeks left!\nFinal projects due April 21\nGroups need to meet with instructor one more time before April 19\nExtra office hour times April 13-19\nEvery group member needs to be in at least one group meeting to receive group meeting grade"
-  },
-  {
-    "objectID": "slides/14_slides.html#last-time",
-    "href": "slides/14_slides.html#last-time",
-    "title": "Public Opinion and Policy",
-    "section": "Last time",
-    "text": "Last time\n\nQuasi-experiments: Observational answer strategies for causal inquiries\n\n\n\n\n \n\n\nData strategy\n\n  \n    Inquiry \n    Observational \n    Experimental \n  \n \n\n  \n    Descriptive \n    Sample survey \n    List experiment \n  \n  \n    Causal \n    Quasi-experiment \n    Survey/field experiment \n  \n\n\n\n\n\n\nRDD as an example of quasi-experiment\nToday: Difference-in-differences as another common example in public policy"
-  },
-  {
-    "objectID": "slides/14_slides.html#but-first",
-    "href": "slides/14_slides.html#but-first",
-    "title": "Public Opinion and Policy",
-    "section": "But first",
-    "text": "But first\nWhat did you learn this semester?"
-  },
-  {
-    "objectID": "slides/14_slides.html#where-to-go-from-here",
-    "href": "slides/14_slides.html#where-to-go-from-here",
-    "title": "Public Opinion and Policy",
-    "section": "Where to go from here?",
-    "text": "Where to go from here?\nGo back to foundations\n\nProbability and statistics\nPhilosophy of science\nResearch design\nR programming\n\n\n\nHappy to help if you want to know more!"
-  },
-  {
-    "objectID": "slides/14_slides.html#thank-you",
-    "href": "slides/14_slides.html#thank-you",
-    "title": "Public Opinion and Policy",
-    "section": "Thank you!",
-    "text": "Thank you!"
-  },
-  {
-    "objectID": "slides/14_slides.html#break-time",
-    "href": "slides/14_slides.html#break-time",
-    "title": "Public Opinion and Policy",
-    "section": "Break time!",
-    "text": "Break time!"
-  },
-  {
-    "objectID": "slides/14_slides.html#fa-laptop-code-lab",
-    "href": "slides/14_slides.html#fa-laptop-code-lab",
-    "title": "Public Opinion and Policy",
-    "section": " Lab",
-    "text": "Lab"
-  },
-  {
-    "objectID": "slides/14_slides.html#where-to-go-from-here-1",
-    "href": "slides/14_slides.html#where-to-go-from-here-1",
-    "title": "Public Opinion and Policy",
-    "section": "Where to go from here?",
-    "text": "Where to go from here?\nFurther learning\n\nProgramming in Python, Julia\nSurvey design\nProgram evaluation\nScience of science\n\n\n\nHappy to help if you want to know more!"
-  },
-  {
-    "objectID": "slides/14_slides.html#further-learning",
-    "href": "slides/14_slides.html#further-learning",
-    "title": "Public Opinion and Policy",
-    "section": "Further learning",
-    "text": "Further learning\n\nProgramming in Python, Julia\nSurvey design\nProgram evaluation\nScience of science"
-  },
-  {
-    "objectID": "slides/14_slides.html#where-to-go-from-here-2",
-    "href": "slides/14_slides.html#where-to-go-from-here-2",
-    "title": "Public Opinion and Policy",
-    "section": "Where to go from here?",
-    "text": "Where to go from here?\nCareers & fields\n\nData science, computer science\nComputational social science\nEconometrics\nEvidence-informed policy\nPublic administration\nBusiness, marketing\n\n\n\nHappy to help if you want to know more!"
-  },
-  {
-    "objectID": "slides/14_slides.html#reminder",
-    "href": "slides/14_slides.html#reminder",
-    "title": "Public Opinion and Policy",
-    "section": "Reminder",
-    "text": "Reminder\n\nCritiques to causal claims from observational data\n\n\n\nReverse causation\nOmitted variable bias\nSelection bias\n\n\n\n\nNeed creativity to rule these out"
-  },
-  {
-    "objectID": "slides/14_slides.html#difference-in-differences-design",
-    "href": "slides/14_slides.html#difference-in-differences-design",
-    "title": "Public Opinion and Policy",
-    "section": "Difference-in-differences design",
-    "text": "Difference-in-differences design\n\n\nAt least two groups or conditions (treatment,control)\nAt least two time periods (pre- and post-treatment)\nOnce treated, units stay on\nWe accept that selection bias is unavoidable\nBut comparing before-after changes between groups allows us to calculate treatment effect\n\n\n\n\naka DD, DnD, Diff-in-diffs for short"
-  },
-  {
-    "objectID": "slides/14_slides.html#diff-in-diffs-estimator",
-    "href": "slides/14_slides.html#diff-in-diffs-estimator",
-    "title": "Public Opinion and Policy",
-    "section": "Diff-in-diffs estimator",
-    "text": "Diff-in-diffs estimator\n\n\n\n \n\n\nTiming\n\n  \n    Group \n    Before \n    After \n  \n \n\n  \n    Treatment \n    A \n    B \n  \n  \n    Control \n    C \n    D \n  \n\n\n\n\n\n\\[\n\\widehat{ATE} =  [\\text{Mean}(B) - \\text{Mean}(A)] - [\\text{Mean}(D) - \\text{Mean}(C)]\n\\]"
-  },
-  {
-    "objectID": "slides/14_slides.html#diff-in-diffs-estimator-1",
-    "href": "slides/14_slides.html#diff-in-diffs-estimator-1",
-    "title": "Public Opinion and Policy",
-    "section": "Diff-in-diffs estimator",
-    "text": "Diff-in-diffs estimator\n\n\n\n \n\n\nTiming\n\n  \n    Group \n    Before \n    After \n  \n \n\n  \n    Treatment \n    A \n    B \n  \n  \n    Control \n    C \n    D \n  \n\n\n\n\n\\[\n\\widehat{ATE} =  \\underbrace{[\\text{Mean}(B) - \\text{Mean}(A)]}_\\text{Difference} - \\underbrace{[\\text{Mean}(D) - \\text{Mean}(C)]}_\\text{Difference}\n\\]"
-  },
-  {
-    "objectID": "slides/14_slides.html#diff-in-diffs-estimator-2",
-    "href": "slides/14_slides.html#diff-in-diffs-estimator-2",
-    "title": "Public Opinion and Policy",
-    "section": "Diff-in-diffs estimator",
-    "text": "Diff-in-diffs estimator\n\n\n\n \n\n\nTiming\n\n  \n    Group \n    Before \n    After \n  \n \n\n  \n    Treatment \n    A \n    B \n  \n  \n    Control \n    C \n    D \n  \n\n\n\n\n\\[\n\\widehat{ATE} =  \\underbrace{\\underbrace{[\\text{Mean}(B) - \\text{Mean}(A)]}_\\text{Difference} - \\underbrace{[\\text{Mean}(D) - \\text{Mean}(C)]}_\\text{Difference}}_\\text{Difference in differences}\n\\]"
   }
 ]

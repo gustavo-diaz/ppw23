@@ -341,11 +341,10 @@ Winter 2023</p>
 <section id="announcements" class="slide level2" data-background-color="#8BD3E6">
 <h2>Announcements</h2>
 <ul>
-<li><p>Two more weeks left!</p></li>
 <li><p>Final projects due <strong>April 21</strong></p></li>
-<li><p>Groups need to meet with instructor one more time before <strong>April 19</strong></p></li>
+<li><p>Groups need to meet with instructor one more time before <strong>April 19</strong> <code>(Otherwise your group meeting grade is F)</code></p></li>
 <li><p>Extra office hour times <strong>April 13-19</strong></p></li>
-<li><p>Every group member needs to be in <strong>at least one</strong> group meeting to receive group meeting grade</p></li>
+<li><p>Every group member needs to be in <strong>at least one</strong> group meeting to receive the group meeting grade</p></li>
 </ul>
 </section>
 <section id="last-time" class="slide level2" data-background-color="#FDBF57">
@@ -389,9 +388,8 @@ Winter 2023</p>
 </ul>
 </div>
 </section>
-<section id="but-first" class="slide level2 center" data-background-color="#8BD3E6" style="text-align: center">
-<h2>But first</h2>
-<h3 id="what-did-you-learn-this-semester">What did you learn this semester?</h3>
+<section id="what-did-you-learn-this-semester" class="slide level2 center" data-background-color="#8BD3E6" style="text-align: center">
+<h2>What did you learn this semester?</h2>
 </section>
 <section id="where-to-go-from-here" class="slide level2">
 <h2>Where to go from here?</h2>
@@ -423,8 +421,8 @@ Winter 2023</p>
 <h2>Where to go from here?</h2>
 <h3 id="careers-fields">Careers &amp; fields</h3>
 <ul>
-<li><p>Data science, computer science</p></li>
-<li><p>Computational social science</p></li>
+<li><p>Data science, computer science, statistics</p></li>
+<li><p>Computational/quantitative social science</p></li>
 <li><p>Econometrics</p></li>
 <li><p>Evidence-informed policy</p></li>
 <li><p>Public administration</p></li>
@@ -470,7 +468,7 @@ Winter 2023</p>
 </div>
 
 <aside><div>
-<p>aka DD, DnD, Diff-in-diffs for short</p>
+<p>aka DD, DiD, Diff-in-diffs for short</p>
 </div></aside></section>
 <section id="diff-in-diffs-estimator" class="slide level2">
 <h2>Diff-in-diffs estimator</h2>
@@ -581,8 +579,105 @@ Winter 2023</p>
 </section>
 <section class="slide level2">
 
+<p><img data-src="figs/dd.png" class="absolute" style="top: 50px; left: 50px; "></p>
 
-<img data-src="figs/dd.png" class="r-stretch quarto-figure-center"></section>
+<aside><div>
+<p>Assuming the treatment group follows the dotted line absent treatment, the difference in difference estimator recovers the causal effect</p>
+</div></aside></section>
+<section id="assumption" class="slide level2">
+<h2>Assumption</h2>
+<div class="fragment">
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Parallel trends</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Treatment and control may have different values before treatment</p></li>
+<li><p>Absent treatment, the treatment group would have changed like the control group</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div>
+<ul>
+<li class="fragment"><p>This is equivalent to claiming that treatment and control, while different, follow a similar trajectory</p></li>
+<li class="fragment"><p>Ideally, you justify by observing the outcome over many pre-treatment periods</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="what-happens-if-we-break-parallel-trends" class="slide level2">
+<h2>What happens if we break parallel trends?</h2>
+
+<img data-src="figs/dd_trend_1.png" class="r-stretch"></section>
+<section id="what-happens-if-we-break-parallel-trends-1" class="slide level2" data-visibility="uncounted">
+<h2>What happens if we break parallel trends?</h2>
+
+<img data-src="figs/dd_trend_2.png" class="r-stretch"></section>
+<section id="what-happens-if-we-break-parallel-trends-2" class="slide level2" data-visibility="uncounted">
+<h2>What happens if we break parallel trends?</h2>
+
+<img data-src="figs/dd_trend_3.png" class="r-stretch"></section>
+<section id="variants-of-the-design" class="slide level2">
+<h2>Variants of the design</h2>
+<div>
+<ul>
+<li class="fragment"><p>Many groups, treatments, time periods</p></li>
+<li class="fragment"><p><strong>Increasingly common:</strong> Units become treated at different time periods</p></li>
+<li class="fragment"><p><strong>Example:</strong> Policy adopted by cities over a time period</p></li>
+<li class="fragment"><p>This makes similar to a <strong>staggered adoption</strong> design</p></li>
+<li class="fragment"><p>But things get very complicated <em>without randomization</em></p></li>
+</ul>
+</div>
+</section>
+<section id="multiple-treatment-periods" class="slide level2">
+<h2>Multiple treatment periods</h2>
+<p><img data-src="figs/dd_timing.png"></p>
+
+<aside><div>
+<p>Effects are positive first, negative later. The average of the two cancels out, but the policy clearly has an effect!</p>
+</div></aside></section></section>
+<section>
+<section id="example" class="title-slide slide level1 center" data-background-color="#8BD3E6">
+<h1>Example</h1>
+
+</section>
+<section id="leininger-et-al-2023" class="slide level2">
+<h2>Leininger et al (2023)</h2>
+<h3 id="temporary-disenfranchisement-in-germany">Temporary disenfranchisement in Germany</h3>
+<div>
+<ul>
+<li class="fragment"><p>Discrepancies of minimum voting age across elections <code>(municipal, state, national)</code></p></li>
+<li class="fragment"><p>16-17 year olds in Schleswig-Holstein can vote in local but not national elections</p></li>
+<li class="fragment"><p><strong>Temporary disenfranchisement</strong> may push voters away from democracy</p></li>
+</ul>
+</div>
+</section>
+<section id="research-design" class="slide level2">
+<h2>Research design</h2>
+
+<img data-src="figs/leininger_1.png" class="r-stretch"><div class="fragment">
+<ul>
+<li><strong>Outcomes:</strong> Survey questions about internal/external efficacy, satisfaction with democracy, political interest</li>
+</ul>
+</div>
+</section>
+<section id="parallel-trends-1" class="slide level2">
+<h2>Parallel trends</h2>
+
+<img data-src="figs/leininger_2.png" class="r-stretch quarto-figure-center"></section>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+<p><img data-src="figs/leininger_3.png"></p>
+
+<aside><div>
+<p>ATEs estimated via difference-in-differences</p>
+</div></aside></section>
 <section id="thank-you" class="slide level2 center" data-background-color="#8BD3E6" style="text-align: center">
 <h2>Thank you!</h2>
 </section>

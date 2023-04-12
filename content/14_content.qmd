@@ -18,7 +18,7 @@ The lab discusses difference-in-differences designs.
 
 ## Reading
 
-- [{{< fa book >}}]{style="color: #ac1455;"} [RD section 16](https://book.declaredesign.org/observational-causal.html)
+- [{{< fa book >}}]{style="color: #ac1455;"} [RD section 16](https://book.declaredesign.org/library/observational-causal.html)
 
 - [{{< fa file-lines >}}]{style="color: #ac1455;"} Leninger, Arndt, Marie-Lou Sohnius, Thorsten Faas, Sigrid Roßteutscher, and Armin Schäfer. 2022. [“Temporary Disenfranchisement: Negative Side Effects of Lowering the Voting Age.”](https://doi.org/10.1017/S000305542200034X) *American Political Science Review*
 
@@ -31,10 +31,10 @@ Click on the frame below and use the arrows to navigate. You can type <kbd>?</kb
 :::
 
 ```{r show-slides, echo = FALSE, results = "asis"}
-show_slide("/slides/placeholder")
+show_slide("/slides/14_slides")
 slide_buttons("/slides/14_slides")
 ```
 
 ## Lab
 
-Quasi-experimental designs II {{< fa laptop-code >}} (coming soon!)
+[Quasi-experimental designs II {{< fa laptop-code >}}](labs/14_lab.Rmd)

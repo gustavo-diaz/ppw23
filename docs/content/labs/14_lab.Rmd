@@ -1,0 +1,136 @@
+---
+title: "Lab 10"
+subtitle: "Quasi experimental designs II"
+author: |
+        | **Name:** Your name here
+        | **Mac ID:** Your Mac ID here
+date: "**Due:** Friday, April 14, 5 PM"
+output: 
+  pdf_document:
+    highlight: espresso
+    fig_caption: yes
+urlcolor: blue
+header-includes:
+    - \usepackage{setspace}
+    - \doublespacing
+    - \usepackage{float}
+    - \floatplacement{figure}{t}
+    - \floatplacement{table}{t}
+    - \usepackage{flafter}
+    - \usepackage[T1]{fontenc}
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{ragged2e}
+    - \usepackage{booktabs}
+    - \usepackage{amsmath}
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+# Global options for the knitting behavior of all subsequent code chunks
+# Adding an option to store previous results to save computing time
+knitr::opts_chunk$set(echo = TRUE, error = TRUE, cache = TRUE)
+
+# Packages
+library(tidyverse)
+library(DeclareDesign)
+library(rdss) # new package needs to be installed
+
+# Package global options
+theme_set(theme_bw(base_size = 20)) # bigger figure font and white background
+
+# Add extra packages here if needed
+```
+
+# Difference in differences
+
+The lecture slides mention that difference in differences (DiD) estimation gets much more complicated once we consider applications in which units can receive treatment at different time periods. The problem is that these are also the most common, interesting, or meaningful applications to public policy!
+
+To dimension the extent of the problem, the following code simulates a DiD design. Our model assumes two groups (treatment, control), an arbitrary number of time periods defined by `N_time_periods`, and units in the treatment group that take up treatment at randomly selected time periods. We start with two periods, which is the canonical design, except that some units can start in the treatment group.
+
+```{r}
+N_time_periods = 2
+
+# M
+model = declare_model(
+  units = add_level(
+    N = 50,
+    # unit level heterogeneity
+    U_unit = rnorm(N),
+    # unit in treatment group if above median of U
+    D_unit = if_else(U_unit > median(U_unit), 1, 0),
+    # select at random a time period for treatment
+    D_time = sample(1:N_time_periods, N, replace = TRUE)
+  ),
+  periods = add_level(
+    N = N_time_periods,
+    U_time = rnorm(N),
+    nest = FALSE
+  ),
+  unit_period = cross_levels(
+    by = join_using(units, periods),
+    U = rnorm(N),
+    potential_outcomes(
+      Y ~ U + U_unit + U_time + 
+                         D * (0.2 - 1 * (D_time - as.numeric(periods))),
+      conditions = list(D = c(0,1))),
+    D = if_else(D_unit == 1 & as.numeric(periods) >= D_time, 1, 0),
+    D_lag = lag_by_group(D, groups = units, n = 1, order_by = periods)
+  )
+)
+```
+
+Notice that treatment assignment depends on the values of `U_unit`, which means our estimates will only be valid if we assume parallel trends. Furthermore, we also assume that treatment effect varies by when units receive treatment. 
+
+In this case, the effect is lower the later the unit receives treatment. This may be the case when policies have larger payoffs for early adopters. This comes from the `D * (0.2 - 1 * (D_time - as.numeric(periods)))` part of the `potential_outcomes` function.
+
+We have two inquiries. The first inquiry is the **Average Treatment effect on the Treated (ATT)**. This is the difference between the observed post-treatment outcome in the treatment group and the unobserved counterfactual of the same group without receiving treatment.
+
+For this particular version of the design, another inquiry is the ATT among those who *just switched* from control to treatment, so we are focusing on the potential outcomes of units who are treated now but were not treated one period ago. This means we are ignoring those who start the study in the treatment group, as well as the potential outcomes from periods outside the switching window.
+
+```{r}
+inq1 = declare_inquiry(
+  ATT = mean(Y_D_1 - Y_D_0),
+  subset = D == 1
+)
+
+inq2 = declare_inquiry(
+    ATT_switchers = mean(Y_D_1 - Y_D_0), 
+    subset = D == 1 & D_lag == 0 & !is.na(D_lag)
+  )
+```
+
+There is no randomization procedure, so the data strategy only realizes the observed outcomes based on the potential outcomes.
+
+```{r}
+reveal = declare_measurement(Y = reveal_outcomes(Y ~ D))
+```
+
+The estimator is a linear regression that controls for variability that is unrelated to the treatment at the unit and period level using "fixed effects." This is equivalent to calculating all the group means individually, but much less cumbersome. Because we are including fixed effects for two sources of variability, we call this a "two-way fixed effect" model. Many other estimators exist that aim to overcome the difficulties that emerge from multiple treatment periods, but for our purposes it is sufficient to focus on the canonical estimator.
+
+```{r}
+est = declare_estimator(
+  Y ~ D,
+  fixed_effects = ~ units + periods,
+  .method = lm_robust,
+  inquiry = c("ATT", "ATT_switchers"),
+  label = "twoway-fe"
+)
+```
+
+
+
+## TASKS
+
+**1. Diagnose the current design. How does it perform in terms of bias, RMSE, and power?**
+
+**2. Why is the performance for the** `ATT` **inquiry different from the performance for the** `ATT_switchers` **inquiry?**
+
+***Hint: This does not need code but a careful read of the material for this week, especially [chapter 16.3](https://book.declaredesign.org/library/observational-causal.html#sec-ch16s3) of the RD book.***
+
+**3. What happens to performance in terms of bias, RMSE, and power when you increase the number of time periods? Show at least 3 values larger than 2 but smaller or equal than 10. You do not need to give a specific answer for each of the three values. Instead, explain the general trend and elaborate on why it happens.**
+
+**4. Is there an optimal number of time periods? What makes you say so? (You only need to show code and output if you haven't already done so).**
+
+# Answers
+
+Write your answers here. Remember to show the code you use to get the answer and to use `set.seed` with your student number to get unique results in simulations and diagnosis.
